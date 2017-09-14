@@ -1,0 +1,9 @@
+{
+  "name": "Customer Manager",
+  "version": "1.2.3",
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "jquery": "latest",
+    "jquery-ui": "~1.11.4"
+  }
+}
