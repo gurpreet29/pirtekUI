@@ -1,0 +1,12 @@
+body {
+    font-family: $fontFamily;
+}
+
+picture {
+    img {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {}

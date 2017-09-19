@@ -42,22 +42,44 @@ table {
 }
 
 @font-face {
-  font-family: 'font';
-  src: url("../fonts/font.eot");
-  src: url("../fonts/font.eot") format("embedded-opentype"), url("../fonts/font.woff2") format("woff2"), url("../fonts/font.woff") format("woff"), url("../fonts/font.ttf") format("truetype"), url("../fonts/font.svg#font") format("svg");
+  font-family: 'MuseoSans';
+  font-weight: 100;
+  src: url("../fonts/MuseoSans-100.eot");
+  src: url("../fonts/MuseoSans-100.eot") format("embedded-opentype"), url("../fonts/MuseoSans-100.woff2") format("woff2"), url("../fonts/MuseoSans-100.woff") format("woff"), url("../fonts/MuseoSans-100.ttf") format("truetype"), url("../fonts/MuseoSans-100.otf") format("truetype"), url("../fonts/MuseoSans-100.svg#font") format("svg");
 }
-.wrapper {
-  max-width: 140rem;
-  margin: auto;
+@font-face {
+  font-family: 'MuseoSans';
+  font-weight: 300;
+  src: url("../fonts/MuseoSans-300.eot");
+  src: url("../fonts/MuseoSans-300.eot") format("embedded-opentype"), url("../fonts/MuseoSans-300.woff2") format("woff2"), url("../fonts/MuseoSans-300.woff") format("woff"), url("../fonts/MuseoSans-300.ttf") format("truetype"), url("../fonts/MuseoSans-300.otf") format("truetype"), url("../fonts/MuseoSans-300.svg#font") format("svg");
+}
+@font-face {
+  font-family: 'MuseoSans';
+  font-weight: 500;
+  src: url("../fonts/MuseoSans-500.eot");
+  src: url("../fonts/MuseoSans-500.eot") format("embedded-opentype"), url("../fonts/MuseoSans-500.woff2") format("woff2"), url("../fonts/MuseoSans-500.woff") format("woff"), url("../fonts/MuseoSans-500.ttf") format("truetype"), url("../fonts/MuseoSans-500.otf") format("truetype"), url("../fonts/MuseoSans-500.svg#font") format("svg");
+}
+@font-face {
+  font-family: 'MuseoSans';
+  font-weight: 700;
+  src: url("../fonts/MuseoSans-700.eot");
+  src: url("../fonts/MuseoSans-700.eot") format("embedded-opentype"), url("../fonts/MuseoSans-700.woff2") format("woff2"), url("../fonts/MuseoSans-700.woff") format("woff"), url("../fonts/MuseoSans-700.ttf") format("truetype"), url("../fonts/MuseoSans-700.otf") format("truetype"), url("../fonts/MuseoSans-700.svg#font") format("svg");
+}
+@font-face {
+  font-family: 'MuseoSans';
+  font-weight: 900;
+  src: url("../fonts/MuseoSans-900.eot");
+  src: url("../fonts/MuseoSans-900.eot") format("embedded-opentype"), url("../fonts/MuseoSans-900.woff2") format("woff2"), url("../fonts/MuseoSans-900.woff") format("woff"), url("../fonts/MuseoSans-900.ttf") format("truetype"), url("../fonts/MuseoSans-900.otf") format("truetype"), url("../fonts/MuseoSans-900.svg#font") format("svg");
+}
+body {
+  font-family: "MuseoSans", sans-serif;
+}
+
+picture img {
+  width: 100%;
 }
 
 /* Mobile */
-@media (max-width: 767px) {
-  .wrapper {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
 header .brand-bar {
   padding: 3rem 0;
 }
@@ -241,6 +263,166 @@ footer .social-links li a:hover svg path, footer .social-links li a:hover svg po
   }
   footer .social-links {
     text-align: center;
+  }
+}
+.carousel .carousel-control {
+  opacity: 1;
+  background-image: none;
+  width: 0;
+  bottom: auto;
+  top: 19%;
+}
+.carousel .carousel-control:focus .glyphicon-chevron-left, .carousel .carousel-control:focus .icon-prev, .carousel .carousel-control:focus .glyphicon-chevron-right, .carousel .carousel-control:focus .icon-next, .carousel .carousel-control:hover .glyphicon-chevron-left, .carousel .carousel-control:hover .icon-prev, .carousel .carousel-control:hover .glyphicon-chevron-right, .carousel .carousel-control:hover .icon-next {
+  background-color: #f3c828;
+  background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%208.64%2013.44%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%231d4789%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Eprev-blue%3C%2Ftitle%3E%3Cpath%20id%3D%22Arrow_copy_6%22%20data-name%3D%22Arrow%20copy%206%22%20class%3D%22cls-1%22%20d%3D%22M145.86%20286.13l1.8-1.77-5-5%205-5-1.8-1.77-6.86%206.82z%22%20transform%3D%22translate%28-139.02%20-272.68%29%22%2F%3E%3C%2Fsvg%3E");
+}
+.carousel .carousel-control .glyphicon-chevron-left, .carousel .carousel-control .icon-prev, .carousel .carousel-control .glyphicon-chevron-right, .carousel .carousel-control .icon-next {
+  background-color: #1d4789;
+  background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%208.64%2013.44%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23fff%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3EArrow%20copy%206%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201%22%3E%3Cpath%20id%3D%22Arrow_copy_6%22%20data-name%3D%22Arrow%20copy%206%22%20class%3D%22cls-1%22%20d%3D%22M6.84%2013.44l1.8-1.77-5-5%205-5L6.84%200%200%206.72z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  background-position: center center;
+  width: 4.7rem;
+  height: 4.7rem;
+}
+.carousel .carousel-control .glyphicon-chevron-left:before, .carousel .carousel-control .icon-prev:before, .carousel .carousel-control .glyphicon-chevron-right:before, .carousel .carousel-control .icon-next:before {
+  content: '';
+}
+.carousel .carousel-control .glyphicon-chevron-left, .carousel .carousel-control .icon-prev {
+  margin-left: 0;
+}
+.carousel .carousel-control .glyphicon-chevron-right, .carousel .carousel-control .icon-next {
+  transform: rotate(180deg);
+  margin-right: 0;
+}
+.carousel .carousel-indicators {
+  bottom: auto;
+  top: 50%;
+  text-align: right;
+}
+.carousel .carousel-indicators.container {
+  left: 50%;
+  padding: 0;
+}
+.carousel .carousel-indicators li {
+  border-color: #fff;
+  background-color: #fff;
+  border-width: .2rem;
+  margin: 0;
+}
+.carousel .carousel-indicators li.active {
+  height: 1rem;
+  width: 1rem;
+  border-color: #f3c828;
+  background-color: transparent;
+}
+.carousel .container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: 26.8%;
+}
+.carousel h1, .carousel h2 {
+  color: #1d4789;
+  font-family: "MuseoSans", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: 26.8%;
+  left: 0;
+}
+.carousel h2 {
+  color: #1d4789;
+  font-size: 7.5rem;
+  margin-top: 2.5rem;
+}
+.carousel.solution {
+  margin-bottom: 5rem;
+}
+.carousel.solution .carousel-control .glyphicon-chevron-left, .carousel.solution .carousel-control .icon-prev, .carousel.solution .carousel-control .glyphicon-chevron-right, .carousel.solution .carousel-control .icon-next {
+  width: 4.2rem;
+  height: 4.2rem;
+}
+.carousel.solution .carousel-control .glyphicon-chevron-left, .carousel.solution .carousel-control .icon-prev {
+  margin-left: -1.5rem;
+}
+.carousel.solution .carousel-control .glyphicon-chevron-right, .carousel.solution .carousel-control .icon-next {
+  margin-right: -1.5rem;
+}
+.carousel.solution .carousel-indicators {
+  top: auto;
+  bottom: -5rem;
+  text-align: center;
+}
+.carousel.solution .carousel-indicators li {
+  border-color: #1d4789;
+}
+.carousel.solution .carousel-indicators li.active {
+  border-color: #1d4789;
+  background-color: #1d4789;
+}
+.carousel.solution ul {
+  display: flex;
+  flex-direction: row;
+}
+.carousel.solution ul li {
+  width: 20%;
+  position: relative;
+}
+.carousel.solution ul li img {
+  width: 100%;
+}
+.carousel.solution ul li p {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%208.6%2013.4%22%20style%3D%22enable-background%3Anew%200%200%208.6%2013.4%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%20.st0%7Bfill%3A%23FFFFFF%3B%7D%3C%2Fstyle%3E%3Ctitle%3EArrow%20copy%206%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%3E%20%3Cg%20id%3D%22Layer_1-2%22%3E%20%20%3Cpath%20id%3D%22Arrow_copy_6%22%20class%3D%22st0%22%20d%3D%22M1.8%2C0L0%2C1.8l5%2C5l-5%2C5l1.8%2C1.7l6.8-6.7L1.8%2C0z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: 90% bottom;
+  background-size: 1rem;
+  color: #fff;
+  padding: 0 10% 0;
+  font-size: 1.6rem;
+  font-family: "MuseoSans", sans-serif;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  h2 {
+    font-size: 5.8rem;
+    margin-top: 2.6rem;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) {
+  .carousel .carousel-indicators.container {
+    left: 0;
+    margin: 0 -1.5rem;
+    width: 100%;
+    bottom: 1.5rem;
+    top: auto;
+    height: 1.5rem;
+  }
+  .carousel .container {
+    margin: auto 1.5rem;
+    height: 100%;
+  }
+  .carousel .carousel-control {
+    display: none;
+  }
+  .carousel h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .carousel h2 {
+    font-size: 2.8rem;
+    margin-top: 1.6rem;
   }
 }
 .category-grid ul {

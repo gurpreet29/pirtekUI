@@ -1,39 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <title>PIRTEK</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
-<p>
-  &lt;a&gt; Anchor tag with PDF download link <br>
-  Class variant : .download
-</p>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div id="editor">
+    <textarea :value="input" @input="update"></textarea>
+    <div v-html="compiledMarkdown"></div>
+</div>
+
+
+<!-- 
+
 
     <section class="category-grid">
         <ul>
-            <li>
-                <div class="thumbnail">
-                    <a href="">
-                    <img src="http://via.placeholder.com/240x182" alt="Lights" >
-                    <div class="caption">
-                    <p class="date">oct 16</p>
-                      <p>Hose Tails.</p>
-                    </div>
-                  </a>
-                </div>
-            </li>
             <li>
                 <div class="thumbnail download">
                     <a href="">
@@ -44,130 +31,11 @@
                     </div>
                   </a>
                 </div>
-            </li> <li>
-                <div class="thumbnail">
-                    <a href="">
-                    <img src="http://via.placeholder.com/240x182" alt="Lights" >
-                    <div class="caption">
-                       <p class="date">oct 16</p>
-                      <p>Hose Tails.</p>
-                    </div>
-                  </a>
-                </div>
-            </li> <li>
-                <div class="thumbnail">
-                    <a href="">
-                    <img src="http://via.placeholder.com/240x182" alt="Lights" >
-                    <div class="caption">
-                       <p class="date">oct 16</p>
-                      <p>Hose Tails.</p>
-                    </div>
-                  </a>
-                </div>
-            </li>
-             <li>
-                <div class="thumbnail">
-                    <a href="">
-                    <img src="http://via.placeholder.com/240x182" alt="Lights" >
-                    <div class="caption">
-                       <p class="date">oct 16</p>
-                      <p>Hose Tails.</p>
-                    </div>
-                  </a>
-                </div>
-            </li>
-             <li>
-                <div class="thumbnail">
-                    <a href="">
-                    <img src="http://via.placeholder.com/240x182" alt="Lights" >
-                    <div class="caption">
-                       <p class="date">oct 16</p>
-                      <p>Hose Tails.</p>
-                    </div>
-                  </a>
-                </div>
-            </li>
-             <li>
-                <div class="thumbnail">
-                    <a href="">
-                    <img src="http://via.placeholder.com/240x182" alt="Lights" >
-                    <div class="caption">
-                       <p class="date">oct 16</p>
-                      <p>Hose Tails.</p>
-                    </div>
-                  </a>
-                </div>
-            </li>
-             <li>
-                <div class="thumbnail">
-                    <a href="">
-                    <img src="http://via.placeholder.com/240x182" alt="Lights" >
-                    <div class="caption">
-                       <p class="date">oct 16</p>
-                      <p>Hose Tails.</p>
-                    </div>
-                  </a>
-                </div>
-            </li>
-             <li>
-                <div class="thumbnail">
-                    <a href="">
-                    <img src="http://via.placeholder.com/240x182" alt="Lights" >
-                    <div class="caption">
-                       <p class="date">oct 16</p>
-                      <p>Hose Tails.</p>
-                    </div>
-                  </a>
-                </div>
-            </li>
-             <li>
-                <div class="thumbnail">
-                    <a href="">
-                    <img src="http://via.placeholder.com/240x182" alt="Lights" >
-                    <div class="caption">
-                       <p class="date">oct 16</p>
-                      <p>Hose Tails.</p>
-                    </div>
-                  </a>
-                </div>
-            </li>
-             <li>
-                <div class="thumbnail">
-                    <a href="">
-                    <img src="http://via.placeholder.com/240x182" alt="Lights" >
-                    <div class="caption">
-                       <p class="date">oct 16</p>
-                      <p>Hose Tails.</p>
-                    </div>
-                  </a>
-                </div>
-            </li>
-             <li>
-                <div class="thumbnail">
-                    <a href="">
-                    <img src="http://via.placeholder.com/240x182" alt="Lights" >
-                    <div class="caption">
-                       <p class="date">oct 16</p>
-                      <p>Hose Tails.</p>
-                    </div>
-                  </a>
-                </div>
-            </li>
-             <li>
-                <div class="thumbnail">
-                    <a href="">
-                    <img src="http://via.placeholder.com/240x182" alt="Lights" >
-                    <div class="caption">
-                       <p class="date">oct 16</p>
-                      <p>Hose Tails.</p>
-                    </div>
-                  </a>
-                </div>
             </li>
         </ul>
-    </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </section> -->
+    <script src="js/app.min.js"></script>
+    <script src="js/category.js"></script>
 </body>
 
 </html>

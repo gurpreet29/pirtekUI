@@ -1,15 +1,15 @@
-.wrapper {
-    max-width: $wrapper-width;
-    margin: auto;
-}
+// .wrapper {
+//     max-width: $wrapper-width;
+//     margin: auto;
+// }
 
-/* Mobile */
-@media (max-width: $mobile) {
-    .wrapper {
-        padding-left: $gutter-width;
-        padding-right: $gutter-width;
-    }
-}
+// /* Mobile
+// @media (max-width: $mobile) {
+//     .wrapper {
+//         padding-left: $gutter-width;
+//         padding-right: $gutter-width;
+//     }
+// }
 
 // overwrite gutter space
 // .container-fluid {
