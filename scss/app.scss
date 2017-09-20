@@ -5,7 +5,12 @@
 @import "base";
 @import "icons";
 @import "template";
+
+// global component
 @import "header";
 @import "footer";
+
+// component
 @import "carousel";
+@import "solution-carousel";
 @import "category-grid";

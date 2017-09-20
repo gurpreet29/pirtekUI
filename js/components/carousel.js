@@ -1,4 +1,4 @@
-/* COMPONENT - Example 1.0 */
+/* COMPONENT - carousel */
 window.app = window.app || {};
 
 (function($) {
@@ -36,11 +36,7 @@ window.app = window.app || {};
                 });
             },
 
-            // What does the function do
-            anotherFunctionName = function() {
-                var _this = this;
-                //Do something
-            },
+           
 
             /***** PUBLIC FUNCTION/INITIALISE ************/
 
@@ -55,8 +51,7 @@ window.app = window.app || {};
                 // On document ready
                 model.init();
                 attachCarousel();
-                picturefill();
-
+            
             },
 
             reset = function() {
