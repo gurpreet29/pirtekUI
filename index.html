@@ -5,50 +5,21 @@
     <title>testing</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
     <style>
-    #demo {
-        font-family: 'Helvetica', Arial, sans-serif;
-    }
 
-    a {
-        text-decoration: none;
-        color: #f66;
-    }
-
-    li {
-        line-height: 1.5em;
-        margin-bottom: 20px;
-    }
-
-    .author,
-    .date {
-        font-weight: bold;
-    }
     </style>
 </head>
 
 <body>
-    <div id="vue-holder">
-        <section class="category-grid" >
-            <ul>
-                <!-- result loop -->
-                <li v-for="category in category.Results">
-                    <div class="thumbnail" v-bind:class="category.CataloguePDF != null ? 'download' : ''">
-                        <a v-bind:href="category.Url">
-                          <img v-bind:src="category.Image" alt="Lights" >
-                          <div class="caption">
-                             <p class="date">{{category.CatalogueDate | formatDate}}</p>
-                            <p>{{category.CatalogueName}}</p>
-                          </div>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4"></div>
+            <div class="col-xs-4"></div>
+        </div>
     </div>
-    <script src="js/app.min.js"></script>
 </body>
 
 </html>
