@@ -31,6 +31,14 @@ a {
     }
 }
 
+.container-fluid {
+    &.bg-blue {
+        background-image: url(../img/blue-background.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 /* Tablet */
 @media (max-width: $tablet) {}
 
