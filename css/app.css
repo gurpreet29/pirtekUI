@@ -1013,6 +1013,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 .quick-link .tile {
   flex: 1;
   font-size: 0;
+  display: flex;
 }
 .quick-link .tile.x2 {
   flex: 2;
@@ -1021,44 +1022,56 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 }
 .quick-link .tile.x2 .image-thumb {
   flex-flow: row;
+  flex: 1;
+}
+.quick-link .tile.x2 .image-thumb a {
+  display: inline-block;
+  width: 50%;
+  padding-top: 49.5%;
 }
 .quick-link .tile .image-thumb {
   display: flex;
   flex-flow: column;
   font-size: 0;
-}
-.quick-link .tile .searchbox {
   flex: 1;
+}
+.quick-link .tile .image-thumb a {
+  display: block;
+  width: 100%;
+  padding-top: 100%;
+}
+.quick-link .tile .search-area {
   background-image: url(../img/search-tile-background.jpg);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
   position: relative;
+  padding-top: 50%;
 }
-.quick-link .tile .searchbox form {
+.quick-link .tile .search-area form {
   position: absolute;
   font-size: 1.6rem;
   bottom: 3rem;
   width: 90%;
   left: 5%;
 }
-.quick-link .tile .searchbox form label {
+.quick-link .tile .search-area form label {
   font-family: "MuseoSans", sans-serif;
   font-weight: 900;
   font-size: 1.4rem;
   color: #fff;
   text-transform: uppercase;
 }
-.quick-link .tile .searchbox form label strong {
+.quick-link .tile .search-area form label strong {
   font-weight: 900;
   font-size: 2.4rem;
   display: block;
 }
-.quick-link .tile .searchbox form .search-box {
+.quick-link .tile .search-area form .search-box {
   position: relative;
   margin-top: 2rem;
 }
-.quick-link .tile .searchbox form .search-box input[type='text'] {
+.quick-link .tile .search-area form .search-box input[type='text'] {
   width: 100%;
   height: 4.2rem;
   font-size: 1.4rem;
@@ -1067,27 +1080,27 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   padding-right: 4rem;
   font-weight: 500;
 }
-.quick-link .tile .searchbox form .search-box ::-webkit-input-placeholder {
+.quick-link .tile .search-area form .search-box ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: #1d4789;
   text-transform: uppercase;
 }
-.quick-link .tile .searchbox form .search-box ::-moz-placeholder {
+.quick-link .tile .search-area form .search-box ::-moz-placeholder {
   /* Firefox 19+ */
   color: #1d4789;
   text-transform: uppercase;
 }
-.quick-link .tile .searchbox form .search-box :-ms-input-placeholder {
+.quick-link .tile .search-area form .search-box :-ms-input-placeholder {
   /* IE 10+ */
   color: #1d4789;
   text-transform: uppercase;
 }
-.quick-link .tile .searchbox form .search-box :-moz-placeholder {
+.quick-link .tile .search-area form .search-box :-moz-placeholder {
   /* Firefox 18- */
   color: #1d4789;
   text-transform: uppercase;
 }
-.quick-link .tile .searchbox form .search-box .search-button {
+.quick-link .tile .search-area form .search-box .search-button {
   display: block;
   position: absolute;
   right: 0;
@@ -1097,7 +1110,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   border: none;
   background: none;
 }
-.quick-link .tile .searchbox form .search-box .search-button img {
+.quick-link .tile .search-area form .search-box .search-button img {
   width: 52%;
   top: 50%;
   transform: translateY(-50%);
@@ -1106,25 +1119,29 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 }
 .quick-link a {
   padding-bottom: 0;
+  display: block;
+  background-color: yellowgreen;
+  padding-top: 100%;
+  position: relative;
 }
 .quick-link a img {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .quick-link a p {
   text-transform: uppercase;
   position: absolute;
   bottom: 2.5rem;
   left: 0;
-  background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%208.6%2013.4%22%20style%3D%22enable-background%3Anew%200%200%208.6%2013.4%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%20.st0%7Bfill%3A%23FFFFFF%3B%7D%3C%2Fstyle%3E%3Ctitle%3EArrow%20copy%206%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%3E%20%3Cg%20id%3D%22Layer_1-2%22%3E%20%20%3Cpath%20id%3D%22Arrow_copy_6%22%20class%3D%22st0%22%20d%3D%22M1.8%2C0L0%2C1.8l5%2C5l-5%2C5l1.8%2C1.7l6.8-6.7L1.8%2C0z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat;
-  background-position: calc(100% - 2rem) 80%;
-  background-size: 1rem;
   color: #fff;
   padding: 0 4rem 0 3rem;
   font-size: 1.4rem;
   font-family: "MuseoSans", sans-serif;
   width: 100%;
   font-weight: 900;
+  z-index: 1;
 }
 .quick-link a p strong {
   font-weight: 900;
@@ -1132,13 +1149,24 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   display: block;
   word-break: break-word;
 }
+.quick-link a p:after {
+  content: '';
+  background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%208.6%2013.4%22%20style%3D%22enable-background%3Anew%200%200%208.6%2013.4%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%20.st0%7Bfill%3A%23FFFFFF%3B%7D%3C%2Fstyle%3E%3Ctitle%3EArrow%20copy%206%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%3E%20%3Cg%20id%3D%22Layer_1-2%22%3E%20%20%3Cpath%20id%3D%22Arrow_copy_6%22%20class%3D%22st0%22%20d%3D%22M1.8%2C0L0%2C1.8l5%2C5l-5%2C5l1.8%2C1.7l6.8-6.7L1.8%2C0z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  right: 1rem;
+  bottom: 0;
+  background-size: 80% 80%;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+}
 .quick-link a:after {
   display: none;
 }
 
 /* Tablet */
 @media (max-width: 991px) {
-  .quick-link .tile .searchbox form {
+  .quick-link .tile .search-area form {
     bottom: 1rem;
   }
 }
@@ -1151,16 +1179,19 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   .quick-link .tile.x2 a p strong {
     font-size: 2.4rem;
   }
-  .quick-link .tile .searchbox {
+  .quick-link .tile .search-area {
     padding-top: 4rem;
     padding-bottom: 2rem;
   }
-  .quick-link .tile .searchbox form {
+  .quick-link .tile .search-area form {
     position: relative;
     bottom: auto;
   }
   .quick-link .tile .image-thumb {
     flex-flow: row;
+  }
+  .quick-link .tile .image-thumb a {
+    padding-top: 50%;
   }
   .quick-link .tile .image-thumb a p strong {
     font-size: 1.4rem;
