@@ -379,6 +379,10 @@ footer .nav-links .footer-links li a:hover, footer .nav-links .footer-links li a
   text-decoration: none;
   color: #f3c828;
 }
+footer .nav-links .footer-links li a:hover:after, footer .nav-links .footer-links li a:active:after, footer .nav-links .footer-links li a:focus:after {
+  bottom: 0.3rem;
+  height: 0.3rem;
+}
 footer .copyright {
   text-align: center;
   color: #707070;
