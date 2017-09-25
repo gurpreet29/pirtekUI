@@ -12,35 +12,18 @@
                 margin-right: 0;
             }
 
-            .thumbnail {
-                padding: .8rem 1rem 0;
-                border: 0;
-                box-shadow: 0px 0px 5px rgba($projectGrey, 0.4);
-                margin-bottom: 0;
-                border-radius: 0;
+            a {
+                display: block;
+                position: relative;
 
-                &.download {
-                    a {
-                        &:before {
-                            content: '';
-                            position: absolute;
-                            padding-top: 75.83%;
-                            width: 100%;
-                            top: 0;
-                            left: 0;
-                            background-color: rgba($projectBlue, 0.5);
-                            background-image: url(../img/download-icon.png);
-                            background-position: center center;
-                            background-repeat: no-repeat;
-                        }
-                    }
-                }
+                .thumbnail {
+                    padding: .8rem 1rem 0;
+                    border: 0;
+                    box-shadow: 0px 0px 5px rgba($projectGrey, 0.4);
+                    margin-bottom: 0;
+                    border-radius: 0;
 
-                a {
-                    display: block;
-                    position: relative;
-
-                    > img {
+                    figure, img {
                         width: 100%;
                     }
 
@@ -73,14 +56,37 @@
                         }
                     }
 
-                    &:hover, &:active, &:focus {
-                        text-decoration: none;
+                    &.download {
+                        figure {
+                            position: relative;
 
-                        .caption {
-                            &:after {
-                                height: .4rem;
-                                background-color: $projectYellow;
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                padding-top: 75.83%;
+                                width: 100%;
+                                top: 0;
+                                left: 0;
+                                background-color: rgba($projectBlue, 0.5);
+                                background-image: url(../img/download-icon.png);
+                                background-position: center center;
+                                background-repeat: no-repeat;
                             }
+                        }
+                    }
+                }
+
+                &:hover, &:active, &:focus {
+                    text-decoration: none;
+
+                    .thumbnail {
+                        box-shadow: 0 5px 10px 0px rgba($projectGrey, 0.4);
+                    }
+
+                    .caption {
+                        &:after {
+                            height: .4rem;
+                            background-color: $projectYellow;
                         }
                     }
                 }
@@ -101,22 +107,22 @@
                 width: 100%;
                 margin-right: 0;
 
-                .thumbnail {
-                    padding: 0.8rem 0;
-                    box-shadow: none;
+                a {
+                    .thumbnail {
+                        padding: 0.8rem 0;
+                        box-shadow: none;
 
-                    &.download {
-                        a {
-                            &:before {
-                                width: 45%;
-                                padding-top: 34.12%;
-                                background-size: 3.8rem;
+                        &.download {
+                            figure {
+                                &:before {
+                                    // width: 45%;
+                                    // padding-top: 34.12%;
+                                    background-size: 3.8rem;
+                                }
                             }
                         }
-                    }
 
-                    a {
-                        > img {
+                        figure {
                             width: 45%;
                             margin-right: 5%;
                             display: inline-block;
@@ -139,9 +145,17 @@
 
                             &:after {
                                 width: 100%;
-                                bottom: 0;
+                                bottom: 1rem;
                                 left: 0;
                             }
+                        }
+                    }
+
+                    &:hover, &:active, &:focus {
+                        text-decoration: none;
+
+                        .thumbnail {
+                            box-shadow: none;
                         }
                     }
                 }
