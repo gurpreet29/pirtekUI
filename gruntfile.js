@@ -21,6 +21,7 @@ module.exports = function(grunt) {
                     "js/vendors/vue.js",
                     "js/vendors/jquery/jquery.min.js",
                     "js/vendors/jquery/jquery.touchSwipe.min.js",
+                    // "js/vendors/jquery/jquery.mobile.custom.js",
                     "js/vendors/bootstrap/*.js",
                     "js/vendors/bootstrap/bootstrap/*.js",
                     "js/vendors/picturefill.js",

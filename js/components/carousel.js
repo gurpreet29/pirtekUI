@@ -16,6 +16,15 @@ window.app = window.app || {};
 
             // What does the function do
             attachCarousel = function() {
+
+                // $(model.container).swiperight(function() {
+                //     $(this).parent().find('.prev').click();
+                // });
+
+                // $(".featured-carousel").swipeleft(function() {
+                //     $(this).parent().find('.next').click();
+                // });
+
                 $(model.container).swipe({
 
                     swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -36,7 +45,7 @@ window.app = window.app || {};
                 });
             },
 
-           
+
 
             /***** PUBLIC FUNCTION/INITIALISE ************/
 
@@ -51,7 +60,7 @@ window.app = window.app || {};
                 // On document ready
                 model.init();
                 attachCarousel();
-            
+
             },
 
             reset = function() {

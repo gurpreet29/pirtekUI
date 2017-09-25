@@ -79,11 +79,11 @@ picture img {
   width: 100%;
 }
 
-a {
+a.cta {
   position: relative;
   padding-bottom: .4rem;
 }
-a:after {
+a.cta:after {
   content: '';
   background-color: #f3c828;
   position: absolute;
@@ -92,10 +92,10 @@ a:after {
   left: 0;
   width: 0;
 }
-a:hover, a:focus {
+a.cta:hover, a.cta:focus {
   text-decoration: none;
 }
-a:hover:after, a:focus:after {
+a.cta:hover:after, a.cta:focus:after {
   width: 100%;
 }
 
@@ -336,6 +336,9 @@ header .call-btn, header .search-btn {
     padding: 1.2rem;
     font-size: 1.6rem;
     font-weight: 900;
+  }
+  header .navbar-header a.call-btn:hover, header .navbar-header a.call-btn:focus {
+    text-decoration: none;
   }
   header .navbar-toggle {
     margin: 0 1rem 0 0;
@@ -1147,7 +1150,6 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   font-weight: 900;
   font-size: 2.4rem;
   display: block;
-  word-break: break-word;
 }
 .quick-link a p:after {
   content: '';
