@@ -1,0 +1,36 @@
+.breadcrum {
+    border-bottom: 1px solid $borderGrey;
+    background-image: url(../img/breadcrum-background.jpg);
+    background-repeat: no-repeat;
+    background-color: $projectNavyBlue;
+    padding: 3.5rem 0 2.6rem;
+
+    h1, h2 {
+        font-family: $fontFamily;
+        font-size: 3rem;
+        font-weight: 500;
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 6rem;
+        font-weight: 900;
+    }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .breadcrum {
+        padding: 4.5rem 0 0.6rem;
+
+        h1, h2 {
+            font-size: 1.8rem;
+            font-weight: 900;
+        }
+
+        h2 {
+            display: none;
+        }
+    }
+}

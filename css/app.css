@@ -564,11 +564,10 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 }
 
 @media (max-width: 991px) {
-  h1 {
+  .carousel h1 {
     font-size: 2.6rem;
   }
-
-  h2 {
+  .carousel h2 {
     font-size: 5.8rem;
     margin-top: 2.6rem;
   }
@@ -1216,6 +1215,38 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   }
   .category-grid ul li a:hover .thumbnail, .category-grid ul li a:active .thumbnail, .category-grid ul li a:focus .thumbnail {
     box-shadow: none;
+  }
+}
+.breadcrum {
+  border-bottom: 1px solid #a3a5a3;
+  background-image: url(../img/breadcrum-background.jpg);
+  background-repeat: no-repeat;
+  background-color: #103771;
+  padding: 3.5rem 0 2.6rem;
+}
+.breadcrum h1, .breadcrum h2 {
+  font-family: "MuseoSans", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+.breadcrum h2 {
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .breadcrum {
+    padding: 4.5rem 0 0.6rem;
+  }
+  .breadcrum h1, .breadcrum h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+  .breadcrum h2 {
+    display: none;
   }
 }
 
