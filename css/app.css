@@ -125,8 +125,8 @@ header .logo img {
   width: 100%;
 }
 header form {
-  flex-basis: 40%;
-  margin: 0 5%;
+  flex-basis: calc(100% - 55rem);
+  margin: 0 auto;
 }
 header form .search-box {
   position: relative;
@@ -1100,6 +1100,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   width: calc(25% - 1.7rem);
   margin-right: 1.7rem;
   margin-bottom: 1.7rem;
+  vertical-align: top;
 }
 .category-grid ul li:nth-child(4n) {
   margin-right: 0;

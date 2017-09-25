@@ -21,8 +21,8 @@ header {
     }
 
     form {
-        flex-basis: 40%;
-        margin: 0 5%;
+        flex-basis: calc(100% - 55rem);
+        margin: 0 auto;
 
         .search-box {
             position: relative;
