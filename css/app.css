@@ -1252,6 +1252,9 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 .side-nav {
   max-width: 25rem;
 }
+.side-nav .panel-group {
+  margin-bottom: 4.5rem;
+}
 .side-nav .panel-group .panel {
   border-radius: 0;
   box-shadow: none;
@@ -1306,7 +1309,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   top: auto;
 }
 .side-nav .sort-box select {
-  color: #6d6e71;
+  color: #1d4789;
   text-transform: uppercase;
   font-weight: 900;
   border: none;
@@ -1318,10 +1321,10 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   text-overflow: '';
   width: 100%;
   padding-bottom: 1.7rem;
-  background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2257%22%20height%3D%2236%22%20viewBox%3D%220%200%2057%2036%22%3E%3Cimage%20width%3D%2257%22%20height%3D%2236%22%20xlink%3Ahref%3D%22data%3Aimg%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAADkAAAAkBAMAAADBfo%2FzAAAABGdBTUEAALGPC%2FxhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJFBMVEUAAAAdR4kdR4kdR4kdR4kdR4kdR4kdR4kdR4kdR4kdR4kAAADHBZvCAAAACnRSTlMAMN%2FvUGBAnxDPzrp%2FzgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfhCRkROQrCeLUAAAAAxElEQVQ4y33SvQ3DIBAF4GcpkVxGyQKp0yGl8hTUHsUbZIA0aSOnuCkDRoe5H0PHe3xC4gCA6wV2cThMwZY1vNHXYg6Hieipy1MKQzmVVlTtnLKMMyVaZXnOWcYb1XjesoQfpV0tJbqzFbjQbMu9AjMNgIN3CotbanFLDZZUY0kV1lRiTQVm%2BhPTZDw7T1cxUzkzxotDd%2BzSHXtUYU0ljqZtsKUtjk5bsUfh%2FjCDfco4HrQbPqLAq0OB8dOhGcdOO77l%2Fg%2Bw%2BfTr9faC9gAAAABJRU5ErkJggg%3D%3D%22%2F%3E%3C%2Fsvg%3E");
+  background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2013.54%208.66%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%231d4789%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Earrow-blue-down%3C%2Ftitle%3E%3Cpath%20id%3D%22Arrow_copy_6%22%20data-name%3D%22Arrow%20copy%206%22%20class%3D%22cls-1%22%20d%3D%22M11.08%204.15l-1.77-1.8-5%205-5-5-1.77%201.8L4.36%2011z%22%20transform%3D%22translate%282.46%20-2.35%29%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
-  background-size: 1rem;
-  background-position: 95% 0.5rem;
+  background-size: 1.6rem;
+  background-position: 99% 0.3rem;
 }
 .side-nav .sort-box select:hover, .side-nav .sort-box select:focus {
   color: #1d4789;
