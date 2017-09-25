@@ -1252,6 +1252,26 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 .side-nav {
   max-width: 25rem;
 }
+.side-nav .active-panel {
+  background-color: #1d4789;
+  color: #fff;
+  font-size: 2.4rem;
+  position: relative;
+  text-transform: uppercase;
+  padding: 1.5rem 0 1.3rem 1.5rem;
+  font-weight: 900;
+  display: none;
+}
+.side-nav .active-panel:after {
+  content: '';
+  height: 1rem;
+  width: 2rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 2.3rem;
+  background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2013.44%208.64%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23fff%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Earrow-white-down%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201-2%22%3E%3Cpath%20id%3D%22Arrow_copy_6%22%20data-name%3D%22Arrow%20copy%206%22%20class%3D%22cls-1%22%20d%3D%22M11%204.2L9.27%202.4l-5%205-5-5-1.67%201.8L4.32%2011z%22%20transform%3D%22translate%282.4%20-2.4%29%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+}
 .side-nav .panel-group {
   margin-bottom: 4.5rem;
 }
@@ -1332,5 +1352,22 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 }
 
 /* Mobile */
+@media (max-width: 767px) {
+  .side-nav {
+    max-width: none;
+  }
+  .side-nav .active-panel {
+    display: block;
+  }
+  .side-nav .panel-group {
+    display: none;
+  }
+  .side-nav .sort-box {
+    margin-top: 1.8rem;
+  }
+  .side-nav .sort-box select {
+    background-position: calc(100% - 18px) 0.3rem;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
