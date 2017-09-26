@@ -71,8 +71,13 @@ table {
   src: url("../fonts/MuseoSans-900.eot");
   src: url("../fonts/MuseoSans-900.eot") format("embedded-opentype"), url("../fonts/MuseoSans-900.woff2") format("woff2"), url("../fonts/MuseoSans-900.woff") format("woff"), url("../fonts/MuseoSans-900.ttf") format("truetype"), url("../fonts/MuseoSans-900.otf") format("truetype"), url("../fonts/MuseoSans-900.svg#font") format("svg");
 }
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "MuseoSans", sans-serif;
+  font-size: 1.4rem;
 }
 
 picture img {
@@ -1367,6 +1372,75 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   }
   .side-nav .sort-box select {
     background-position: calc(100% - 18px) 0.3rem;
+  }
+}
+.content-area h1, .content-area h2, .content-area h3 {
+  font-family: "MuseoSans", sans-serif;
+  font-size: 3rem;
+  color: #1d4789;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.content-area h4 {
+  font-family: "MuseoSans", sans-serif;
+  font-size: 2.1rem;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 2.3rem;
+}
+.content-area h4 + h4 {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+.content-area p {
+  font-family: "MuseoSans", sans-serif;
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+.content-area p + img {
+  margin-top: .7rem;
+}
+.content-area p strong {
+  font-weight: 900;
+}
+.content-area ul {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.content-area ul li {
+  font-family: "MuseoSans", sans-serif;
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+.content-area ul li:before {
+  content: '\2022';
+  margin-right: 0.4rem;
+}
+.content-area img {
+  width: 100%;
+  margin-bottom: 3.5rem;
+}
+.content-area img + p {
+  margin-top: -0.5rem;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .content-area h4 {
+    line-height: 1.47;
+  }
+  .content-area img {
+    width: calc(100% + 3rem);
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
   }
 }
 

@@ -1,0 +1,84 @@
+.content-area {
+    h1, h2, h3 {
+        font-family: $fontFamily;
+        font-size: 3rem;
+        color: $projectBlue;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+
+    h4 {
+        font-family: $fontFamily;
+        font-size: 2.1rem;
+        color: $black;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 2.3rem;
+
+        + h4 {
+            margin-top: 2.5rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    p {
+        font-family: $fontFamily;
+        font-size: 1.6rem;
+        color: $black;
+        font-weight: 500;
+        line-height: 1.6;
+        margin-bottom: 2.5rem;
+
+        + img {
+            margin-top: .7rem;
+        }
+
+        strong {
+            font-weight: 900;
+        }
+    }
+
+    ul {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        li {
+            font-family: $fontFamily;
+            font-size: 1.6rem;
+            color: $black;
+            font-weight: 500;
+            line-height: 1.6;
+            margin-bottom: 0;
+
+            &:before {
+                content: '\2022';
+                margin-right: 0.4rem;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 3.5rem;
+
+        + p {
+            margin-top: -0.5rem;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .content-area {
+        h4 {
+            line-height: 1.47;
+        }
+
+        img {
+            width: calc(100% + 3rem);
+            margin-left: -1.5rem;
+            margin-right: -1.5rem;
+        }
+    }
+}
