@@ -46,6 +46,24 @@ a {
     }
 }
 
+.btn-default {
+    border-radius: 0;
+    text-transform: uppercase;
+    background-color: $projectBlue;
+    color: $white;
+    font-family: $fontFamily;
+    font-weight: 900;
+    border: none;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    min-width: 24rem;
+
+    &:hover, &:focus {
+        background-color: $projectYellow;
+        color: $projectBlue;
+    }
+}
+
 /* Tablet */
 @media (max-width: $tablet) {}
 

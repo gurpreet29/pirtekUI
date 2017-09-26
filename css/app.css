@@ -110,6 +110,23 @@ a.cta:hover:after, a.cta:focus:after {
   background-size: cover;
 }
 
+.btn-default {
+  border-radius: 0;
+  text-transform: uppercase;
+  background-color: #1d4789;
+  color: #fff;
+  font-family: "MuseoSans", sans-serif;
+  font-weight: 900;
+  border: none;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  min-width: 24rem;
+}
+.btn-default:hover, .btn-default:focus {
+  background-color: #f3c828;
+  color: #1d4789;
+}
+
 /* Tablet */
 /* Mobile */
 header .brand-bar {
