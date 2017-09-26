@@ -1298,6 +1298,14 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   border: 0;
   padding: 0;
 }
+.side-nav .panel-group .panel-heading + .panel-collapse.in .panel-body {
+  padding-bottom: 1.8rem;
+  border-bottom: 0.2rem solid #dcddde;
+}
+.side-nav .panel-group .panel-heading + .panel-collapse.in .panel-body:empty {
+  padding-bottom: 0;
+  border-bottom: none;
+}
 .side-nav .panel-title > a {
   display: block;
   color: #6d6e71;
@@ -1309,7 +1317,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 }
 .side-nav .panel-title > a:hover, .side-nav .panel-title > a:focus {
   text-decoration: none;
-  color: #f3c828;
+  color: #1d4789;
 }
 .side-nav .panel-title > a[aria-expanded="true"] {
   color: #1d4789;
@@ -1327,6 +1335,38 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   bottom: 0;
   left: 0;
   width: 100%;
+}
+.side-nav .panel-body .sub-heading {
+  margin-bottom: 1.8rem;
+}
+.side-nav .panel-body a {
+  display: inline-block;
+  color: #6d6e71;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+  position: relative;
+  padding: 1.6rem 0 0rem;
+}
+.side-nav .panel-body a:hover, .side-nav .panel-body a:focus, .side-nav .panel-body a.active {
+  text-decoration: none;
+  color: #f3c828;
+}
+.side-nav .panel-body a:hover:after, .side-nav .panel-body a:focus:after, .side-nav .panel-body a.active:after {
+  content: '';
+  position: absolute;
+  height: .2rem;
+  bottom: -.6rem;
+  left: 0;
+  background-color: #f3c828;
+  width: 100%;
+}
+.side-nav .panel-body a:focus, .side-nav .panel-body a.active {
+  color: #1d4789;
+}
+.side-nav .panel-body ul li a {
+  text-transform: none;
+  font-size: 1.4rem;
 }
 .side-nav .sort-box label {
   position: absolute;

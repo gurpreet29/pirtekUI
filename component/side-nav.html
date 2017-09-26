@@ -11,6 +11,22 @@
 
 <body>
     <div id="vue-holder"></div>
+
+<p>Description : <em>aria-expanded="true"</em> used to open default accordion dropdown
+<br>
+<code> 
+&lt;a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" <strong>aria-expanded="true"</strong> &gt;
+                        Hydraulic
+                       &lt;/a&gt;
+  </code><br><br><br>
+Class : <em> in</em> added to open drop body <br>
+<code>
+    &lt; div id="collapseOne" class="panel-collapse collapse <strong>in</strong> " &gt;
+</code>
+
+ </p>
+<br><br><br>
+
     <div class="container">
         <section class="side-nav">
             <aside>
@@ -27,7 +43,44 @@
                         <div id="collapseOne" class="panel-collapse collapse in ">
                             <div class="panel-body">
                                 <!-- placeholder for product listing future use -->
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt beatae aspernatur consequuntur accusamus molestiae officiis dolor iste voluptate neque similique impedit, laboriosam possimus quos. Ducimus nulla pariatur corrupti officia, ipsam.
+                             <div class="sub-heading">
+                                 <a href="#" class="active" > Hydraulic </a>    
+                                 <ul>
+                                    <li><a href="#"  class="active">Braided Hose</a></li>
+                                    <li><a href="#">Multispiral Hose</a></li>
+                                 </ul>
+                             </div>
+                             
+                             <div class="sub-heading">
+                                 <a href="#"> Industrial PVC </a>    
+                                 <ul>
+                                    <li><a href="#">Pressure Reducing</a></li>
+                                    <li><a href="#">Back Pressure</a></li>
+                                 </ul>
+                             </div>
+
+                             <div class="sub-heading">
+                                 <a href="#"> Thermoplastic </a>    
+                                 <ul>
+                                    <li><a href="#">Ball</a></li>
+                                    <li><a href="#">Plug</a></li>
+                                    <li><a href="#">Check</a></li>
+                                    <li><a href="#">Needle</a></li>
+                                    <li><a href="#">Relief</a></li>
+                                    <li><a href="#">Filters</a></li>
+                                    <li><a href="#">Metering</a></li>
+                                 </ul>
+                             </div>
+
+                             <div class="sub-heading">
+                                 <a href="#"> Specialty </a>    
+                                 <ul>
+                                    <li><a href="#">Instrument Manifolds</a></li>
+                                    <li><a href="#">Flanged Products</a></li>
+                                 
+                                 </ul>
+                             </div>
+
                             </div>
                         </div>
                     </div>
@@ -40,10 +93,7 @@
          </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse ">
-                            <div class="panel-body">
-                                <!-- placeholder for product listing future use -->
-                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt beatae aspernatur consequuntur accusamus molestiae officiis dolor iste voluptate neque similique impedit, laboriosam possimus quos. Ducimus nulla pariatur corrupti officia, ipsam.
-                            </div>
+                            <div class="panel-body"></div>
                         </div>
                     </div>
                     <div class="panel ">
@@ -55,10 +105,7 @@
          </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <!-- placeholder for product listing future use -->
-                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt beatae aspernatur consequuntur accusamus molestiae officiis dolor iste voluptate neque similique impedit, laboriosam possimus quos. Ducimus nulla pariatur corrupti officia, ipsam.
-                            </div>
+                            <div class="panel-body"></div>
                         </div>
                     </div>
                 </div>

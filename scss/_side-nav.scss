@@ -47,9 +47,23 @@
             border-radius: 0;
             padding: 0;
 
-            + .panel-collapse > .panel-body {
-                border: 0;
-                padding: 0;
+            + .panel-collapse {
+                > .panel-body {
+                    border: 0;
+                    padding: 0;
+                }
+
+                &.in {
+                    .panel-body {
+                        padding-bottom: 1.8rem;
+                        border-bottom: 0.2rem solid $sideNavBorder;
+
+                        &:empty {
+                            padding-bottom: 0;
+                            border-bottom: none;
+                        }
+                    }
+                }
             }
         }
     }
@@ -66,7 +80,7 @@
 
             &:hover, &:focus {
                 text-decoration: none;
-                color: $projectYellow;
+                color: $projectBlue;
             }
 
             &[aria-expanded="true"] {
@@ -87,6 +101,50 @@
                 bottom: 0;
                 left: 0;
                 width: 100%;
+            }
+        }
+    }
+
+    .panel-body {
+        .sub-heading {
+            margin-bottom: 1.8rem;
+        }
+
+        a {
+            display: inline-block;
+            color: $projectGrey;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            font-weight: 500;
+            position: relative;
+            padding: 1.6rem 0 0rem;
+
+            &:hover, &:focus, &.active {
+                text-decoration: none;
+                color: $projectYellow;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    height: .2rem;
+                    bottom: -.6rem;
+                    left: 0;
+                    background-color: $projectYellow;
+                    width: 100%;
+                }
+            }
+
+            &:focus, &.active {
+                color: $projectBlue;
+            }
+        }
+
+        ul {
+            li {
+                a {
+                    text-transform: none;
+                    font-size: 1.4rem;
+                }
             }
         }
     }
