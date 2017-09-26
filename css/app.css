@@ -129,6 +129,11 @@ a.cta:hover:after, a.cta:focus:after {
 
 /* Tablet */
 /* Mobile */
+@media (max-width: 767px) {
+  .btn-default {
+    width: 100%;
+  }
+}
 header .brand-bar {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -156,7 +161,7 @@ header form .search-box {
 }
 header form .search-box label {
   position: absolute;
-  left: 999.9rem;
+  left: -999.9rem;
 }
 header form .search-box input[type='text'] {
   width: 100%;

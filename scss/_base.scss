@@ -68,4 +68,8 @@ a {
 @media (max-width: $tablet) {}
 
 /* Mobile */
-@media (max-width: $mobile) {}
+@media (max-width: $mobile) {
+    .btn-default {
+        width: 100%;
+    }
+}
