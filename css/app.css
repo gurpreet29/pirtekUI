@@ -11946,6 +11946,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   padding: 2rem 1.9rem 3.5rem;
   min-height: 12.4rem;
   position: relative;
+  background-color: #fff;
 }
 .download-brochure a {
   position: static;
