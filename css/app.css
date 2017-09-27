@@ -10445,6 +10445,7 @@ html {
 body {
   font-family: "MuseoSans", sans-serif;
   font-size: 1.4rem;
+  line-height: 1.1;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -11039,83 +11040,6 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   width: 100%;
   padding-top: 100%;
 }
-.quick-link .tile .search-area {
-  background-image: url(../img/search-tile-background.jpg);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: cover;
-  position: relative;
-  padding-top: 50%;
-}
-.quick-link .tile .search-area form {
-  position: absolute;
-  font-size: 1.6rem;
-  bottom: 3rem;
-  width: 90%;
-  left: 5%;
-}
-.quick-link .tile .search-area form label {
-  font-family: "MuseoSans", sans-serif;
-  font-weight: 900;
-  font-size: 1.4rem;
-  color: #fff;
-  text-transform: uppercase;
-}
-.quick-link .tile .search-area form label strong {
-  font-weight: 900;
-  font-size: 2.4rem;
-  display: block;
-}
-.quick-link .tile .search-area form .search-box {
-  position: relative;
-  margin-top: 2rem;
-}
-.quick-link .tile .search-area form .search-box input[type='text'] {
-  width: 100%;
-  height: 4.2rem;
-  font-size: 1.4rem;
-  color: #1d4789;
-  padding-left: 2rem;
-  padding-right: 4rem;
-  font-weight: 500;
-}
-.quick-link .tile .search-area form .search-box ::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: #1d4789;
-  text-transform: uppercase;
-}
-.quick-link .tile .search-area form .search-box ::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #1d4789;
-  text-transform: uppercase;
-}
-.quick-link .tile .search-area form .search-box :-ms-input-placeholder {
-  /* IE 10+ */
-  color: #1d4789;
-  text-transform: uppercase;
-}
-.quick-link .tile .search-area form .search-box :-moz-placeholder {
-  /* Firefox 18- */
-  color: #1d4789;
-  text-transform: uppercase;
-}
-.quick-link .tile .search-area form .search-box .search-button {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 4.2rem;
-  width: 4rem;
-  border: none;
-  background: none;
-}
-.quick-link .tile .search-area form .search-box .search-button img {
-  width: 52%;
-  top: 50%;
-  transform: translateY(-50%);
-  position: absolute;
-  left: 0.4rem;
-}
 .quick-link a {
   padding-bottom: 0;
   display: block;
@@ -11141,6 +11065,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   width: 100%;
   font-weight: 900;
   z-index: 1;
+  line-height: 1.1;
 }
 .quick-link a p strong {
   font-weight: 900;
@@ -11163,11 +11088,6 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 }
 
 /* Tablet */
-@media (max-width: 991px) {
-  .quick-link .tile .search-area form {
-    bottom: 1rem;
-  }
-}
 /* Mobile */
 @media (max-width: 767px) {
   .quick-link {
@@ -11496,6 +11416,174 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   }
   .latest-news .news-item li a .copy-text {
     font-size: 2.4rem;
+  }
+}
+.search-nearby .search-area {
+  position: relative;
+}
+.quick-link .search-nearby .search-area {
+  background-image: url(../img/search-tile-background.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: cover;
+  position: relative;
+  padding-top: 50%;
+}
+.quick-link .search-nearby .search-area form {
+  position: absolute;
+  font-size: 1.6rem;
+  bottom: 3rem;
+  width: 90%;
+  left: 5%;
+}
+.quick-link .search-nearby .search-area form label {
+  font-family: "MuseoSans", sans-serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.quick-link .search-nearby .search-area form label strong {
+  font-weight: 900;
+  font-size: 2.4rem;
+  display: block;
+}
+.quick-link .search-nearby .search-area form .search-box {
+  position: relative;
+  margin-top: 2rem;
+}
+.quick-link .search-nearby .search-area form .search-box input[type='text'] {
+  width: 100%;
+  height: 4.2rem;
+  font-size: 1.4rem;
+  color: #1d4789;
+  padding-left: 2rem;
+  padding-right: 4rem;
+  font-weight: 500;
+  background-color: #fff;
+}
+.quick-link .search-nearby .search-area form .search-box ::-webkit-input-placeholder {
+  color: #1d4789;
+  text-transform: uppercase;
+}
+.quick-link .search-nearby .search-area form .search-box ::-moz-placeholder {
+  color: #1d4789;
+  text-transform: uppercase;
+}
+.quick-link .search-nearby .search-area form .search-box :-ms-input-placeholder {
+  color: #1d4789;
+  text-transform: uppercase;
+}
+.quick-link .search-nearby .search-area form .search-box :-moz-placeholder {
+  color: #1d4789;
+  text-transform: uppercase;
+}
+.quick-link .search-nearby .search-area form .search-box .search-button {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 4.2rem;
+  width: 4rem;
+  border: none;
+}
+.quick-link .search-nearby .search-area form .search-box .search-button img {
+  width: 52%;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  left: 0.4rem;
+}
+.search-nearby .search-area form {
+  position: relative;
+  font-size: 1.6rem;
+  width: 100%;
+}
+.search-nearby .search-area form label {
+  font-family: "MuseoSans", sans-serif;
+  font-weight: 900;
+  font-size: 2.4rem;
+  color: #1d4789;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+.search-nearby .search-area form label strong {
+  font-weight: 900;
+  font-size: 2.4rem;
+  display: block;
+}
+.search-nearby .search-area form .search-box {
+  position: relative;
+  margin-top: 3rem;
+}
+.search-nearby .search-area form .search-box input[type='text'] {
+  width: 100%;
+  height: 5rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #1d4789;
+  padding-left: 2rem;
+  padding-right: 6rem;
+  font-weight: 500;
+  border: none;
+}
+.search-nearby .search-area form .search-box ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fff;
+  text-transform: uppercase;
+}
+.search-nearby .search-area form .search-box ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+  text-transform: uppercase;
+}
+.search-nearby .search-area form .search-box :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fff;
+  text-transform: uppercase;
+}
+.search-nearby .search-area form .search-box :-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff;
+  text-transform: uppercase;
+}
+.search-nearby .search-area form .search-box .search-button {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 5rem;
+  width: 5.9rem;
+  border: none;
+  background: none;
+  background-image: url(../img/search-white.png);
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  background-position: center;
+}
+.quick-link .search-nearby .search-area form .search-box .search-button {
+  background-image: url(../img/search.png);
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .quick-link .search-nearby .search-area form {
+    bottom: 1rem;
+  }
+  .quick-link .search-nearby .search-area form .search-box {
+    margin-top: 1rem;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) {
+  .quick-link .search-nearby .search-area {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+  .quick-link .search-nearby .search-area form {
+    position: relative;
+    bottom: auto;
   }
 }
 .category-grid ul {
