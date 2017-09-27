@@ -80,6 +80,14 @@ body {
   font-size: 1.4rem;
 }
 
+h4 {
+  font-family: "MuseoSans", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #1d4789;
+  text-transform: uppercase;
+}
+
 picture img {
   width: 100%;
 }
@@ -1508,5 +1516,18 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
     margin-right: -1.5rem;
   }
 }
+.search-title {
+  padding-top: 5.7rem;
+}
+.search-title h4 {
+  margin: 0 0 3.5rem 0;
+}
+.search-title .result-count {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Mobile */
 
 /*# sourceMappingURL=app.css.map */
