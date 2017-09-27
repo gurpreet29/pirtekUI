@@ -1,7 +1,15 @@
 @import "reset";
 @import "mixins";
-@import "fonts";
 @import "variable";
+
+// framework
+@import "bootstrap";
+
+// fonts
+@import "fonts";
+@import "font-awesome/font-awesome";
+
+// base
 @import "base";
 @import "icons";
 @import "template";

@@ -1,12 +1,12 @@
 // font-face definitions
 
 // @font-face {
-// 	font-family: 'Calmetta';
-// 		font-weight: 700;
-// 		src:local('Γò¼├┤Γö£ΓöÉ╬ô├▓├ª'),
-// 			url('/assets/fonts/Calmetta_Bold.woff2') format('woff2'),
-// 			url('/assets/fonts/Calmetta_Bold.woff') format('woff'),
-// 			url('/assets/fonts/Calmetta_Bold.ttf') format('truetype');
+//  font-family: 'Calmetta';
+//      font-weight: 700;
+//      src:local('Γò¼├┤Γö£ΓûôΓö¼Γò¥╬ô├╢┬ú╬ô├╢├▒Γò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓòùΓö£ΓöñΓò¼├┤Γö£ΓòóΓö¼Γò¥Γò¼├┤Γö£ΓûôΓö¼├æ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£Γòæ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬ú╬ô├╗├åΓò¼├┤Γö£ΓûôΓö¼Γò¥╬ô├╢┬ú╬ô├╢├▒Γò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓûôΓö£ΓöéΓò¼├┤Γö£ΓòóΓö¼Γò¥╬ô├╢┬ú╬ô├▓├ªΓò¼├┤Γö£ΓûôΓö¼Γò¥╬ô├╢┬ú╬ô├╢├▒Γò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓûôΓö£ΓöéΓò¼├┤Γö£ΓòóΓö¼├║╬ô├╢┬úΓö¼Γò£╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├╗├┤╬ô├╢┬╝╬ô├▓┬ÑΓò¼├┤Γö£ΓòóΓö¼├║Γò¼├┤Γö£ΓòóΓö£ΓûÆ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£Γòæ╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├╣╬ô├╢┬ú╬ô├╢├▒╬ô├▓┬╝Γö£Γöñ╬ô├╢┬ú╬ô├▓├│╬ô├╢┬╝Γö£ΓòæΓò¼├┤Γö£ΓòóΓö¼Γò¥╬ô├╢┬╝Γö¼Γò¥'),
+//          url('/assets/fonts/Calmetta_Bold.woff2') format('woff2'),
+//          url('/assets/fonts/Calmetta_Bold.woff') format('woff'),
+//          url('/assets/fonts/Calmetta_Bold.ttf') format('truetype');
 // }
 
 @font-face {
@@ -42,4 +42,10 @@
     font-weight: 900;
     src: url("../fonts/MuseoSans-900.eot");
     src: url("../fonts/MuseoSans-900.eot") format("embedded-opentype"), url("../fonts/MuseoSans-900.woff2") format("woff2"), url("../fonts/MuseoSans-900.woff") format("woff"), url("../fonts/MuseoSans-900.ttf") format("truetype"), url("../fonts/MuseoSans-900.otf") format("truetype"), url("../fonts/MuseoSans-900.svg#font") format("svg");
+}
+
+@font-face {
+    font-family: 'fontAwesome';
+    src: url("../fonts/font-awesome/fontawesome-webfont.eot");
+    src: url("../fonts/font-awesome/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/font-awesome/fontawesome-webfont.woff2") format("woff2"), url("../fonts/font-awesome/fontawesome-webfont.woff") format("woff"), url("../fonts/font-awesome/fontawesome-webfont.ttf") format("truetype"), url("../fonts/font-awesome/fontawesome-webfont.svg#font") format("svg");
 }
