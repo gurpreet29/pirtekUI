@@ -11736,6 +11736,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   background-repeat: no-repeat;
   background-color: #103771;
   padding: 3.5rem 0 2.6rem;
+  margin-bottom: 6rem;
 }
 .breadcrum .container {
   position: relative;
@@ -11794,6 +11795,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 @media (max-width: 767px) {
   .breadcrum {
     padding: 4.5rem 0 0.6rem;
+    margin-bottom: 3rem;
   }
   .breadcrum h1, .breadcrum h2 {
     font-size: 1.8rem;
