@@ -37,6 +37,11 @@ p {
     font-weight: 500;
     line-height: 1.6;
     margin-bottom: 3rem;
+
+    // fix to work for right panel in T9
+    + h5 {
+        margin-top: 4.5rem;
+    }
 }
 
 picture {
