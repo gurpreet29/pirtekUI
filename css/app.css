@@ -12068,5 +12068,14 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 }
 
 /* Mobile */
+@media (max-width: 767px) {
+  .download-brochure p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .download-brochure p strong {
+    font-size: 1.7rem;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

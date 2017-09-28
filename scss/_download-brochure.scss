@@ -42,5 +42,14 @@
 
 /* Mobile */
 @media (max-width: $mobile) {
-    .download-brochure {}
+    .download-brochure {
+        p {
+            font-size: 1rem;
+            line-height: 1.2;
+
+            strong {
+                font-size: 1.7rem;
+            }
+        }
+    }
 }
