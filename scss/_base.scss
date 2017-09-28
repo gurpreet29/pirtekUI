@@ -46,6 +46,8 @@ picture {
 }
 
 a {
+    font-family: $fontFamily;
+
     &.cta {
         position: relative;
         padding-bottom: .4rem;
@@ -94,6 +96,12 @@ a {
         background-color: $projectYellow;
         color: $projectBlue;
     }
+}
+
+label {
+    position: absolute;
+    left: -999rem;
+    top: auto;
 }
 
 /* Tablet */

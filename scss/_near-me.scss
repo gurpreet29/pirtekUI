@@ -1,0 +1,105 @@
+.near-me {
+    padding-top: 43.75%;
+    position: relative;
+    background-image: url(../img/store-background.jpg);
+    background-size: cover;
+
+    .search-container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        text-align: center;
+        width: 100%;
+    }
+
+    h5 {
+        color: $white;
+        margin-bottom: 2.5rem;
+    }
+
+    input[type='text'] {
+        min-width: 35rem;
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2013.54%208.66%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23727272%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Earrow-grey-down%3C%2Ftitle%3E%3Cpath%20id%3D%22Arrow_copy_6%22%20data-name%3D%22Arrow%20copy%206%22%20class%3D%22cls-1%22%20d%3D%22M11.08%204.15l-1.77-1.8-5%205-5-5-1.77%201.8L4.36%2011z%22%20transform%3D%22translate%282.46%20-2.35%29%22%2F%3E%3C%2Fsvg%3E");
+        background-repeat: no-repeat;
+        background-size: 1.6rem;
+        background-position: 99% center;
+        padding-right: 2.3rem;
+    }
+
+    .cta {
+        font-size: 1.4rem;
+        color: $white;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.13rem;
+
+        &:hover, &:focus {
+            color: $projectYellow;
+        }
+    }
+
+    .form-inline {
+        font-size: 0;
+        margin-bottom: 3rem;
+
+        .form-control {
+            display: inline-block;
+            width: auto;
+            vertical-align: bottom;
+            margin: 0;
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+            height: 52px;
+            text-transform: uppercase;
+            color: $formElementText;
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: $tablet) {
+    .near-me {
+        input[type='text'] {
+            min-width: auto;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .near-me {
+        padding: 8rem 1.5rem 3rem;
+
+        .search-container {
+            position: relative;
+            left: auto;
+            top: auto;
+            transform: none;
+        }
+
+        .form-inline {
+            select {
+                background-position: 95% center;
+                padding-right: 10%;
+
+                &.form-control {
+                    border-bottom: 0.1rem solid $formElementBorder;
+                }
+            }
+
+            .form-control {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
