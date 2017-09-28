@@ -21,6 +21,24 @@ h4 {
     text-transform: uppercase;
 }
 
+h5 {
+    font-family: $fontFamily;
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: $projectBlue;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+p {
+    font-family: $fontFamily;
+    font-size: 1.6rem;
+    color: $black;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
 picture {
     img {
         width: 100%;
