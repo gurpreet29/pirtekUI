@@ -7397,6 +7397,11 @@ button.close {
   src: url("../fonts/font-awesome/fontawesome-webfont.eot");
   src: url("../fonts/font-awesome/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/font-awesome/fontawesome-webfont.woff2") format("woff2"), url("../fonts/font-awesome/fontawesome-webfont.woff") format("woff"), url("../fonts/font-awesome/fontawesome-webfont.ttf") format("truetype"), url("../fonts/font-awesome/fontawesome-webfont.svg#font") format("svg");
 }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+}
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -10545,6 +10550,9 @@ label {
     width: 100%;
   }
 }
+header {
+  display: none;
+}
 header .brand-bar {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -10695,7 +10703,8 @@ header .navbar-default .navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
 header .navbar-default .navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
-header .call-btn, header .search-btn {
+header .call-btn,
+header .search-btn {
   display: none;
 }
 

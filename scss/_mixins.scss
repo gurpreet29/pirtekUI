@@ -1,45 +1,15 @@
 @mixin betterclearfix() {
-	&:before {
-		content: "";
-		display: table;
-	}
+    &:before {
+        content: "";
+        display: table;
+    }
 
-	&:after {
-		content: "";
-		display: table;
-		clear: both; 
-	}
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
-	*zoom: 1;
-}
-
-@mixin redBtn() {
-	@include background-image(linear-gradient(to bottom, $red_color 0, $dark_red_color 100%));
-	background-repeat: repeat-x;
-	border-color: #a70715;
-
-	&:hover {
-		background-color: $dark_red_color;
-		background-position: 0 -15px;
-	}
-	&:focus {
-		background-color: $dark_red_color;
-		background-position: 0 -15px;
-	}
-}
-
-@mixin find-more() {
-	color:$red_color;
-	text-decoration:none;
-	font-size:11px;
-	text-transform:uppercase;
-
-	&:hover{
-		color:$red_color;
-	}
-
-	&:focus{
-		color:$red_color;
-	}
+    *zoom: 1;
 }
 

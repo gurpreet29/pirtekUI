@@ -1,4 +1,6 @@
 header {
+    display: none;
+
     .brand-bar {
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -10,8 +12,6 @@ header {
     .logo {
         width: 24rem;
         padding-bottom: 0;
-
-        
 
         &:after {
             display: none;
@@ -165,7 +165,8 @@ header {
             overflow: hidden;
             border: none;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 background-color: transparent;
             }
 
@@ -195,17 +196,20 @@ header {
         }
     }
 
-    .call-btn, .search-btn {
+    .call-btn,
+    .search-btn {
         display: none;
     }
 }
 
 /* Tablet */
+
 @media (max-width: $tablet) {
     header {}
 }
 
 /* Mobile */
+
 @media (max-width: $mobile) {
     header {
         .brand-bar {
@@ -299,7 +303,8 @@ header {
                     font-size: 1.6rem;
                     font-weight: 900;
 
-                    &:hover, &:focus {
+                    &:hover,
+                    &:focus {
                         text-decoration: none;
                     }
                 }

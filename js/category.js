@@ -11,6 +11,7 @@ var category = new Vue({
         commits: null
         category: {
             "ResultCount": 4,
+            
             "PageNumber": 1,
             "PageCount": 4,
             "Results": [{
