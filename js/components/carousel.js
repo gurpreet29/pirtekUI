@@ -17,31 +17,12 @@ window.app = window.app || {};
             // What does the function do
             attachCarousel = function() {
 
-                // $(model.container).swiperight(function() {
-                //     $(this).parent().find('.prev').click();
-                // });
+                $(model.container).swiperight(function() {
+                    $(this).carousel('prev');
+                });
 
-                // $(".featured-carousel").swipeleft(function() {
-                //     $(this).parent().find('.next').click();
-                // });
-
-                $(model.container).swipe({
-
-                    swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
-
-                        if (direction == 'left') $(this).carousel('next');
-                        if (direction == 'right') $(this).carousel('prev');
-
-                    },
-                    allowPageScroll: "vertical"
-                    //,// options: {
-                    //     //exluded element list, less <a>
-                    //     excludedElements: "button, input, select, textarea, .noSwipe",
-                    //     //trigger <a> on tap
-                    //     tap: function(event, target) {
-                    //         $(target).parent().trigger('click');
-                    //     }
-                    // }
+                $(model.container).swipeleft(function() {
+                    $(this).carousel('next');
                 });
             },
 

@@ -17,14 +17,6 @@ window.app = window.app || {};
             // fixes height for category item in its row
             itemHeight = function() {
 
-                if ($(window).width() < 768) {
-                    $(model.item).find(model.textCaption).removeAttr('style');
-
-                } else {
-
-                }
-
-
                 $(model.textCaption).removeAttr('style');
                 var rowMax = 0,
 
@@ -33,30 +25,29 @@ window.app = window.app || {};
                     totalRow = totalItem / itemsPerRow;
 
                 $(model.textCaption).each(function(index, el) {
-                        console.log(index % itemsPerRow);
+                    console.log(index % itemsPerRow);
 
                 });
 
-                // for (var i = 0; i < totalRow; i++) {
-
-                //     console.log(i * itemsPerRow + ' to ' + (i + itemsPerRow -1 ));
-
-
-                //     $(model.textCaption +":gt("+ (i * itemsPerRow) +"):lt("+ (itemsPerRow -1) +")").each(function(index, el) {
-                //         console.log('itemHeight' + $(this).height()  + '  html '+ $(this).html());
-                //         rowMax = $(this).height() > rowMax ? $(this).height() : rowMax
-                //         $(this).css('min-height', rowMax);
-
-                //     });
-
-                // };
-
-
-
-
-
 
             },
+
+            // List Row height
+            listRowHeight = function(){
+                if($(window).width() > 767){
+                    $(model.container).find('li:nth-child(4n + 1)').each(function(){
+                        var maxHeight = 0;
+                        $(this).add($(this).nextAll().slice(0,3)).each(function(){
+                            maxHeight = Math.max($(this).find(".caption").height(), maxHeight);
+                        }).find(".caption").height(maxHeight);
+                    });
+                } else {
+                    $(model.item).find(model.textCaption).removeAttr('style');
+                }
+            },
+
+
+
 
             /***** PUBLIC FUNCTION/INITIALISE ************/
 
@@ -67,21 +58,19 @@ window.app = window.app || {};
                         this.container = args.container || '.category-grid';
                         this.item = this.container + ' ' + (args.item || 'ul li');
                         this.textCaption = this.item + ' ' + (args.textCaption || '.caption');
-
-
                     }
                 };
 
                 // On document ready
                 model.init();
                 itemHeight();
+                listRowHeight();
 
                 $(window).resize(function(event) {
                     /* Act on the event */
                     itemHeight();
+                    listRowHeight();
                 });
-
-
             },
 
             reset = function() {
@@ -108,6 +97,7 @@ window.app = window.app || {};
                 container: '.category-grid'
             });
         }
+
     });
 
 })(jQuery);
