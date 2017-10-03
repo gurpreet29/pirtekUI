@@ -65,6 +65,7 @@ module.exports = function(grunt) {
                 tasks: ['compass:dev']
             }
         },
+        
         svgmin: {
             dist: {
                 options: {
