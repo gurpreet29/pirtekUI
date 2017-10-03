@@ -26,6 +26,7 @@ module.exports = function(grunt) {
                     "js/vendors/bootstrap/bootstrap/*.js",
                     "js/vendors/picturefill.js",
                     "js/components/filter/*.js",
+                    "js/vendors/google-map.js",
                     "js/components/*.js"
 
 

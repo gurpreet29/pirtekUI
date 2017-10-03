@@ -13,8 +13,57 @@
 <body>
 <div id="vue-holder"></div>
 
+<p>Description: Without &lt;a&gt; tag</p>
+<br>
+<br>
+<br>
+
 <section class="image-component">
-    <img srcset="https://placehold.it/1366x643/D796FF/000000" alt="Sample Image" class="img-responsive">
+	 <picture>
+	        <source srcset="https://placehold.it/1600x710/D796FF/000000" media="(min-width:1141px)">
+	        <!-- DW -->
+	        <source srcset="https://placehold.it/2280x1240/F78000/000000" media="(min-width:768px) and (-webkit-min-device-pixel-ratio: 2)">
+	        <!-- T2x -->
+	        <!-- <source srcset="https://placehold.it/2280x1240/F78000/000000" media="(min-width:768px) and (min-resolution: 144dpi)"> -->
+	        <!-- T2x -->
+	        <!-- <source srcset="https://placehold.it/1140x620/F8E5D1/000000" media="(min-width:768px)"> -->
+	        <!-- T -->
+	        <source srcset="https://placehold.it/1280x1600/00E880/000000" media="(min-width:320px)">
+	        <!-- M -->
+	        <!--[if IE 9]></video><![endif]-->
+	        <img srcset="https://placehold.it/1366x643/D796FF/000000" alt="Sample Image">
+	        <!-- Fallback -->
+	</picture>
+</section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>Description: With &lt;a&gt; tag</p>
+<br>
+<br>
+<br>
+
+<section class="image-component">
+<a href="#"><picture>
+	       <source srcset="https://placehold.it/1600x710/D796FF/000000" media="(min-width:1141px)">
+	       <!-- DW -->
+	       <source srcset="https://placehold.it/2280x1240/F78000/000000" media="(min-width:768px) and (-webkit-min-device-pixel-ratio: 2)">
+	       <!-- T2x -->
+	       <!-- <source srcset="https://placehold.it/2280x1240/F78000/000000" media="(min-width:768px) and (min-resolution: 144dpi)"> -->
+	       <!-- T2x -->
+	       <!-- <source srcset="https://placehold.it/1140x620/F8E5D1/000000" media="(min-width:768px)"> -->
+	       <!-- T -->
+	       <source srcset="https://placehold.it/1280x1600/00E880/000000" media="(min-width:320px)">
+	       <!-- M -->
+	       <!--[if IE 9]></video><![endif]-->
+	       <img srcset="https://placehold.it/1366x643/D796FF/000000" alt="Sample Image">
+	       <!-- Fallback -->
+		</picture></a>
 </section>
 
     
