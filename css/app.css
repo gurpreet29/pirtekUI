@@ -12089,6 +12089,9 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   line-height: 1.5;
   font-size: 1.6rem;
 }
+.right-panel table tr td img {
+  vertical-align: top;
+}
 .right-panel h5 + button {
   margin-top: 3.5rem;
   margin-bottom: 7.5rem;
@@ -12244,9 +12247,6 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
     display: block;
     width: 100%;
   }
-}
-.contact-map {
-  border: 5px solid red;
 }
 .contact-map #map_container {
   position: relative;

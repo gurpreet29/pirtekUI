@@ -14,62 +14,23 @@
 <div>
 	<div id="vue-holder"></div>
 	
-<section class="contact-map">
-	<div id="map_container"></div>
-			  <div id="map"></div>
-</section>
+
 	
+
+
+	<section class="contact-map">
+		<div id="map_container"></div>
+		<div id="map"></div>
+	</section>
+
+
 	
 	    
 	    <script src="../js/app.min.js"></script>
-	    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-	    <script>
-$( document ).ready( function() {
+<!-- js to load google map api -->
+	    
 
-	//Google Maps JS
-	//Set Map
-	function initialize() {
-			var myLatlng = new google.maps.LatLng(53.3333,-3.08333);
-			var imagePath = 'http://m.schuepfen.ch/icons/helveticons/black/60/Pin-location.png'
-			var mapOptions = {
-				zoom: 11,
-				center: myLatlng,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			}
 
-		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-		//Callout Content
-		var contentString = 'Some address here..';
-		//Set window width + content
-		var infowindow = new google.maps.InfoWindow({
-			content: contentString,
-			maxWidth: 500
-		});
-
-		//Add Marker
-		var marker = new google.maps.Marker({
-			position: myLatlng,
-			map: map,
-			icon: imagePath,
-			title: 'image title'
-		});
-
-		google.maps.event.addListener(marker, 'click', function() {
-			infowindow.open(map,marker);
-		});
-
-		//Resize Function
-		google.maps.event.addDomListener(window, "resize", function() {
-			var center = map.getCenter();
-			google.maps.event.trigger(map, "resize");
-			map.setCenter(center);
-		});
-	}
-
-	google.maps.event.addDomListener(window, 'load', initialize);
-
-});
-	    </script>
 </div>
 </body>
 
