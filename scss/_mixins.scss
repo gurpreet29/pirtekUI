@@ -1,4 +1,4 @@
-@mixin betterclearfix() {
+@mixin betterclearfix {
     &:before {
         content: "";
         display: table;
@@ -13,3 +13,22 @@
     *zoom: 1;
 }
 
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+@mixin transform($property) {
+    transform: $property;
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -ms-transform: $property;
+}
+
+@mixin transition($value) {
+    transition: $value;
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+}

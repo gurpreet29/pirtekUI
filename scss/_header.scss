@@ -1,17 +1,17 @@
 header {
-    display: none;
-
     .brand-bar {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
         display: flex;
-        flex-direction: row;
-        align-items: end;
+        flex-flow: row wrap;
+        align-items: center;
+        height: 8.3rem;
     }
 
+    // TOP NAV
     .logo {
-        width: 24rem;
+        width: 23.4rem;
         padding-bottom: 0;
+
+        @include transition(0.25s);
 
         &:after {
             display: none;
@@ -20,98 +20,87 @@ header {
         img {
             width: 100%;
         }
+
+        &:hover,
+        &:focus,
+        &:active {
+            opacity: 0.75;
+            outline: 0;
+        }
     }
 
-    form {
-        flex-basis: calc(100% - 55rem);
-        margin: 0 auto;
+    .top-nav-wrap {
+        margin-left: auto;
 
-        .search-box {
-            position: relative;
-            margin-top: 1.2rem;
+        .top-nav,
+        .social-bar {
+            display: inline-block;
+            margin: 0;
 
-            label {
-                position: absolute;
-                left: -999.9rem;
-            }
-
-            input[type='text'] {
-                width: 100%;
-                height: 4.2rem;
+            li {
+                display: inline-block;
                 font-size: 1.4rem;
-                color: $projectBlue;
-                padding-left: 2rem;
-                padding-right: 4rem;
-                font-weight: 500;
+                margin: 0 1rem;
+
+                a {
+                    color: $projectGrey;
+                    font-size: 1.4rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05rem;
+                    display: inline-block;
+
+                    @include transition(0.25s);
+
+                    img {
+                        @include transition(0.25s);
+                    }
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        color: $projectBrown;
+                        text-decoration: none;
+                        outline: 0;
+
+                        img {
+                            opacity: .75;
+                        }
+                    }
+
+                    &.global-logo {
+                        background: url("../img/member-psa-logo.png") no-repeat;
+                        width: 20rem;
+                        height: 3rem;
+                        overflow: hidden;
+                        background-position: top;
+                        text-indent: -624rem;
+                    }
+                }
             }
+        }
 
-            ::-webkit-input-placeholder {
-                /* Chrome/Opera/Safari */
-                color: $projectBlue;
-                text-transform: uppercase;
-            }
+        .social-bar {
+            li {
+                margin: 0 .5rem;
+                vertical-align: middle;
 
-            ::-moz-placeholder {
-                /* Firefox 19+ */
-                color: $projectBlue;
-                text-transform: uppercase;
-            }
-
-            :-ms-input-placeholder {
-                /* IE 10+ */
-                color: $projectBlue;
-                text-transform: uppercase;
-            }
-
-            :-moz-placeholder {
-                /* Firefox 18- */
-                color: $projectBlue;
-                text-transform: uppercase;
-            }
-
-            .search-button {
-                display: block;
-                position: absolute;
-                right: 0;
-                top: 0;
-                height: 4.2rem;
-                width: 3rem;
-                border: none;
-                background: none;
-
-                img {
-                    width: 70%;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    position: absolute;
-                    left: 0.4rem;
+                a {
+                    color: $projectBlue;
+                    font-size: 1.8rem;
                 }
             }
         }
     }
 
-    .call-us {
-        text-align: right;
-        color: $projectGrey;
-        font-size: 1.4rem;
-        margin-top: 0.9rem;
-        min-width: 24rem;
-
-        strong {
-            display: block;
-            font-size: 3rem;
-            color: $projectBlue;
-            font-weight: 900;
-        }
-    }
-
+    // BOTTOM NAV
     .navbar {
         margin-bottom: 0;
     }
 
     .navbar-default {
-        background-color: $projectBlue;
-        border: 0;
+        background-color: transparent;
+        border-top: 1px solid $lightGrey;
+        border-bottom: 0;
         border-radius: 0;
 
         .navbar-collapse {
