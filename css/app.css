@@ -10581,6 +10581,9 @@ label {
     width: 100%;
   }
 }
+header {
+  display: none;
+}
 header .brand-bar {
   padding-top: 3rem;
   padding-bottom: 3rem;
