@@ -12119,6 +12119,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   font-size: 1.6rem;
 }
 .right-panel table tr td img {
+  max-width: 10rem;
   vertical-align: top;
   margin-bottom: 1rem;
 }
