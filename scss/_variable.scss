@@ -23,17 +23,17 @@ $tablet: 991px;
 // @media (max-width: @screen-md-max) { // < 1200px (medium laptop)
 // nothing yet to declare as default is for desktop
 
-// color
-$black: #000;
-$white: #fff;
-
 // PSA project colors
 $projectGrey: #727272;
 $projectSkyBlue: #5c8d9f;
 $projectBlue: #343f55;
 $projectBrown: #d09166;
+$projectblack: #1f1f1f;
 
 $lightGrey: #ccc;
+$ultraGrey: #f9f9fa;
+$black: #000;
+$white: #fff;
 
 //DUMMY COLOR
 $projectNavyBlue: #103771;
