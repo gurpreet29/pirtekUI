@@ -92,7 +92,7 @@
                         left: 0;
                         background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%208.6%2013.4%22%20style%3D%22enable-background%3Anew%200%200%208.6%2013.4%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%20.st0%7Bfill%3A%23FFFFFF%3B%7D%3C%2Fstyle%3E%3Ctitle%3EArrow%20copy%206%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%3E%20%3Cg%20id%3D%22Layer_1-2%22%3E%20%20%3Cpath%20id%3D%22Arrow_copy_6%22%20class%3D%22st0%22%20d%3D%22M1.8%2C0L0%2C1.8l5%2C5l-5%2C5l1.8%2C1.7l6.8-6.7L1.8%2C0z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
                         background-repeat: no-repeat;
-                        background-position: 90% calc(100% - 5px);
+                        background-position: 90% calc(100% - 0.1rem);
                         background-size: 1rem 1.7rem;
                         color: $white;
                         padding: 0 10% 0;
@@ -101,6 +101,7 @@
                         width: 100%;
                         font-weight: 900;
                         margin: 0;
+                        line-height: 1.2;
                     }
 
                     &:after {
@@ -232,7 +233,7 @@
                                     position: relative;
 
                                     // background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%208.6%2013.4%22%20style%3D%22enable-background%3Anew%200%200%208.6%2013.4%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%20.st0%7Bfill%3A%23FFFFFF%3B%7D%3C%2Fstyle%3E%3Ctitle%3EArrow%20copy%206%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%3E%20%3Cg%20id%3D%22Layer_1-2%22%3E%20%20%3Cpath%20id%3D%22Arrow_copy_6%22%20class%3D%22st0%22%20d%3D%22M1.8%2C0L0%2C1.8l5%2C5l-5%2C5l1.8%2C1.7l6.8-6.7L1.8%2C0z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-                                    background-position: 100% bottom;
+                                    background-position: 100% calc(100% - 0.1rem);
                                     background-size: 1rem 1.7rem;
 
                                     // color: $white;
