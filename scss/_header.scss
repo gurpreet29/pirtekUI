@@ -8,6 +8,14 @@ header {
         height: 8.3rem;
     }
 
+    a {
+        outline: 0;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
     // TOP NAV
     .logo {
         width: 23.4rem;
@@ -81,6 +89,10 @@ header {
                     color: $projectBlue;
                     font-size: 1.8rem;
                 }
+
+                &:last-child {
+                    margin-right: 0;
+                }
             }
         }
     }
@@ -103,9 +115,11 @@ header {
                 height: 5.6rem;
 
                 li {
-                    &.active {
-                        a {
-                            color: $projectblack;
+                    &.open {
+                        position: static;
+
+                        > a {
+                            color: $projectBlack;
                             background-color: transparent;
 
                             &:hover,
@@ -115,7 +129,7 @@ header {
                                 background-color: transparent;
                             }
 
-                            &:after {
+                            &::after {
                                 content: '';
                                 position: absolute;
                                 height: 0.4rem;
@@ -125,10 +139,63 @@ header {
                                 background-color: $projectBrown;
                             }
                         }
+
+                        .dropdown-menu {
+                            background-color: $projectlightGrey;
+                            border-radius: 0;
+                            border: 0;
+                            width: 1170px;
+                            margin: 0 auto;
+                            left: 0;
+                            right: 0;
+                            display: flex;
+                            flex-flow: wrap row;
+                            padding: 5rem 2rem;
+
+                            > li {
+                                flex-grow: 1;
+                                padding: 0 2rem;
+                                display: inline-block;
+                                width: 25%;
+
+                                > ul {
+                                    li {
+                                        padding: 1.5rem 0;
+
+                                        a {
+                                            color: $projectlighterGrey;
+                                            text-transform: none;
+
+                                            &:hover,
+                                            &:focus,
+                                            &:active {
+                                                color: $projectBrown;
+                                                text-decoration: none;
+                                            }
+                                        }
+
+                                        &:first-child {
+                                            a {
+                                                font-size: 1.6rem;
+                                                color: $projectBlack;
+
+                                                &:hover,
+                                                &:focus,
+                                                &:active {
+                                                    color: $projectBrown;
+                                                }
+                                            }
+
+                                            border-bottom: 1px solid $ultraLightGrey;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
 
                     a {
-                        color: $projectblack;
+                        color: $projectBlack;
                         text-transform: uppercase;
                         font-weight: 600;
                         font-size: 1.4rem;
@@ -157,7 +224,7 @@ header {
                     padding-left: 5rem;
                     width: 100%;
                     max-width: 27rem;
-                    background: $projectblack url("../img/search-left.jpg") no-repeat;
+                    background: $projectBlack url("../img/search-left.jpg") no-repeat;
                     background-position: top left;
                 }
 
@@ -263,8 +330,27 @@ header {
     }
 
     .call-btn,
-    .search-btn {
+    .search-btn,
+    .global-btn {
         display: none;
+    }
+}
+
+@media (max-width: $mediumDesktop) {
+    header {
+        .navbar-default {
+            .navbar-collapse {
+                .navbar-nav {
+                    li {
+                        &.open {
+                            .dropdown-menu {
+                                width: 970px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -310,6 +396,12 @@ header {
                         a {
                             font-size: 1.1rem;
                         }
+
+                        &.open {
+                            .dropdown-menu {
+                                width: 750px;
+                            }
+                        }
                     }
 
                     &:first-of-type {
@@ -343,33 +435,23 @@ header {
 @media (max-width: $mobile) {
     header {
         .brand-bar {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
+            height: 5rem;
         }
 
-        .logo {
-            text-align: center;
-            width: 100%;
-
-            img {
-                width: 14rem;
+        .top-nav-wrap {
+            .top-nav {
+                display: none;
             }
-        }
 
-        form {
-            display: none;
-            position: absolute;
-            left: 0;
-            width: 100%;
-            top: 11rem;
+            .social-bar {
+                li {
+                    font-size: 1.8rem;
 
-            &.show {
-                display: block;
+                    a {
+                        font-size: 1.8rem;
+                    }
+                }
             }
-        }
-
-        .call-us {
-            display: none;
         }
 
         .nav {
@@ -381,18 +463,85 @@ header {
         }
 
         .navbar-default {
-            background-color: $projectBlue;
+            background-color: $projectBlack;
             border: 0;
             border-radius: 0;
 
             .navbar-collapse {
                 padding: 0;
-            }
 
-            .navbar-nav {
-                li {
-                    a {
-                        padding-left: 1.5rem;
+                .navbar-nav {
+                    height: inherit;
+
+                    li {
+                        a {
+                            padding: 1.3rem 1.5rem 1.5rem;
+                            color: $white;
+                            font-size: 1.4rem;
+
+                            &:hover,
+                            &:focus,
+                            &:active {
+                                color: $white;
+                            }
+                        }
+
+                        &.open {
+                            position: relative;
+
+                            a {
+                                color: $projectBlack;
+                                background-color: $white;
+
+                                &:hover,
+                                &:focus,
+                                &:active {
+                                    color: $projectBlack;
+                                    background-color: $white;
+                                }
+                            }
+
+                            .dropdown-menu {
+                                width: 100%;
+                                display: block;
+                                padding: 0;
+
+                                li {
+                                    padding: 0;
+                                    width: 100%;
+
+                                    > ul {
+                                        li {
+                                            padding: 0;
+
+                                            a {
+                                                width: 100%;
+                                                display: block;
+                                            }
+
+                                            &:first-child {
+                                                a {
+                                                    font-size: 1.4rem;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:first-of-type {
+                        width: 100%;
+                        display: block;
+
+                        li {
+                            margin-right: auto;
+                        }
+                    }
+
+                    &:last-of-type {
+                        display: none;
                     }
                 }
             }
@@ -400,7 +549,7 @@ header {
 
         .navbar-header {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
 
             a {
                 padding: 0;
@@ -411,38 +560,25 @@ header {
 
                 &.search-btn {
                     display: block;
-                    position: absolute;
-                    top: 0rem;
-                    left: 0rem;
                     width: 4rem;
                     height: 4rem;
 
                     img {
                         position: absolute;
-                        transform: translate(50%, 50%);
+
+                        @include transform(translate(15px, 50%));
                     }
                 }
 
-                &.call-btn {
+                &.global-btn {
                     display: block;
-                    text-align: center;
-                    flex-basis: calc(100% - 100px);
-                    color: white;
-                    display: block;
-                    padding: 1.2rem;
-                    font-size: 1.6rem;
-                    font-weight: 900;
-
-                    &:hover,
-                    &:focus {
-                        text-decoration: none;
-                    }
+                    margin: auto;
                 }
             }
         }
 
         .navbar-toggle {
-            margin: 0 1rem 0 0;
+            margin: 0 0.5rem 0 0;
         }
     }
 }
