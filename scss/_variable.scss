@@ -11,17 +11,8 @@ $speed: 2ms;
 $wrapper-width: 140rem;
 $gutter-width: 1.5rem;
 
-// device
-// @media (max-width: @screen-xs-max) { // < 768px (xsmall phone)
-// @media (max-width: $mobile)
 $mobile: 767px;
-
-// @media (max-width: @screen-sm-max) { // < 992px (small tablet)
-// @media (max-width: $tablet)
 $tablet: 991px;
-
-// @media (max-width: @screen-md-max) { // < 1200px (medium laptop)
-// nothing yet to declare as default is for desktop
 
 // PSA project colors
 $projectGrey: #727272;
