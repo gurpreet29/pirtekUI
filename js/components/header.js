@@ -1,3 +1,6 @@
+/*Header component*/
+
 $(document).ready(function() {
-	console.log('vinod');
+    var topnav = $('header .top-nav-wrap .top-nav li').slice(0,3);
+    console.log(topnav);
 });
