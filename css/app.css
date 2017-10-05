@@ -10482,6 +10482,10 @@ p + h5 {
   margin-top: 4.5rem;
 }
 
+ul {
+  margin-bottom: 0;
+}
+
 picture img {
   width: 100%;
 }
@@ -12445,6 +12449,79 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
     font-size: 1.2rem;
     background-size: 0.7rem 0.9rem;
     background-position: 90% calc(100% - 0.3rem);
+  }
+}
+.cta-list ul {
+  width: 100%;
+}
+.cta-list ul li {
+  background-color: #ebebed;
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 2rem;
+}
+.cta-list ul li .logo {
+  background-color: #dcddde;
+  min-width: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  min-height: 12rem;
+}
+.cta-list ul li .logo img {
+  max-width: 19rem;
+}
+.cta-list ul li .text-holder {
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 4rem;
+}
+.cta-list ul li .text-holder .title, .cta-list ul li .text-holder .link {
+  color: #1d4789;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.cta-list ul li .text-holder .link {
+  font-size: 1.6rem;
+  padding: 1rem 4rem;
+  border-left: 0.1rem solid #cccccc;
+}
+.cta-list ul li .text-holder .link a {
+  color: #1d4789;
+}
+.cta-list ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Tablet */
+/* Mobile */
+@media (max-width: 767px) {
+  .cta-list ul li {
+    margin-bottom: 1rem;
+  }
+  .cta-list ul li .logo {
+    min-width: 12.5rem;
+    min-height: 9.5rem;
+  }
+  .cta-list ul li .logo img {
+    max-width: 9.5rem;
+  }
+  .cta-list ul li .text-holder {
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 1rem 0 1rem 2rem;
+  }
+  .cta-list ul li .text-holder .title, .cta-list ul li .text-holder .link {
+    font-size: 1.6rem;
+  }
+  .cta-list ul li .text-holder .link {
+    padding: 0.6rem  0 0 0;
+    border-left: none;
   }
 }
 
