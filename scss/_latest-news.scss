@@ -63,20 +63,44 @@
                     margin-bottom: 1.6rem;
                 }
 
-                .date {
+                .date, .road {
                     font-size: 1.4rem;
                     text-transform: uppercase;
                     letter-spacing: 0.15rem;
                     margin-bottom: 0.2rem;
                 }
 
-                .copy-text {
+                .copy-text, .location {
                     font-size: 2.4rem;
                     text-transform: uppercase;
+
+                    + .phone {
+                        margin-top: .2rem;
+                    }
+                }
+
+                .phone {
+                    font-size: 1.8rem;
                 }
 
                 &:hover, &:focus {
                     color: $projectYellow;
+                }
+
+                &.download {
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        padding-top: 75.83%;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: rgba($projectBlue, 0.5);
+                        background-image: url(../img/download-icon.png);
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-size: 20% auto;
+                    }
                 }
             }
         }
@@ -96,13 +120,17 @@
                 }
 
                 a {
-                    .date {
+                    .date, .road {
                         letter-spacing: 0.05rem;
                         font-size: 1.2rem;
                     }
 
-                    .copy-text {
+                    .copy-text, .location {
                         font-size: 1.6rem;
+                    }
+
+                    .phone {
+                        font-size: 1.4rem;
                     }
                 }
             }
@@ -114,6 +142,10 @@
 @media (max-width: $mobile) {
     .latest-news {
         padding-top: 4rem;
+
+        h4 {
+            font-size: 2.4rem;
+        }
 
         .title {
             margin-bottom: 1.5rem;
@@ -141,6 +173,7 @@
                 margin-right: 0;
                 display: none;
                 max-width: 100%;
+                flex: 1;
 
                 &:first-child {
                     display: block;
@@ -151,13 +184,71 @@
                 }
 
                 a {
-                    .date {
+                    .date, .road {
                         font-size: 1.4rem;
                         letter-spacing: 0.15rem;
                     }
 
-                    .copy-text {
+                    .copy-text, .location {
                         font-size: 2.4rem;
+                    }
+
+                    .phone {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+
+        &.mobile-list {
+            padding-top: 8rem;
+            padding-bottom: 0;
+
+            .news-item {
+                flex-direction: column;
+                margin-bottom: 0;
+                margin-left: -$gutter-width;
+                margin-right: -$gutter-width;
+
+                li {
+                    margin-right: 0;
+                    max-width: 100%;
+                    flex: 1;
+                    display: block;
+
+                    a {
+                        background-color: $projectBlue;
+                        padding: 3rem ($gutter-width * 2) 3rem $gutter-width;
+                        border-bottom: 0.1rem solid $borderPurple;
+                        background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%208.6%2013.4%22%20style%3D%22enable-background%3Anew%200%200%208.6%2013.4%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%20.st0%7Bfill%3A%23FFFFFF%3B%7D%3C%2Fstyle%3E%3Ctitle%3EArrow%20copy%206%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%3E%20%3Cg%20id%3D%22Layer_1-2%22%3E%20%20%3Cpath%20id%3D%22Arrow_copy_6%22%20class%3D%22st0%22%20d%3D%22M1.8%2C0L0%2C1.8l5%2C5l-5%2C5l1.8%2C1.7l6.8-6.7L1.8%2C0z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+                        background-repeat: no-repeat;
+                        background-size: 1rem 1.7rem;
+                        background-position: calc(100% - 1.5rem) center;
+
+                        img {
+                            display: none;
+                        }
+
+                        .date, .road {
+                            font-size: 1.2rem;
+                            letter-spacing: 0.15rem;
+                        }
+
+                        .copy-text, .location {
+                            font-size: 1.8rem;
+                        }
+
+                        &:before {
+                            display: none;
+                        }
+
+                        &:after {
+                            bottom: .1rem;
+                        }
+
+                        &:hover, &:focus {
+                            background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%208.6%2013.4%22%3E%3Cstyle%3E.st0%7Bfill%3A%23f3c828%7D%3C%2Fstyle%3E%3Ctitle%3EArrow%20copy%206%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%3E%3Cg%20id%3D%22Layer_1-2%22%3E%3Cpath%20id%3D%22Arrow_copy_6%22%20class%3D%22st0%22%20d%3D%22M1.8%200L0%201.8l5%205-5%205%201.8%201.7%206.8-6.7L1.8%200z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+                        }
                     }
                 }
             }
