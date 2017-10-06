@@ -10679,15 +10679,15 @@ header .navbar-default .navbar-collapse {
 header .navbar-default .navbar-collapse .navbar-nav {
   height: 5.6rem;
 }
-header .navbar-default .navbar-collapse .navbar-nav > li.open > a {
+header .navbar-default .navbar-collapse .navbar-nav > li.open > a, header .navbar-default .navbar-collapse .navbar-nav > li.active > a {
   color: #1f1f1f;
   background-color: transparent;
 }
-header .navbar-default .navbar-collapse .navbar-nav > li.open > a:hover, header .navbar-default .navbar-collapse .navbar-nav > li.open > a:focus {
+header .navbar-default .navbar-collapse .navbar-nav > li.open > a:hover, header .navbar-default .navbar-collapse .navbar-nav > li.open > a:focus, header .navbar-default .navbar-collapse .navbar-nav > li.active > a:hover, header .navbar-default .navbar-collapse .navbar-nav > li.active > a:focus {
   color: #d09166;
   background-color: transparent;
 }
-header .navbar-default .navbar-collapse .navbar-nav > li.open > a::after {
+header .navbar-default .navbar-collapse .navbar-nav > li.open > a::after, header .navbar-default .navbar-collapse .navbar-nav > li.active > a::after {
   content: '';
   position: absolute;
   height: 0.4rem;

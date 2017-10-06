@@ -114,7 +114,8 @@ header {
 
                 > li {
                     // default open menu
-                    &.open {
+                    &.open,
+                    &.active {
                         > a {
                             color: $projectBlack;
                             background-color: transparent;
