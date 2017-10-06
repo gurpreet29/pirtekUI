@@ -1,0 +1,355 @@
+footer {
+    // display: flex;
+    .foot-top {
+        background-color: $projectMediumBlack;
+        padding: 10rem 0;
+
+        .container {
+            .foot-nav {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                > li {
+                    position: relative;
+
+                    h6 {
+                        color: $white;
+                    }
+
+                    a {
+                        color: $white;
+                        outline: 0;
+
+                        @include transition(0.25s);
+
+                        &:hover,
+                        &:focus,
+                        &:active {
+                            text-decoration: none;
+                        }
+                    }
+
+                    &.seprator {
+                        content: '';
+                        display: block;
+                        margin-top: 3.75rem;
+                        margin-bottom: 3.75rem;
+                        background-color: $lighterGrey;
+                        width: .1rem;
+                    }
+
+                    // FIRST COLUMN
+                    .social-bar-bottom {
+                        li {
+                            width: 4.8rem;
+                            height: 4.8rem;
+                            float: left;
+                            margin-right: 1.3rem;
+
+                            a {
+                                width: 4.8rem;
+                                height: 4.8rem;
+                                border-top-left-radius: 2rem;
+                                border-bottom-right-radius: 2rem;
+                                background-color: $greyDark;
+                                font-size: 2.4rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                &:hover,
+                                &:focus,
+                                &:active {
+                                    background-color: $projectBrown;
+
+                                    i {
+                                        color: $greyDark;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // MIDDLE COLUMN
+                    .footer-middle {
+                        li {
+                            margin-bottom: 2rem;
+                            padding-left: 2.6rem;
+                            position: relative;
+
+                            a {
+                                text-transform: lowercase;
+
+                                i {
+                                    left: 0;
+                                    position: absolute;
+                                    color: $projectLightBrown;
+                                    font-size: 1.6rem;
+                                }
+
+                                + a {
+                                    padding-left: 2rem;
+
+                                    img {
+                                        margin-right: 1rem;
+                                        position: relative;
+                                        top: -.2rem;
+                                    }
+                                }
+
+                                &:hover,
+                                &:focus,
+                                &:active {
+                                    color: $projectBrown;
+                                }
+                            }
+                        }
+                    }
+
+                    // LAST COLUMN
+                    &:last-child {
+                        max-width: 27rem;
+                        padding-left: 2rem;
+
+                        li {
+                            margin-bottom: 1.5rem;
+                            padding-left: 1.5rem;
+                            position: relative;
+
+                            a {
+                                color: $lightGrey;
+
+                                i {
+                                    left: 0;
+                                    color: $lightGrey;
+                                    position: absolute;
+                                }
+
+                                &:hover,
+                                &:focus,
+                                &:active {
+                                    color: $projectBrown;
+                                    text-decoration: none;
+
+                                    i {
+                                        color: $lightGrey;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        max-width: 34rem;
+                        padding: 0 2rem;
+                    }
+
+                    &:first-child {
+                        max-width: 20rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .foot-bottom {
+        background-color: $projectDarkBlack;
+        padding: 2rem 0;
+
+        .container {
+            p {
+                text-align: center;
+                color: $lighterGrey;
+                font-size: 1.4rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* Tablet */
+
+@media (max-width: $tablet) {
+    footer {
+        .foot-top {
+            .container {
+                .foot-nav {
+                    > li {
+                        // FIRST COLUMN
+                        .social-bar-bottom {
+                            li {
+                                width: 3.8rem;
+                                height: 3.8rem;
+
+                                a {
+                                    width: 3.8rem;
+                                    height: 3.8rem;
+                                    border-top-left-radius: 1.8rem;
+                                    border-bottom-right-radius: 1.8rem;
+                                    font-size: 2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    footer {
+        // display: flex;
+        .foot-top {
+            padding: 4rem 0 0;
+
+            .container {
+                .foot-nav {
+                    display: block;
+                    justify-content: space-between;
+
+                    > li {
+                        position: relative;
+                        display: block;
+                        width: 100%;
+                        max-width: 100%;
+                        overflow: hidden;
+                        padding: 0;
+
+                        &.seprator {
+                            display: none;
+                        }
+
+                        // FIRST COLUMN
+                        .social-bar-bottom {
+                            position: relative;
+
+                            li {
+                                width: 4.8rem;
+                                height: 4.8rem;
+                                float: left;
+                                margin-right: 1.3rem;
+
+                                a {
+                                    width: 4.8rem;
+                                    height: 4.8rem;
+                                    border-top-left-radius: 2rem;
+                                    border-bottom-right-radius: 2rem;
+                                    background-color: $greyDark;
+                                    font-size: 2.4rem;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    &:hover,
+                                    &:focus,
+                                    &:active {
+                                        background-color: $projectBrown;
+
+                                        i {
+                                            color: $greyDark;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        // MIDDLE COLUMN
+                        .footer-middle {
+                            li {
+                                margin-bottom: 2rem;
+                                padding-left: 2.6rem;
+                                position: relative;
+
+                                a {
+                                    text-transform: lowercase;
+
+                                    i {
+                                        left: 0;
+                                        position: absolute;
+                                        color: $projectLightBrown;
+                                        font-size: 1.6rem;
+                                    }
+
+                                    + a {
+                                        padding-left: 2rem;
+
+                                        img {
+                                            margin-right: 1rem;
+                                            position: relative;
+                                            top: -.2rem;
+                                        }
+                                    }
+
+                                    &:hover,
+                                    &:focus,
+                                    &:active {
+                                        color: $projectBrown;
+                                    }
+                                }
+                            }
+                        }
+
+                        // LAST COLUMN
+                        &:last-child {
+                            max-width: 100%;
+                            padding-left: 0;
+
+                            li {
+                                margin-bottom: 1.5rem;
+                                padding-left: 1.5rem;
+                                position: relative;
+
+                                a {
+                                    color: $lightGrey;
+
+                                    i {
+                                        left: 0;
+                                        color: $lightGrey;
+                                        position: absolute;
+                                    }
+
+                                    &:hover,
+                                    &:focus,
+                                    &:active {
+                                        color: $projectBrown;
+                                        text-decoration: none;
+
+                                        i {
+                                            color: $lightGrey;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            max-width: 100%;
+                            padding: 0;
+                        }
+
+                        &:first-child {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .foot-bottom {
+            background-color: $projectDarkBlack;
+            padding: 2rem 0;
+
+            .container {
+                p {
+                    text-align: center;
+                    color: $lighterGrey;
+                    font-size: 1.4rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
