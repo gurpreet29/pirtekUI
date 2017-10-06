@@ -9,7 +9,7 @@ function headerNav() {
 function hoverAdd() {
     if ($(window).width() > 767) {
         $(this).addClass('open');
-         $(">ul", this).show();
+        $(">ul", this).show();
     }
 }
 
@@ -42,9 +42,9 @@ function tabhover() {
 
 // READY FUNCTION
 $(document).ready(function() {
-// GLOBAL VARIABLES
-var widownWidth = $(window).width(),
-    headerList = $('#navigation ul > li.dropdown');
+    // GLOBAL VARIABLES
+    var widownWidth = $(window).width(),
+        headerList = $('#navigation ul > li.dropdown');
 
     // tabhover();
 
@@ -55,6 +55,15 @@ var widownWidth = $(window).width(),
         // hoverDropdown();
     }
 
-    $(headerList).on('mouseenter', hoverAdd);
-    $(headerList).on('mouseleave', hoverRemove);
+    /* $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+         event.preventDefault();
+         event.stopPropagation();
+         $(this).parent().siblings().removeClass('open');
+         $(this).parent().toggleClass('open');
+     });*/
+
+
+    $(headerList).on('mouseenter focus', hoverAdd);
+    $(headerList).on('mouseleave blur', hoverRemove);
+
 });

@@ -112,7 +112,7 @@ header {
             .navbar-nav {
                 height: 5.6rem;
 
-                li {
+                > li {
                     // default open menu
                     &.open {
                         > a {
@@ -147,6 +147,8 @@ header {
                         }
 
                         > ul {
+                            padding-bottom: 0;
+
                             > li {
                                 padding: 0;
                                 border-bottom: 1px solid $ultraLightGrey;
@@ -163,6 +165,37 @@ header {
                                     &:focus {
                                         color: $projectBrown;
                                         text-decoration: none;
+                                    }
+                                }
+
+                                .caret {
+                                    border-top: 6px solid transparent;
+                                    border-left: 6px dashed;
+                                    right: 1rem;
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    margin: auto;
+                                    border-bottom: 6px solid transparent;
+                                }
+
+                                &:last-child {
+                                    border: 0;
+                                }
+
+                                > ul {
+                                    left: 100%;
+                                    padding: 0;
+                                    top: -2px;
+                                    box-shadow: 5px 3px 17px rgba(0, 0, 0, 0.175);
+                                    -webkit-box-shadow: 5px 3px 17px rgba(0, 0, 0, 0.175);
+
+                                    > li {
+                                        border-bottom: 1px solid $ultraLightGrey;
+
+                                        a {
+                                            color: $projectlighterGrey;
+                                        }
                                     }
                                 }
                             }
