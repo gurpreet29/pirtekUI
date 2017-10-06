@@ -11633,11 +11633,16 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 .videosec .carousel {
   overflow: hidden;
 }
-.videosec .carousel-inner {
-  width: 150%;
-  left: -25%;
+.videosec .carousel img {
+  width: 100%;
 }
-@media all and (transform-3d), (-webkit-transform-3d) {
+@media (min-width: 768px) {
+  .videosec .carousel-inner {
+    width: 150%;
+    left: -25%;
+  }
+}
+@media all and (min-width: 768px) and (transform-3d), (min-width: 768px) and (-webkit-transform-3d) {
   .videosec .carousel-inner > .item {
     -webkit-transition: -webkit-transform .6s ease-in-out;
     -o-transition: -o-transform .6s ease-in-out;
@@ -11667,13 +11672,62 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
     transform: translate3d(0, 0, 0);
   }
 }
-.videosec .carousel-control.left,
-.videosec .carousel-control.right {
-  background: rgba(255, 255, 255, 0);
-  width: 49%;
+@media (min-width: 768px) {
+  .videosec .carousel-control.left,
+  .videosec .carousel-control.right {
+    background: rgba(255, 255, 255, 0);
+    width: 55%;
+  }
+  .videosec .item .col-sm-4 {
+    padding: 0 55px;
+  }
+}
+.videosec .carousel-control {
+  top: 43%;
 }
 .videosec.container-fluid {
-  padding: 50px 0;
+  padding: 30px 0;
+}
+.videosec p {
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  font-size: 1em;
+  margin: 10px 0 1rem;
+}
+@media (max-width: 767px) {
+  .videosec .carousel .carousel-control {
+    display: block;
+  }
+}
+.videosec .video-container .video-image {
+  position: relative;
+}
+.videosec .video-container .video-image .video-icon {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  cursor: pointer;
+  text-align: center;
+}
+.videosec .video-container .video-image .video-icon .fa {
+  margin-top: 25%;
+  font-size: 30px;
+  background: #f3c828;
+  padding: 12px 23px 12px 25px;
+  color: #154786;
+}
+.videosec .video-container .video-image img {
+  width: 100%;
+  margin: 0px;
+}
+.videosec .video-container .video-file {
+  display: none;
+}
+.videosec .video-container .video-file iframe {
+  width: 100%;
 }
 
 .category-grid ul {
