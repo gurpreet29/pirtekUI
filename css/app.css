@@ -11700,6 +11700,10 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
     display: block;
   }
 }
+.videosec .video-container {
+  position: relative;
+  background-color: #ccc;
+}
 .videosec .video-container .video-image {
   position: relative;
 }
@@ -11718,6 +11722,11 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   background: #f3c828;
   padding: 12px 23px 12px 25px;
   color: #154786;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .videosec .video-container .video-image .video-icon .fa {
+    margin-top: 20%;
+  }
 }
 .videosec .video-container .video-image img {
   width: 100%;

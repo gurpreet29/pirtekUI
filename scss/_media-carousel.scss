@@ -81,6 +81,9 @@
     }
 
     .video-container {
+        position: relative;
+        background-color: #ccc;
+
         .video-image {
             position: relative;
 
@@ -99,6 +102,10 @@
                     background: #f3c828;
                     padding: 12px 23px 12px 25px;
                     color: #154786;
+
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        margin-top: 20%;
+                    }
                 }
             }
 
