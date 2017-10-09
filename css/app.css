@@ -10481,6 +10481,9 @@ p {
 p + h5 {
   margin-top: 4.5rem;
 }
+p strong {
+  font-weight: 900;
+}
 
 ul {
   margin-bottom: 0;
@@ -10535,9 +10538,15 @@ a.cta:hover:after, a.cta:focus:after {
   padding: 1.5rem;
   min-width: 24rem;
 }
-.btn-default:hover, .btn-default:focus {
+.btn-default:hover, .btn-default:focus, .btn-default:active {
   background-color: #f3c828;
   color: #1d4789;
+  border-color: #f3c828;
+}
+.btn-default:active:hover, .btn-default:active:focus {
+  background-color: #f3c828;
+  color: #1d4789;
+  border-color: #f3c828;
 }
 
 label {
@@ -12681,6 +12690,29 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
     padding: 0.6rem  0 0 0;
     border-left: none;
   }
+}
+.form-default span {
+  font-family: "MuseoSans", sans-serif;
+  font-size: 1.4rem;
+  color: #707070;
+  letter-spacing: .1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+.form-default .form-control {
+  border-radius: 0;
+  color: #000;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  height: 4.5rem;
+  border-color: #e6e7e6;
+  box-shadow: none;
+}
+.form-default .form-control:focus {
+  border-color: #e6e7e6;
+  outline: 0;
+  box-shadow: none;
+  border-bottom: 0.4rem solid #f3c828;
 }
 
 /*# sourceMappingURL=app.css.map */

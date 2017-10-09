@@ -1,0 +1,27 @@
+.form-default {
+    span {
+        font-family: $fontFamily;
+        font-size: 1.4rem;
+        color: $formElementText;
+        letter-spacing: .1rem;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+
+    .form-control {
+        border-radius: 0;
+        color: $black;
+        font-size: 1.6rem;
+        padding: 1rem 2rem;
+        height: 4.5rem;
+        border-color: $formElementBorder;
+        box-shadow: none;
+
+        &:focus {
+            border-color: $formElementBorder;
+            outline: 0;
+            box-shadow: none;
+            border-bottom: 0.4rem solid $projectYellow;
+        }
+    }
+}
