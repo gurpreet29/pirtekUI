@@ -1,6 +1,7 @@
 .quick-link {
     display: flex;
     flex-flow: row;
+    position: relative;
 
     .tile {
         flex: 1;
@@ -135,7 +136,6 @@
     a {
         padding-bottom: 0;
         display: block;
-        background-color: yellowgreen;
         padding-top: 100%;
         position: relative;
 

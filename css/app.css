@@ -11061,6 +11061,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 .quick-link {
   display: flex;
   flex-flow: row;
+  position: relative;
 }
 .quick-link .tile {
   flex: 1;
@@ -11095,7 +11096,6 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 .quick-link a {
   padding-bottom: 0;
   display: block;
-  background-color: yellowgreen;
   padding-top: 100%;
   position: relative;
 }
