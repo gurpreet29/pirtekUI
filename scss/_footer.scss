@@ -206,9 +206,11 @@ footer {
             padding: 4rem 0 0;
 
             .container {
+                padding: 0;
+
                 .foot-nav {
                     display: block;
-                    justify-content: space-between;
+                    margin-bottom: 0;
 
                     > li {
                         position: relative;
@@ -227,31 +229,16 @@ footer {
                             position: relative;
 
                             li {
-                                width: 4.8rem;
-                                height: 4.8rem;
-                                float: left;
-                                margin-right: 1.3rem;
+                                width: 3.8rem;
+                                height: 3.8rem;
+                                margin-right: 1rem;
 
                                 a {
-                                    width: 4.8rem;
-                                    height: 4.8rem;
-                                    border-top-left-radius: 2rem;
-                                    border-bottom-right-radius: 2rem;
-                                    background-color: $greyDark;
-                                    font-size: 2.4rem;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-
-                                    &:hover,
-                                    &:focus,
-                                    &:active {
-                                        background-color: $projectBrown;
-
-                                        i {
-                                            color: $greyDark;
-                                        }
-                                    }
+                                    width: 3.8rem;
+                                    height: 3.8rem;
+                                    border-top-left-radius: 1.5rem;
+                                    border-bottom-right-radius: 1.5rem;
+                                    font-size: 2rem;
                                 }
                             }
                         }
@@ -264,30 +251,17 @@ footer {
                                 position: relative;
 
                                 a {
-                                    text-transform: lowercase;
-
                                     i {
-                                        left: 0;
-                                        position: absolute;
-                                        color: $projectLightBrown;
                                         font-size: 1.6rem;
                                     }
 
                                     + a {
                                         padding-left: 2rem;
-
-                                        img {
-                                            margin-right: 1rem;
-                                            position: relative;
-                                            top: -.2rem;
-                                        }
                                     }
+                                }
 
-                                    &:hover,
-                                    &:focus,
-                                    &:active {
-                                        color: $projectBrown;
-                                    }
+                                &:last-child {
+                                    margin-bottom: 0;
                                 }
                             }
                         }
@@ -295,32 +269,25 @@ footer {
                         // LAST COLUMN
                         &:last-child {
                             max-width: 100%;
-                            padding-left: 0;
+                            padding: 0;
 
                             li {
-                                margin-bottom: 1.5rem;
-                                padding-left: 1.5rem;
+                                background-color: $greyStrip;
+                                padding: 2rem 2rem;
                                 position: relative;
+                                margin-bottom: .2rem;
 
                                 a {
                                     color: $lightGrey;
+                                    padding: 0 1.5rem;
 
                                     i {
-                                        left: 0;
-                                        color: $lightGrey;
-                                        position: absolute;
+                                        left: 2rem;
                                     }
+                                }
 
-                                    &:hover,
-                                    &:focus,
-                                    &:active {
-                                        color: $projectBrown;
-                                        text-decoration: none;
-
-                                        i {
-                                            color: $lightGrey;
-                                        }
-                                    }
+                                &:last-child {
+                                    margin-bottom: 0;
                                 }
                             }
                         }
@@ -328,10 +295,14 @@ footer {
                         &:nth-child(3) {
                             max-width: 100%;
                             padding: 0;
+                            margin-bottom: 4rem;
+                            padding: 0 2rem;
                         }
 
                         &:first-child {
                             max-width: 100%;
+                            margin-bottom: 4rem;
+                            padding: 0 2rem;
                         }
                     }
                 }

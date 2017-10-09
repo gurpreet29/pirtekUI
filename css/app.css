@@ -10544,6 +10544,10 @@ label {
   .btn-default {
     width: 100%;
   }
+
+  h6 {
+    font-size: 1.9rem;
+  }
 }
 header {
   background: #fff;
@@ -11179,9 +11183,12 @@ footer .foot-bottom .container p {
   footer .foot-top {
     padding: 4rem 0 0;
   }
+  footer .foot-top .container {
+    padding: 0;
+  }
   footer .foot-top .container .foot-nav {
     display: block;
-    justify-content: space-between;
+    margin-bottom: 0;
   }
   footer .foot-top .container .foot-nav > li {
     position: relative;
@@ -11198,83 +11205,61 @@ footer .foot-bottom .container p {
     position: relative;
   }
   footer .foot-top .container .foot-nav > li .social-bar-bottom li {
-    width: 4.8rem;
-    height: 4.8rem;
-    float: left;
-    margin-right: 1.3rem;
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-right: 1rem;
   }
   footer .foot-top .container .foot-nav > li .social-bar-bottom li a {
-    width: 4.8rem;
-    height: 4.8rem;
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    background-color: #323232;
-    font-size: 2.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  footer .foot-top .container .foot-nav > li .social-bar-bottom li a:hover, footer .foot-top .container .foot-nav > li .social-bar-bottom li a:focus, footer .foot-top .container .foot-nav > li .social-bar-bottom li a:active {
-    background-color: #d09166;
-  }
-  footer .foot-top .container .foot-nav > li .social-bar-bottom li a:hover i, footer .foot-top .container .foot-nav > li .social-bar-bottom li a:focus i, footer .foot-top .container .foot-nav > li .social-bar-bottom li a:active i {
-    color: #323232;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    font-size: 2rem;
   }
   footer .foot-top .container .foot-nav > li .footer-middle li {
     margin-bottom: 2rem;
     padding-left: 2.6rem;
     position: relative;
   }
-  footer .foot-top .container .foot-nav > li .footer-middle li a {
-    text-transform: lowercase;
-  }
   footer .foot-top .container .foot-nav > li .footer-middle li a i {
-    left: 0;
-    position: absolute;
-    color: #b8b3aa;
     font-size: 1.6rem;
   }
   footer .foot-top .container .foot-nav > li .footer-middle li a + a {
     padding-left: 2rem;
   }
-  footer .foot-top .container .foot-nav > li .footer-middle li a + a img {
-    margin-right: 1rem;
-    position: relative;
-    top: -.2rem;
-  }
-  footer .foot-top .container .foot-nav > li .footer-middle li a:hover, footer .foot-top .container .foot-nav > li .footer-middle li a:focus, footer .foot-top .container .foot-nav > li .footer-middle li a:active {
-    color: #d09166;
+  footer .foot-top .container .foot-nav > li .footer-middle li:last-child {
+    margin-bottom: 0;
   }
   footer .foot-top .container .foot-nav > li:last-child {
     max-width: 100%;
-    padding-left: 0;
+    padding: 0;
   }
   footer .foot-top .container .foot-nav > li:last-child li {
-    margin-bottom: 1.5rem;
-    padding-left: 1.5rem;
+    background-color: #252525;
+    padding: 2rem 2rem;
     position: relative;
+    margin-bottom: .2rem;
   }
   footer .foot-top .container .foot-nav > li:last-child li a {
     color: #ccc;
+    padding: 0 1.5rem;
   }
   footer .foot-top .container .foot-nav > li:last-child li a i {
-    left: 0;
-    color: #ccc;
-    position: absolute;
+    left: 2rem;
   }
-  footer .foot-top .container .foot-nav > li:last-child li a:hover, footer .foot-top .container .foot-nav > li:last-child li a:focus, footer .foot-top .container .foot-nav > li:last-child li a:active {
-    color: #d09166;
-    text-decoration: none;
-  }
-  footer .foot-top .container .foot-nav > li:last-child li a:hover i, footer .foot-top .container .foot-nav > li:last-child li a:focus i, footer .foot-top .container .foot-nav > li:last-child li a:active i {
-    color: #ccc;
+  footer .foot-top .container .foot-nav > li:last-child li:last-child {
+    margin-bottom: 0;
   }
   footer .foot-top .container .foot-nav > li:nth-child(3) {
     max-width: 100%;
     padding: 0;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
   }
   footer .foot-top .container .foot-nav > li:first-child {
     max-width: 100%;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
   }
   footer .foot-bottom {
     background-color: #111111;
