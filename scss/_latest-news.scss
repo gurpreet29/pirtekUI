@@ -1,11 +1,13 @@
 .latest-news {
+    padding: 10rem 0;
+    overflow: hidden;
+
     a {
         font-family: $fontFamily;
         font-size: 1.6rem;
         color: $black;
         font-weight: 600;
         line-height: 1.6;
-        margin-bottom: 3rem;
         text-decoration: none;
         display: block;
 
@@ -24,6 +26,10 @@
                 color: $projectBrown;
             }
         }
+
+        &.btn-primary {
+            margin-bottom: 6.3rem;
+        }
     }
 
     .date {
@@ -39,6 +45,7 @@
 
     p {
         color: $mediumblack;
+        margin-bottom: 0;
 
         strong {
             text-transform: uppercase;
@@ -48,71 +55,72 @@
         }
     }
 
-    article {
+    .latest-news-top {
         clear: both;
     }
-}
 
-.headline {
-    p {
-        display: none;
-    }
-
-    a:not(.btn) {
-        color: $lightseagreen;
-        margin: 0;
-        text-transform: normal;
-
-        strong {
-            margin: 0;
-        }
-    }
-
-    article {
-        background: $white;
-        border: 1px solid $lightGrey;
-        margin-bottom: .3rem;
-        position: relative;
-        transition: all .2s ease-in;
-
-        .date {
-            position: absolute;
-            right: 0;
+    &.headline {
+        p {
             display: none;
-            background: $lightseagreen;
-            color: $white;
-            border-bottom: 0;
-            top: 0;
-            max-width: 70px;
+        }
 
-            span {
-                display: none;
+        a:not(.btn) {
+            color: $lightseagreen;
+            margin: 0;
+            text-transform: normal;
+
+            strong {
+                margin: 0;
             }
+        }
 
-            &.stack {
-                display: block;
-                text-align: center;
-                font-weight: 300;
-                padding: .5rem;
+        .latest-news-item {
+            background: $white;
+            border: 1px solid $lightGrey;
+            margin-bottom: .3rem;
+            position: relative;
+            transition: all .2s ease-in;
+            clear: both;
 
-                .fa {
+            .date {
+                position: absolute;
+                right: 0;
+                display: none;
+                background: $lightseagreen;
+                color: $white;
+                border-bottom: 0;
+                top: 0;
+                max-width: 70px;
+
+                span {
+                    display: none;
+                }
+
+                &.stack {
                     display: block;
-                    font-size: 2rem;
-                    padding: .5rem 0;
+                    text-align: center;
+                    font-weight: 300;
+                    padding: .5rem;
+
+                    .fa {
+                        display: block;
+                        font-size: 2rem;
+                        padding: .5rem 0;
+                    }
                 }
             }
-        }
 
-        > a {
-            padding: 2.4rem 5rem 2.4rem 2.4rem;
+            > a {
+                padding: 2.4rem 8rem 2.4rem 2.4rem;
 
-            &:hover,
-            &:focus,
-            &:active {
-                background: $lightblack;
+                &:hover,
+                &:focus,
+                &:active {
+                    background: $lightblack;
 
-                strong {
-                    color: $white;
+                    strong {
+                        color: $white;
+                    }
                 }
             }
         }
@@ -122,7 +130,27 @@
 @media (max-width: $mediumDesktop) {}
 
 /* Tablet */
-@media (max-width: $tablet) {}
+@media (max-width: $tablet) {
+    .latest-news {
+        padding: 4rem 0;
+
+        a {
+            &.btn-primary {
+                margin-bottom: 4rem;
+            }
+        }
+    }
+}
 
 /* Mobile */
-@media (max-width: $mobile) {}
+@media (max-width: $mobile) {
+    .latest-news {
+        &.headline {
+            padding: 0;
+
+            .latest-news-item {
+                display: none;
+            }
+        }
+    }
+}

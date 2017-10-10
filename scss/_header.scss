@@ -411,6 +411,12 @@ header {
                             .dropdown-menu {
                                 width: 970px;
                             }
+
+                            &.menu-sm {
+                                .dropdown-menu {
+                                    width: 30rem;
+                                }
+                            }
                         }
                     }
                 }
@@ -609,6 +615,13 @@ header {
                                             }
                                         }
                                     }
+                                }
+                            }
+
+                            &.menu-sm {
+                                .dropdown-menu {
+                                    width: 100%;
+                                    display: block;
                                 }
                             }
                         }
