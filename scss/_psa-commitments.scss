@@ -65,8 +65,13 @@
             &:hover,
             &:focus,
             &:active {
-                // color: $projectBrown;
-           
+                outline: 0;
+
+                figure {
+                    img {
+                        opacity: 0.2;
+                    }
+                }
             }
         }
 
@@ -91,7 +96,7 @@
                         span {
                             position: absolute;
                             display: inline-block;
-                            float: left;
+                            left: 0;
                             width: 9.6rem;
                             height: 9.6rem;
                             background-color: $white;
@@ -155,6 +160,7 @@
                     &:focus,
                     &:active {
                         text-decoration: none;
+                        outline: 0;
 
                         figure {
                             span {
@@ -185,6 +191,11 @@
                     a {
                         figure {
                             flex-direction: row-reverse;
+
+                            span {
+                                right: 0;
+                                left: auto;
+                            }
 
                             figcaption {
                                 margin: 0.8rem 7.8rem 0.8rem 0;
@@ -339,4 +350,22 @@
 
 /* Mobile */
 
-@media (max-width: $mobile) {}
+@media (max-width: $mobile) {
+    .psa-commitments {
+        margin: 4rem 0;
+
+        .psa-commits {
+            > .psa-commit-childs {
+                li {
+                    a {
+                        figure {
+                            figcaption {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

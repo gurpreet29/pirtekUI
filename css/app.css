@@ -11350,6 +11350,12 @@ footer .foot-bottom .container p {
   font-size: 3rem;
   font-weight: 300;
 }
+.psa-commitments .psa-commits > a:hover, .psa-commitments .psa-commits > a:focus, .psa-commitments .psa-commits > a:active {
+  outline: 0;
+}
+.psa-commitments .psa-commits > a:hover figure img, .psa-commitments .psa-commits > a:focus figure img, .psa-commitments .psa-commits > a:active figure img {
+  opacity: 0.2;
+}
 .psa-commitments .psa-commits > .psa-commit-childs {
   position: absolute;
   width: 100%;
@@ -11371,7 +11377,7 @@ footer .foot-bottom .container p {
 .psa-commitments .psa-commits > .psa-commit-childs li a figure span {
   position: absolute;
   display: inline-block;
-  float: left;
+  left: 0;
   width: 9.6rem;
   height: 9.6rem;
   background-color: #fff;
@@ -11430,6 +11436,7 @@ footer .foot-bottom .container p {
 }
 .psa-commitments .psa-commits > .psa-commit-childs li a:hover, .psa-commitments .psa-commits > .psa-commit-childs li a:focus, .psa-commitments .psa-commits > .psa-commit-childs li a:active {
   text-decoration: none;
+  outline: 0;
 }
 .psa-commitments .psa-commits > .psa-commit-childs li a:hover figure span, .psa-commitments .psa-commits > .psa-commit-childs li a:focus figure span, .psa-commitments .psa-commits > .psa-commit-childs li a:active figure span {
   background-color: #1f1f1f;
@@ -11449,6 +11456,10 @@ footer .foot-bottom .container p {
 }
 .psa-commitments .psa-commits > .psa-commit-childs li.psa-reverse a figure {
   flex-direction: row-reverse;
+}
+.psa-commitments .psa-commits > .psa-commit-childs li.psa-reverse a figure span {
+  right: 0;
+  left: auto;
 }
 .psa-commitments .psa-commits > .psa-commit-childs li.psa-reverse a figure figcaption {
   margin: 0.8rem 7.8rem 0.8rem 0;
@@ -11549,5 +11560,13 @@ footer .foot-bottom .container p {
   }
 }
 /* Mobile */
+@media (max-width: 767px) {
+  .psa-commitments {
+    margin: 4rem 0;
+  }
+  .psa-commitments .psa-commits > .psa-commit-childs li a figure figcaption {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
