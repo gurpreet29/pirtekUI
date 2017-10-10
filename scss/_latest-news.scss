@@ -1,0 +1,128 @@
+.latest-news {
+    a {
+        font-family: $fontFamily;
+        font-size: 1.6rem;
+        color: $black;
+        font-weight: 600;
+        line-height: 1.6;
+        margin-bottom: 3rem;
+        text-decoration: none;
+        display: block;
+
+        strong {
+            text-transform: uppercase;
+            margin: 2rem 0;
+            display: block;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            outline: 0;
+
+            strong {
+                color: $projectBrown;
+            }
+        }
+    }
+
+    .date {
+        border-bottom: 1px solid $lightGrey;
+        padding-bottom: 5px;
+        color: $mediumblack;
+        display: block;
+
+        &.stack {
+            display: none;
+        }
+    }
+
+    p {
+        color: $mediumblack;
+
+        strong {
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 600;
+            color: $black;
+        }
+    }
+
+    article {
+        clear: both;
+    }
+}
+
+.headline {
+    p {
+        display: none;
+    }
+
+    a:not(.btn) {
+        color: $lightseagreen;
+        margin: 0;
+        text-transform: normal;
+
+        strong {
+            margin: 0;
+        }
+    }
+
+    article {
+        background: $white;
+        border: 1px solid $lightGrey;
+        margin-bottom: .3rem;
+        position: relative;
+        transition: all .2s ease-in;
+
+        .date {
+            position: absolute;
+            right: 0;
+            display: none;
+            background: $lightseagreen;
+            color: $white;
+            border-bottom: 0;
+            top: 0;
+            max-width: 70px;
+
+            span {
+                display: none;
+            }
+
+            &.stack {
+                display: block;
+                text-align: center;
+                font-weight: 300;
+                padding: .5rem;
+
+                .fa {
+                    display: block;
+                    font-size: 2rem;
+                    padding: .5rem 0;
+                }
+            }
+        }
+
+        > a {
+            padding: 2.4rem 5rem 2.4rem 2.4rem;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background: $lightblack;
+
+                strong {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mediumDesktop) {}
+
+/* Tablet */
+@media (max-width: $tablet) {}
+
+/* Mobile */
+@media (max-width: $mobile) {}

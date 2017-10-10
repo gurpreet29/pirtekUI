@@ -10486,6 +10486,20 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   padding: 0;
 }
 
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 5rem;
+  text-transform: uppercase;
+  margin-bottom: 4.5rem;
+  color: #103771;
+}
+h2 strong {
+  color: #5c8d9f;
+  font-weight: 600;
+}
+
 h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
@@ -10524,21 +10538,28 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
-.btn-default {
-  border-radius: 0;
+.btn {
   text-transform: uppercase;
-  background-color: #343f55;
-  color: #fff;
+  font-size: 2rem;
+  padding: 1.2rem 2.3rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  border: none;
-  font-size: 1.6rem;
-  padding: 1.5rem;
-  min-width: 24rem;
+  font-weight: 600;
+  border-radius: 0;
+  margin-bottom: 3rem;
+  min-width: 20rem;
 }
-.btn-default:hover, .btn-default:focus {
-  background-color: #f3c828;
-  color: #343f55;
+.btn.btn-primary {
+  color: #fff;
+  background-color: #b26c3e;
+  border-color: #b26c3e;
+  border-width: 2px;
+  float: right;
+  transition: all .2s ease-in;
+}
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
+  background-color: transparent;
+  border-color: #b26c3e;
+  color: #b26c3e;
 }
 
 label {
@@ -11568,5 +11589,102 @@ footer .foot-bottom .container p {
     display: none;
   }
 }
+.latest-news a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  text-decoration: none;
+  display: block;
+}
+.latest-news a strong {
+  text-transform: uppercase;
+  margin: 2rem 0;
+  display: block;
+}
+.latest-news a:hover, .latest-news a:focus, .latest-news a:active {
+  outline: 0;
+}
+.latest-news a:hover strong, .latest-news a:focus strong, .latest-news a:active strong {
+  color: #bb5241;
+}
+.latest-news .date {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  color: #616161;
+  display: block;
+}
+.latest-news .date.stack {
+  display: none;
+}
+.latest-news p {
+  color: #616161;
+}
+.latest-news p strong {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+}
+.latest-news article {
+  clear: both;
+}
+
+.headline p {
+  display: none;
+}
+.headline a:not(.btn) {
+  color: #032f3e;
+  margin: 0;
+  text-transform: normal;
+}
+.headline a:not(.btn) strong {
+  margin: 0;
+}
+.headline article {
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: .3rem;
+  position: relative;
+  transition: all .2s ease-in;
+}
+.headline article .date {
+  position: absolute;
+  right: 0;
+  display: none;
+  background: #032f3e;
+  color: #fff;
+  border-bottom: 0;
+  top: 0;
+  max-width: 70px;
+}
+.headline article .date span {
+  display: none;
+}
+.headline article .date.stack {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  padding: .5rem;
+}
+.headline article .date.stack .fa {
+  display: block;
+  font-size: 2rem;
+  padding: .5rem 0;
+}
+.headline article > a {
+  padding: 2.4rem 5rem 2.4rem 2.4rem;
+}
+.headline article > a:hover, .headline article > a:focus, .headline article > a:active {
+  background: #363636;
+}
+.headline article > a:hover strong, .headline article > a:focus strong, .headline article > a:active strong {
+  color: #fff;
+}
+
+/* Tablet */
+/* Mobile */
 
 /*# sourceMappingURL=app.css.map */
