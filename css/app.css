@@ -11331,7 +11331,6 @@ footer .foot-bottom .container p {
   }
 }
 .psa-commitments {
-  display: none;
   width: 100%;
   margin: 0 auto;
 }
@@ -11382,6 +11381,7 @@ footer .foot-bottom .container p {
 .psa-commitments .psa-commits > a figure figcaption {
   top: 50%;
   position: relative;
+  margin: 0 auto;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -11485,8 +11485,8 @@ footer .foot-bottom .container p {
   outline: 0;
 }
 .psa-commitments .psa-commits > .psa-commit-childs li a:hover figure span, .psa-commitments .psa-commits > .psa-commit-childs li a:focus figure span, .psa-commitments .psa-commits > .psa-commit-childs li a:active figure span {
-  background-color: #1f1f1f;
-  border: 1px solid #1f1f1f;
+  background-color: #bb5241;
+  border: 1px solid #bb5241;
 }
 .psa-commitments .psa-commits > .psa-commit-childs li a:hover figure span img, .psa-commitments .psa-commits > .psa-commit-childs li a:focus figure span img, .psa-commitments .psa-commits > .psa-commit-childs li a:active figure span img {
   opacity: 0;
@@ -11541,14 +11541,26 @@ footer .foot-bottom .container p {
 
 /* Tablet */
 @media (max-width: 991px) {
+  .psa-commitments .psa-commits > .psa-commit-childs li a figure figcaption {
+    display: none;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) {
+  .psa-commitments {
+    margin: 5rem 0;
+  }
   .psa-commitments .psa-commits {
-    margin: 10rem auto;
+    margin: 0 auto;
     width: 25rem;
     height: 25rem;
   }
   .psa-commitments .psa-commits > a {
     width: 22.8rem;
     height: 22.8rem;
+  }
+  .psa-commitments .psa-commits > a figure figcaption {
+    width: 20rem;
   }
   .psa-commitments .psa-commits > a figure figcaption h3 {
     line-height: 1;
@@ -11557,61 +11569,99 @@ footer .foot-bottom .container p {
   .psa-commitments .psa-commits > a figure figcaption h3 span {
     font-size: 2.2rem;
   }
-  .psa-commitments .psa-commits > .psa-commit-childs li a figure {
+  .psa-commitments .psa-commits .psa-commit-childs li a figure {
     height: 7.2rem;
   }
-  .psa-commitments .psa-commits > .psa-commit-childs li a figure span {
+  .psa-commitments .psa-commits .psa-commit-childs li a figure span {
     width: 7.2rem;
     height: 7.2rem;
   }
-  .psa-commitments .psa-commits > .psa-commit-childs li a figure span img {
+  .psa-commitments .psa-commits .psa-commit-childs li a figure span img {
     width: 3.6rem;
     height: 3.6rem;
     -webkit-transition: 0.25s;
     -o-transition: 0.25s;
     transition: 0.25s;
   }
-  .psa-commitments .psa-commits > .psa-commit-childs li a figure span img.icon-hrv {
+  .psa-commitments .psa-commits .psa-commit-childs li a figure span img.icon-hrv {
     opacity: 0;
   }
-  .psa-commitments .psa-commits > .psa-commit-childs li.psa-reverse a figure figcaption {
+  .psa-commitments .psa-commits .psa-commit-childs li.psa-reverse a figure figcaption {
     margin: 0.8rem 7.8rem 0.8rem 0;
   }
-  .psa-commitments .psa-commits > .psa-commit-childs li:first-child {
+  .psa-commitments .psa-commits .psa-commit-childs li:first-child {
     left: auto;
     right: 18.5rem;
     top: -1.2rem;
   }
-  .psa-commitments .psa-commits > .psa-commit-childs li:nth-child(2) {
+  .psa-commitments .psa-commits .psa-commit-childs li:nth-child(2) {
     left: 16.1rem;
     top: -1.2rem;
   }
-  .psa-commitments .psa-commits > .psa-commit-childs li:nth-child(3) {
+  .psa-commitments .psa-commits .psa-commit-childs li:nth-child(3) {
     left: auto;
     right: 22.5rem;
     top: 8.6rem;
   }
-  .psa-commitments .psa-commits > .psa-commit-childs li:nth-child(4) {
+  .psa-commitments .psa-commits .psa-commit-childs li:nth-child(4) {
     left: 21.8rem;
     top: 8.6rem;
   }
-  .psa-commitments .psa-commits > .psa-commit-childs li:nth-child(5) {
+  .psa-commitments .psa-commits .psa-commit-childs li:nth-child(5) {
     left: auto;
     right: 17.8rem;
     top: 19.2rem;
   }
-  .psa-commitments .psa-commits > .psa-commit-childs li:last-child {
+  .psa-commitments .psa-commits .psa-commit-childs li:last-child {
     top: 19.2rem;
     left: 17.7rem;
   }
 }
-/* Mobile */
-@media (max-width: 767px) {
-  .psa-commitments {
-    margin: 4rem 0;
+@media (max-width: 374px) {
+  .psa-commitments .psa-commits {
+    width: 17rem;
+    height: 17rem;
   }
-  .psa-commitments .psa-commits > .psa-commit-childs li a figure figcaption {
-    display: none;
+  .psa-commitments .psa-commits > a {
+    width: 14.8rem;
+    height: 14.8rem;
+  }
+  .psa-commitments .psa-commits > a figure figcaption {
+    width: 12.8rem;
+  }
+  .psa-commitments .psa-commits > a figure figcaption h3 {
+    font-size: 2.3rem;
+  }
+  .psa-commitments .psa-commits > a figure figcaption h3 span {
+    font-size: 1.6rem;
+  }
+  .psa-commitments .psa-commits .psa-commit-childs li a figure span {
+    width: 6.2rem;
+    height: 6.2rem;
+  }
+  .psa-commitments .psa-commits .psa-commit-childs li:first-child {
+    right: 13.2rem;
+    top: -2rem;
+  }
+  .psa-commitments .psa-commits .psa-commit-childs li:nth-child(2) {
+    left: 13.3rem;
+    top: -2rem;
+  }
+  .psa-commitments .psa-commits .psa-commit-childs li:nth-child(3) {
+    right: 16.1rem;
+    top: 5.7rem;
+  }
+  .psa-commitments .psa-commits .psa-commit-childs li:nth-child(4) {
+    left: 16.2rem;
+    top: 5.7rem;
+  }
+  .psa-commitments .psa-commits .psa-commit-childs li:nth-child(5) {
+    right: 13.2rem;
+    top: 12.7rem;
+  }
+  .psa-commitments .psa-commits .psa-commit-childs li:last-child {
+    top: 12.7rem;
+    left: 13.3rem;
   }
 }
 .latest-news {

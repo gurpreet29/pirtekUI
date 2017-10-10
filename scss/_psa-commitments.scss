@@ -1,5 +1,4 @@
 .psa-commitments {
-    display: none;
     width: 100%;
     margin: 0 auto;
 
@@ -47,6 +46,7 @@
                 figcaption {
                     top: 50%;
                     position: relative;
+                    margin: 0 auto;
 
                     @include transform(translateY(-50%));
 
@@ -165,8 +165,8 @@
 
                         figure {
                             span {
-                                background-color: $projectBlack;
-                                border: 1px solid $projectBlack;
+                                background-color: $projectBrown;
+                                border: 1px solid $projectBrown;
 
                                 img {
                                     opacity: 0;
@@ -250,7 +250,29 @@
 @media (max-width: $tablet) {
     .psa-commitments {
         .psa-commits {
-            margin: 10rem auto;
+            > .psa-commit-childs {
+                li {
+                    a {
+                        figure {
+                            figcaption {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Mobile */
+
+@media (max-width: $mobile) {
+    .psa-commitments {
+        margin: 5rem 0;
+
+        .psa-commits {
+            margin: 0 auto;
             width: 25rem;
             height: 25rem;
 
@@ -260,6 +282,8 @@
 
                 figure {
                     figcaption {
+                        width: 20rem;
+
                         h3 {
                             line-height: 1;
                             font-size: 2.7rem;
@@ -272,7 +296,7 @@
                 }
             }
 
-            > .psa-commit-childs {
+            .psa-commit-childs {
                 li {
                     a {
                         figure {
@@ -292,11 +316,6 @@
                                         opacity: 0;
                                     }
                                 }
-                            }
-
-                            figcaption {
-                                // display: none;
-                           
                             }
                         }
                     }
@@ -349,21 +368,70 @@
     }
 }
 
-/* Mobile */
-
-@media (max-width: $mobile) {
+@media (max-width: $mobileSmall) {
     .psa-commitments {
-        margin: 4rem 0;
-
         .psa-commits {
-            > .psa-commit-childs {
+            width: 17rem;
+            height: 17rem;
+
+            > a {
+                width: 14.8rem;
+                height: 14.8rem;
+
+                figure {
+                    figcaption {
+                        width: 12.8rem;
+
+                        h3 {
+                            font-size: 2.3rem;
+
+                            span {
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .psa-commit-childs {
                 li {
                     a {
                         figure {
-                            figcaption {
-                                display: none;
+                            span {
+                                width: 6.2rem;
+                                height: 6.2rem;
                             }
                         }
+                    }
+
+                    &:first-child {
+                        right: 13.2rem;
+                        top: -2rem;
+                    }
+
+                    &:nth-child(2) {
+                        left: 13.3rem;
+                        top: -2rem;
+                    }
+
+                    &:nth-child(3) {
+                        right: 16.1rem;
+                        top: 5.7rem;
+                    }
+
+                    &:nth-child(4) {
+                        left: 16.2rem;
+                        top: 5.7rem;
+                    }
+
+                    &:nth-child(5) {
+                        right: 13.2rem;
+                        top: 12.7rem;
+                    }
+
+                    &:last-child {
+                        top: 12.7rem;
+                        left: 13.3rem;
                     }
                 }
             }
