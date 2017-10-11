@@ -15,22 +15,22 @@ window.app = window.app || {};
             /***** PRIVATE FUNCTIONS ************/
 
             // fixes height for category item in its row
-            itemHeight = function() {
+            // itemHeight = function() {
 
-                $(model.textCaption).removeAttr('style');
-                var rowMax = 0,
+            //     $(model.textCaption).removeAttr('style');
+            //     var rowMax = 0,
 
-                    totalItem = $(model.item).length,
-                    itemsPerRow = 4,
-                    totalRow = totalItem / itemsPerRow;
+            //         totalItem = $(model.item).length,
+            //         itemsPerRow = 4,
+            //         totalRow = totalItem / itemsPerRow;
 
-                $(model.textCaption).each(function(index, el) {
-                    console.log(index % itemsPerRow);
+            //     $(model.textCaption).each(function(index, el) {
+            //         // console.log(index % itemsPerRow);
 
-                });
+            //     });
 
 
-            },
+            // },
 
             // List Row height
             listRowHeight = function(){
@@ -63,12 +63,12 @@ window.app = window.app || {};
 
                 // On document ready
                 model.init();
-                itemHeight();
+                // itemHeight();
                 listRowHeight();
 
                 $(window).resize(function(event) {
                     /* Act on the event */
-                    itemHeight();
+                    // itemHeight();
                     listRowHeight();
                 });
             },

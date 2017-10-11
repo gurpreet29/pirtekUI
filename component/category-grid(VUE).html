@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+    <br>
+    <br>
+  <div class="container">
+
+  <!-- VUE HOLDER STARTS -->
+      <div id="grid-holder">
+        <!--filter component -->
+        <section class="grid-filter" v-if="category.Filter.length > 0">
+            <label for="sort-by"></label>
+            <select name="sort-by" id="sort-by" v-model="selectedVal">
+                <option track-by="$index" v-for="name in category.Filter"> {{ name }} </option>
+            </select>
+            <ul>
+                <li track-by="$index" v-for="name in category.Filter">
+                    <a href="#" v-on:click="selectedVal = name" v-bind:class=" name === selectedVal  ? 'active' : ''">
+                        {{ name }} 
+                    </a>
+                </li>
+            </ul>
+        </section>
+        
+        <!--grid component -->
+        <section class="category-grid">
+            <ul>
+                <!-- result loop -->
+                <li v-for="category in result">
+                    <a v-bind:href="category.Url">
+                        <div class="thumbnail" v-bind:class="category.IsDownlable != false ? 'download' : ''">
+                            <figure>
+                                <img v-bind:src="category.Image" alt="sample text">
+                            </figure>
+                            <div class="caption">
+                                <p class="date">{{category.ItemTitle}}</p>
+                               
+                                <p>{{category.ItemName}}</p>
+                                <p class="phone">{{category.PhoneNo}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- loadmore button -->
+        <div class="text-center" v-if="elementLoaded > category.ItemToLoad && elementLoaded != result.length && elementLoaded != '0'">
+            <button type="button" class="btn btn-default" v-on:click='loadMore'>load more</button>
+        </div>
+    </div>
+  </div>
+
+
+  <!-- DATA TO LOAD -->
+    <script>
+    var dataJson = {
+      "ResultCount": 5,
+        "ItemToLoad": 2,
+        "Filter": ['Show All', 'Africa', 'Hydraulic', 'Industrial'],
+        "Results": [{
+                "Url": 'http://www.discoverychannel.co.in/in/en.html',
+                "Image": 'https://wallpaperscraft.com/image/otter_wet_water_animal_95494_800x600.jpg',
+                "ItemTitle": 'Discovery',
+                "ItemName": 'Spanish adventurer',
+                "FilterName": 'Africa',
+                "IsDownlable": null,
+                 "PhoneNo": '385743571'
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/river-monsters.html',
+                "ItemTitle": 'River Monsters',
+                "Image": 'https://wallpaperscraft.com/image/raccoon_paws_animal_funny_103443_800x600.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Hydraulic",
+               
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/breaking-point.html',
+                "ItemTitle": 'Breaking Point: Commando School Belgaum',
+                "Image": 'http://wallpaperscraft.com/image/otter_animal_wool_fur_beautiful_36197_800x600.jpg',
+                "ItemName": 'SHOWS',
+                "FilterName": "Hydraulic",
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/destroyed-in-seconds.html',
+                "ItemTitle": 'Destroyed in Seconds',
+                "Image": 'https://thumbs-prod.si-cdn.com/zMXsdiAVDxnl92g30TDiGkzvriQ=/800x600/filters:no_upscale():focal(880x405:881x406)/https://public-media.smithsonianmag.com/filer/88/ac/88acca63-e84f-4525-9dfe-052d1d62b559/071_francis_perez.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Industrial",
+                "IsDownlable": null,
+                 "PhoneNo": null
+            },
+
+
+            {
+                "Url": 'http://www.discoverychannel.co.in/in/en.html',
+                "ItemTitle": 'Discovery',
+                "Image": 'https://wallpaperscraft.com/image/lemur_face_eyes_animal_57923_800x600.jpg',
+                "ItemName": 'Spanish adventurer',
+                "FilterName": 'Africa',
+                "IsDownlable": null,
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/river-monsters.html',
+                "ItemTitle": 'River Monsters',
+                "Image": 'http://www.millcreekbirdpark.co.nz/SiteContent/Images/images/800x600/discover/mill-creek-duck.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Hydraulic",
+               
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/breaking-point.html',
+                "ItemTitle": 'Breaking Point: Commando School Belgaum',
+                "Image": 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxTMNxTdsQEXYKYNzCVxzdhr_Ok7bWFLF8uXt0-pE35zPRg_yJKQ',
+                "ItemName": 'SHOWS',
+                "FilterName": "Hydraulic",
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/destroyed-in-seconds.html',
+                "ItemTitle": 'Destroyed in Seconds',
+                "Image": 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWcpiCxyHIdzxs3J3UM41-lRAbX4BfMYJnVJkPTAcANaYQLE2SYw',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Industrial",
+                "IsDownlable": null,
+                 "PhoneNo": null
+            },
+
+            {
+                "Url": 'http://www.discoverychannel.co.in/in/en.html',
+                "ItemTitle": 'Discovery',
+                "Image": 'http://listverse.wpengine.netdna-cdn.com/wp-content/uploads/2010/05/skunk-in-grass-800x600.jpg',
+                "ItemName": 'Spanish adventurer',
+                "FilterName": 'Africa',
+                "IsDownlable": null,
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/river-monsters.html',
+                "ItemTitle": 'River Monsters',
+                "Image": 'https://wallpaperscraft.com/image/cat_face_glasses_thick_65455_800x600.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Hydraulic",
+               
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/breaking-point.html',
+                "ItemTitle": 'Breaking Point: Commando School Belgaum',
+                "Image": 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMxL8lW4qusbC1tLyZsmOmfsgHgZptUDPGS1f8XTW0Ruc8Ym3vQw',
+                "ItemName": 'SHOWS',
+                "FilterName": "Hydraulic",
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/destroyed-in-seconds.html',
+                "ItemTitle": 'Destroyed in Seconds',
+                "Image": 'https://i.kinja-img.com/gawker-media/image/upload/s---9Tu2Cp6--/c_scale,f_auto,fl_progressive,q_80,w_800/18mfysetb5mtsjpg.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Industrial",
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            },
+            {
+                "Url": 'http://www.discoverychannel.co.in/in/en.html',
+                "ItemTitle": 'Discovery',
+                "Image": 'http://weiw.lightshedder.com/Landscape-Wildlife/Space-Coast-2012/i-6ptBK4z/0/L/IMG5278-L.jpg',
+                "ItemName": 'Spanish adventurer',
+                "FilterName": 'Africa',
+                "IsDownlable": null,
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/river-monsters.html',
+                "ItemTitle": 'River Monsters',
+                "Image": 'http://michaelcommon.com/wp-content/uploads/2015/11/PetPortrait_000-800x600.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Hydraulic",
+               
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/breaking-point.html',
+                "ItemTitle": 'Breaking Point: Commando School Belgaum',
+                "Image": 'http://vuing.com/wp-content/uploads/2016/02/amazing-photography-internet-favorite-picture-best-National-Geographic-photos-2015-5-800x600.jpg',
+                "ItemName": 'SHOWS',
+                "FilterName": "Hydraulic",
+                "IsDownlable": null,
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/destroyed-in-seconds.html',
+                "ItemTitle": 'Destroyed in Seconds',
+                "Image": 'http://vuing.com/wp-content/uploads/2016/09/amazing-photo-caimain-butterflies-drinking-tears-flower-cowan-1-800x600.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Industrial",
+                "IsDownlable": null,
+                 "PhoneNo": null
+            },
+            {
+                "Url": 'http://www.discoverychannel.co.in/in/en.html',
+                "ItemTitle": 'Discovery',
+                "Image": 'https://wallpaperscraft.com/image/otter_wet_water_animal_95494_800x600.jpg',
+                "ItemName": 'Spanish adventurer',
+                "FilterName": 'Africa',
+                "IsDownlable": null,
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/river-monsters.html',
+                "ItemTitle": 'River Monsters',
+                "Image": 'https://wallpaperscraft.com/image/raccoon_paws_animal_funny_103443_800x600.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Hydraulic",
+               
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/breaking-point.html',
+                "ItemTitle": 'Breaking Point: Commando School Belgaum',
+                "Image": 'http://wallpaperscraft.com/image/otter_animal_wool_fur_beautiful_36197_800x600.jpg',
+                "ItemName": 'SHOWS',
+                "FilterName": "Hydraulic",
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/destroyed-in-seconds.html',
+                "ItemTitle": 'Destroyed in Seconds',
+                "Image": 'https://thumbs-prod.si-cdn.com/zMXsdiAVDxnl92g30TDiGkzvriQ=/800x600/filters:no_upscale():focal(880x405:881x406)/https://public-media.smithsonianmag.com/filer/88/ac/88acca63-e84f-4525-9dfe-052d1d62b559/071_francis_perez.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Industrial",
+                "IsDownlable": null,
+                 "PhoneNo": null
+            },
+            {
+                "Url": 'http://www.discoverychannel.co.in/in/en.html',
+                "ItemTitle": 'Discovery',
+                "Image": 'https://wallpaperscraft.com/image/lemur_face_eyes_animal_57923_800x600.jpg',
+                "ItemName": 'Spanish adventurer',
+                "FilterName": 'Africa',
+                "IsDownlable": null,
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/river-monsters.html',
+                "ItemTitle": 'River Monsters',
+                "Image": 'http://www.millcreekbirdpark.co.nz/SiteContent/Images/images/800x600/discover/mill-creek-duck.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Hydraulic",
+               
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/breaking-point.html',
+                "ItemTitle": 'Breaking Point: Commando School Belgaum',
+                "Image": 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxTMNxTdsQEXYKYNzCVxzdhr_Ok7bWFLF8uXt0-pE35zPRg_yJKQ',
+                "ItemName": 'SHOWS',
+                "FilterName": "Hydraulic",
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/destroyed-in-seconds.html',
+                "ItemTitle": 'Destroyed in Seconds',
+                "Image": 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWcpiCxyHIdzxs3J3UM41-lRAbX4BfMYJnVJkPTAcANaYQLE2SYw',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Industrial",
+                "IsDownlable": null,
+                 "PhoneNo": null
+            },
+
+            {
+                "Url": 'http://www.discoverychannel.co.in/in/en.html',
+                "ItemTitle": 'Discovery',
+                "Image": 'http://listverse.wpengine.netdna-cdn.com/wp-content/uploads/2010/05/skunk-in-grass-800x600.jpg',
+                "ItemName": 'Spanish adventurer',
+                "FilterName": 'Africa',
+                "IsDownlable": null,
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/river-monsters.html',
+                "ItemTitle": 'River Monsters',
+                "Image": 'https://wallpaperscraft.com/image/cat_face_glasses_thick_65455_800x600.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Hydraulic",
+               
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/breaking-point.html',
+                "ItemTitle": 'Breaking Point: Commando School Belgaum',
+                "Image": 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMxL8lW4qusbC1tLyZsmOmfsgHgZptUDPGS1f8XTW0Ruc8Ym3vQw',
+                "ItemName": 'SHOWS',
+                "FilterName": "Hydraulic",
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/destroyed-in-seconds.html',
+                "ItemTitle": 'Destroyed in Seconds',
+                "Image": 'https://i.kinja-img.com/gawker-media/image/upload/s---9Tu2Cp6--/c_scale,f_auto,fl_progressive,q_80,w_800/18mfysetb5mtsjpg.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Industrial",
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            },
+
+
+            {
+                "Url": 'http://www.discoverychannel.co.in/in/en.html',
+                "ItemTitle": 'Discovery',
+                "Image": 'http://weiw.lightshedder.com/Landscape-Wildlife/Space-Coast-2012/i-6ptBK4z/0/L/IMG5278-L.jpg',
+                "ItemName": 'Spanish adventurer',
+                "FilterName": 'Africa',
+                "IsDownlable": null,
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/river-monsters.html',
+                "ItemTitle": 'River Monsters',
+                "Image": 'http://michaelcommon.com/wp-content/uploads/2015/11/PetPortrait_000-800x600.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Hydraulic",
+               
+                "IsDownlable": "20bfbf6773bb4b72804e615d1e59bae0",
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/breaking-point.html',
+                "ItemTitle": 'Breaking Point: Commando School Belgaum',
+                "Image": 'http://vuing.com/wp-content/uploads/2016/02/amazing-photography-internet-favorite-picture-best-National-Geographic-photos-2015-5-800x600.jpg',
+                "ItemName": 'SHOWS',
+                "FilterName": "Hydraulic",
+                "IsDownlable": null,
+                 "PhoneNo": null
+            }, {
+                "Url": 'http://www.discoverychannel.co.in/in/en/shows/destroyed-in-seconds.html',
+                "ItemTitle": 'Destroyed in Seconds',
+                "Image": 'http://vuing.com/wp-content/uploads/2016/09/amazing-photo-caimain-butterflies-drinking-tears-flower-cowan-1-800x600.jpg',
+                "ItemName": 'Ron pitts',
+                "FilterName": "Industrial",
+                "IsDownlable": null,
+                 "PhoneNo": null
+            }
+        ]
+    };
+    </script>
+    <script src="../js/app.min.js"></script>
+</body>
+
+</html>
