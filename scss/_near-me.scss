@@ -3,7 +3,8 @@
     position: relative;
     background-image: url(../img/store-background.jpg);
     background-size: cover;
-    margin-top: -6rem;
+
+    // margin-top: -6rem;
 
     .search-container {
         position: absolute;
@@ -79,7 +80,8 @@
 @media (max-width: $mobile) {
     .near-me {
         padding: 8rem 1.5rem 3rem;
-        margin-top: -3rem;
+
+        // margin-top: -3rem;
 
         .search-container {
             position: relative;

@@ -12453,7 +12453,6 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   position: relative;
   background-image: url(../img/store-background.jpg);
   background-size: cover;
-  margin-top: -6rem;
 }
 .near-me .search-container {
   position: absolute;
@@ -12518,7 +12517,6 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 @media (max-width: 767px) {
   .near-me {
     padding: 8rem 1.5rem 3rem;
-    margin-top: -3rem;
   }
   .near-me .search-container {
     position: relative;
