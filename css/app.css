@@ -10518,6 +10518,15 @@ h3 {
   line-height: 1.2;
 }
 
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
 h6 {
   font-family: "Montserrat", sans-serif;
   font-size: 2.4rem;
@@ -11928,53 +11937,88 @@ footer .foot-bottom .container p {
   }
 }
 .quick-link {
-  display: flex;
-  flex-flow: row;
   position: relative;
+  overflow: hidden;
 }
 .quick-link .tile {
-  flex: 1;
-  font-size: 0;
   display: flex;
+  flex-flow: wrap row;
 }
-.quick-link .tile.x2 {
-  flex: 2;
+.quick-link .tile [class*=col-] {
+  padding: 0;
+  overflow: hidden;
+}
+.quick-link .tile .singapore-container-value {
   display: flex;
-  flex-flow: column;
+  justify-content: space-around;
 }
-.quick-link .tile.x2 .image-thumb {
-  flex-flow: row;
-  flex: 1;
-}
-.quick-link .tile.x2 .image-thumb a {
-  display: inline-block;
-  width: 50%;
-  padding-top: 49.5%;
-}
-.quick-link .tile .image-thumb {
+.quick-link .tile .singapore-container-value .img-sec {
   display: flex;
-  flex-flow: column;
-  font-size: 0;
-  flex: 1;
+  justify-content: center;
+  align-items: center;
 }
-.quick-link .tile .image-thumb a {
-  display: block;
+.quick-link .tile .singapore-container-value .img-sec figure {
   width: 100%;
-  padding-top: 100%;
+  position: relative;
+  text-align: center;
 }
-.quick-link a {
+.quick-link .tile .singapore-container-value .img-sec figure .year-to-date {
+  position: absolute;
+  font-size: 2.6rem;
+  font-weight: 700;
+  top: 4.6rem;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  line-height: 1.2;
+}
+.quick-link .tile .singapore-container-value .img-sec figure .year-to-date span {
+  font-weight: 300;
+  display: block;
+  clear: both;
+}
+.quick-link .tile .singapore-container-value .img-sec figure figcaption {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #363636;
+}
+.quick-link .tile .singapore-container-value .img-sec figure svg {
+  width: 100%;
+  max-width: 15.3rem;
+  height: 15.3rem;
+  opacity: 0.6;
+}
+.quick-link .tile .singapore-container-value .img-sec figure svg path {
+  stroke: #00b0ec;
+  circle: #00b0ec;
+}
+.quick-link .tile .singapore-container-value .img-sec:first-child figure svg path {
+  stroke: #014181;
+  circle: #014181;
+}
+.quick-link .tile .singapore-container-value .img-sec:last-child figure svg path {
+  stroke: #bb5241;
+  circle: #bb5241;
+}
+.quick-link .tile .core-business {
+  width: 33.333%;
+  flex-basis: 33.333%;
+  border: 1px solid yellow;
+}
+.quick-link .tile a {
   padding-bottom: 0;
   display: block;
-  padding-top: 100%;
+  padding-top: 50%;
   position: relative;
 }
-.quick-link a img {
+.quick-link .tile a img {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-.quick-link a p {
+.quick-link .tile a p {
   text-transform: uppercase;
   position: absolute;
   bottom: 2.5rem;
@@ -11988,61 +12032,83 @@ footer .foot-bottom .container p {
   z-index: 1;
   line-height: 1.1;
 }
-.quick-link a p strong {
-  font-weight: 900;
-  font-size: 2.4rem;
-  display: block;
+.quick-link .quick-link-bottom [class*=col-] {
+  padding: 0;
+  overflow: hidden;
 }
-.quick-link a p:after {
-  content: '';
-  background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%208.6%2013.4%22%20style%3D%22enable-background%3Anew%200%200%208.6%2013.4%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%20.st0%7Bfill%3A%23FFFFFF%3B%7D%3C%2Fstyle%3E%3Ctitle%3EArrow%20copy%206%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%3E%20%3Cg%20id%3D%22Layer_1-2%22%3E%20%20%3Cpath%20id%3D%22Arrow_copy_6%22%20class%3D%22st0%22%20d%3D%22M1.8%2C0L0%2C1.8l5%2C5l-5%2C5l1.8%2C1.7l6.8-6.7L1.8%2C0z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-  background-repeat: no-repeat;
-  right: 1rem;
-  bottom: 0;
-  background-size: 80% 80%;
-  height: 2rem;
-  width: 2rem;
+.quick-link .quick-link-bottom [class*=col-] p {
   position: absolute;
 }
-.quick-link a:after {
-  display: none;
+.quick-link .quick-link-bottom [class*=col-] img {
+  width: 100%;
+}
+.quick-link .quick-link-bottom [class*=col-] a {
+  display: block;
+}
+.quick-link .quick-link-bottom [class*=col-] .row {
+  margin: 0;
 }
 
 /* Tablet */
 /* Mobile */
 @media (max-width: 767px) {
-  .quick-link {
-    padding: 0;
-    flex-flow: column;
-  }
-  .quick-link .tile.x2 a p strong {
-    font-size: 2.4rem;
-  }
-  .quick-link .tile .search-area {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-  }
-  .quick-link .tile .search-area form {
-    position: relative;
-    bottom: auto;
-  }
-  .quick-link .tile .image-thumb {
-    flex-flow: row;
-  }
-  .quick-link .tile .image-thumb a {
-    padding-top: 50%;
-  }
-  .quick-link .tile .image-thumb a p strong {
-    font-size: 1.4rem;
-  }
-  .quick-link a p {
-    font-size: 1.4rem;
-    background-image: none;
-    padding: 0 1.5rem;
-  }
-  .quick-link a p strong {
-    font-size: 1.4rem;
-  }
+  /*    .quick-link {
+      padding: 0;
+      flex-flow: column;
+  
+      .tile {
+          &.x2 {
+              a {
+                  p {
+                      strong {
+                          font-size: 2.4rem;
+                      }
+                  }
+              }
+          }
+  
+          // .search-nearby {
+          .search-area {
+              padding-top: 4rem;
+              padding-bottom: 2rem;
+  
+              form {
+                  position: relative;
+                  bottom: auto;
+              }
+          }
+  
+          // }
+  
+          .image-thumb {
+              flex-flow: row;
+  
+              a {
+                  padding-top: 50%;
+  
+                  p {
+                      strong {
+                          font-size: 1.4rem;
+                      }
+                  }
+              }
+          }
+      }
+  
+      // .quick-link .tile .image-thumb a
+  
+      a {
+          p {
+              font-size: 1.4rem;
+              background-image: none;
+              padding: 0 $gutter-width;
+  
+              strong {
+                  font-size: 1.4rem;
+              }
+          }
+      }
+  } */
 }
 
 /*# sourceMappingURL=app.css.map */
