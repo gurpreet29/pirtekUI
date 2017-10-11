@@ -1,5 +1,22 @@
 // grid holder
 
+if (dataJson ===undefined) {
+var dataJson={
+      "ResultCount": 0,
+        "ItemToLoad": 0,
+        "Filter": [],
+        "Results": [{
+                "Url": null,
+                "Image": null,
+                "ItemTitle": null,
+                "ItemName": null,
+                "FilterName": null,
+                "IsDownlable": null,
+                 "PhoneNo": null
+            }
+        ]
+    };
+}
 
 var grid = new Vue({
 

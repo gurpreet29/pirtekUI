@@ -10945,6 +10945,10 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
     flex: 1;
   }
 }
+.image-component {
+  margin-bottom: 3rem;
+}
+
 .carousel .carousel-control {
   opacity: 1;
   background-image: none;
