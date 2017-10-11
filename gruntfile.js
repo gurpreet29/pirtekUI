@@ -22,7 +22,7 @@ module.exports = function(grunt) {
                     "js/vendors/jquery/jquery.min.js",
                     "js/vendors/jquery/jquery.mobile.custom.js",
                     "js/vendors/bootstrap/*.js",
-                    "js/vendors/bootstrap/bootstrap/*.js",
+                    // "js/vendors/bootstrap/bootstrap/*.js",
                     "js/vendors/picturefill.js",
                     "js/components/filter/*.js",
                     // "js/vendors/google-map.js",
