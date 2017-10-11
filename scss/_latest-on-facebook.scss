@@ -1,0 +1,168 @@
+.latest-facebook {
+    padding: 10rem 0;
+
+    .item {
+        a {
+            text-decoration: none;
+            display: block;
+
+            &:hover,
+            &:focus,
+            &:active {
+                .caption {
+                    p {
+                        strong {
+                            color: $projectBrown;
+                        }
+                    }
+                }
+            }
+        }
+
+        .thumbnail {
+            padding: 0;
+            border-radius: 0;
+            border: 0;
+            margin-bottom: 2.9rem;
+
+            img {
+                width: 100%;
+                margin: 0;
+            }
+        }
+
+        .caption {
+            p {
+                margin-bottom: 1.5rem;
+                font-size: 1.7rem;
+
+                &:nth-child(2) {
+                    font-size: 1.45rem;
+                }
+            }
+        }
+    }
+
+    nav {
+        margin-top: 6.5rem;
+
+        .pager {
+            text-align: right;
+
+            li {
+                > a,
+                > span {
+                    border-radius: 0;
+                    border: 2px solid $projectBrown;
+                    background-color: $projectBrown;
+                    color: $white;
+                    transition: all .2s ease-in;
+                    padding: .65rem 3rem;
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        background-color: $white;
+                        color: $projectBrown;
+                        outline: 0;
+                    }
+
+                    .fa {
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .summary {
+        font-size: 2.5rem;
+    }
+
+    .Facebook-link {
+        margin-bottom: 5.6rem;
+        float: right;
+        display: block;
+        max-width: 26.6rem;
+        position: relative;
+        z-index: 1;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    a:not(.Facebook-link) {
+        &:focus {
+            outline: 0;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .latest-facebook {
+        .col-sm-5 {
+            padding-right: 3rem;
+        }
+
+        .item {
+            .col-sm-6 {
+                &:first-of-type {
+                    padding-left: 0;
+                }
+
+                &:nth-child(2) {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: $tablet) {
+    .latest-facebook {
+        .summary {
+            font-size: 2rem;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .latest-facebook {
+        padding: 4rem 0;
+
+        h2 {
+            max-width: 15.5rem;
+        }
+
+        .summary {
+            display: none;
+        }
+
+        .Facebook-link {
+            position: absolute;
+            top: -7rem;
+            z-index: 1;
+            right: 1.5rem;
+            max-width: 14.8rem;
+        }
+
+        nav {
+            margin-top: 3.5rem;
+
+            .pager {
+                text-align: center !important;
+            }
+        }
+
+        .carousel-inner {
+            .item {
+                .col-xs-12 {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

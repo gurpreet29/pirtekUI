@@ -12110,5 +12110,122 @@ footer .foot-bottom .container p {
       }
   } */
 }
+.latest-facebook {
+  padding: 10rem 0;
+}
+.latest-facebook .item a {
+  text-decoration: none;
+  display: block;
+}
+.latest-facebook .item a:hover .caption p strong, .latest-facebook .item a:focus .caption p strong, .latest-facebook .item a:active .caption p strong {
+  color: #bb5241;
+}
+.latest-facebook .item .thumbnail {
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 2.9rem;
+}
+.latest-facebook .item .thumbnail img {
+  width: 100%;
+  margin: 0;
+}
+.latest-facebook .item .caption p {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+}
+.latest-facebook .item .caption p:nth-child(2) {
+  font-size: 1.45rem;
+}
+.latest-facebook nav {
+  margin-top: 6.5rem;
+}
+.latest-facebook nav .pager {
+  text-align: right;
+}
+.latest-facebook nav .pager li > a,
+.latest-facebook nav .pager li > span {
+  border-radius: 0;
+  border: 2px solid #bb5241;
+  background-color: #bb5241;
+  color: #fff;
+  transition: all .2s ease-in;
+  padding: .65rem 3rem;
+}
+.latest-facebook nav .pager li > a:hover, .latest-facebook nav .pager li > a:focus, .latest-facebook nav .pager li > a:active,
+.latest-facebook nav .pager li > span:hover,
+.latest-facebook nav .pager li > span:focus,
+.latest-facebook nav .pager li > span:active {
+  background-color: #fff;
+  color: #bb5241;
+  outline: 0;
+}
+.latest-facebook nav .pager li > a .fa,
+.latest-facebook nav .pager li > span .fa {
+  font-size: 3.5rem;
+}
+.latest-facebook .summary {
+  font-size: 2.5rem;
+}
+.latest-facebook .Facebook-link {
+  margin-bottom: 5.6rem;
+  float: right;
+  display: block;
+  max-width: 26.6rem;
+  position: relative;
+  z-index: 1;
+}
+.latest-facebook .Facebook-link img {
+  width: 100%;
+}
+.latest-facebook a:not(.Facebook-link):focus {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .latest-facebook .col-sm-5 {
+    padding-right: 3rem;
+  }
+  .latest-facebook .item .col-sm-6:first-of-type {
+    padding-left: 0;
+  }
+  .latest-facebook .item .col-sm-6:nth-child(2) {
+    padding-right: 0;
+  }
+}
+/* Tablet */
+@media (max-width: 991px) {
+  .latest-facebook .summary {
+    font-size: 2rem;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) {
+  .latest-facebook {
+    padding: 4rem 0;
+  }
+  .latest-facebook h2 {
+    max-width: 15.5rem;
+  }
+  .latest-facebook .summary {
+    display: none;
+  }
+  .latest-facebook .Facebook-link {
+    position: absolute;
+    top: -7rem;
+    z-index: 1;
+    right: 1.5rem;
+    max-width: 14.8rem;
+  }
+  .latest-facebook nav {
+    margin-top: 3.5rem;
+  }
+  .latest-facebook nav .pager {
+    text-align: center !important;
+  }
+  .latest-facebook .carousel-inner .item .col-xs-12 {
+    padding: 0;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
