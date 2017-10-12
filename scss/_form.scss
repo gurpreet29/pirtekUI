@@ -1,11 +1,13 @@
 .form-default {
-    span {
+    span, label {
         font-family: $fontFamily;
         font-size: 1.4rem;
         color: $formElementText;
         letter-spacing: .1rem;
         margin-bottom: 1rem;
         display: inline-block;
+        position: static;
+        font-weight: 500;
     }
 
     // also written at base.scss
