@@ -96,7 +96,9 @@ var grid = new Vue({
 
 
             this.result = this.filterResult.slice(0, this.pageLoad);
-
+            
+            // call global function to reset height of items in row
+            uif.gridHeight();
         }
 
 
