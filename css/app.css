@@ -11944,6 +11944,9 @@ footer .foot-bottom .container p {
   padding: 0;
   overflow: hidden;
 }
+.quick-link [class*=col-] p {
+  color: #fff;
+}
 .quick-link .singapore-container .singapore-container-value {
   margin: 1% 1% 1% 0;
   width: 53%;
@@ -11977,6 +11980,7 @@ footer .foot-bottom .container p {
   right: 0;
   margin: auto;
   line-height: 1.2;
+  color: #000;
 }
 .quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure .year-to-date span {
   font-weight: 300;

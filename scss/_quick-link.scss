@@ -5,6 +5,10 @@
     [class*=col-] {
         padding: 0;
         overflow: hidden;
+
+        p {
+            color: $white;
+        }
     }
 
     .singapore-container {
@@ -41,6 +45,7 @@
                             right: 0;
                             margin: auto;
                             line-height: 1.2;
+                            color: $black;
 
                             span {
                                 font-weight: 300;
