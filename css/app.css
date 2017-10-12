@@ -11940,29 +11940,34 @@ footer .foot-bottom .container p {
   position: relative;
   overflow: hidden;
 }
-.quick-link .tile {
-  display: flex;
-  flex-flow: wrap row;
-}
-.quick-link .tile [class*=col-] {
+.quick-link [class*=col-] {
   padding: 0;
   overflow: hidden;
 }
-.quick-link .tile .singapore-container-value {
+.quick-link .singapore-container .singapore-container-value {
+  margin: 1% 1% 1% 0;
+  width: 53%;
+  float: right;
+}
+.quick-link .singapore-container .singapore-container-value .singapore-container-items {
+  background-color: #fff;
+  position: relative;
   display: flex;
   justify-content: space-around;
+  padding: 1rem 2rem;
 }
-.quick-link .tile .singapore-container-value .img-sec {
+.quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 1rem;
 }
-.quick-link .tile .singapore-container-value .img-sec figure {
+.quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure {
   width: 100%;
   position: relative;
   text-align: center;
 }
-.quick-link .tile .singapore-container-value .img-sec figure .year-to-date {
+.quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure .year-to-date {
   position: absolute;
   font-size: 2.6rem;
   font-weight: 700;
@@ -11973,71 +11978,95 @@ footer .foot-bottom .container p {
   margin: auto;
   line-height: 1.2;
 }
-.quick-link .tile .singapore-container-value .img-sec figure .year-to-date span {
+.quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure .year-to-date span {
   font-weight: 300;
   display: block;
   clear: both;
 }
-.quick-link .tile .singapore-container-value .img-sec figure figcaption {
+.quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure figcaption {
   font-size: 1.5rem;
   font-weight: 600;
   color: #363636;
 }
-.quick-link .tile .singapore-container-value .img-sec figure svg {
+.quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure svg {
   width: 100%;
   max-width: 15.3rem;
   height: 15.3rem;
   opacity: 0.6;
 }
-.quick-link .tile .singapore-container-value .img-sec figure svg path {
+.quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure svg path {
   stroke: #00b0ec;
   circle: #00b0ec;
 }
-.quick-link .tile .singapore-container-value .img-sec:first-child figure svg path {
+.quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec:first-child figure svg path {
   stroke: #014181;
   circle: #014181;
 }
-.quick-link .tile .singapore-container-value .img-sec:last-child figure svg path {
+.quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec:last-child figure svg path {
   stroke: #bb5241;
   circle: #bb5241;
 }
-.quick-link .tile .core-business {
+.quick-link .singapore-container .singapore-container-value .singapore-container-items .core-business {
   width: 33.333%;
   flex-basis: 33.333%;
   border: 1px solid yellow;
 }
-.quick-link .tile a {
-  padding-bottom: 0;
+.quick-link .singapore-container > a {
   display: block;
-  padding-top: 50%;
-  position: relative;
 }
-.quick-link .tile a img {
+.quick-link .singapore-container > a img {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-.quick-link .tile a p {
+.quick-link .singapore-container > a p {
   text-transform: uppercase;
   position: absolute;
-  bottom: 2.5rem;
-  left: 0;
   color: #fff;
-  padding: 0 4rem 0 3rem;
-  font-size: 1.4rem;
-  font-family: "Montserrat", sans-serif;
-  width: 100%;
-  font-weight: 900;
-  z-index: 1;
-  line-height: 1.1;
-}
-.quick-link .quick-link-bottom [class*=col-] {
   padding: 0;
-  overflow: hidden;
+  font-size: 2.8rem;
+  font-weight: 600;
+  z-index: 1;
+  top: 34.5%;
+  left: 8.7%;
+  line-height: 1.3;
+  margin-bottom: 0;
 }
-.quick-link .quick-link-bottom [class*=col-] p {
+.quick-link .singapore-container > a p span {
+  display: block;
+  clear: both;
+  font-size: 1.6rem;
+  margin-top: 0.4rem;
+  color: #ccc;
+}
+.quick-link .quick-link-bottom [class*=col-] .quick-anchor {
   position: absolute;
+  top: 8.6%;
+  left: 2.7rem;
+}
+.quick-link .quick-link-bottom [class*=col-] .quick-anchor p {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.quick-link .quick-link-bottom [class*=col-] .quick-anchor p strong {
+  font-weight: 900;
+  font-size: 2.7rem;
+  clear: both;
+  letter-spacing: 0.2rem;
+}
+.quick-link .quick-link-bottom [class*=col-] .psa-carreer .quick-anchor {
+  left: 2.7rem;
+  top: auto;
+  bottom: 23.6%;
+}
+.quick-link .quick-link-bottom [class*=col-] .corporate .quick-anchor {
+  top: auto;
+  left: 46.5%;
+  bottom: 21%;
 }
 .quick-link .quick-link-bottom [class*=col-] img {
   width: 100%;
@@ -12049,66 +12078,105 @@ footer .foot-bottom .container p {
   margin: 0;
 }
 
+@media (max-width: 1199px) {
+  .quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure .year-to-date {
+    font-size: 2rem;
+    top: 3.1rem;
+  }
+  .quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure .year-to-date span {
+    font-weight: 300;
+  }
+  .quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure figcaption {
+    font-size: 1.4rem;
+  }
+  .quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure svg {
+    width: 100%;
+    max-width: 11.1rem;
+    height: 11.1rem;
+  }
+  .quick-link .singapore-container > a p {
+    padding: 0 0 0 1rem;
+    font-size: 2.2rem;
+  }
+  .quick-link .singapore-container > a p span {
+    font-size: 1.4rem;
+  }
+  .quick-link .quick-link-bottom [class*=col-] .quick-anchor p {
+    font-size: 1.6rem;
+  }
+  .quick-link .quick-link-bottom [class*=col-] .quick-anchor p strong {
+    font-size: 2rem;
+  }
+}
 /* Tablet */
 /* Mobile */
 @media (max-width: 767px) {
-  /*    .quick-link {
-      padding: 0;
-      flex-flow: column;
-  
-      .tile {
-          &.x2 {
-              a {
-                  p {
-                      strong {
-                          font-size: 2.4rem;
-                      }
-                  }
-              }
-          }
-  
-          // .search-nearby {
-          .search-area {
-              padding-top: 4rem;
-              padding-bottom: 2rem;
-  
-              form {
-                  position: relative;
-                  bottom: auto;
-              }
-          }
-  
-          // }
-  
-          .image-thumb {
-              flex-flow: row;
-  
-              a {
-                  padding-top: 50%;
-  
-                  p {
-                      strong {
-                          font-size: 1.4rem;
-                      }
-                  }
-              }
-          }
-      }
-  
-      // .quick-link .tile .image-thumb a
-  
-      a {
-          p {
-              font-size: 1.4rem;
-              background-image: none;
-              padding: 0 $gutter-width;
-  
-              strong {
-                  font-size: 1.4rem;
-              }
-          }
-      }
-  } */
+  .quick-link .singapore-container .singapore-container-value {
+    margin: 1%;
+    width: 98%;
+    float: none;
+  }
+  .quick-link .singapore-container .singapore-container-value .singapore-container-items {
+    padding: 1rem 0.5rem;
+  }
+  .quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec {
+    padding: 0 1rem;
+  }
+  .quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure .year-to-date {
+    font-size: 1.8rem;
+    top: 2.8rem;
+  }
+  .quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure .year-to-date span {
+    font-weight: 300;
+  }
+  .quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure figcaption {
+    font-size: 1.2rem;
+  }
+  .quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure svg {
+    max-width: 9.3rem;
+    height: 9.3rem;
+  }
+  .quick-link .singapore-container > a p {
+    padding: 4rem 1rem 0 1rem;
+    font-size: 1.8rem;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .quick-link .singapore-container > a p br {
+    display: none;
+  }
+  .quick-link .singapore-container > a p span {
+    font-size: 1.6rem;
+  }
+  .quick-link .quick-link-bottom [class*=col-] .quick-anchor {
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+  }
+  .quick-link .quick-link-bottom [class*=col-] .quick-anchor p {
+    font-size: 1.6rem;
+  }
+  .quick-link .quick-link-bottom [class*=col-] .quick-anchor p strong {
+    font-size: 2rem;
+  }
+  .quick-link .quick-link-bottom [class*=col-] .psa-carreer .quick-anchor,
+  .quick-link .quick-link-bottom [class*=col-] .corporate .quick-anchor {
+    left: 1.5rem;
+    top: auto;
+    bottom: 1.5rem;
+    text-align: left;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+  }
 }
 .latest-facebook {
   padding: 10rem 0;

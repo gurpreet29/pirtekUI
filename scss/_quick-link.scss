@@ -2,101 +2,105 @@
     position: relative;
     overflow: hidden;
 
-    .tile {
-        display: flex;
-        flex-flow: wrap row;
+    [class*=col-] {
+        padding: 0;
+        overflow: hidden;
+    }
 
-        [class*=col-] {
-            padding: 0;
-            overflow: hidden;
-        }
-
+    .singapore-container {
         .singapore-container-value {
-            display: flex;
-            justify-content: space-around;
+            margin: 1% 1% 1% 0;
+            width: 53%;
+            float: right;
 
-            .img-sec {
+            .singapore-container-items {
+                background-color: $white;
+                position: relative;
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                justify-content: space-around;
+                padding: 1rem 2rem;
 
-                figure {
-                    width: 100%;
-                    position: relative;
-                    text-align: center;
+                .img-sec {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 2rem 1rem;
 
-                    .year-to-date {
-                        position: absolute;
-                        font-size: 2.6rem;
-                        font-weight: 700;
-                        top: 4.6rem;
-                        text-align: center;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
-                        line-height: 1.2;
-
-                        span {
-                            font-weight: 300;
-                            display: block;
-                            clear: both;
-                        }
-                    }
-
-                    figcaption {
-                        font-size: 1.5rem;
-                        font-weight: 600;
-                        color: $lightblack;
-                    }
-
-                    svg {
+                    figure {
                         width: 100%;
-                        max-width: 15.3rem;
-                        height: 15.3rem;
-                        opacity: 0.6;
+                        position: relative;
+                        text-align: center;
 
-                        path {
-                            stroke: $skyBlue;
-                            circle: $skyBlue;
+                        .year-to-date {
+                            position: absolute;
+                            font-size: 2.6rem;
+                            font-weight: 700;
+                            top: 4.6rem;
+                            text-align: center;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            line-height: 1.2;
+
+                            span {
+                                font-weight: 300;
+                                display: block;
+                                clear: both;
+                            }
+                        }
+
+                        figcaption {
+                            font-size: 1.5rem;
+                            font-weight: 600;
+                            color: $lightblack;
+                        }
+
+                        svg {
+                            width: 100%;
+                            max-width: 15.3rem;
+                            height: 15.3rem;
+                            opacity: 0.6;
+
+                            path {
+                                stroke: $skyBlue;
+                                circle: $skyBlue;
+                            }
                         }
                     }
-                }
 
-                &:first-child {
-                    figure {
-                        svg {
-                            path {
-                                stroke: $blue;
-                                circle: $blue;
+                    &:first-child {
+                        figure {
+                            svg {
+                                path {
+                                    stroke: $blue;
+                                    circle: $blue;
+                                }
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        figure {
+                            svg {
+                                path {
+                                    stroke: $projectBrown;
+                                    circle: $projectBrown;
+                                }
                             }
                         }
                     }
                 }
 
-                &:last-child {
-                    figure {
-                        svg {
-                            path {
-                                stroke: $projectBrown;
-                                circle: $projectBrown;
-                            }
-                        }
-                    }
+                .core-business {
+                    width: 33.333%;
+                    flex-basis: 33.333%;
+                    border: 1px solid yellow;
                 }
             }
         }
 
-        .core-business {
-            width: 33.333%;
-            flex-basis: 33.333%;
-            border: 1px solid yellow;
-        }
-
-        a {
-            padding-bottom: 0;
+        > a {
             display: block;
-            padding-top: 50%;
-            position: relative;
 
             img {
                 width: 100%;
@@ -108,51 +112,64 @@
             p {
                 text-transform: uppercase;
                 position: absolute;
-                bottom: 2.5rem;
-                left: 0;
                 color: $white;
-                padding: 0 4rem 0 3rem;
-                font-size: 1.4rem;
-                font-family: $fontFamily;
-                width: 100%;
-                font-weight: 900;
+                padding: 0;
+                font-size: 2.8rem;
+                font-weight: 600;
                 z-index: 1;
-                line-height: 1.1;
+                top: 34.5%;
+                left: 8.7%;
+                line-height: 1.3;
+                margin-bottom: 0;
 
-                //     strong {
-                //         font-weight: 900;
-                //         font-size: 2.4rem;
-                //         display: block;
-                //     }
-
-                //     &:after {
-                //         content: '';
-                //         background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20viewBox%3D%220%200%208.6%2013.4%22%20style%3D%22enable-background%3Anew%200%200%208.6%2013.4%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%20.st0%7Bfill%3A%23FFFFFF%3B%7D%3C%2Fstyle%3E%3Ctitle%3EArrow%20copy%206%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%3E%20%3Cg%20id%3D%22Layer_1-2%22%3E%20%20%3Cpath%20id%3D%22Arrow_copy_6%22%20class%3D%22st0%22%20d%3D%22M1.8%2C0L0%2C1.8l5%2C5l-5%2C5l1.8%2C1.7l6.8-6.7L1.8%2C0z%22%2F%3E%20%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-                //         background-repeat: no-repeat;
-                //         right: 1rem;
-                //         bottom: 0;
-                //         background-size: 80% 80%;
-                //         height: 2rem;
-                //         width: 2rem;
-                //         position: absolute;
-                //     }
-           
+                span {
+                    display: block;
+                    clear: both;
+                    font-size: 1.6rem;
+                    margin-top: 0.4rem;
+                    color: $lightGrey;
+                }
             }
-
-            // &:after {
-            //     display: none;
-            // }
-       
         }
     }
 
     .quick-link-bottom {
         [class*=col-] {
-            padding: 0;
-            overflow: hidden;
-
-            p {
+            .quick-anchor {
                 position: absolute;
+                top: 8.6%;
+                left: 2.7rem;
+
+                p {
+                    font-size: 2.2rem;
+                    text-transform: uppercase;
+                    line-height: 1.2;
+                    margin-bottom: 0;
+                    font-weight: 600;
+
+                    strong {
+                        font-weight: 900;
+                        font-size: 2.7rem;
+                        clear: both;
+                        letter-spacing: 0.2rem;
+                    }
+                }
+            }
+
+            .psa-carreer {
+                .quick-anchor {
+                    left: 2.7rem;
+                    top: auto;
+                    bottom: 23.6%;
+                }
+            }
+
+            .corporate {
+                .quick-anchor {
+                    top: auto;
+                    left: 46.5%;
+                    bottom: 21%;
+                }
             }
 
             img {
@@ -170,81 +187,156 @@
     }
 }
 
-/* Tablet */
-
-@media (max-width: $tablet) {
+@media (max-width: $mediumDesktop) {
     .quick-link {
-        .tile {
-            // .search-nearby {
-            // .search-area {
-            //     form {
-            //         bottom: 1rem;
-            //     }
-            // }
+        .singapore-container {
+            .singapore-container-value {
+                .singapore-container-items {
+                    .img-sec {
+                        figure {
+                            .year-to-date {
+                                font-size: 2rem;
+                                top: 3.1rem;
 
-            // }
-       
+                                span {
+                                    font-weight: 300;
+                                }
+                            }
+
+                            figcaption {
+                                font-size: 1.4rem;
+                            }
+
+                            svg {
+                                width: 100%;
+                                max-width: 11.1rem;
+                                height: 11.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            > a {
+                p {
+                    padding: 0 0 0 1rem;
+                    font-size: 2.2rem;
+
+                    span {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+
+        .quick-link-bottom {
+            [class*=col-] {
+                .quick-anchor {
+                    p {
+                        font-size: 1.6rem;
+
+                        strong {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
+/* Tablet */
+@media (max-width: $tablet) {}
+
 /* Mobile */
 @media (max-width: $mobile) {
-    /*    .quick-link {
-        padding: 0;
-        flex-flow: column;
-    
-        .tile {
-            &.x2 {
-                a {
-                    p {
-                        strong {
-                            font-size: 2.4rem;
+    .quick-link {
+        .singapore-container {
+            .singapore-container-value {
+                margin: 1%;
+                width: 98%;
+                float: none;
+
+                .singapore-container-items {
+                    padding: 1rem 0.5rem;
+
+                    .img-sec {
+                        padding: 0 1rem;
+
+                        figure {
+                            .year-to-date {
+                                font-size: 1.8rem;
+                                top: 2.8rem;
+
+                                span {
+                                    font-weight: 300;
+                                }
+                            }
+
+                            figcaption {
+                                font-size: 1.2rem;
+                            }
+
+                            svg {
+                                max-width: 9.3rem;
+                                height: 9.3rem;
+                            }
                         }
                     }
                 }
             }
-    
-            // .search-nearby {
-            .search-area {
-                padding-top: 4rem;
-                padding-bottom: 2rem;
-    
-                form {
+
+            > a {
+                p {
+                    padding: 4rem 1rem 0 1rem;
+                    font-size: 1.8rem;
                     position: relative;
-                    bottom: auto;
-                }
-            }
-    
-            // }
-    
-            .image-thumb {
-                flex-flow: row;
-    
-                a {
-                    padding-top: 50%;
-    
-                    p {
-                        strong {
-                            font-size: 1.4rem;
-                        }
+                    left: 0;
+                    top: 0;
+
+                    br {
+                        display: none;
+                    }
+
+                    span {
+                        font-size: 1.6rem;
                     }
                 }
             }
         }
-    
-        // .quick-link .tile .image-thumb a
-    
-        a {
-            p {
-                font-size: 1.4rem;
-                background-image: none;
-                padding: 0 $gutter-width;
-    
-                strong {
-                    font-size: 1.4rem;
+
+        .quick-link-bottom {
+            [class*=col-] {
+                .quick-anchor {
+                    top: 50%;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    text-align: center;
+
+                    @include transform(translateY(-50%));
+
+                    p {
+                        font-size: 1.6rem;
+
+                        strong {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                .psa-carreer,
+                .corporate {
+                    .quick-anchor {
+                        left: 1.5rem;
+                        top: auto;
+                        bottom: 1.5rem;
+                        text-align: left;
+
+                        @include transform(translateY(0));
+                    }
                 }
             }
         }
-    } */
+    }
 }
