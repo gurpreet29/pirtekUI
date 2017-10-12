@@ -35,10 +35,10 @@ window.app = window.app || {};
 
                 // On document ready
                 model.init();
-                // positionBox();
+                positionBox();
                 $(window).resize(function(event) {
                     /* Act on the event */
-                    // positionBox();
+                    positionBox();
                 });
 
 
