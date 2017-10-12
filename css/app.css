@@ -12295,5 +12295,63 @@ footer .foot-bottom .container p {
     padding: 0;
   }
 }
+.breadcrum {
+  border-bottom: 1px solid #a3a5a3;
+  background-image: url(../img/breadcrum-background.jpg);
+  background-repeat: no-repeat;
+  background-color: #103771;
+  position: relative;
+}
+.breadcrum .container {
+  position: relative;
+}
+.breadcrum .container .caption-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.breadcrum .page-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.4rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  z-index: 1;
+  position: relative;
+}
+.breadcrum h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 6.2rem;
+  font-weight: 700;
+  z-index: 1;
+  position: relative;
+}
+.breadcrum picture {
+  position: relative;
+  z-index: 0;
+  right: 0;
+}
+.breadcrum picture img {
+  max-width: 100%;
+  width: 100%;
+}
+
+/* Tablet */
+/* Mobile */
+@media (max-width: 767px) {
+  .breadcrum {
+    margin-bottom: 3rem;
+  }
+  .breadcrum h1, .breadcrum h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+  }
+  .breadcrum h2 {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

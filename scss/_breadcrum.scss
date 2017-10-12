@@ -1,0 +1,70 @@
+.breadcrum {
+    border-bottom: 1px solid $borderGrey;
+    background-image: url(../img/breadcrum-background.jpg);
+    background-repeat: no-repeat;
+    background-color: $projectNavyBlue;
+    position: relative;
+
+    .container {
+        position: relative;
+
+        .caption-text {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .page-title {
+        font-family: $fontFamily;
+        font-size: 4.4rem;
+        font-weight: 200;
+        margin-bottom: 1rem;
+        color: $white;
+        text-transform: uppercase;
+        z-index: 1;
+        position: relative;
+    }
+
+    h1 {
+        font-family: $fontFamily;
+        color: $white;
+        text-transform: uppercase;
+        font-size: 6.2rem;
+        font-weight: 700;
+        z-index: 1;
+        position: relative;
+    }
+
+    picture {
+        position: relative;
+        z-index: 0;
+        right: 0;
+
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: $tablet) {
+    .breadcrum {}
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .breadcrum {
+        margin-bottom: 3rem;
+
+        h1, h2 {
+            font-size: 1.8rem;
+            font-weight: 900;
+        }
+
+        h2 {
+            display: none;
+        }
+    }
+}
