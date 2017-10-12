@@ -12703,13 +12703,15 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
     border-left: none;
   }
 }
-.form-default span {
+.form-default span, .form-default label {
   font-family: "MuseoSans", sans-serif;
   font-size: 1.4rem;
   color: #707070;
   letter-spacing: .1rem;
   margin-bottom: 1rem;
   display: inline-block;
+  position: static;
+  font-weight: 500;
 }
 .form-default .btn-default {
   border-radius: 0;
