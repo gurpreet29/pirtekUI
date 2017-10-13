@@ -50,6 +50,7 @@ window.app = window.app || {};
                 $(document).on('click', model.controls, function(event) {
                     event.preventDefault();
                     event.stopPropagation();
+                    console.log('controls');
                 });
                 // $('a[data-slide="prev"]').click(function(e) {
                 //     e.preventDefault();
