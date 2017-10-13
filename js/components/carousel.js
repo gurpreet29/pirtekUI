@@ -42,6 +42,22 @@ window.app = window.app || {};
                 model.init();
                 attachCarousel();
 
+                $('a[data-slide="prev"]').click(function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    $('#myCarousel').carousel('prev');
+                    console.log('$(#myCarousel).carousel(prev);');
+
+                });
+
+                $('a[data-slide="next"]').click(function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    $('#myCarousel').carousel('next');
+                    console.log('$(#myCarousel).carousel(next);');
+                });
+
             },
 
             reset = function() {
