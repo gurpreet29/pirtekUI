@@ -12300,21 +12300,23 @@ footer .foot-bottom .container p {
   }
 }
 .breadcrum {
-  border-bottom: 1px solid #a3a5a3;
-  background-image: url(../img/breadcrum-background.jpg);
-  background-repeat: no-repeat;
-  background-color: #103771;
   position: relative;
+  margin-bottom: 8rem;
 }
-.breadcrum .container {
-  position: relative;
-}
-.breadcrum .container .caption-text {
+.breadcrum .caption-text {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  width: 117rem;
+  padding: 0 1.5rem;
 }
-.breadcrum .page-title {
+.breadcrum .caption-text .page-title {
   font-family: "Montserrat", sans-serif;
   font-size: 4.4rem;
   font-weight: 200;
@@ -12323,8 +12325,21 @@ footer .foot-bottom .container p {
   text-transform: uppercase;
   z-index: 1;
   position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.breadcrum h1 {
+.breadcrum .caption-text .page-title a {
+  color: #fff;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+.breadcrum .caption-text .page-title a:hover, .breadcrum .caption-text .page-title a:focus, .breadcrum .caption-text .page-title a:active {
+  color: #bb5241;
+  text-decoration: none;
+}
+.breadcrum .caption-text h1 {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   text-transform: uppercase;
@@ -12332,6 +12347,9 @@ footer .foot-bottom .container p {
   font-weight: 700;
   z-index: 1;
   position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .breadcrum picture {
   position: relative;
@@ -12343,9 +12361,31 @@ footer .foot-bottom .container p {
   width: 100%;
 }
 
+/* MediumDesktop */
+@media (max-width: 1199px) {
+  .breadcrum .caption-text {
+    width: 97rem;
+  }
+}
 /* Tablet */
+@media (max-width: 991px) {
+  .breadcrum .caption-text {
+    width: 75rem;
+  }
+  .breadcrum .caption-text .page-title {
+    font-size: 2.4rem;
+    margin-bottom: 0.2rem;
+  }
+  .breadcrum .caption-text h1 {
+    font-size: 2.6rem;
+  }
+}
 /* Mobile */
 @media (max-width: 767px) {
+  .breadcrum .caption-text {
+    width: 100%;
+  }
+
   .breadcrum {
     margin-bottom: 3rem;
   }
@@ -12355,6 +12395,126 @@ footer .foot-bottom .container p {
   }
   .breadcrum h2 {
     display: none;
+  }
+}
+.quotecarousel .carousel .container {
+  max-width: 55rem;
+  right: 15rem;
+  left: auto;
+  text-align: left;
+}
+.quotecarousel .carousel .container p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #fff;
+  letter-spacing: 1;
+  line-height: 3.3rem;
+}
+.quotecarousel .carousel .container p.designation {
+  color: #caccce;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.quotecarousel .carousel .container .fa {
+  font-size: 4rem;
+  color: #fff;
+}
+.quotecarousel .carousel .container .fa.fa-quote-left {
+  margin-left: -5rem;
+}
+.quotecarousel .carousel .container .fa.fa-quote-right {
+  margin-right: -5rem;
+}
+.quotecarousel .carousel .container h5 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.quotecarousel .carousel .carousel-indicators {
+  top: auto;
+  bottom: 3rem;
+  text-align: center;
+  left: 50%;
+  margin-left: -30%;
+  width: 60%;
+}
+.quotecarousel .carousel .carousel-indicators li {
+  display: inline-block;
+  clear: none;
+  margin-bottom: 0;
+  margin-right: 0.7rem;
+  float: none;
+}
+
+/* for medium laptop*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .quotecarousel .carousel .container {
+    max-width: 50rem;
+    right: 8rem;
+    padding-top: 6.8%;
+  }
+}
+/* tablet */
+@media (max-width: 991px) {
+  .quotecarousel .carousel .container {
+    max-width: 40rem;
+    right: 5rem;
+    padding-top: 5.8%;
+  }
+  .quotecarousel .carousel .container p {
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+  }
+  .quotecarousel .carousel .container .fa {
+    font-size: 3rem;
+  }
+  .quotecarousel .carousel .carousel-indicators {
+    bottom: 2rem;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) {
+  .quotecarousel .carousel .container {
+    position: relative;
+    right: 0;
+    padding: 1rem 1.5rem;
+    margin: 0 auto;
+  }
+  .quotecarousel .carousel .container p,
+  .quotecarousel .carousel .container h5 {
+    color: #000;
+    padding: 0 1.5rem;
+  }
+  .quotecarousel .carousel .container p.designation,
+  .quotecarousel .carousel .container h5.designation {
+    color: #727272;
+  }
+  .quotecarousel .carousel .container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .quotecarousel .carousel .container .fa {
+    color: #bb5241;
+    font-size: 2rem;
+  }
+  .quotecarousel .carousel .container .fa.fa-quote-left {
+    margin-left: -0.5rem;
+  }
+  .quotecarousel .carousel .container .fa.fa-quote-right {
+    margin-right: -0.5rem;
+  }
+  .quotecarousel .carousel .carousel-indicators {
+    bottom: 0;
+  }
+  .quotecarousel .carousel .carousel-indicators li {
+    border-color: #727272;
+    border-width: 0.3rem;
+    height: 1.4rem;
+    width: 1.4rem;
+  }
+  .quotecarousel a {
+    text-decoration: none;
   }
 }
 
