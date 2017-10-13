@@ -35,6 +35,9 @@ window.app = window.app || {};
                 model = {
                     init: function() {
                         this.container = args.container || '.carousel';
+                        // this.nextButton = args.nextButton || this.container +' a[data-slide="next"]';
+                        // this.prevButton = args.prevButton || this.container +' a[data-slide="prev"]';
+                        this.controls = this.container + ' ' + (args.controls || ' .carousel-control');
                     }
                 };
 
@@ -42,21 +45,27 @@ window.app = window.app || {};
                 model.init();
                 attachCarousel();
 
-                $('a[data-slide="prev"]').click(function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
 
-                    $('#myCarousel').carousel('prev');
-                    console.log('$(#myCarousel).carousel(prev);');
 
+                $(document).on('click', model.controls, function(event) {
+                    event.preventDefault();
+                    event.stopPropagation();
                 });
+                // $('a[data-slide="prev"]').click(function(e) {
+                //     e.preventDefault();
+                //     e.stopPropagation();
 
-                $('a[data-slide="next"]').click(function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    $('#myCarousel').carousel('next');
-                    console.log('$(#myCarousel).carousel(next);');
-                });
+                //     $(model.container).carousel('prev');
+
+
+                // });
+
+                // $('a[data-slide="next"]').click(function(e) {
+                //     e.preventDefault();
+                //     e.stopPropagation();
+                //    $(model.container).carousel('next');
+
+                // });
 
             },
 
