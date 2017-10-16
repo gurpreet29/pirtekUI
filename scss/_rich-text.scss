@@ -1,0 +1,147 @@
+.rich-text {
+    overflow: hidden;
+
+    &.padding-large {
+        padding: 10rem 0;
+    }
+
+    h3 {
+        color: $lightseagreen;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 1.6rem;
+        color: $mediumblack;
+        height: 1.5;
+    }
+
+    a {
+        outline: 0;
+        color: $mediumblack;
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+            color: $projectBrown;
+        }
+    }
+
+    > ul {
+        margin-left: 1.5rem;
+
+        > li {
+            font-size: 1.6rem;
+            color: $mediumblack;
+            height: 1.5;
+            margin-bottom: 1.3rem;
+            position: relative;
+            padding-left: 1.5rem;
+
+            &::after {
+                content: "\f105";
+                font-family: FontAwesome;
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: inherit;
+                position: absolute;
+                font-size: 2rem;
+                color: $mediumblack;
+                top: -2px;
+                left: 0;
+            }
+        }
+    }
+
+    > img {
+        width: 100%;
+        margin: 4rem 0;
+        display: block;
+        clear: both;
+    }
+
+    &.img-compact {
+        > img {
+            margin: 0;
+            width: 100%;
+            display: block;
+        }
+
+        [class*=col] {
+            > img {
+                margin: 0;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+
+    .video-iframe {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        margin: 4rem 0;
+
+        > iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100% !important;
+        }
+    }
+
+    &.figure-img {
+        figure {
+            margin-bottom: 6rem;
+
+            img {
+                display: block;
+                max-width: 100%;
+                margin: auto;
+            }
+
+            figcaption {
+                text-align: center;
+                font-size: 1.6rem;
+                padding: 2rem;
+            }
+
+            &:first-child {
+                margin-top: 6.7rem;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* MediumDesktop */
+@media (max-width: $mediumDesktop) {
+    .rich-text {}
+}
+
+/* Tablet */
+@media (max-width: $tablet) {
+    .rich-text {}
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .rich-text {
+        &.padding-large {
+            padding: 4rem 0;
+        }
+
+        &.img-compact {
+            [class*=col] {
+                > img {
+                    margin: 0 0 4rem 0;
+                }
+            }
+        }
+    }
+}
