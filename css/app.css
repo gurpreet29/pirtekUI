@@ -10648,6 +10648,9 @@ header .call-us {
   margin-top: 0.9rem;
   min-width: 24rem;
 }
+header .call-us img {
+  vertical-align: baseline;
+}
 header .call-us strong {
   display: block;
   font-size: 3rem;
@@ -11176,9 +11179,6 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   }
   .quick-link .tile .image-thumb {
     flex-flow: row;
-  }
-  .quick-link .tile .image-thumb a {
-    padding-top: 50%;
   }
   .quick-link .tile .image-thumb a p strong {
     font-size: 1.4rem;
