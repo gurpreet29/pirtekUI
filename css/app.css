@@ -11087,6 +11087,8 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   flex: 1;
   font-size: 0;
   display: flex;
+  margin-bottom: 0;
+  position: relative;
 }
 .quick-link .tile.x2 {
   flex: 2;
@@ -11099,29 +11101,24 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 }
 .quick-link .tile.x2 .image-thumb a {
   display: inline-block;
-  width: 50%;
-  padding-top: 49.5%;
 }
 .quick-link .tile .image-thumb {
   display: flex;
   flex-flow: column;
   font-size: 0;
   flex: 1;
+  position: relative;
 }
 .quick-link .tile .image-thumb a {
   display: block;
-  width: 100%;
-  padding-top: 100%;
 }
 .quick-link a {
   padding-bottom: 0;
   display: block;
-  padding-top: 100%;
   position: relative;
 }
 .quick-link a img {
   width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
 }
