@@ -11668,6 +11668,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   text-transform: uppercase;
   line-height: 1.2;
   margin-bottom: 0;
+  position: static;
 }
 .search-nearby .search-area form label strong {
   font-weight: 900;
