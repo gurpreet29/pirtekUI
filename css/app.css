@@ -10489,6 +10489,10 @@ ul {
   margin-bottom: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 picture img {
   width: 100%;
 }
@@ -10947,6 +10951,9 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 }
 .image-component {
   margin-bottom: 3rem;
+}
+.image-component img {
+  width: 100%;
 }
 
 .carousel .carousel-control {
