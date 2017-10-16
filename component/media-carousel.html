@@ -10,78 +10,64 @@
 </head>
 
 <body>
+    <div id="vue-holder">
+        <section class="container-fluid videosec bg-blue">
+            <!-- component starts -->
+            <div class="carousel slide " id="myVidCarousel">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="col-sm-4 col-xs-12">
+                            <div class="video-container">
+                                <div class="video-image">
+                                    <a href="#" class="video-icon"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                    <img src="http://placehold.it/1060x596/CCCCCC">
+                                    
+                                </div>
 
+                                <div class="video-file">
+                                    <div class="video-player-wrapper embed-responsive embed-responsive-16by9">
+                                        <iframe src="https://www.youtube.com/embed/oAlyttcLqHg" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>This is dummy lorem ipsum.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="col-sm-4 col-xs-12">
+                            <!-- <div class="video-container">
+                                <div class="video-image">
+                                    <a href="#" class="video-icon"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                    <img src="http://placehold.it/1060x596/CCCCCC">
+                                </div>
+                                <div class="video-file">
+                                    <div class="video-player-wrapper embed-responsive embed-responsive-16by9">
+                                        <iframe src="https://www.youtube.com/embed/i54LuLKPtTg" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <a href="#">
+                                <img src="http://placehold.it/1060x596/CCCCCC">
+                            </a>
+                            <p>This is dummy lorem ipsum.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-sm-4 col-xs-12">
+                            <a href="#"><img src="http://placehold.it/1060x596/000"></a>
+                            <p>This is dummy lorem ipsum.</p>
+                        </div>
+                    </div>
 
-    <div id="vue-holder">  </div>
-
-        <section id="myCarousel" class="carousel slide" data-ride="carousel">
-        
-            
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <a href="google.com">
-                     
-                        <picture>
-                            <source srcset="https://placehold.it/1600x710/D796FF/000000" media="(min-width:1141px)">
-                            <!-- DW -->
-                            <source srcset="https://placehold.it/2280x1240/F78000/000000" media="(min-width:768px) and (-webkit-min-device-pixel-ratio: 2)">
-                            <!-- T2x -->
-                            <source srcset="https://placehold.it/960x570/00E880/000000" media="(min-width:320px)">
-                            <!-- M -->
-                            <img srcset="https://placehold.it/1600x710/D796FF/000000" alt="Sample Image">
-                            <!-- Fallback -->
-                        </picture>
-                    </a>
                 </div>
-                <div class="item">
-                    <a href="google.com">
-                     
-                        <picture>
-                            <source srcset="https://placehold.it/1600x710/D796FF/000000" media="(min-width:1141px)">
-                            <!-- DW -->
-                            <source srcset="https://placehold.it/2280x1240/F78000/000000" media="(min-width:768px) and (-webkit-min-device-pixel-ratio: 2)">
-                            <!-- T2x -->
-                            <source srcset="https://placehold.it/960x570/00E880/000000" media="(min-width:320px)">
-                            <!-- M -->
-                            <img srcset="https://placehold.it/1600x710/D796FF/000000" alt="Sample Image">
-                            <!-- Fallback -->
-                        </picture>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="google.com">
-                    
-                        <!-- <img src="http://via.placeholder.com/1600x710/f20505" alt="New york" style="width:100%;"> -->
-                        <picture>
-                            <source srcset="https://placehold.it/1600x710/D796FF/000000" media="(min-width:1141px)">
-                            <!-- DW -->
-                            <source srcset="https://placehold.it/2280x1240/F78000/000000" media="(min-width:768px) and (-webkit-min-device-pixel-ratio: 2)">
-                            <!-- T2x -->
-                            <source srcset="https://placehold.it/960x570/00E880/000000" media="(min-width:320px)">
-                            <!-- M -->
-                            <img srcset="https://placehold.it/1600x710/D796FF/000000" alt="Sample Image">
-                            <!-- Fallback -->
-                        </picture>
-                    </a>
-                </div>
+                <a class="left carousel-control" href="#myVidCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#myVidCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
             </div>
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
+            
+            <!-- component ends -->
         </section>
-
-
-
-
-  
+    </div>
     <script src="../js/app.min.js"></script>
 </body>
-
 </html>
