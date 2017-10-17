@@ -10,15 +10,40 @@
             }
         }
 
+        img {
+            max-width: 100%;
+        }
+
         .carousel-control {
             background-image: none;
+            display: block;
+            width: 3.4rem;
+            height: 3.4rem;
+            margin: 0;
+            font-size: 1.2rem;
+            background-color: $projectBlue;
+            color: $white;
+            top: 50%;
+
+            @include transform(translateY(-50%));
 
             &.left {
-                margin-left: 15px;
+                margin-left: -1.5rem;
             }
 
             &.right {
-                margin-right: 15px;
+                margin-right: -1.5rem;
+            }
+
+            i {
+                position: relative;
+                top: 0.4rem;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $projectBrown;
             }
         }
 
@@ -128,6 +153,7 @@
         .carousel {
             .col-md-2 {
                 width: 33.33%;
+                float: left;
             }
         }
     }
