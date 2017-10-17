@@ -12881,5 +12881,43 @@ footer .foot-bottom .container p {
 
 /* Tablet */
 /* Mobile */
+.tender-listing li {
+  padding: 3.5rem 3rem;
+  border: 0;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  background-color: transparent;
+}
+.tender-listing li:nth-child(even) {
+  background-color: #e6eef0;
+}
+.tender-listing li p {
+  font-size: 1.4rem;
+  color: #363636;
+  line-height: 2;
+  margin-bottom: 0;
+}
+.tender-listing li p.listing-heading {
+  text-transform: uppercase;
+  color: #616161;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+.tender-listing li ol {
+  padding-left: 2rem;
+}
+.tender-listing li ol li {
+  padding: 0;
+  font-size: 1.4rem;
+  color: #363636;
+  line-height: 2;
+  margin-bottom: 0;
+  list-style: lower-latin;
+}
+
+/* Tablet */
+/* Mobile */
 
 /*# sourceMappingURL=app.css.map */
