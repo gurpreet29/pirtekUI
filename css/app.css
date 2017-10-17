@@ -10516,6 +10516,12 @@ h3 {
   margin-bottom: 2rem;
   text-transform: uppercase;
   line-height: 1.2;
+  color: #032f3e;
+  text-transform: uppercase;
+}
+h3 span {
+  font-size: 3.6rem;
+  font-weight: 300;
 }
 
 h4 {
@@ -10544,8 +10550,12 @@ p {
   line-height: 1.6;
   margin-bottom: 3rem;
 }
-p + h5 {
-  margin-top: 4.5rem;
+p.subheading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #363636;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
 }
 
 picture img {
@@ -10616,6 +10626,11 @@ label {
 
   h2 {
     font-size: 2.6rem;
+  }
+
+  p.subheading {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
   }
 }
 header {
@@ -12523,10 +12538,6 @@ footer .foot-bottom .container p {
 .rich-text.padding-large {
   padding: 10rem 0;
 }
-.rich-text h3 {
-  color: #032f3e;
-  text-transform: uppercase;
-}
 .rich-text p {
   font-size: 1.6rem;
   color: #616161;
@@ -12850,5 +12861,25 @@ footer .foot-bottom .container p {
     padding: 2rem 0;
   }
 }
+.tender-header p.tender-ref {
+  position: relative;
+  padding: 0.2rem 4rem 0.2rem;
+}
+.tender-header p.tender-ref::before {
+  content: '';
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10rem;
+  -webkit-border-radius: 10rem;
+  -moz-border-radius: 10rem;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #bb5241;
+}
+
+/* Tablet */
+/* Mobile */
 
 /*# sourceMappingURL=app.css.map */

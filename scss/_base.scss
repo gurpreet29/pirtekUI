@@ -46,6 +46,13 @@ h3 {
     margin-bottom: 2rem;
     text-transform: uppercase;
     line-height: 1.2;
+    color: $lightseagreen;
+    text-transform: uppercase;
+
+    span {
+        font-size: 3.6rem;
+        font-weight: 300;
+    }
 }
 
 h4 {
@@ -74,9 +81,12 @@ p {
     line-height: 1.6;
     margin-bottom: 3rem;
 
-    // fix to work for right panel in T9
-    + h5 {
-        margin-top: 4.5rem;
+    &.subheading {
+        font-size: 2rem;
+        font-weight: 700;
+        color: $lightblack;
+        text-transform: uppercase;
+        margin-bottom: 4rem;
     }
 }
 
@@ -88,38 +98,9 @@ picture {
 
 a {
     font-family: $fontFamily;
-
-    // &.cta {
-    //     position: relative;
-    //     padding-bottom: .4rem;
-
-    //     &:after {
-    //         content: '';
-    //         background-color: $projectYellow;
-    //         position: absolute;
-    //         height: .4rem;
-    //         bottom: 0;
-    //         left: 0;
-    //         width: 0;
-    //     }
-
-    //     &:hover, &:focus {
-    //         text-decoration: none;
-
-    //         &:after {
-    //             width: 100%;
-    //         }
-    //     }
-    // }
 }
 
-.container-fluid {
-    // &.bg-blue {
-    //     background-image: url(../img/blue-background.jpg);
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    // }
-}
+.container-fluid {}
 
 .btn {
     text-transform: uppercase;
@@ -189,5 +170,12 @@ label {
 
     h2 {
         font-size: 2.6rem;
+    }
+
+    p {
+        &.subheading {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
     }
 }

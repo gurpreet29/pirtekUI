@@ -1,0 +1,28 @@
+.tender-header {
+    p {
+        &.tender-ref {
+            position: relative;
+            padding: 0.2rem 4rem 0.2rem;
+
+            &::before {
+                content: '';
+                width: 2.5rem;
+                height: 2.5rem;
+
+                @include border-radius(10rem);
+
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: $projectBrown;
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: $tablet) {}
+
+/* Mobile */
+@media (max-width: $mobile) {}
