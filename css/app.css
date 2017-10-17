@@ -12737,5 +12737,94 @@ footer .foot-bottom .container p {
     width: 100%;
   }
 }
+.terminal {
+  margin-bottom: 6rem;
+}
+.terminal .terminal-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1f1f1f;
+  margin-bottom: 2rem;
+}
+.terminal img {
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.terminal .terminal-container {
+  border: 0.1rem solid #dae4e6;
+  overflow: hidden;
+}
+.terminal .terminal-container .terminal-heading {
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 3rem 3rem;
+  margin: 0;
+  box-shadow: none;
+  border: 0;
+  outline: 0;
+  text-align: left;
+  position: relative;
+}
+.terminal .terminal-container .terminal-heading::after {
+  content: '';
+  background-image: url("../img/component/terminal/close.png");
+  width: 2.3rem;
+  height: 2.3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 3rem;
+  margin: auto;
+}
+.terminal .terminal-container .terminal-heading.open::after {
+  background-image: url("../img/component/terminal/open.png");
+}
+.terminal .terminal-container ul {
+  margin-bottom: 0;
+}
+.terminal .terminal-container ul li {
+  background-color: #f6f6f6;
+  color: #1f1f1f;
+  font-size: 1.6rem;
+  border-top: 0.1rem solid #dae4e6;
+  padding: 0;
+  display: block;
+  overflow: hidden;
+}
+.terminal .terminal-container ul li p {
+  padding: 2.4rem 1.5rem;
+  margin: 0;
+}
+.terminal .terminal-container ul li .col-sm-10 {
+  border-right: 0.1rem solid #ebebeb;
+}
+.terminal .terminal-container ul li .col-sm-2 {
+  text-align: center;
+}
+
+/* Tablet */
+/* Mobile */
+@media (max-width: 767px) {
+  .terminal {
+    margin-bottom: 4rem;
+  }
+  .terminal .terminal-container .terminal-heading {
+    font-size: 1.6rem;
+    padding: 2rem 1.5rem;
+  }
+  .terminal .terminal-container .terminal-heading::after {
+    right: 1.5rem;
+  }
+  .terminal .terminal-container ul li {
+    font-size: 1.4rem;
+  }
+  .terminal .terminal-container ul li p {
+    padding: 2rem 0;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

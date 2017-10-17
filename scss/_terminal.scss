@@ -1,0 +1,112 @@
+.terminal {
+    margin-bottom: 6rem;
+
+    .terminal-heading {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $projectBlack;
+        margin-bottom: 2rem;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        clear: both;
+    }
+
+    .terminal-container {
+        border: 0.1rem solid $lightBlue;
+        overflow: hidden;
+
+        .terminal-heading {
+            background-color: $white;
+            font-weight: 700;
+            font-size: 1.6rem;
+            padding: 3rem 3rem;
+            margin: 0;
+            box-shadow: none;
+            border: 0;
+            outline: 0;
+            text-align: left;
+            position: relative;
+
+            &::after {
+                content: '';
+                background-image: url("../img/component/terminal/close.png");
+                width: 2.3rem;
+                height: 2.3rem;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 3rem;
+                margin: auto;
+            }
+
+            &.open {
+                &::after {
+                    background-image: url("../img/component/terminal/open.png");
+                }
+            }
+        }
+
+        ul {
+            margin-bottom: 0;
+
+            li {
+                background-color: $semiGray;
+                color: $projectBlack;
+                font-size: 1.6rem;
+                border-top: 0.1rem solid $lightBlue;
+                padding: 0;
+                display: block;
+                overflow: hidden;
+
+                p {
+                    padding: 2.4rem 1.5rem;
+                    margin: 0;
+                }
+
+                .col-sm-10 {
+                    border-right: 0.1rem solid $projectlightGrey;
+                }
+
+                .col-sm-2 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: $tablet) {}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .terminal {
+        margin-bottom: 4rem;
+
+        .terminal-container {
+            .terminal-heading {
+                font-size: 1.6rem;
+                padding: 2rem 1.5rem;
+
+                &::after {
+                    right: 1.5rem;
+                }
+            }
+
+            ul {
+                li {
+                    font-size: 1.4rem;
+
+                    p {
+                        padding: 2rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
