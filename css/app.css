@@ -12740,11 +12740,12 @@ footer .foot-bottom .container p {
 .terminal {
   margin-bottom: 6rem;
 }
-.terminal .terminal-heading {
+.terminal .terminal-header {
   font-size: 1.8rem;
   font-weight: 700;
   color: #1f1f1f;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 .terminal img {
   display: block;

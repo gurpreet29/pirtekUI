@@ -1,11 +1,12 @@
 .terminal {
     margin-bottom: 6rem;
 
-    .terminal-heading {
+    .terminal-header {
         font-size: 1.8rem;
         font-weight: 700;
         color: $projectBlack;
         margin-bottom: 2rem;
+        text-transform: uppercase;
     }
 
     img {
