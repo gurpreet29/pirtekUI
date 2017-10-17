@@ -32,7 +32,7 @@ window.app = window.app || {};
                     $(model.container).click(function() {
                        var collapseBtn = $(this).find(model.terminalHeader),
                             collapseItems = $(this).find(model.collapseItem);
-                        $(collapseBtn).click(function(e) {
+                        $(collapseBtn).click(function() {
                             $(collapseItems).collapse('toggle');
                             $(collapseBtn).toggleClass('open');
                         });
