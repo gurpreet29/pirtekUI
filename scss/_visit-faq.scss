@@ -1,0 +1,46 @@
+.visit-faq {
+    background-color: $blue;
+    padding: 7.6rem 0;
+
+    [class*=col] {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        line-height: 1.5;
+        margin-bottom: 0;
+        color: $white;
+    }
+
+    h6 {
+        font-size: 3.2rem;
+        color: $white;
+        margin-bottom: 0;
+    }
+
+    .btn {
+        display: block;
+
+        &:hover,
+        &:focus,
+        &:active {
+            border-color: $white;
+            color: $white;
+        }
+    }
+}
+
+@media (max-width: $mediumDesktop) {}
+
+/* Tablet */
+@media (max-width: $tablet) {}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .visit-faq {
+        padding: 2.5rem 1.5rem;
+    }
+}

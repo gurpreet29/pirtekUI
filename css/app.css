@@ -10599,6 +10599,10 @@ a {
   font-size: 1.5rem;
   margin-bottom: 0;
 }
+.btn.btn-sm, .btn-group-sm > .btn {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
 
 label {
   position: absolute;
@@ -12974,5 +12978,40 @@ footer .foot-bottom .container p {
 
 /* Tablet */
 /* Mobile */
+.visit-faq {
+  background-color: #014181;
+  padding: 7.6rem 0;
+}
+.visit-faq [class*=col] {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.visit-faq p {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-bottom: 0;
+  color: #fff;
+}
+.visit-faq h6 {
+  font-size: 3.2rem;
+  color: #fff;
+  margin-bottom: 0;
+}
+.visit-faq .btn {
+  display: block;
+}
+.visit-faq .btn:hover, .visit-faq .btn:focus, .visit-faq .btn:active {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* Tablet */
+/* Mobile */
+@media (max-width: 767px) {
+  .visit-faq {
+    padding: 2.5rem 1.5rem;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
