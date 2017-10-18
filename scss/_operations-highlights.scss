@@ -1,0 +1,56 @@
+.operations-highlights {
+    h6 {
+        color: $lightseagreen;
+        margin-bottom: 1.6rem;
+    }
+
+    p {
+        text-transform: uppercase;
+        color: $lightseagreen;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .list-group {
+        li {
+            overflow: hidden;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            > div {
+                padding: 1.7rem 2.1rem;
+                font-size: 1.6rem;
+                float: left;
+            }
+
+            .operation-left {
+                width: 60%;
+                color: $lightblack;
+                font-weight: 300;
+            }
+
+            .operation-right {
+                width: 40%;
+                font-weight: 600;
+                color: $white;
+                text-align: center;
+                background-color: $lightseagreen;
+            }
+
+            &:first-child,
+            &:last-child {
+                @include border-radius(0px);
+            }
+        }
+    }
+}
+
+@media (max-width: $mediumDesktop) {}
+
+/* Tablet */
+@media (max-width: $tablet) {}
+
+/* Mobile */
+@media (max-width: $mobile) {}

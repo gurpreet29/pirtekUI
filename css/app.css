@@ -10541,6 +10541,9 @@ h6 {
   text-transform: uppercase;
   line-height: 1.2;
 }
+h6 span {
+  font-weight: 300;
+}
 
 p {
   font-family: "Montserrat", sans-serif;
@@ -13013,5 +13016,47 @@ footer .foot-bottom .container p {
     padding: 2.5rem 1.5rem;
   }
 }
+.operations-highlights h6 {
+  color: #032f3e;
+  margin-bottom: 1.6rem;
+}
+.operations-highlights p {
+  text-transform: uppercase;
+  color: #032f3e;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+.operations-highlights .list-group li {
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.operations-highlights .list-group li > div {
+  padding: 1.7rem 2.1rem;
+  font-size: 1.6rem;
+  float: left;
+}
+.operations-highlights .list-group li .operation-left {
+  width: 60%;
+  color: #363636;
+  font-weight: 300;
+}
+.operations-highlights .list-group li .operation-right {
+  width: 40%;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  background-color: #032f3e;
+}
+.operations-highlights .list-group li:first-child, .operations-highlights .list-group li:last-child {
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+}
+
+/* Tablet */
+/* Mobile */
 
 /*# sourceMappingURL=app.css.map */
