@@ -133,6 +133,22 @@ a {
         }
     }
 
+    &.btn-default {
+        color: $white;
+        background-color: $projectBlack;
+        border-color: $projectBlack;
+        border-width: 2px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: transparent;
+            border-color: $projectBlack;
+            color: $projectBlack;
+            box-shadow: none;
+        }
+    }
+
     &:hover,
     &:focus,
     &:active {
@@ -150,6 +166,15 @@ a {
     &.btn-sm {
         font-size: 1.4rem;
         margin-bottom: 0;
+    }
+
+    &.btn-xs {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        display: inline;
+        font-weight: 300;
     }
 }
 
@@ -180,6 +205,10 @@ label {
 
     h3 {
         font-size: 2.2rem;
+
+        span {
+            font-size: 2.2rem;
+        }
     }
 
     h2 {
