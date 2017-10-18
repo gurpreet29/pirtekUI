@@ -137,6 +137,11 @@ a {
         color: $lightbrown;
         box-shadow: none;
     }
+
+    &.btn-md {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
 }
 
 label {

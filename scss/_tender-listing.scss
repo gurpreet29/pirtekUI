@@ -38,6 +38,64 @@
                 list-style: lower-latin;
             }
         }
+
+        &:first-child,
+        &:last-child {
+            @include border-radius(0px);
+        }
+    }
+}
+
+.tender-status {
+    overflow: hidden;
+
+    ul {
+        margin-bottom: 0;
+
+        li {
+            padding: 1.7rem 2rem;
+            border: 0;
+
+            @include border-radius(0px);
+
+            background-color: $skyBlue;
+
+            &:nth-child(even) {
+                background-color: $blue;
+            }
+
+            p {
+                font-size: 1.4rem;
+                color: $white;
+                line-height: 1.5;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                margin-bottom: 0.2rem;
+
+                &.status-result {
+                    line-height: 1.5;
+                    font-weight: 600;
+                    font-size: 1.8rem;
+                    margin-bottom: 0;
+                }
+            }
+
+            &:first-child,
+            &:last-child {
+                @include border-radius(0px);
+            }
+        }
+    }
+
+    .reg-btn {
+        padding: 3rem 2rem;
+        border: 1px solid $skyBlue;
+        border-top: 0;
+
+        .btn {
+            margin: 0 auto;
+            display: block;
+        }
     }
 }
 
