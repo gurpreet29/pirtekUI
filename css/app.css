@@ -13115,13 +13115,14 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 
 .modal-header {
   min-height: 5rem;
+  border: none;
 }
 .modal-header .close {
   margin-top: -.2rem;
   background-color: #1d4789;
   text-shadow: none;
   color: #fff;
-  padding: .5rem;
+  padding: 0.5rem 0.9rem;
   opacity: 1;
 }
 .modal-header .close:hover, .modal-header .close:focus {

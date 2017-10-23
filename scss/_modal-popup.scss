@@ -4,13 +4,14 @@
 
 .modal-header {
     min-height: 5rem;
+    border: none;
 
     .close {
         margin-top: -.2rem;
         background-color: $projectBlue;
         text-shadow: none;
         color: $white;
-        padding: .5rem;
+        padding: 0.5rem 0.9rem;
         opacity: 1;
 
         &:hover, &:focus {
