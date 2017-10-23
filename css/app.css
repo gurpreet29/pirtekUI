@@ -13168,6 +13168,102 @@ footer .foot-bottom .container p {
   .tender-notice {
     padding: 4rem 0;
   }
+  .tender-notice .pull-right {
+    padding-bottom: 0.7rem;
+    float: left !important;
+  }
+  .tender-notice .pull-right button {
+    width: auto;
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem;
+  }
+  .tender-notice .pull-right button:first-child {
+    padding-left: 0;
+  }
+  .tender-notice .pull-right button:last-child {
+    padding-right: 0;
+  }
+  .tender-notice .table-container .table-filter {
+    width: 100%;
+    margin: 0;
+  }
+  .tender-notice .table-container .table-filter caption {
+    width: 100%;
+    left: auto;
+    display: block;
+    padding-top: 1.5rem;
+    border-top: 0;
+  }
+  .tender-notice .table-container .table-filter caption .badge {
+    margin-right: 1rem;
+  }
+  .tender-notice .table-container .table-filter thead {
+    /* Hide table headers (but not display: none;, for accessibility) */
+  }
+  .tender-notice .table-container .table-filter thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .tender-notice .table-container .table-filter thead tr td.no {
+    width: auto;
+  }
+  .tender-notice .table-container .table-filter thead tr td.type {
+    width: auto;
+  }
+  .tender-notice .table-container .table-filter thead tr td.description {
+    width: auto;
+  }
+  .tender-notice .table-container .table-filter thead tr td.status {
+    width: auto;
+  }
+  .tender-notice .table-container .table-filter tr {
+    border: 1px solid #dae4e6;
+    margin-bottom: 0.3rem;
+    border-bottom: 0;
+  }
+  .tender-notice .table-container .table-filter tr td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #dae4e6;
+    position: relative;
+    white-space: normal;
+    text-align: left;
+    padding: 1.5rem;
+    padding-left: 50%;
+  }
+  .tender-notice .table-container .table-filter tr td .btn {
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .tender-notice .table-container .table-filter tr td::before {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    width: 45%;
+    padding-right: 1.5rem;
+    text-align: left;
+    font-weight: bold;
+    content: attr(data-title);
+    color: #8f8f8f;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .tender-notice .table-container .table-filter tr:last-child {
+    border-bottom: 0;
+  }
+  .tender-notice .table-container .table-filter:first-child caption {
+    border-top: 1px solid #dae4e6;
+  }
+  .tender-notice .table-container table,
+  .tender-notice .table-container thead,
+  .tender-notice .table-container tbody,
+  .tender-notice .table-container th,
+  .tender-notice .table-container td,
+  .tender-notice .table-container tr {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
