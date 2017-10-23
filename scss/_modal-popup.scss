@@ -1,0 +1,21 @@
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-header {
+    min-height: 5rem;
+
+    .close {
+        margin-top: -.2rem;
+        background-color: $projectBlue;
+        text-shadow: none;
+        color: $white;
+        padding: .5rem;
+        opacity: 1;
+
+        &:hover, &:focus {
+            background-color: $projectYellow;
+            color: $projectBlue;
+        }
+    }
+}
