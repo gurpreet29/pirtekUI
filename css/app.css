@@ -12788,6 +12788,42 @@ footer .foot-bottom .container p {
     display: block;
   }
 }
+@media (min-width: 480px) and (max-width: 767px) and (transform-3d), (min-width: 480px) and (max-width: 767px) and (-webkit-transform-3d) {
+  .multicarousel .carousel .carousel-inner > .item.active.right,
+  .multicarousel .carousel .carousel-inner > .item.next {
+    transform: translate3d(50%, 0, 0);
+    left: 0;
+  }
+  .multicarousel .carousel .carousel-inner > .item.active.left,
+  .multicarousel .carousel .carousel-inner > .item.prev {
+    transform: translate3d(-50%, 0, 0);
+    left: 0;
+  }
+  .multicarousel .carousel .carousel-inner > .item.left,
+  .multicarousel .carousel .carousel-inner > .item.prev.right,
+  .multicarousel .carousel .carousel-inner > .item.active {
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .multicarousel .carousel .carousel-inner > .active.left,
+  .multicarousel .carousel .carousel-inner > .prev {
+    left: -50%;
+  }
+  .multicarousel .carousel .carousel-inner > .active.right,
+  .multicarousel .carousel .carousel-inner > .next {
+    left: 50%;
+  }
+  .multicarousel .carousel .carousel-inner > .left,
+  .multicarousel .carousel .carousel-inner > .prev.right,
+  .multicarousel .carousel .carousel-inner > .active {
+    left: 0;
+  }
+  .multicarousel .carousel .carousel-inner .cloneditem-1 {
+    display: block;
+  }
+}
 
 /*Tablet*/
 @media (max-width: 991px) {
@@ -12796,8 +12832,17 @@ footer .foot-bottom .container p {
     float: left;
   }
 }
-/*Mobile*/
-@media (max-width: 767px) {
+/*Mobile landscape*/
+@media (min-width: 480px) and (max-width: 767px) {
+  .multicarousel .carousel .carousel-control {
+    display: block;
+  }
+  .multicarousel .carousel .col-md-2 {
+    width: 50%;
+  }
+}
+/*Mobile portrait*/
+@media (max-width: 479px) {
   .multicarousel .carousel .carousel-control {
     display: block;
   }
@@ -13167,6 +13212,56 @@ footer .foot-bottom .container p {
 @media (max-width: 767px) {
   .tender-notice {
     padding: 4rem 0;
+  }
+}
+.career-benefits {
+  padding: 10rem 0;
+}
+.career-benefits a:hover, .career-benefits a:focus, .career-benefits a:active {
+  text-decoration: none;
+  outline: 0;
+}
+.career-benefits a:hover .caption h4, .career-benefits a:focus .caption h4, .career-benefits a:active .caption h4 {
+  color: #bb5241;
+}
+.career-benefits .thumbnail {
+  padding: 0;
+  border: 0;
+}
+.career-benefits .thumbnail img {
+  border: 1px solid #ccc;
+}
+.career-benefits .thumbnail .caption {
+  padding: 29px 9px 9px;
+}
+.career-benefits .thumbnail .caption h4 {
+  text-transform: none;
+  font-size: 2.1rem;
+  color: #032f3e;
+  font-weight: 400;
+}
+.career-benefits .thumbnail .caption p {
+  color: #696866;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .career-benefits {
+    padding: 4rem 0;
+  }
+  .career-benefits .thumbnail .caption {
+    padding: 18px 3px 0;
+  }
+  .career-benefits .thumbnail .caption h4 {
+    margin-bottom: 1rem;
+  }
+  .career-benefits .thumbnail .caption p {
+    line-height: 1.6;
+  }
+  .career-benefits .thumbnail img {
+    width: 100%;
   }
 }
 

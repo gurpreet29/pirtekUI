@@ -1,0 +1,70 @@
+.career-benefits {
+    padding: 10rem 0;
+
+    a {
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+            outline: 0;
+
+            .caption {
+                h4 {
+                    color: $projectBrown;
+                }
+            }
+        }
+    }
+
+    .thumbnail {
+        padding: 0;
+        border: 0;
+
+        img {
+            border: 1px solid $lightGrey;
+        }
+
+        .caption {
+            padding: 29px 9px 9px;
+
+            h4 {
+                text-transform: none;
+                font-size: 2.1rem;
+                color: $lightseagreen;
+                font-weight: 400;
+            }
+
+            p {
+                // color: lighten($lightseagreen, 5%);
+                color: $projectSemiGrey;
+                font-size: 1.5rem;
+                line-height: 1.8;
+            }
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .career-benefits {
+        padding: 4rem 0;
+
+        .thumbnail {
+            .caption {
+                padding: 18px 3px 0;
+
+                h4 {
+                    margin-bottom: 1rem;
+                }
+
+                p {
+                    line-height: 1.6;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
