@@ -115,5 +115,126 @@
 @media (max-width: $mobile) {
     .tender-notice {
         padding: 4rem 0;
+
+        .pull-right {
+            padding-bottom: 0.7rem;
+            float: left !important;
+
+            button {
+                width: auto;
+                font-size: 1.2rem;
+                padding: 1rem 1rem 1rem 0;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+
+        .table-container {
+            .table-filter {
+                width: 100%;
+                margin: 0;
+
+                caption {
+                    width: 100%;
+                    left: auto;
+                    display: block;
+                    padding-top: 1.5rem;
+                    border-top: 0;
+
+                    .badge {
+                        margin-right: 1rem;
+                    }
+                }
+
+                thead {
+                    /* Hide table headers (but not display: none;, for accessibility) */
+                    tr {
+                        position: absolute;
+                        top: -9999px;
+                        left: -9999px;
+
+                        td {
+                            &.no {
+                                width: auto;
+                            }
+
+                            &.type {
+                                width: auto;
+                            }
+
+                            &.description {
+                                width: auto;
+                            }
+
+                            &.status {
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+
+                tr {
+                    border: 1px solid $lightBlue;
+                    margin-bottom: 0.3rem;
+                    border-bottom: 0;
+
+                    td {
+                        /* Behave  like a "row" */
+                        border: none;
+                        border-bottom: 1px solid $lightBlue;
+                        position: relative;
+                        white-space: normal;
+                        text-align: left;
+                        padding: 1.5rem;
+                        padding-left: 50%;
+
+                        .btn {
+                            font-size: 1.2rem;
+                            padding-left: 1.5rem;
+                            padding-right: 1.5rem;
+                        }
+
+                        &::before {
+                            position: absolute;
+                            top: 1.5rem;
+                            left: 1.5rem;
+                            width: 45%;
+                            padding-right: 1.5rem;
+                            text-align: left;
+                            font-weight: bold;
+                            content: attr(data-title);
+                            color: $projectlighterGrey;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                        }
+                    }
+
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+                }
+
+                &:first-child {
+                    caption {
+                        border-top: 1px solid $lightBlue;
+                    }
+                }
+            }
+
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+        }
     }
 }
