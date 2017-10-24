@@ -13360,5 +13360,49 @@ footer .foot-bottom .container p {
     width: 100%;
   }
 }
+.faq .badge {
+  border-radius: 50rem;
+  -webkit-border-radius: 50rem;
+  -moz-border-radius: 50rem;
+  margin-right: 1.8rem;
+  font-weight: 300;
+  font-size: 1.4rem;
+  min-height: 2.5rem;
+  min-width: 2.5rem;
+  align-items: center;
+  padding: 0.6rem .5rem .4rem;
+}
+.faq h6 {
+  font-size: 1.4rem;
+  border-bottom: 1px solid #e6eef0;
+  margin-bottom: 0;
+}
+.faq h6 a {
+  color: #343f55;
+  display: block;
+  padding: 3rem 0;
+  position: relative;
+}
+.faq h6 a::after {
+  content: "\f055";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  font-family: 'FontAwesome';
+  font-size: 2.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+.faq h6 a[aria-expanded="true"]::after {
+  color: #727272;
+  content: "\f056";
+}
+
+/* Tablet */
+/* Mobile */
 
 /*# sourceMappingURL=app.css.map */
