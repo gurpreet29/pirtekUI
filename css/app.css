@@ -13321,6 +13321,7 @@ footer .foot-bottom .container p {
   color: #bb5241;
 }
 .career-benefits .thumbnail {
+  background-color: transparent;
   padding: 0;
   border: 0;
 }
@@ -13335,11 +13336,12 @@ footer .foot-bottom .container p {
   font-size: 2.1rem;
   color: #032f3e;
   font-weight: 400;
+  margin-bottom: 1.4rem;
 }
 .career-benefits .thumbnail .caption p {
   color: #696866;
   font-size: 1.5rem;
-  line-height: 1.8;
+  line-height: 2;
 }
 
 /* Mobile */
@@ -13360,30 +13362,40 @@ footer .foot-bottom .container p {
     width: 100%;
   }
 }
-.faq .badge {
+.accordion .panel-body {
+  padding: 0;
+}
+.accordion .panel-body h6 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+.accordion .panel-body h6 a {
+  color: #343f55;
+  display: block;
+  padding: 3rem 4rem 3rem 0;
+  position: relative;
+  outline: 0;
+  border-bottom: 1px solid #e6eef0;
+  display: flex;
+}
+.accordion .panel-body h6 a .badge {
   border-radius: 50rem;
   -webkit-border-radius: 50rem;
   -moz-border-radius: 50rem;
   margin-right: 1.8rem;
   font-weight: 300;
   font-size: 1.4rem;
-  min-height: 2.5rem;
+  height: 2.5rem;
   min-width: 2.5rem;
   align-items: center;
   padding: 0.6rem .5rem .4rem;
+  background-color: #014181;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
-.faq h6 {
-  font-size: 1.4rem;
-  border-bottom: 1px solid #e6eef0;
-  margin-bottom: 0;
-}
-.faq h6 a {
-  color: #343f55;
-  display: block;
-  padding: 3rem 0;
-  position: relative;
-}
-.faq h6 a::after {
+.accordion .panel-body h6 a::after {
+  color: #727272;
   content: "\f055";
   position: absolute;
   top: 0;
@@ -13396,130 +13408,78 @@ footer .foot-bottom .container p {
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
-.faq h6 a[aria-expanded="true"]::after {
-  color: #727272;
+.accordion .panel-body h6 a[aria-expanded="true"] {
+  border-bottom: 1px solid transparent;
+}
+.accordion .panel-body h6 a[aria-expanded="true"]::after {
   content: "\f056";
+}
+.accordion .panel-body h6 a[aria-expanded="false"] .badge {
+  background-color: #bb5241;
+}
+.accordion .panel-body h6 a:hover, .accordion .panel-body h6 a:focus, .accordion .panel-body h6 a:active {
+  text-decoration: none;
+}
+.accordion .panel-body .panel-collapse .media {
+  padding-left: 4.4rem;
+}
+.accordion .panel-body .panel-collapse .media p {
+  font-size: 1.4rem;
+  color: #949494;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.accordion .panel-body .panel-collapse .media p strong {
+  font-weight: 600;
+  color: #616161;
+  margin-bottom: 1rem;
+}
+.accordion .panel-body .panel-collapse .media .media-left {
+  min-width: 7rem;
+}
+.accordion .panel-body .panel-collapse .media .media-body p:last-child {
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e6eef0;
+}
+.accordion .panel-body .panel-collapse .media:last-of-type {
+  border-bottom: 1px solid #e6eef0;
+  margin-top: 3rem;
+}
+.accordion .panel-body .panel-collapse .media:last-of-type .media-body p:last-child {
+  border-bottom: 0;
 }
 
 /* Tablet */
 /* Mobile */
-.other-offices {
-  background-color: #014181;
-  padding: 10rem 0 7rem;
-}
-.other-offices h6 {
-  color: #fff;
-  font-size: 3.2rem;
-  margin-bottom: 4rem;
-}
-.other-offices ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-.other-offices ul li {
-  flex-basis: 18%;
-}
-.other-offices ul li a {
-  text-decoration: none;
-  display: block;
-  opacity: 0.8;
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-}
-.other-offices ul li a:hover, .other-offices ul li a:focus, .other-offices ul li a:active {
-  outline: 0;
-  opacity: 1;
-}
-.other-offices ul li a:hover .thumbnail::after, .other-offices ul li a:focus .thumbnail::after, .other-offices ul li a:active .thumbnail::after {
-  content: '';
-}
-.other-offices ul li a .thumbnail {
-  position: relative;
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-}
-.other-offices ul li a .thumbnail img {
-  background-color: #ccc;
-}
-.other-offices ul li a .thumbnail .caption {
-  padding: 2rem 0.2rem;
-}
-.other-offices ul li a .thumbnail .caption h4 {
-  font-size: 1.6rem;
-  color: #fff;
-  line-height: 1.4;
-  margin-bottom: 0;
-  font-weight: 600;
-}
-.other-offices ul li a .thumbnail .caption p {
-  font-size: 1.3rem;
-  color: #fff;
-  text-transform: uppercase;
-  line-height: 1.3;
-  margin-bottom: 0;
-}
-.other-offices ul li a .thumbnail::after {
-  position: absolute;
-  content: none;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: .3rem;
-  background-color: #bb5241;
-  display: block;
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
-}
-.other-offices ul li a .thumbnail:hover, .other-offices ul li a .thumbnail:focus, .other-offices ul li a .thumbnail:active {
-  outline: 0;
-  opacity: 1;
-}
-.other-offices ul li a .thumbnail:hover::after, .other-offices ul li a .thumbnail:focus::after, .other-offices ul li a .thumbnail:active::after {
-  content: '';
-}
-
 @media (max-width: 767px) {
-  .other-offices {
-    padding: 0 0 2rem;
-  }
-  .other-offices .container {
-    padding: 0;
-  }
-  .other-offices .container h6 {
-    padding: 3rem 1.5rem;
+  .accordion .panel-body h6 {
+    font-size: 1.4rem;
     margin-bottom: 0;
-    background-color: #012f5e;
-    font-size: 2.4rem;
   }
-  .other-offices .container ul {
-    display: block;
+  .accordion .panel-body h6 a {
+    padding: 2rem 3.7rem 2rem 0;
   }
-  .other-offices .container ul li {
-    width: 100%;
-    border-bottom: 1px solid #103771;
-    border-collapse: collapse;
+  .accordion .panel-body .panel-collapse {
+    max-height: 35rem;
+    overflow-y: auto;
   }
-  .other-offices .container ul li a .thumbnail {
-    margin-bottom: 0;
-    padding: 2rem 1.5rem;
+  .accordion .panel-body .panel-collapse .media {
+    padding-left: 0;
   }
-  .other-offices .container ul li a .thumbnail img {
-    display: none;
+  .accordion .panel-body .panel-collapse .media .media-left {
+    min-width: 4rem;
   }
-  .other-offices .container ul li a .thumbnail .caption {
-    padding: 0;
+  .accordion .panel-body .panel-collapse .media .media-body p:last-child {
+    padding-bottom: 2rem;
   }
-  .other-offices .container ul li a .thumbnail .caption h4 {
-    color: #fff;
-  }
-  .other-offices .container ul li a .thumbnail .caption p {
-    margin-bottom: 0;
-    color: #fff;
+  .accordion .panel-body .panel-collapse .media:last-of-type {
+    margin-top: 2rem;
   }
 }
 
