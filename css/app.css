@@ -13360,7 +13360,19 @@ footer .foot-bottom .container p {
     width: 100%;
   }
 }
-.faq .badge {
+.faq h6 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+.faq h6 a {
+  color: #343f55;
+  display: block;
+  padding: 3rem 0;
+  position: relative;
+  outline: 0;
+  border-bottom: 1px solid #e6eef0;
+}
+.faq h6 a .badge {
   border-radius: 50rem;
   -webkit-border-radius: 50rem;
   -moz-border-radius: 50rem;
@@ -13371,19 +13383,13 @@ footer .foot-bottom .container p {
   min-width: 2.5rem;
   align-items: center;
   padding: 0.6rem .5rem .4rem;
-}
-.faq h6 {
-  font-size: 1.4rem;
-  border-bottom: 1px solid #e6eef0;
-  margin-bottom: 0;
-}
-.faq h6 a {
-  color: #343f55;
-  display: block;
-  padding: 3rem 0;
-  position: relative;
+  background-color: #014181;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 .faq h6 a::after {
+  color: #727272;
   content: "\f055";
   position: absolute;
   top: 0;
@@ -13396,10 +13402,51 @@ footer .foot-bottom .container p {
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+.faq h6 a[aria-expanded="true"] {
+  border-bottom: 1px solid transparent;
 }
 .faq h6 a[aria-expanded="true"]::after {
-  color: #727272;
   content: "\f056";
+}
+.faq h6 a[aria-expanded="false"] .badge {
+  background-color: #bb5241;
+}
+.faq h6 a:hover, .faq h6 a:focus, .faq h6 a:active {
+  text-decoration: none;
+}
+.faq .panel-collapse .media {
+  padding-left: 4.4rem;
+}
+.faq .panel-collapse .media p {
+  font-size: 1.4rem;
+  color: #949494;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+.faq .panel-collapse .media p strong {
+  font-weight: 600;
+  color: #616161;
+  margin-bottom: 1rem;
+}
+.faq .panel-collapse .media .media-left {
+  min-width: 7rem;
+}
+.faq .panel-collapse .media .media-body p:last-child {
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  border-bottom: 1px solid #e6eef0;
+}
+.faq .panel-collapse .media:last-of-type {
+  border-bottom: 1px solid #e6eef0;
+  margin-top: 3rem;
+}
+.faq .panel-collapse .media:last-of-type .media-body p:last-child {
+  border-bottom: 0;
 }
 
 /* Tablet */

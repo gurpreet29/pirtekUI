@@ -1,19 +1,6 @@
 .faq {
-    .badge {
-        @include border-radius(50rem);
-
-        margin-right: 1.8rem;
-        font-weight: 300;
-        font-size: 1.4rem;
-        min-height: 2.5rem;
-        min-width: 2.5rem;
-        align-items: center;
-        padding: 0.6rem .5rem .4rem;
-    }
-
     h6 {
         font-size: 1.4rem;
-        border-bottom: 1px solid $listingBg;
         margin-bottom: 0;
 
         a {
@@ -21,8 +8,26 @@
             display: block;
             padding: 3rem 0;
             position: relative;
+            outline: 0;
+            border-bottom: 1px solid $listingBg;
+
+            .badge {
+                @include border-radius(50rem);
+
+                margin-right: 1.8rem;
+                font-weight: 300;
+                font-size: 1.4rem;
+                min-height: 2.5rem;
+                min-width: 2.5rem;
+                align-items: center;
+                padding: 0.6rem .5rem .4rem;
+                background-color: $blue;
+
+                @include transition(0.25s);
+            }
 
             &::after {
+                color: $projectGrey;
                 content: "\f055";
                 position: absolute;
                 top: 0;
@@ -33,12 +38,73 @@
                 top: 50%;
 
                 @include transform(translateY(-50%));
+                @include transition(0.25s);
             }
 
             &[aria-expanded="true"] {
                 &::after {
-                    color: $projectGrey;
                     content: "\f056";
+                }
+
+                border-bottom: 1px solid transparent;
+            }
+
+            &[aria-expanded="false"] {
+                .badge {
+                    background-color: $projectBrown;
+                }
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .panel-collapse {
+        .media {
+            padding-left: 4.4rem;
+
+            p {
+                font-size: 1.4rem;
+                color: $lighterGrey;
+                margin-bottom: 1rem;
+                line-height: 1.5;
+                font-weight: 300;
+
+                strong {
+                    font-weight: 600;
+                    color: $mediumblack;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .media-left {
+                min-width: 7rem;
+            }
+
+            .media-body {
+                p {
+                    &:last-child {
+                        padding-bottom: 3rem;
+                        margin-bottom: 0;
+                        border-bottom: 1px solid $listingBg;
+                    }
+                }
+            }
+
+            &:last-of-type {
+                border-bottom: 1px solid $listingBg;
+                margin-top: 3rem;
+
+                .media-body {
+                    p {
+                        &:last-child {
+                            border-bottom: 0;
+                        }
+                    }
                 }
             }
         }
