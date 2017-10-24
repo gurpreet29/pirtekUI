@@ -13321,6 +13321,7 @@ footer .foot-bottom .container p {
   color: #bb5241;
 }
 .career-benefits .thumbnail {
+  background-color: transparent;
   padding: 0;
   border: 0;
 }
@@ -13335,11 +13336,12 @@ footer .foot-bottom .container p {
   font-size: 2.1rem;
   color: #032f3e;
   font-weight: 400;
+  margin-bottom: 1.4rem;
 }
 .career-benefits .thumbnail .caption p {
   color: #696866;
   font-size: 1.5rem;
-  line-height: 1.8;
+  line-height: 2;
 }
 
 /* Mobile */
