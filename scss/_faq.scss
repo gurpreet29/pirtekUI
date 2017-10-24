@@ -1,0 +1,54 @@
+.faq {
+    .badge {
+        @include border-radius(50rem);
+
+        margin-right: 1.8rem;
+        font-weight: 300;
+        font-size: 1.4rem;
+        min-height: 2.5rem;
+        min-width: 2.5rem;
+        align-items: center;
+        padding: 0.6rem .5rem .4rem;
+    }
+
+    h6 {
+        font-size: 1.4rem;
+        border-bottom: 1px solid $listingBg;
+        margin-bottom: 0;
+
+        a {
+            color: $projectBlue;
+            display: block;
+            padding: 3rem 0;
+            position: relative;
+
+            &::after {
+                content: "\f055";
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: block;
+                font-family: 'FontAwesome';
+                font-size: 2.8rem;
+                top: 50%;
+
+                @include transform(translateY(-50%));
+            }
+
+            &[aria-expanded="true"] {
+                &::after {
+                    color: $projectGrey;
+                    content: "\f056";
+                }
+            }
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: $tablet) {}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .faq {}
+}
