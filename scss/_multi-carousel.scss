@@ -143,6 +143,49 @@
                     display: block;
                 }
             }
+
+            @media (min-width: 480px) and (max-width: 767px) {
+                @media (transform-3d), (-webkit-transform-3d) {
+                    > .item.active.right,
+                    > .item.next {
+                        transform: translate3d(50%, 0, 0);
+                        left: 0;
+                    }
+
+                    > .item.active.left,
+                    > .item.prev {
+                        transform: translate3d(-50%, 0, 0);
+                        left: 0;
+                    }
+
+                    > .item.left,
+                    > .item.prev.right,
+                    > .item.active {
+                        transform: translate3d(0, 0, 0);
+                        left: 0;
+                    }
+                }
+
+                > .active.left,
+                > .prev {
+                    left: -50%;
+                }
+
+                > .active.right,
+                > .next {
+                    left: 50%;
+                }
+
+                > .left,
+                > .prev.right,
+                > .active {
+                    left: 0;
+                }
+
+                .cloneditem-1 {
+                    display: block;
+                }
+            }
         }
     }
 }
@@ -159,8 +202,23 @@
     }
 }
 
-/*Mobile*/
-@media (max-width: $mobile) {
+/*Mobile landscape*/
+@media (min-width: 480px) and (max-width: 767px) {
+    .multicarousel {
+        .carousel {
+            .carousel-control {
+                display: block;
+            }
+
+            .col-md-2 {
+                width: 50%;
+            }
+        }
+    }
+}
+
+/*Mobile portrait*/
+@media (max-width: 479px) {
     .multicarousel {
         .carousel {
             .carousel-control {
