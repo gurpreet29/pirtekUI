@@ -13360,26 +13360,30 @@ footer .foot-bottom .container p {
     width: 100%;
   }
 }
-.faq h6 {
+.accordion .panel-body {
+  padding: 0;
+}
+.accordion .panel-body h6 {
   font-size: 1.4rem;
   margin-bottom: 0;
 }
-.faq h6 a {
+.accordion .panel-body h6 a {
   color: #343f55;
   display: block;
-  padding: 3rem 0;
+  padding: 3rem 4rem 3rem 0;
   position: relative;
   outline: 0;
   border-bottom: 1px solid #e6eef0;
+  display: flex;
 }
-.faq h6 a .badge {
+.accordion .panel-body h6 a .badge {
   border-radius: 50rem;
   -webkit-border-radius: 50rem;
   -moz-border-radius: 50rem;
   margin-right: 1.8rem;
   font-weight: 300;
   font-size: 1.4rem;
-  min-height: 2.5rem;
+  height: 2.5rem;
   min-width: 2.5rem;
   align-items: center;
   padding: 0.6rem .5rem .4rem;
@@ -13388,7 +13392,7 @@ footer .foot-bottom .container p {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
-.faq h6 a::after {
+.accordion .panel-body h6 a::after {
   color: #727272;
   content: "\f055";
   position: absolute;
@@ -13406,50 +13410,75 @@ footer .foot-bottom .container p {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
-.faq h6 a[aria-expanded="true"] {
+.accordion .panel-body h6 a[aria-expanded="true"] {
   border-bottom: 1px solid transparent;
 }
-.faq h6 a[aria-expanded="true"]::after {
+.accordion .panel-body h6 a[aria-expanded="true"]::after {
   content: "\f056";
 }
-.faq h6 a[aria-expanded="false"] .badge {
+.accordion .panel-body h6 a[aria-expanded="false"] .badge {
   background-color: #bb5241;
 }
-.faq h6 a:hover, .faq h6 a:focus, .faq h6 a:active {
+.accordion .panel-body h6 a:hover, .accordion .panel-body h6 a:focus, .accordion .panel-body h6 a:active {
   text-decoration: none;
 }
-.faq .panel-collapse .media {
+.accordion .panel-body .panel-collapse .media {
   padding-left: 4.4rem;
 }
-.faq .panel-collapse .media p {
+.accordion .panel-body .panel-collapse .media p {
   font-size: 1.4rem;
   color: #949494;
   margin-bottom: 1rem;
   line-height: 1.5;
   font-weight: 300;
 }
-.faq .panel-collapse .media p strong {
+.accordion .panel-body .panel-collapse .media p strong {
   font-weight: 600;
   color: #616161;
   margin-bottom: 1rem;
 }
-.faq .panel-collapse .media .media-left {
+.accordion .panel-body .panel-collapse .media .media-left {
   min-width: 7rem;
 }
-.faq .panel-collapse .media .media-body p:last-child {
+.accordion .panel-body .panel-collapse .media .media-body p:last-child {
   padding-bottom: 3rem;
   margin-bottom: 0;
   border-bottom: 1px solid #e6eef0;
 }
-.faq .panel-collapse .media:last-of-type {
+.accordion .panel-body .panel-collapse .media:last-of-type {
   border-bottom: 1px solid #e6eef0;
   margin-top: 3rem;
 }
-.faq .panel-collapse .media:last-of-type .media-body p:last-child {
+.accordion .panel-body .panel-collapse .media:last-of-type .media-body p:last-child {
   border-bottom: 0;
 }
 
 /* Tablet */
 /* Mobile */
+@media (max-width: 767px) {
+  .accordion .panel-body h6 {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+  }
+  .accordion .panel-body h6 a {
+    padding: 2rem 3.7rem 2rem 0;
+  }
+  .accordion .panel-body .panel-collapse {
+    max-height: 35rem;
+    overflow-y: auto;
+  }
+  .accordion .panel-body .panel-collapse .media {
+    padding-left: 0;
+  }
+  .accordion .panel-body .panel-collapse .media .media-left {
+    min-width: 4rem;
+  }
+  .accordion .panel-body .panel-collapse .media .media-body p:last-child {
+    padding-bottom: 2rem;
+  }
+  .accordion .panel-body .panel-collapse .media:last-of-type {
+    margin-top: 2rem;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */
