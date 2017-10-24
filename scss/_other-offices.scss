@@ -1,0 +1,147 @@
+.other-offices {
+    background-color: $blue;
+    padding: 10rem 0 7rem;
+
+    h6 {
+        color: $white;
+        font-size: 3.2rem;
+        margin-bottom: 4rem;
+    }
+
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        li {
+            flex-basis: 18%;
+
+            a {
+                text-decoration: none;
+                display: block;
+                opacity: 0.8;
+
+                @include transition(0.25s);
+
+                &:hover,
+                &:focus,
+                &:active {
+                    outline: 0;
+                    opacity: 1;
+
+                    .thumbnail {
+                        &::after {
+                            content: '';
+                        }
+                    }
+                }
+
+                .thumbnail {
+                    position: relative;
+                    background-color: transparent;
+                    border: 0;
+                    padding: 0;
+
+                    img {
+                        background-color: $lightGrey;
+                    }
+
+                    .caption {
+                        padding: 2rem 0.2rem;
+
+                        h4 {
+                            font-size: 1.6rem;
+                            color: $white;
+                            line-height: 1.4;
+                            margin-bottom: 0;
+                            font-weight: 600;
+                        }
+
+                        p {
+                            font-size: 1.3rem;
+                            color: $white;
+                            text-transform: uppercase;
+                            line-height: 1.3;
+                            margin-bottom: 0;
+                        }
+                    }
+
+                    &::after {
+                        position: absolute;
+                        content: none;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        height: .3rem;
+                        background-color: $projectBrown;
+                        display: block;
+
+                        @include transition(0.25s);
+                    }
+
+                    &:hover,
+                    &:focus,
+                    &:active {
+                        outline: 0;
+                        opacity: 1;
+
+                        &::after {
+                            content: '';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $mobile) {
+    .other-offices {
+        padding: 0 0 2rem;
+
+        .container {
+            padding: 0;
+
+            h6 {
+                padding: 3rem 1.5rem;
+                margin-bottom: 0;
+                background-color: darken($blue, 7%);
+                font-size: 2.4rem;
+            }
+
+            ul {
+                display: block;
+
+                li {
+                    width: 100%;
+                    border-bottom: 1px solid $projectNavyBlue;
+                    border-collapse: collapse;
+
+                    a {
+                        .thumbnail {
+                            margin-bottom: 0;
+                            padding: 2rem 1.5rem;
+
+                            img {
+                                display: none;
+                            }
+
+                            .caption {
+                                padding: 0;
+
+                                h4 {
+                                    color: $white;
+                                }
+
+                                p {
+                                    margin-bottom: 0;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
