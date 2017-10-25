@@ -119,16 +119,27 @@ a {
 
     &.btn-primary {
         color: $white;
-        background-color: $lightbrown;
-        border-color: $lightbrown;
+        background-color: $projectBrown;
+        border-color: $projectBrown;
         border-width: 2px;
+
+        &.solid-hrv {
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: rgba(255, 255, 255, 0.5);
+                border-color: $projectBrown;
+                color: $projectBrown;
+                box-shadow: none;
+            }
+        }
 
         &:hover,
         &:focus,
         &:active {
             background-color: transparent;
-            border-color: $lightbrown;
-            color: $lightbrown;
+            border-color: $projectBrown;
+            color: $projectBrown;
             box-shadow: none;
         }
     }
