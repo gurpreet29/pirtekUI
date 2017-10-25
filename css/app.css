@@ -13497,11 +13497,22 @@ footer .foot-bottom .container p {
 .contact-map #map {
   height: 0;
   overflow: hidden;
-  padding-bottom: 71.42%;
+  padding-bottom: 66.42%;
   position: relative;
 }
 
 /* Mobile */
+@media (max-width: 991px) {
+  .contact-map {
+    margin: 4rem 0 0;
+  }
+}
+/* Mobile */
+@media (max-width: 767px) {
+  .contact-map {
+    margin: 4rem 0 2rem;
+  }
+}
 .other-offices {
   background-color: #014181;
   padding: 10rem 0 7rem;
@@ -13693,6 +13704,12 @@ footer .foot-bottom .container p {
   margin-bottom: 0.4rem;
 }
 
+/* Mobile */
+@media (max-width: 991px) {
+  .right-panel {
+    margin: 4rem 0;
+  }
+}
 /* Mobile */
 @media (max-width: 767px) {
   .right-panel {

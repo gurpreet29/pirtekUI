@@ -8,12 +8,21 @@
     #map {
         height: 0;
         overflow: hidden;
-        padding-bottom: 71.42%;
+        padding-bottom: 66.42%;
         position: relative;
     }
 }
 
 /* Mobile */
+@media (max-width: $tablet) {
+    .contact-map {
+        margin: 4rem 0 0;
+    }
+}
+
+/* Mobile */
 @media (max-width: $mobile) {
-    .contact-map {}
+    .contact-map {
+        margin: 4rem 0 2rem;
+    }
 }
