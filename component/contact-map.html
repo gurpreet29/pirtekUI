@@ -10,35 +10,31 @@
 
 <body>
     <div>
-        <div id="vue-holder"></div>
         <section class="contact-map">
             <div id="map_container"></div>
             <div id="map"></div>
         </section>
-        <script src="../js/app.min.js"></script>
-        <!-- js to load google map api -->
-
-<script>
-      function initialize() {
-        var uluru = {lat: 1.273981, lng: 103.801429};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 18,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-             //Resize Function
-            google.maps.event.addDomListener(window, "resize", function() {
-                var center = map.getCenter();
-                google.maps.event.trigger(map, "resize");
-                map.setCenter(center);
+        <script>
+          function initialize() {
+            var uluru = {lat: -25.363, lng: 131.044};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 4,
+              center: uluru
             });
-      }
-</script>
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+                 //Resize Function
+                google.maps.event.addDomListener(window, "resize", function() {
+                    var center = map.getCenter();
+                    google.maps.event.trigger(map, "resize");
+                    map.setCenter(center);
+                });
+              }
+        </script>
 
-
+        <script src="../js/app.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRsO9WnXsHaY5KFUqCnmS7vT-kEdO081o&callback=initialize"></script>
     </div>
 </body>

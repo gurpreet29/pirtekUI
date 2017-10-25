@@ -1,0 +1,17 @@
+.contact-map {
+    #map_container {
+        position: relative;
+    }
+
+    #map {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 71.42%;
+        position: relative;
+    }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .contact-map {}
+}

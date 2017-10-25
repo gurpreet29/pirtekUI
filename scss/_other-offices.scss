@@ -11,10 +11,15 @@
     ul {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
 
         li {
             flex-basis: 18%;
+            width: 18%;
+            margin-right: 2.5%;
+
+            &:nth-child(5n) {
+                margin-right: auto;
+            }
 
             a {
                 text-decoration: none;
@@ -116,6 +121,7 @@
                     width: 100%;
                     border-bottom: 1px solid $projectNavyBlue;
                     border-collapse: collapse;
+                    margin-right: auto;
 
                     a {
                         .thumbnail {

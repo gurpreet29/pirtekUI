@@ -13500,10 +13500,14 @@ footer .foot-bottom .container p {
 .other-offices ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
 }
 .other-offices ul li {
   flex-basis: 18%;
+  width: 18%;
+  margin-right: 2.5%;
+}
+.other-offices ul li:nth-child(5n) {
+  margin-right: auto;
 }
 .other-offices ul li a {
   text-decoration: none;
@@ -13587,6 +13591,7 @@ footer .foot-bottom .container p {
     width: 100%;
     border-bottom: 1px solid #103771;
     border-collapse: collapse;
+    margin: auto;
   }
   .other-offices .container ul li a .thumbnail {
     margin-bottom: 0;
@@ -13640,6 +13645,17 @@ footer .foot-bottom .container p {
 }
 
 /* Tablet */
+/* Mobile */
+.contact-map #map_container {
+  position: relative;
+}
+.contact-map #map {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 71.42%;
+  position: relative;
+}
+
 /* Mobile */
 
 /*# sourceMappingURL=app.css.map */
