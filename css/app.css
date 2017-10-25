@@ -13488,6 +13488,20 @@ footer .foot-bottom .container p {
     margin-top: 2rem;
   }
 }
+.contact-map {
+  margin: 10rem 0;
+}
+.contact-map #map_container {
+  position: relative;
+}
+.contact-map #map {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 71.42%;
+  position: relative;
+}
+
+/* Mobile */
 .other-offices {
   background-color: #014181;
   padding: 10rem 0 7rem;
