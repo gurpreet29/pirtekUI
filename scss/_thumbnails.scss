@@ -1,0 +1,42 @@
+.thumbnails {
+    position: relative;
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        z-index: 1;
+    }
+
+    .caption-text {
+        padding: 3rem;
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+
+        @include transform(translateY(-50%));
+
+        h6 {
+            color: $white;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '';
+        display: block;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* Tablet */
+@media (max-width: $tablet) {}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .thumbnails {}
+}

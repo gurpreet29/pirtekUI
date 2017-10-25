@@ -1,0 +1,50 @@
+.right-panel {
+    background-color: $projectlightGrey;
+    padding: 4rem 5rem;
+    margin: 10rem 0;
+
+    table {
+        margin-bottom: 4.5rem;
+        font-size: 1.6rem;
+        width: 100%;
+
+        tr {
+            td {
+                line-height: 1.5;
+                font-size: 1.6rem;
+                display: inline-block;
+                word-break: break-all;
+                vertical-align: top;
+
+                &:first-child {
+                    width: 20%;
+                }
+
+                &:last-child {
+                    width: 80%;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    p {
+        margin-bottom: 4.3rem;
+    }
+
+    h6 {
+        margin-bottom: 0.4rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .right-panel {
+        padding: 0;
+        background-color: transparent;
+        margin: 0 0 4rem;
+    }
+}
