@@ -13517,11 +13517,11 @@ footer .foot-bottom .container p {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
-.other-offices ul li a:hover, .other-offices ul li a:focus, .other-offices ul li a:active {
+.other-offices ul li a:hover, .other-offices ul li a:focus, .other-offices ul li a:active, .other-offices ul li a.active {
   outline: 0;
   opacity: 1;
 }
-.other-offices ul li a:hover .thumbnail::after, .other-offices ul li a:focus .thumbnail::after, .other-offices ul li a:active .thumbnail::after {
+.other-offices ul li a:hover .thumbnail::after, .other-offices ul li a:focus .thumbnail::after, .other-offices ul li a:active .thumbnail::after, .other-offices ul li a.active .thumbnail::after {
   content: '';
 }
 .other-offices ul li a .thumbnail {
@@ -13591,7 +13591,7 @@ footer .foot-bottom .container p {
     width: 100%;
     border-bottom: 1px solid #103771;
     border-collapse: collapse;
-    margin: auto;
+    margin-right: auto;
   }
   .other-offices .container ul li a .thumbnail {
     margin-bottom: 0;
@@ -13646,16 +13646,38 @@ footer .foot-bottom .container p {
 
 /* Tablet */
 /* Mobile */
-.contact-map #map_container {
-  position: relative;
+.right-panel {
+  background-color: #ebebeb;
+  padding: 4rem 5.3rem;
 }
-.contact-map #map {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 71.42%;
-  position: relative;
+.right-panel table {
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 4.5rem;
+}
+.right-panel table strong {
+  font-weight: 900;
+}
+.right-panel table tr td {
+  line-height: 1.5;
+  font-size: 1.6rem;
+}
+.right-panel table tr td img {
+  max-width: 10rem;
+  vertical-align: top;
+  margin-bottom: 1rem;
+}
+.right-panel h5 + .btn {
+  margin-top: 3.5rem;
+  margin-bottom: 7.5rem;
 }
 
 /* Mobile */
+@media (max-width: 767px) {
+  .right-panel {
+    padding: 4rem 1.5rem;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

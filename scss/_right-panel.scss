@@ -1,0 +1,43 @@
+.right-panel {
+    background-color: $projectlightGrey;
+    padding: 4rem 5.3rem;
+
+    table {
+        font-size: 1.6rem;
+        font-weight: 500;
+        width: 100%;
+
+        strong {
+            font-weight: 900;
+        }
+
+        tr {
+            td {
+                line-height: 1.5;
+                font-size: 1.6rem;
+
+                img {
+                    max-width: 10rem;
+                    vertical-align: top;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        margin-bottom: 4.5rem;
+    }
+
+    h5 {
+        + .btn {
+            margin-top: 3.5rem;
+            margin-bottom: 7.5rem;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {
+    .right-panel {
+        padding: 4rem 1.5rem;
+    }
+}

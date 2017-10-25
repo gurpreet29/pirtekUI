@@ -30,7 +30,8 @@
 
                 &:hover,
                 &:focus,
-                &:active {
+                &:active,
+                &.active {
                     outline: 0;
                     opacity: 1;
 
