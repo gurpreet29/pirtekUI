@@ -1,43 +1,50 @@
 .right-panel {
     background-color: $projectlightGrey;
-    padding: 4rem 5.3rem;
+    padding: 4rem 5rem;
+    margin: 10rem 0;
 
     table {
+        margin-bottom: 4.5rem;
         font-size: 1.6rem;
-        font-weight: 500;
         width: 100%;
-
-        strong {
-            font-weight: 900;
-        }
 
         tr {
             td {
                 line-height: 1.5;
                 font-size: 1.6rem;
+                display: inline-block;
+                word-break: break-all;
+                vertical-align: top;
 
-                img {
-                    max-width: 10rem;
-                    vertical-align: top;
-                    margin-bottom: 1rem;
+                &:first-child {
+                    width: 20%;
+                }
+
+                &:last-child {
+                    width: 80%;
                 }
             }
         }
 
-        margin-bottom: 4.5rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
-    h5 {
-        + .btn {
-            margin-top: 3.5rem;
-            margin-bottom: 7.5rem;
-        }
+    p {
+        margin-bottom: 4.3rem;
+    }
+
+    h6 {
+        margin-bottom: 0.4rem;
     }
 }
 
 /* Mobile */
 @media (max-width: $mobile) {
     .right-panel {
-        padding: 4rem 1.5rem;
+        padding: 0;
+        background-color: transparent;
+        margin: 0 0 4rem;
     }
 }
