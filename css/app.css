@@ -11464,8 +11464,9 @@ footer .foot-bottom .container p {
   font-size: 3.7rem;
   line-height: 1;
   margin: 0;
+  color: #fff;
 }
-.psa-commitments .psa-commits > a figure figcaption h3 span {
+.psa-commitments .psa-commits > a figure figcaption h3 .commit {
   font-size: 3rem;
   font-weight: 300;
 }
@@ -11493,7 +11494,7 @@ footer .foot-bottom .container p {
   display: flex;
   height: 9.6rem;
 }
-.psa-commitments .psa-commits > .psa-commit-childs li a figure span {
+.psa-commitments .psa-commits > .psa-commit-childs li a figure .icon-img {
   position: absolute;
   display: inline-block;
   left: 0;
@@ -11509,7 +11510,7 @@ footer .foot-bottom .container p {
   transition: 0.25s;
   z-index: 2;
 }
-.psa-commitments .psa-commits > .psa-commit-childs li a figure span img {
+.psa-commitments .psa-commits > .psa-commit-childs li a figure .icon-img img {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -11525,7 +11526,7 @@ footer .foot-bottom .container p {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
-.psa-commitments .psa-commits > .psa-commit-childs li a figure span img.icon-hrv {
+.psa-commitments .psa-commits > .psa-commit-childs li a figure .icon-img img.icon-hrv {
   opacity: 0;
 }
 .psa-commitments .psa-commits > .psa-commit-childs li a figure figcaption {
@@ -11639,24 +11640,24 @@ footer .foot-bottom .container p {
     line-height: 1;
     font-size: 2.7rem;
   }
-  .psa-commitments .psa-commits > a figure figcaption h3 span {
+  .psa-commitments .psa-commits > a figure figcaption h3 .commit {
     font-size: 2.2rem;
   }
   .psa-commitments .psa-commits .psa-commit-childs li a figure {
     height: 7.2rem;
   }
-  .psa-commitments .psa-commits .psa-commit-childs li a figure span {
+  .psa-commitments .psa-commits .psa-commit-childs li a figure .icon-img {
     width: 7.2rem;
     height: 7.2rem;
   }
-  .psa-commitments .psa-commits .psa-commit-childs li a figure span img {
+  .psa-commitments .psa-commits .psa-commit-childs li a figure .icon-img img {
     width: 3.6rem;
     height: 3.6rem;
     -webkit-transition: 0.25s;
     -o-transition: 0.25s;
     transition: 0.25s;
   }
-  .psa-commitments .psa-commits .psa-commit-childs li a figure span img.icon-hrv {
+  .psa-commitments .psa-commits .psa-commit-childs li a figure .icon-img img.icon-hrv {
     opacity: 0;
   }
   .psa-commitments .psa-commits .psa-commit-childs li.psa-reverse a figure figcaption {
@@ -11705,10 +11706,10 @@ footer .foot-bottom .container p {
   .psa-commitments .psa-commits > a figure figcaption h3 {
     font-size: 2.3rem;
   }
-  .psa-commitments .psa-commits > a figure figcaption h3 span {
+  .psa-commitments .psa-commits > a figure figcaption h3 .commit {
     font-size: 1.6rem;
   }
-  .psa-commitments .psa-commits .psa-commit-childs li a figure span {
+  .psa-commitments .psa-commits .psa-commit-childs li a figure .icon-img {
     width: 6.2rem;
     height: 6.2rem;
   }
