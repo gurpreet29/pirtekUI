@@ -60,38 +60,11 @@
                             color: $lightblack;
                         }
 
-                        svg {
+                        img {
                             width: 100%;
-                            max-width: 15.3rem;
-                            height: 15.3rem;
+                            max-width: 15rem;
                             opacity: 0.6;
-
-                            path {
-                                stroke: $skyBlue;
-                                circle: $skyBlue;
-                            }
-                        }
-                    }
-
-                    &:first-child {
-                        figure {
-                            svg {
-                                path {
-                                    stroke: $blue;
-                                    circle: $blue;
-                                }
-                            }
-                        }
-                    }
-
-                    &:last-child {
-                        figure {
-                            svg {
-                                path {
-                                    stroke: $projectBrown;
-                                    circle: $projectBrown;
-                                }
-                            }
+                            margin-bottom: 1.5rem;
                         }
                     }
                 }
@@ -212,10 +185,9 @@
                                 font-size: 1.4rem;
                             }
 
-                            svg {
+                            img {
                                 width: 100%;
                                 max-width: 11.1rem;
-                                height: 11.1rem;
                             }
                         }
                     }
@@ -282,9 +254,9 @@
                                 font-size: 1.2rem;
                             }
 
-                            svg {
+                            img {
                                 max-width: 9.3rem;
-                                height: 9.3rem;
+                                margin-bottom: 0.5rem;
                             }
                         }
                     }
