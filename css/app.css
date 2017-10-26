@@ -13834,6 +13834,9 @@ footer .foot-bottom .container p {
     padding: 4rem 0;
   }
 }
+.form-default {
+  margin: 10rem 0;
+}
 .form-default form span, .form-default form label {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
@@ -13890,7 +13893,15 @@ footer .foot-bottom .container p {
   overflow-x: hidden;
   overflow-y: auto;
 }
+.form-default .Captcha .control-label {
+  display: none !important;
+}
 
 /* Mobile */
+@media (max-width: 767px) {
+  .form-default {
+    margin: 4rem 0 2rem;
+  }
+}
 
 /*# sourceMappingURL=app.css.map */

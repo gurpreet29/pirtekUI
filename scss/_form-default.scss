@@ -1,4 +1,6 @@
 .form-default {
+    margin: 10rem 0;
+
     form {
         span, label {
             font-family: $fontFamily;
@@ -66,7 +68,17 @@
             overflow-y: auto;
         }
     }
+
+    .Captcha {
+        .control-label {
+            display: none !important;
+        }
+    }
 }
 
 /* Mobile */
-@media (max-width: $mobile) {}
+@media (max-width: $mobile) {
+    .form-default {
+        margin: 4rem 0 2rem;
+    }
+}
