@@ -1,0 +1,72 @@
+.form-default {
+    form {
+        span, label {
+            font-family: $fontFamily;
+            font-size: 1.4rem;
+            color: $projectBlack;
+            letter-spacing: .1rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            position: static;
+            font-weight: 400;
+        }
+
+        // also written at base.scss
+        .btn-default {
+            text-transform: uppercase;
+            font-size: 2rem;
+            padding: 1.2rem 2.3rem;
+            font-family: $fontFamily;
+            font-weight: 600;
+            border-radius: 0;
+            margin-bottom: 3rem;
+            min-width: 20rem;
+            transition: all .2s ease-in;
+            color: $white;
+            background-color: $projectBrown;
+            border-color: $projectBrown;
+            border-width: 2px;
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.active {
+                background-color: transparent;
+                border-color: $projectBrown;
+                color: $projectBrown;
+                box-shadow: none;
+            }
+        }
+
+        .form-control {
+            border-radius: 0;
+            color: $black;
+            font-size: 1.6rem;
+            padding: 1rem 2rem;
+            height: 4.5rem;
+            border-color: $projectlightGrey;
+            box-shadow: none;
+
+            &:focus {
+                border-color: $projectlightGrey;
+                outline: 0;
+                box-shadow: none;
+                border-bottom: 0.4rem solid $projectBrown;
+            }
+        }
+
+        textarea {
+            height: 10rem;
+            width: 100%;
+            margin: 0;
+            resize: none;
+            border: none;
+            outline: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    }
+}
+
+/* Mobile */
+@media (max-width: $mobile) {}

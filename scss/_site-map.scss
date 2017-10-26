@@ -1,0 +1,73 @@
+.site-map {
+    background-color: $projectlightGrey;
+    overflow: hidden;
+    padding: 10rem 0;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        display: block;
+        width: 100%;
+
+        li {
+            line-height: 1.6;
+
+            h6 {
+                margin-bottom: 0;
+
+                a {
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    color: $black;
+                    padding: 2rem 0;
+                    border-bottom: 1px solid $lightBlue;
+                }
+            }
+
+            h5 {
+                a {
+                    font-size: 1.7rem;
+                    font-weight: 600;
+                    margin: 2rem 0 0;
+                }
+            }
+
+            > a {
+                padding: 2rem 0 0 1.5rem;
+                position: relative;
+
+                &::before {
+                    content: '\f105';
+                    display: block;
+                    left: 0;
+                    height: 20px;
+                    position: absolute;
+                    font-family: 'FontAwesome';
+                }
+            }
+
+            a {
+                color: $projectGrey;
+                font-size: 1.6rem;
+                letter-spacing: 0.05rem;
+                display: block;
+
+                @include transition(0.25s);
+
+                &:hover,
+                &:focus {
+                    color: $projectBrown;
+                    text-decoration: none;
+                    outline: 0;
+                }
+            }
+        }
+    }
+}
+
+/*mobile*/
+@media (max-width: $mobile) {
+    .site-map {
+        padding: 4rem 0;
+    }
+}

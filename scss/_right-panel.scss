@@ -41,6 +41,13 @@
 }
 
 /* Mobile */
+@media (max-width: $tablet) {
+    .right-panel {
+        margin: 4rem 0;
+    }
+}
+
+/* Mobile */
 @media (max-width: $mobile) {
     .right-panel {
         padding: 0;
