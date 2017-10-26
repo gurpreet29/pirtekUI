@@ -1,5 +1,6 @@
 .thumbnails {
     position: relative;
+    margin: 4rem 0;
 
     img {
         width: 100%;
@@ -38,5 +39,7 @@
 
 /* Mobile */
 @media (max-width: $mobile) {
-    .thumbnails {}
+    .thumbnails {
+        margin: 4rem 0;
+    }
 }

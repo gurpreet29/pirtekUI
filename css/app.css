@@ -13645,6 +13645,7 @@ footer .foot-bottom .container p {
 }
 .thumbnails {
   position: relative;
+  margin: 4rem 0;
 }
 .thumbnails img {
   width: 100%;
@@ -13678,6 +13679,11 @@ footer .foot-bottom .container p {
 
 /* Tablet */
 /* Mobile */
+@media (max-width: 767px) {
+  .thumbnails {
+    margin: 4rem 0;
+  }
+}
 .right-panel {
   background-color: #ebebeb;
   padding: 4rem 5rem;
