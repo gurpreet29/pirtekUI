@@ -13175,6 +13175,10 @@ footer .foot-bottom .container p {
   font-weight: 300;
   border-color: #dae4e6;
 }
+.tender-notice .table-container .table-filter td:first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 .tender-notice .table-container .table-filter td > a:not(.btn) {
   color: #014181;
 }
@@ -13198,6 +13202,21 @@ footer .foot-bottom .container p {
 }
 .tender-notice .table-container .table-filter thead tr td.status {
   width: 20%;
+}
+.tender-notice hr {
+  border-color: #dae4e6;
+  margin-bottom: 1rem;
+  margin-top: 1.2rem;
+}
+.tender-notice.news-media .table-container .table-filter thead tr td {
+  padding-bottom: 0;
+}
+.tender-notice.news-media .table-container .table-filter tbody tr td {
+  border-top: 0;
+  border-bottom: 1px solid #dae4e6;
+}
+.tender-notice.news-media .table-container .table-filter tbody tr:last-child td {
+  border: 0;
 }
 
 /* Tablet */
