@@ -13847,6 +13847,63 @@ footer .foot-bottom .container p {
     padding: 4rem 0;
   }
 }
+.form-default form span, .form-default form label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  color: #1f1f1f;
+  letter-spacing: .1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  position: static;
+  font-weight: 400;
+}
+.form-default form .btn-default {
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 1.2rem 2.3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border-radius: 0;
+  margin-bottom: 3rem;
+  min-width: 20rem;
+  transition: all .2s ease-in;
+  color: #fff;
+  background-color: #bb5241;
+  border-color: #bb5241;
+  border-width: 2px;
+}
+.form-default form .btn-default:hover, .form-default form .btn-default:focus, .form-default form .btn-default:active, .form-default form .btn-default.active {
+  background-color: transparent;
+  border-color: #bb5241;
+  color: #bb5241;
+  box-shadow: none;
+}
+.form-default form .form-control {
+  border-radius: 0;
+  color: #000;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  height: 4.5rem;
+  border-color: #ebebeb;
+  box-shadow: none;
+}
+.form-default form .form-control:focus {
+  border-color: #ebebeb;
+  outline: 0;
+  box-shadow: none;
+  border-bottom: 0.4rem solid #bb5241;
+}
+.form-default form textarea {
+  height: 10rem;
+  width: 100%;
+  margin: 0;
+  resize: none;
+  border: none;
+  outline: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 /* Mobile */
 
 /*# sourceMappingURL=app.css.map */
