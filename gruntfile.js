@@ -4,6 +4,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+
     grunt.loadNpmTasks('grunt-grunticon');
     grunt.loadNpmTasks('grunt-svgmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
@@ -33,7 +34,7 @@ module.exports = function(grunt) {
 
 
                 ],
-                dest: 'js/app.min.js'
+                dest: 'js/app.js'
             }
         },
 
@@ -61,7 +62,7 @@ module.exports = function(grunt) {
             options: { livereload: true },
             scripts: {
                 files: ['<%= concat.dist.src %>'],
-                tasks: ['concat']
+                tasks: ['concat', 'uglify']
             },
             sass: {
                 files: ['scss/*.scss'],
