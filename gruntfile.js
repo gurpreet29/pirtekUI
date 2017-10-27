@@ -69,22 +69,6 @@ module.exports = function(grunt) {
                 tasks: ['compass:dev']
             }
         },
-        svgmin: {
-            dist: {
-                options: {
-                    plugins: [{
-                        removeXMLProcInst: false
-                    }]
-                },
-
-                files: [{
-                    expand: true,
-                    cwd: 'img/svg/src',
-                    src: ['*.svg'],
-                    dest: 'img/svg/'
-                }]
-            }
-        },
         postcss: {
             options: {
                 map: true,
@@ -105,6 +89,22 @@ module.exports = function(grunt) {
                 // src: ['app.css', '!*.min.css'],
                 dest: 'css/',
                 ext: '.min.css'
+            }
+        },
+        svgmin: {
+            dist: {
+                options: {
+                    plugins: [{
+                        removeXMLProcInst: false
+                    }]
+                },
+
+                files: [{
+                    expand: true,
+                    cwd: 'img/svg/src',
+                    src: ['*.svg'],
+                    dest: 'img/svg/'
+                }]
             }
         },
 
