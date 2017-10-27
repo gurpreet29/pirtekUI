@@ -1,6 +1,6 @@
 .item {
     margin-bottom: 3rem;
-    padding: 4rem 2rem;
+    padding: 10rem 2rem;
 
     h6 {
         margin-bottom: 0;
@@ -24,6 +24,10 @@
 
     &:first-child {
         margin-top: 2rem;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
     }
 
     .result-text {
@@ -53,6 +57,35 @@
     .btn {
         width: 20%;
         margin: 0;
+
+        i {
+            display: none;
+        }
+    }
+}
+
+.pagination {
+    margin: 4rem 0 10rem;
+
+    > li {
+        > a {
+            color: $projectBlack;
+            outline: 0;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $ultraLightGrey;
+            }
+        }
+    }
+
+    > .active {
+        > a {
+            color: $white;
+            background-color: $projectBrown;
+            border-color: $projectBrown;
+        }
     }
 }
 
@@ -61,23 +94,47 @@
 /* Mobile */
 @media (max-width: $mobile) {
     .form-search {
-        margin: 4rem 0px 1rem;
-
-        .input-search,
-        .btn {
-            height: 4rem;
-            font-size: 1.4rem;
-            padding: 1rem 1.2rem;
-        }
+        margin: 4rem 0px 2rem;
 
         .input-search {
-            width: 70%;
+            height: 4rem;
+            width: 80%;
         }
 
         .btn {
-            width: 30%;
-            margin: 0;
-            min-width: 30%;
+            min-width: 20%;
+            height: 4rem;
+            padding: 0;
+
+            i {
+                display: block;
+            }
+
+            > span {
+                display: none;
+            }
+        }
+    }
+
+    .item {
+        margin-bottom: 2rem;
+        padding: 3rem 2rem;
+
+        &:first-child {
+            margin-top: 1rem;
+        }
+    }
+
+    .pagination {
+        margin: 2rem 0 4rem;
+
+        > li {
+            display: none;
+
+            &:first-child,
+            &:last-child {
+                display: inline-block;
+            }
         }
     }
 }

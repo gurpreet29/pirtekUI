@@ -204,6 +204,15 @@ label {
     top: auto;
 }
 
+.badge-info {
+    line-height: 2;
+    min-width: 3rem;
+    min-height: 3rem;
+    background-color: $projectBrown;
+
+    @include border-radius(50rem);
+}
+
 /* Tablet */
 @media (max-width: $tablet) {
     h2 {
