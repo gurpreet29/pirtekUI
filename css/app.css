@@ -11158,6 +11158,18 @@ header .global-btn {
     width: 100%;
     display: block;
   }
+  header .navbar-default .navbar-collapse .navbar-nav li.active > a {
+    color: #fff;
+  }
+  header .navbar-default .navbar-collapse .navbar-nav li.active > a:hover {
+    color: #fff;
+  }
+  header .navbar-default .navbar-collapse .navbar-nav li.open > a {
+    color: #1f1f1f;
+  }
+  header .navbar-default .navbar-collapse .navbar-nav li.open > a:hover {
+    color: #1f1f1f;
+  }
   header .navbar-default .navbar-collapse .navbar-nav:first-of-type {
     width: 100%;
     display: block;

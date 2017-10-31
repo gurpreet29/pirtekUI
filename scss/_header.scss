@@ -640,6 +640,26 @@ header {
                                 }
                             }
                         }
+
+                        &.active {
+                            > a {
+                                color: $white;
+
+                                &:hover {
+                                    color: $white;
+                                }
+                            }
+                        }
+
+                        &.open {
+                            > a {
+                                color: $projectBlack;
+
+                                &:hover {
+                                    color: $projectBlack;
+                                }
+                            }
+                        }
                     }
 
                     &:first-of-type {
