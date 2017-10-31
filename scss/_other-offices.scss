@@ -26,8 +26,6 @@
                 display: block;
                 opacity: 0.8;
 
-                @include transition(0.25s);
-
                 &:hover,
                 &:focus,
                 &:active,
@@ -81,8 +79,6 @@
                         height: .3rem;
                         background-color: $projectBrown;
                         display: block;
-
-                        @include transition(0.25s);
                     }
 
                     &:hover,

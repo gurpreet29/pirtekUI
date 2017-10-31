@@ -11942,14 +11942,17 @@ footer .foot-bottom .container p {
   bottom: 17.6rem;
   right: 0;
 }
-.carousel .item.active a {
+.carousel > .item.active a {
   display: block;
 }
-.carousel .item.active a picture {
+.carousel > .item.active a picture {
   display: block;
 }
-.carousel .item.active a.video-icon {
+.carousel > .item.active a.video-icon {
   display: none;
+}
+.carousel > .item > a > img {
+  width: 100%;
 }
 
 @media (max-width: 1300px) {
@@ -12921,7 +12924,8 @@ footer .foot-bottom .container p {
   overflow: hidden;
 }
 .terminal .terminal-container ul li p {
-  padding: 2.4rem 1.5rem;
+  padding: 2.4rem 0;
+  word-wrap: break-word;
   margin: 0;
 }
 .terminal .terminal-container ul li .col-sm-10 {
@@ -13049,17 +13053,23 @@ footer .foot-bottom .container p {
   -moz-border-radius: 0px;
 }
 .tender-status .reg-btn {
-  padding: 3rem 2rem;
+  padding: 3rem 0;
   border: 1px solid #00b0ec;
   border-top: 0;
+  text-align: center;
 }
 .tender-status .reg-btn .btn {
   margin: 0 auto;
-  display: block;
+  display: inline;
 }
 
 /* Tablet */
 /* Mobile */
+@media (max-width: 767px) {
+  .tender-status .reg-btn .btn {
+    display: block;
+  }
+}
 .visit-faq {
   background-color: #014181;
   padding: 7.6rem 0;
@@ -13562,9 +13572,6 @@ footer .foot-bottom .container p {
   text-decoration: none;
   display: block;
   opacity: 0.8;
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
 }
 .other-offices ul li a:hover, .other-offices ul li a:focus, .other-offices ul li a:active, .other-offices ul li a.active {
   outline: 0;
@@ -13608,9 +13615,6 @@ footer .foot-bottom .container p {
   height: .3rem;
   background-color: #bb5241;
   display: block;
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
 }
 .other-offices ul li a .thumbnail:hover, .other-offices ul li a .thumbnail:focus, .other-offices ul li a .thumbnail:active {
   outline: 0;
@@ -13717,6 +13721,7 @@ footer .foot-bottom .container p {
   display: inline-block;
   word-break: break-all;
   vertical-align: top;
+  float: left;
 }
 .right-panel table tr td:first-child {
   width: 20%;
@@ -13754,6 +13759,7 @@ footer .foot-bottom .container p {
 .not-found h2 {
   font-size: 27rem;
   font-weight: 700;
+  word-break: break-all;
 }
 .not-found h4 {
   color: #363636;

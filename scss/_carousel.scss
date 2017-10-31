@@ -73,7 +73,7 @@
         right: 0;
     }
 
-    .item {
+    > .item {
         &.active {
             a {
                 display: block;
@@ -85,6 +85,12 @@
                 &.video-icon {
                     display: none;
                 }
+            }
+        }
+
+        > a {
+            > img {
+                width: 100%;
             }
         }
     }

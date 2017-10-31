@@ -65,7 +65,8 @@
                 overflow: hidden;
 
                 p {
-                    padding: 2.4rem 1.5rem;
+                    padding: 2.4rem 0;
+                    word-wrap: break-word;
                     margin: 0;
                 }
 
