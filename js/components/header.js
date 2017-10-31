@@ -44,38 +44,25 @@ function svgBg() {
 }
 
 
-/*function hoverAdd() {
-    if ($(window).width() > 767) {
+function hoverAdd() {
+    if ($(window).width() > 1024) {
         $(this).addClass('open');
         $(">ul", this).show();
     }
 }
 
 function hoverRemove() {
-    if ($(window).width() > 767) {
+    if ($(window).width() > 1024) {
         $(this).removeClass('open');
         $(">ul", this).hide();
     }
-}*/
-
-/*function tabhover() {
-    $('header li.dropdown > a').on("touchstart", function(e) {
-        if ($(window).width() > 767) {
-            var link = $(this); //preselect the link
-            if (link.hasClass('hover')) {
-                return true;
-            } else {
-                $('header li.dropdown').removeClass('open');
-                link.addClass("hover").parent().addClass("open");
-
-                $('header li.dropdown > a').not(this).removeClass("hover");
-                e.preventDefault();
-                return false; //extra, and to make sure the function has consistent return points
-            }
-        }
-    });
 }
-*/
+
+
+
+
+
+
 
 // READY FUNCTION
 $(document).ready(function() {
@@ -100,7 +87,26 @@ $(document).ready(function() {
     svgBg();
 
 
-    // $(headerList).on('mouseenter focus', hoverAdd);
-    // $(headerList).on('mouseleave blur', hoverRemove);
+    $('header li.dropdown > a').on("touchstart", function(e) {
+        if ($(window).width() > 767) {
+            var link = $(this); //preselect the link
+            if (link.hasClass('hover')) {
+                return true;
+            } else {
+                $('header li.dropdown').removeClass('open');
+                link.addClass("hover").parent().addClass("open");
+
+                $('header li.dropdown > a').not(this).removeClass("hover");
+                e.preventDefault();
+                return false; //extra, and to make sure the function has consistent return points
+            }
+        }
+    });
+
+
+
+
+    $(headerList).on('mouseenter focus', hoverAdd);
+    $(headerList).on('mouseleave blur', hoverRemove);
 
 });

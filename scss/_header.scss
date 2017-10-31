@@ -261,6 +261,21 @@ header {
                         }
                     }
 
+                    > a {
+                        &:hover,
+                        &:focus {
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                height: 0.4rem;
+                                width: 100%;
+                                bottom: 0;
+                                left: 0;
+                                background-color: $projectBrown;
+                            }
+                        }
+                    }
+
                     a {
                         color: $projectBlack;
                         text-transform: uppercase;
