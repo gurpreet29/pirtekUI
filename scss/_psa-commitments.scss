@@ -84,6 +84,7 @@
 
             li {
                 position: absolute;
+                overflow: hidden;
                 display: inline-block;
                 top: 0;
 
@@ -121,6 +122,8 @@
                                 display: block;
                                 margin: auto;
                                 opacity: 1;
+                                font-size: .8rem;
+                                word-wrap: break-word;
 
                                 @include transition(0.25s);
 

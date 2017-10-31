@@ -11500,6 +11500,7 @@ footer .foot-bottom .container p {
 }
 .psa-commitments .psa-commits > .psa-commit-childs li {
   position: absolute;
+  overflow: hidden;
   display: inline-block;
   top: 0;
 }
@@ -11539,6 +11540,8 @@ footer .foot-bottom .container p {
   display: block;
   margin: auto;
   opacity: 1;
+  font-size: .8rem;
+  word-wrap: break-word;
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
@@ -12000,6 +12003,7 @@ footer .foot-bottom .container p {
   .carousel .container {
     margin: auto 1.5rem;
     height: 100%;
+    text-align: left;
   }
   .carousel .carousel-control {
     display: none;
@@ -12364,7 +12368,6 @@ footer .foot-bottom .container p {
 }
 .breadcrum {
   position: relative;
-  margin-bottom: 8rem;
 }
 .breadcrum .caption-text {
   position: absolute;
@@ -12447,10 +12450,6 @@ footer .foot-bottom .container p {
 @media (max-width: 767px) {
   .breadcrum .caption-text {
     width: 100%;
-  }
-
-  .breadcrum {
-    margin-bottom: 3rem;
   }
   .breadcrum h1, .breadcrum h2 {
     font-size: 1.8rem;
@@ -13903,7 +13902,7 @@ footer .foot-bottom .container p {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   border-radius: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   min-width: 20rem;
   transition: all .2s ease-in;
   color: #fff;
