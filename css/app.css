@@ -11191,7 +11191,7 @@ header .global-btn {
 }
 footer .foot-top {
   background-color: #1a1a1a;
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 footer .foot-top .container .foot-nav {
   display: flex;
@@ -11207,12 +11207,9 @@ footer .foot-top .container .foot-nav > li h6 {
 footer .foot-top .container .foot-nav > li a {
   color: #fff;
   outline: 0;
-  -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
-  transition: 0.25s;
 }
 footer .foot-top .container .foot-nav > li a:hover, footer .foot-top .container .foot-nav > li a:focus, footer .foot-top .container .foot-nav > li a:active {
-  text-decoration: none;
+  text-decoration: underline;
 }
 footer .foot-top .container .foot-nav > li.seprator {
   content: '';
@@ -11268,7 +11265,10 @@ footer .foot-top .container .foot-nav > li .footer-middle li a + a img {
   top: -.2rem;
 }
 footer .foot-top .container .foot-nav > li .footer-middle li a:hover, footer .foot-top .container .foot-nav > li .footer-middle li a:focus, footer .foot-top .container .foot-nav > li .footer-middle li a:active {
-  color: #bb5241;
+  color: #ccc;
+}
+footer .foot-top .container .foot-nav > li .footer-middle li:last-child {
+  margin-bottom: 0;
 }
 footer .foot-top .container .foot-nav > li:last-child {
   max-width: 27rem;
@@ -11288,8 +11288,7 @@ footer .foot-top .container .foot-nav > li:last-child li a i {
   position: absolute;
 }
 footer .foot-top .container .foot-nav > li:last-child li a:hover, footer .foot-top .container .foot-nav > li:last-child li a:focus, footer .foot-top .container .foot-nav > li:last-child li a:active {
-  color: #bb5241;
-  text-decoration: none;
+  color: #ccc;
 }
 footer .foot-top .container .foot-nav > li:last-child li a:hover i, footer .foot-top .container .foot-nav > li:last-child li a:focus i, footer .foot-top .container .foot-nav > li:last-child li a:active i {
   color: #ccc;
@@ -11300,6 +11299,9 @@ footer .foot-top .container .foot-nav > li:nth-child(3) {
 }
 footer .foot-top .container .foot-nav > li:first-child {
   max-width: 20rem;
+}
+footer .foot-top .container .foot-nav > li:first-child a:hover, footer .foot-top .container .foot-nav > li:first-child a:focus, footer .foot-top .container .foot-nav > li:first-child a:active {
+  text-decoration: none;
 }
 footer .foot-bottom {
   background-color: #111111;

@@ -2,7 +2,7 @@ footer {
     // display: flex;
     .foot-top {
         background-color: $projectMediumBlack;
-        padding: 10rem 0;
+        padding: 6rem 0;
 
         .container {
             .foot-nav {
@@ -21,12 +21,10 @@ footer {
                         color: $white;
                         outline: 0;
 
-                        @include transition(0.25s);
-
                         &:hover,
                         &:focus,
                         &:active {
-                            text-decoration: none;
+                            text-decoration: underline;
                         }
                     }
 
@@ -101,8 +99,12 @@ footer {
                                 &:hover,
                                 &:focus,
                                 &:active {
-                                    color: $projectBrown;
+                                    color: $lightGrey;
                                 }
+                            }
+
+                            &:last-child {
+                                margin-bottom: 0;
                             }
                         }
                     }
@@ -129,8 +131,7 @@ footer {
                                 &:hover,
                                 &:focus,
                                 &:active {
-                                    color: $projectBrown;
-                                    text-decoration: none;
+                                    color: $lightGrey;
 
                                     i {
                                         color: $lightGrey;
@@ -147,6 +148,14 @@ footer {
 
                     &:first-child {
                         max-width: 20rem;
+
+                        a {
+                            &:hover,
+                            &:focus,
+                            &:active {
+                                text-decoration: none;
+                            }
+                        }
                     }
                 }
             }
