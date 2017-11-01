@@ -12226,6 +12226,9 @@ footer .foot-bottom .container p {
   -o-transition: 0.25s;
   transition: 0.25s;
 }
+.quick-link a:hover, .quick-link a:focus {
+  outline: 0;
+}
 .quick-link a:hover p, .quick-link a:focus p {
   text-decoration: underline;
 }

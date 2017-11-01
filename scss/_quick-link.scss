@@ -171,6 +171,8 @@
 
         &:hover,
         &:focus {
+            outline: 0;
+
             p {
                 text-decoration: underline;
             }
