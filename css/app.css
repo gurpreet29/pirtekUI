@@ -12221,6 +12221,14 @@ footer .foot-bottom .container p {
 .quick-link .quick-link-bottom [class*=col-] .row {
   margin: 0;
 }
+.quick-link a p {
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+.quick-link a:hover p, .quick-link a:focus p {
+  text-decoration: underline;
+}
 
 @media (max-width: 1199px) {
   .quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure .year-to-date {
@@ -12391,6 +12399,9 @@ footer .foot-bottom .container p {
 }
 .latest-facebook a:not(.Facebook-link):focus {
   outline: 0;
+}
+.latest-facebook .col-xs-12 > a {
+  display: block;
 }
 
 @media (min-width: 768px) {

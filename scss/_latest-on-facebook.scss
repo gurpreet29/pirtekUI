@@ -97,6 +97,12 @@
             outline: 0;
         }
     }
+
+    .col-xs-12 {
+        > a {
+            display: block;
+        }
+    }
 }
 
 @media (min-width: 768px) {

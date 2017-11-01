@@ -163,6 +163,19 @@
             }
         }
     }
+
+    a {
+        p {
+            @include transition(0.25s);
+        }
+
+        &:hover,
+        &:focus {
+            p {
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 @media (max-width: $mediumDesktop) {
