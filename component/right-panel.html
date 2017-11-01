@@ -8,683 +8,133 @@
     <link rel="stylesheet" href="../css/app.css">
 </head>
 
-<body data-gr-c-s-loaded="true" cz-shortcut-listen="true">
-    <header>
-        <div class="container brand-bar">
-            <a href="/" class="logo">
-    <img src="/-/media/Feature/Identity/logo.png?h=100&amp;w=500&amp;la=en&amp;hash=74B70B60F7CE8379852A65188F130DA9A7B32ECC" alt="PSA Singapore">
-</a>
-            <div class="top-nav-wrap">
-                <ul class="top-nav">
-                    <li>
-                        <a href="/AboutUs/NewsandMedia">News and Media</a>
-                    </li>
-                    <li>
-                        <a href="/PortUsers/FAQ">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="/ContactUs">Contact Us</a>
-                    </li>
-                    <li><a href="#!" target="_blank"><img src="../assets/img/member-psa-logo.png" alt="a member of Global PSA"></a></li>
-                </ul>
-                <ul class="social-bar">
-                    <li><a href="https://www.facebook.com/singaporepsa/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="https://in.linkedin.com/company/psa-corporation-limited"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li><a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                </ul>
+<body>
+    
+    <!-- For backend team -->
+    <div class="container well">
+        <h3>Component: right pannel</h3>
+        <p>Description: Right pannel
+            <br> Default class: .right-panel
+        </p>
+    </div>
+    <!-- FOR TEMPLATE AND TESTING USE ONLY-->
+
+    <!-- thumbanils component Start -->
+    <section class="right-panel">
+        <h6>Address</h6>
+        <p>460 Alexandra Road Singapore 119963 </p>
+        <h6>Contact</h6>
+        <table>
+            <tr>
+                <td>Phone</td>
+                <td>(65) 6274 7111</td>
+            </tr>
+            <tr>
+                <td>Fax</td>
+                <td>(65) 6274 4261</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>psac_corpcomms@globalpsa.com</td>
+            </tr>
+        </table>
+        <h6>Hours</h6>
+        <table>
+            <tr>
+                <td colspan="2">Mon – Fri 7:30am – 5pm</td>
+            </tr>
+            <tr>
+                <td>Sat</td>
+                <td>8am – 12pm</td>
+            </tr>
+            <tr>
+                <td>Sun</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+    </section>
+    <!-- thumbanils component End -->
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <!-- For backend team -->
+    <div class="container well">
+        <div class="row">
+            <h4>Template</h4>
+            <p>Description: .col-sm-5</p>
+        </div>
+    </div>
+
+    <!-- Template -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <section class="contact-map">
+                    <div id="map_container"></div>
+                    <div id="map"></div>
+                </section>
+                <script>
+                  function initialize() {
+                    var uluru = {lat: -25.363, lng: 131.044};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 4,
+                      center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                      position: uluru,
+                      map: map
+                    });
+                         //Resize Function
+                        google.maps.event.addDomListener(window, "resize", function() {
+                            var center = map.getCenter();
+                            google.maps.event.trigger(map, "resize");
+                            map.setCenter(center);
+                        });
+                      }
+                </script>
+            </div>
+
+            <div class="col-md-5 col-sm-12">
+                <section class="right-panel">
+                    <h6>Address</h6>
+                    <p>460 Alexandra Road Singapore 119963 </p>
+                    <h6>Contact</h6>
+                    <table>
+                        <tr>
+                            <td>Phone</td>
+                            <td>(65) 6274 7111</td>
+                        </tr>
+                        <tr>
+                            <td>Fax</td>
+                            <td>(65) 6274 4261</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>psac_corpcomms@globalpsa.com</td>
+                        </tr>
+                    </table>
+                    <h6>Hours</h6>
+                    <table>
+                        <tr>
+                            <td>Mon–Fri</td>
+                            <td>7:30am – 5pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sat</td>
+                            <td>8am – 12pm</td>
+                        </tr>
+                        <tr>
+                            <td>Sun</td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+                </section>
             </div>
         </div>
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <!-- FOR MOBILE -->
-                <div class="navbar-header">
-                    <a href="#" class="search-btn"> <img src="../assets/img/search-white.png" alt=""></a>
-                    <a href="#!" target="_blank" class="global-btn"><img src="../assets/img/member-psa-logo-mobile.png" alt="a member of Global PSA"></a>
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="sr-only">Toggle navigation</span>
-                    </button>
-                </div>
-                <!-- FOR DESKTOP -->
-                <div id="navigation" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown menu-lg"> <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Business</a>
-                            <ul class="dropdown-menu " role="menu">
-                                <li>
-                                    <ul>
-                                        <li><a href="/OurBusiness/Terminals">Terminals</a></li>
-                                        <li><a href="/OurBusiness/Terminals/Joint-Venture-Terminals">Joint-Venture Terminals</a></li>
-                                        <li><a href="/OurBusiness/Terminals/Multi-Purpose-Terminals">Multi-Purpose Terminals</a></li>
-                                        <li><a href="/OurBusiness/Terminals/Future-Terminals">Future Terminals</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/OurBusiness/Shippers-Services">Shippers Services </a></li>
-                                        <li><a href="/OurBusiness/Shippers-Services/Keppel-Distripark">Keppel Distripark</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/OurBusiness/Container-Services">Container Services</a></li>
-                                        <li><a href="/OurBusiness/Container-Services/ReeferCare">ReeferCare</a></li>
-                                        <li><a href="/OurBusiness/Container-Services/ChemCare">ChemCare</a></li>
-                                        <li><a href="/OurBusiness/Container-Services/BoxCare">BoxCare</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown menu-lg"> <a href="/PortUsers" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Port Users</a>
-                            <ul class="dropdown-menu " role="menu">
-                                <li>
-                                    <ul>
-                                        <li><a href="/PortUsers/Passes-and-Permits">Passes and Permits </a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/">Application Forms and Permits</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/PortUsers/FAQ">FAQ</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/">Safety Pointers</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/PortUsers/Terminal-Bus-Guide">Terminal Bus Guide</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown menu-lg"> <a href="/Our-Commitment/Health-and-Safety" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Commitment</a>
-                            <ul class="dropdown-menu " role="menu">
-                                <li>
-                                    <ul>
-                                        <li><a href="/Our-Commitment/Health-and-Safety">Health and Safety</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/Our-Commitment/Security">Security</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/Our-Commitment/Innovation">Innovation</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/Our-Commitment/Corporate-Social-Responsibility">Corporate Social Responsibility</a></li>
-                                        <li><a href="/">Community</a></li>
-                                        <li><a href="/">Education</a></li>
-                                        <li><a href="/">Environment</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown menu-lg"> <a href="/Tenders" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tenders</a>
-                            <ul class="dropdown-menu " role="menu">
-                                <li>
-                                    <ul>
-                                        <li><a href="/Tenders/TenderNotices">Tenders Notice</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/">Terms and Conditions</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/">Maintain Supplier Information</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/Tenders/FAQ">FAQs</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown menu-sm"> <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Careers</a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="/">Why Join PSA</a></li>
-                                <li><a href="/">Our PSA Family</a></li>
-                                <li class="dropdown dropdown-submenu"> <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Young Applications<b class="caret"></b></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="/">Management Associate Programme</a></li>
-                                        <li><a href="/">Scholarships</a></li>
-                                        <li><a href="/">Internships</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown menu-lg"> <a href="/AboutUs" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
-                            <ul class="dropdown-menu " role="menu">
-                                <li>
-                                    <ul>
-                                        <li><a href="/AboutUs/Milestones">Milestones</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/AboutUs/Management-Structure">Management Structure</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/AboutUs/Core-Business">Core Business</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/AboutUs/Awards-and-Accolades">Awards And Accolades</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/AboutUs">PSA Offices</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <ul>
-                                        <li><a href="/AboutUs/NewsandMedia">News And Media</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <div class="search-box">
-                                <label for="search">Search</label>
-                                <input id="search" placeholder="Enter your search here ..." type="text">
-                                <button type="submit" class="search-button"></button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="homepage-bg"></div>
-        <div>
-            <section id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
-                </ol>
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <a href="/">
-                            <div class="container">
-                                <h1>PSA careers</h1>
-                                <h2>Sub-Title</h2>
-                            </div>
-                            <img src="/-/media/Feature/Carousel/HomepageImageCarousel/hero-banner-2-1600x710.jpg?h=710&amp;w=1600&amp;la=en&amp;hash=4FCF2EA31BCB89990123A88663CA6303DB21A42E" height="710" width="1600" alt="hero-banner-2-1600x710">
-                        </a>
-                    </div>
-                    <div class="item ">
-                        <a href="/">
-                            <div class="container">
-                                <h1>Transhipment Hub</h1>
-                                <h2></h2>
-                            </div>
-                            <img src="/-/media/Feature/Carousel/HomepageImageCarousel/hero-banner-1600x710.jpg?h=710&amp;w=1600&amp;la=en&amp;hash=C9CC9BA16A50954F27E7FD14793132A973FC682C" height="710" width="1600" alt="hero-banner-1600x710">
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <section class="container quick-link">
-            <div class="row ">
-                <div class="col-sm-12 singapore-container">
-                    <a href="#!" title="Singapore container volume">
-                        <p>
-                            Singapore container
-                            <br> volume <span>(TEUs Handled)</span>
-                        </p>
-                        <picture>
-                            <!--[if IE 9]><video style="display: none;"><![endif]-->
-                            <source srcset="/-/media/Feature/PageContent/VolumnContainerLinks/singapore-container-2480-800.jpg?h=800&amp;la=en&amp;w=2480&amp;hash=05B120425F0B2E3F698FBF1D74B239A00BCCD56A" media="(min-width:768px) and (-webkit-min-device-pixel-ratio: 2)">
-                            <source srcset="/-/media/Feature/PageContent/VolumnContainerLinks/singapore-container-2480-800.jpg?h=800&amp;la=en&amp;w=2480&amp;hash=05B120425F0B2E3F698FBF1D74B239A00BCCD56A" media="(min-width:768px) and (min-resolution: 144dpi)">
-                            <source srcset="/-/media/Feature/PageContent/VolumnContainerLinks/singapore-container-1170-400.jpg?h=400&amp;la=en&amp;w=1170&amp;hash=7E4D610C44D172529078268AD196A924D555EFFE" media="(min-width:768px)">
-                            <source srcset="/-/media/Feature/PageContent/VolumnContainerLinks/singapore-container-750-690.jpg?h=690&amp;la=en&amp;w=750&amp;hash=263D2E6C3FAFC2F6842949635EA22E19E97843E5" media="(min-width:320px) and (-webkit-min-device-pixel-ratio: 2)">
-                            <source srcset="/-/media/Feature/PageContent/VolumnContainerLinks/singapore-container-750-690.jpg?h=690&amp;la=en&amp;w=750&amp;hash=263D2E6C3FAFC2F6842949635EA22E19E97843E5" media="(min-width:320px) and (min-resolution: 144dpi)">
-                            <!--[if IE 9]></video><![endif]-->
-                            <img srcset="/-/media/Feature/PageContent/VolumnContainerLinks/singapore-container-2480-800.jpg?h=400&amp;la=en&amp;w=1170&amp;hash=80E6DEA499E96735D781959F60205A10306311B7" alt="singapore-container-2480-800">
-                        </picture>
-                    </a>
-                    <div class="singapore-container-value">
-                        <div class="singapore-container-items">
-                            <div class="img-sec">
-                                <figure>
-                                    <img src="/-/media/Feature/PageContent/VolumnContainerLinks/circle/circle-blue.png " alt="">
-                                    <p class="year-to-date">21.77 <span>million</span></p>
-                                    <figcaption>
-                                        <br>Year to&nbsp; test date
-                                        <br> AUG 2017
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="img-sec">
-                                <figure>
-                                    <img src="/-/media/Feature/PageContent/VolumnContainerLinks/circle/circle-brown.png " alt="">
-                                    <p class="year-to-date">20.23 <span>million</span></p>
-                                    <figcaption>
-                                        <br>Year to date
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="img-sec">
-                                <figure>
-                                    <img src="/-/media/Feature/PageContent/VolumnContainerLinks/circle/circle-skyblue.png " alt="">
-                                    <p class="year-to-date">7.6% <span>change</span></p>
-                                    <figcaption>
-                                        <br>% Change
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row quick-link-bottom">
-                <div class="col-sm-3">
-                    <div class="core-business">
-                        <a href="/" title="Core Business">
-                            <picture>
-                                <!--[if IE 9]><video style="display: none;"><![endif]-->
-                                <source srcset="/-/media/Feature/PageContent/HomepageTiles/core-business-602-778.jpg?h=1556&amp;la=en&amp;w=1204&amp;hash=E4FD9F3F901598BF138BFACB7102B8AD17F31E16" media="(min-width:768px) and (-webkit-min-device-pixel-ratio: 2)">
-                                <source srcset="/-/media/Feature/PageContent/HomepageTiles/core-business-602-778.jpg?h=1556&amp;la=en&amp;w=1204&amp;hash=E4FD9F3F901598BF138BFACB7102B8AD17F31E16" media="(min-width:768px) and (min-resolution: 144dpi)">
-                                <source srcset="/-/media/Feature/PageContent/HomepageTiles/core-business-602-778.jpg?h=778&amp;la=en&amp;w=602&amp;hash=38847AAEA362310F052BE3C0B8A95AFFAE66D2FF" media="(min-width:768px)">
-                                <source srcset="/-/media/Feature/PageContent/HomepageTiles/core-business-602-778.jpg?h=250&amp;la=en&amp;w=750&amp;hash=0642576B7ED5CD6370408821E132FE51882EEC7E" media="(min-width:320px) and (-webkit-min-device-pixel-ratio: 2)">
-                                <source srcset="/-/media/Feature/PageContent/HomepageTiles/core-business-602-778.jpg?h=250&amp;la=en&amp;w=750&amp;hash=0642576B7ED5CD6370408821E132FE51882EEC7E" media="(min-width:320px) and (min-resolution: 144dpi)">
-                                <!--[if IE 9]></video><![endif]-->
-                                <img srcset="/-/media/Feature/PageContent/HomepageTiles/core-business-602-778.jpg?h=778&amp;la=en&amp;w=602&amp;hash=38847AAEA362310F052BE3C0B8A95AFFAE66D2FF" alt="core-business-602-778">
-                            </picture>
-                            <div class="quick-anchor">
-                                <p><strong>core </strong></p>
-                                <p>business</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-12 col-xs-6">
-                            <div class="psa-carreer">
-                                <a href="/" title="PSA Careers">
-                                    <picture>
-                                        <!--[if IE 9]><video style="display: none;"><![endif]-->
-                                        <source srcset="/-/media/Feature/PageContent/HomepageTiles/psa_career_1204_545.jpg?h=1556&amp;la=en&amp;w=1204&amp;hash=4496A08789685CB06D397ED944EFA20891603A88" media="(min-width:768px) and (-webkit-min-device-pixel-ratio: 2)">
-                                        <source srcset="/-/media/Feature/PageContent/HomepageTiles/psa_career_1204_545.jpg?h=1556&amp;la=en&amp;w=1204&amp;hash=4496A08789685CB06D397ED944EFA20891603A88" media="(min-width:768px) and (min-resolution: 144dpi)">
-                                        <source srcset="/-/media/Feature/PageContent/HomepageTiles/psa_career_1204_545.jpg?h=545&amp;la=en&amp;w=1204&amp;hash=77A561B6E91EF5C61418323B01744616F5399CE2" media="(min-width:768px)">
-                                        <source srcset="/-/media/Feature/PageContent/HomepageTiles/psa_career_1204_545.jpg?h=348&amp;la=en&amp;w=750&amp;hash=B5AD4BF907CE809BFA145E7BEED21226456F65D2" media="(min-width:320px) and (-webkit-min-device-pixel-ratio: 2)">
-                                        <source srcset="/-/media/Feature/PageContent/HomepageTiles/psa_career_1204_545.jpg?h=348&amp;la=en&amp;w=750&amp;hash=B5AD4BF907CE809BFA145E7BEED21226456F65D2" media="(min-width:320px) and (min-resolution: 144dpi)">
-                                        <!--[if IE 9]></video><![endif]-->
-                                        <img srcset="/-/media/Feature/PageContent/HomepageTiles/psa_career_1204_545.jpg?h=545&amp;la=en&amp;w=1204&amp;hash=77A561B6E91EF5C61418323B01744616F5399CE2" alt="psa-career-1204-545">
-                                    </picture>
-                                    <div class="quick-anchor">
-                                        <p><strong>PSA </strong></p>
-                                        <p>careers</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-xs-6">
-                            <div class="corporate">
-                                <a href="/" title="Corporate Responsibility">
-                                    <picture>
-                                        <!--[if IE 9]><video style="display: none;"><![endif]-->
-                                        <source srcset="/-/media/Feature/PageContent/HomepageTiles/corporate_1204_233.jpg?h=446&amp;la=en&amp;w=2408&amp;hash=8E8A7DC4174C2AF652B42D130E54BBA202DC1E0F" media="(min-width:768px) and (-webkit-min-device-pixel-ratio: 2)">
-                                        <source srcset="/-/media/Feature/PageContent/HomepageTiles/corporate_1204_233.jpg?h=446&amp;la=en&amp;w=2408&amp;hash=8E8A7DC4174C2AF652B42D130E54BBA202DC1E0F" media="(min-width:768px) and (min-resolution: 144dpi)">
-                                        <source srcset="/-/media/Feature/PageContent/HomepageTiles/corporate_1204_233.jpg?h=233&amp;la=en&amp;w=1204&amp;hash=499ADF809A1969545717DD310214635F6A50E35C" media="(min-width:768px)">
-                                        <source srcset="/-/media/Feature/PageContent/HomepageTiles/corporate_1204_233.jpg?h=348&amp;la=en&amp;w=750&amp;hash=711A3B6FA3C3E9CE451E5475E1EFC284E958CC34" media="(min-width:320px) and (-webkit-min-device-pixel-ratio: 2)">
-                                        <source srcset="/-/media/Feature/PageContent/HomepageTiles/corporate_1204_233.jpg?h=348&amp;la=en&amp;w=750&amp;hash=711A3B6FA3C3E9CE451E5475E1EFC284E958CC34" media="(min-width:320px) and (min-resolution: 144dpi)">
-                                        <!--[if IE 9]></video><![endif]-->
-                                        <img srcset="/-/media/Feature/PageContent/HomepageTiles/corporate_1204_233.jpg?h=233&amp;la=en&amp;w=1204&amp;hash=499ADF809A1969545717DD310214635F6A50E35C" alt="corporate-1204-233">
-                                    </picture>
-                                    <div class="quick-anchor">
-                                        <p><strong>Corporate </strong></p>
-                                        <p>Social Responsibility</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="tender">
-                        <a href="/" title="Tenders">
-                            <picture>
-                                <!--[if IE 9]><video style="display: none;"><![endif]-->
-                                <source srcset="/-/media/Feature/PageContent/HomepageTiles/tenders-602-778.jpg?h=1556&amp;la=en&amp;w=1204&amp;hash=5B973C2BD4C94DABFB7D826AF5B58AE9A82429D0" media="(min-width:768px) and (-webkit-min-device-pixel-ratio: 2)">
-                                <source srcset="/-/media/Feature/PageContent/HomepageTiles/tenders-602-778.jpg?h=1556&amp;la=en&amp;w=1204&amp;hash=5B973C2BD4C94DABFB7D826AF5B58AE9A82429D0" media="(min-width:768px) and (min-resolution: 144dpi)">
-                                <source srcset="/-/media/Feature/PageContent/HomepageTiles/tenders-602-778.jpg?h=778&amp;la=en&amp;w=602&amp;hash=8AB8E3DC1385963BD1B21EE648479F54C374D92D" media="(min-width:768px)">
-                                <source srcset="/-/media/Feature/PageContent/HomepageTiles/tenders-602-778.jpg?h=250&amp;la=en&amp;w=750&amp;hash=14C22839F96CF48AB5796C0DBD35618E5C6F6490" media="(min-width:320px) and (-webkit-min-device-pixel-ratio: 2)">
-                                <source srcset="/-/media/Feature/PageContent/HomepageTiles/tenders-602-778.jpg?h=250&amp;la=en&amp;w=750&amp;hash=14C22839F96CF48AB5796C0DBD35618E5C6F6490" media="(min-width:320px) and (min-resolution: 144dpi)">
-                                <!--[if IE 9]></video><![endif]-->
-                                <img srcset="/-/media/Feature/PageContent/HomepageTiles/tenders-602-778.jpg?h=778&amp;la=en&amp;w=602&amp;hash=8AB8E3DC1385963BD1B21EE648479F54C374D92D" alt="tenders-602-778">
-                            </picture>
-                            <div class="quick-anchor">
-                                <p><strong>Tenders </strong></p>
-                                <p></p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div>
-            <section class="psa-commitments">
-                <div class="psa-commits">
-                    <!-- circle -->
-                    <a href="#!">
-                        <figure>
-                            <img src="/-/media/Feature/PageContent/MediaFolder/psa-commitment-bg.png" alt="">
-                            <figcaption>
-                                <h3>PSA <span class="commit">COMMITMENTS</span></h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <!-- childs -->
-                    <ul class="psa-commit-childs">
-                        <li class="psa-reverse">
-                            <a href="/">
-                                <figure>
-                                    <span class="icon-img">
-                            <img src="/-/media/Feature/PageContent/MediaFolder/icon-health.png?h=36&amp;w=36&amp;la=en&amp;hash=3B0397D201D445A4934B721D2BB1A98F459EC07C" height="36" width="36" alt="Health-and-Safety">
-                            <img src="/-/media/Feature/PageContent/MediaFolder/icon-health-hrv.png?h=36&amp;w=36&amp;la=en&amp;hash=E34B235D774BED8C3FE3CF80393CE8A6AF51F565" class="icon-hrv" width="36" height="36" alt="Health-hrv">
-                            
-                        </span>
-                                    <figcaption>
-                                        <p class="heading">Health and Safety</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                <figure>
-                                    <span class="icon-img">
-                            <img src="/-/media/Feature/PageContent/MediaFolder/icon-security.png?h=36&amp;w=36&amp;la=en&amp;hash=8E96EA541F38BF9481ECC1D3856237B2003D4F0C" height="36" width="36" alt="Security">
-                            <img src="/-/media/Feature/PageContent/MediaFolder/icon-security-hrv.png?h=36&amp;w=36&amp;la=en&amp;hash=2E9BC53B73B82B4686EDAA156F55DA89D9A559F3" class="icon-hrv" width="36" height="36" alt="Security-hrv">
-                            
-                        </span>
-                                    <figcaption>
-                                        <p class="heading">SECURITY</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="psa-reverse">
-                            <a href="/">
-                                <figure>
-                                    <span class="icon-img">
-                            <img src="/-/media/Feature/PageContent/MediaFolder/icon-innovation.png?h=36&amp;w=36&amp;la=en&amp;hash=E3A5980DD7C5357F18BA0A14BB0F7CE57725086A" height="36" width="36" alt="Innovation">
-                            <img src="/-/media/Feature/PageContent/MediaFolder/icon-innovation-hrv.png?h=36&amp;w=36&amp;la=en&amp;hash=B42FA5E0946DBAFB00359F19F6EFC34F14EABC1C" class="icon-hrv" width="36" height="36" alt="Innovation-hrv">
-                            
-                        </span>
-                                    <figcaption>
-                                        <p class="heading">Innovation</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                <figure>
-                                    <span class="icon-img">
-                            <img src="/-/media/Feature/PageContent/MediaFolder/icon-community.png?h=36&amp;w=36&amp;la=en&amp;hash=1F8584C481D46EBBC97B3E2FBADE82190758CFC5" height="36" width="36" alt="Community">
-                            <img src="/-/media/Feature/PageContent/MediaFolder/icon-community-hrv.png?h=36&amp;w=36&amp;la=en&amp;hash=22A3BE9EE59B7537ACC2C2E9E015E89EC3E22A16" class="icon-hrv" width="36" height="36" alt="Community-hrv">
-                            
-                        </span>
-                                    <figcaption>
-                                        <p class="heading">Community</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li class="psa-reverse">
-                            <a href="/">
-                                <figure>
-                                    <span class="icon-img">
-                            <img src="/-/media/Feature/PageContent/MediaFolder/icon-education.png?h=36&amp;w=36&amp;la=en&amp;hash=BDF33B4E951B06B9A90CBDD0F774B21FB7F1E5C2" height="36" width="36" alt="Education">
-                            <img src="/-/media/Feature/PageContent/MediaFolder/icon-education-hrv.png?h=36&amp;w=36&amp;la=en&amp;hash=1FC7AD7FBD7480D54B0581486781FD802B183D74" class="icon-hrv" width="36" height="36" alt="Education-hrv">
-                            
-                        </span>
-                                    <figcaption>
-                                        <p class="heading">Education</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/">
-                                <figure>
-                                    <span class="icon-img">
-                            <img src="/-/media/Feature/PageContent/MediaFolder/icon-environment.png?h=36&amp;w=36&amp;la=en&amp;hash=C147209B18BCF43E331C293790E40E31D32E9FCF" height="36" width="36" alt="Environment">
-                            <img src="/-/media/Feature/PageContent/MediaFolder/icon-environment-hrv.png?h=36&amp;w=36&amp;la=en&amp;hash=56AB3D9BC9B0FFC7483FC050476814A4733BD7D3" class="icon-hrv" width="36" height="36" alt="Environment-hrv">
-                            
-                        </span>
-                                    <figcaption>
-                                        <p class="heading">Environment</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                                    </figcaption>
-                                </figure>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <div class="latest-news">
-                        <h2>Latest <strong>News</strong></h2>
-                        <div class="latest-news-top">
-                            <a href="/AboutUs/NewsandMedia/Article3">
-                        <span class="date stack"><i class="fa fa-calendar" aria-hidden="true"></i>30 Oct</span>
-                        <span class="date">30 October 2017</span>
-                        <strong>CMA CGM and PSA launch Phase 2 of container terminal joint venture in Singapore</strong>
-                        <p>dfvadfvdf</p>
-                    </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6">
-                    <div class="latest-news headline">
-                        <a href="/AboutUs/NewsandMedia" class="btn btn-primary pull-right">VIEW ALL</a>
-                        <div class="latest-news-item">
-                            <a href="/AboutUs/NewsandMedia/NewsLetter1">
-                            <span class="date stack"><i class="fa fa-calendar" aria-hidden="true"></i>30 Oct</span>
-                            <span class="date">30 October 2017 </span>
-                            <strong>CMA CGM and PSA launch Phase 2 of container terminal joint venture in Singapore</strong>
-                            <p>dfvadfvdf</p>
-                        </a>
-                        </div>
-                        <div class="latest-news-item">
-                            <a href="/AboutUs/NewsandMedia/NewsLetter2">
-                            <span class="date stack"><i class="fa fa-calendar" aria-hidden="true"></i>30 Oct</span>
-                            <span class="date">30 October 2017 </span>
-                            <strong>CMA CGM and PSA launch Phase 2 of container terminal joint venture in Singapore</strong>
-                            <p>dfvadfvdf</p>
-                        </a>
-                        </div>
-                        <div class="latest-news-item">
-                            <a href="/AboutUs/NewsandMedia/Article1">
-                            <span class="date stack"><i class="fa fa-calendar" aria-hidden="true"></i>04 Oct</span>
-                            <span class="date">04 October 2017 </span>
-                            <strong>CMA CGM and PSA launch Phase 2 of container terminal joint venture in Singapore</strong>
-                            <p>dfvadfvdf</p>
-                        </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div>
-            <section class="latest-facebook">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-5">
-                            <h2>LATEST ON <strong>FACEBOOK</strong></h2>
-                            <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                            <nav>
-                                <ul class="control-box pager">
-                                    <li>
-                                        <a data-slide="prev" href="#latestTrend" class=""><i class="fa fa-angle-left"></i></a>
-                                    </li>
-                                    <li>
-                                        <a data-slide="next" href="#latestTrend" class=""><i class="fa fa-angle-right"></i></a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="col-xs-12 col-sm-7">
-                            <a href="https://www.facebook.com/singaporepsa/" class="Facebook-link">
-                            <img src="/-/media/Feature/Social/follow-us.jpg?h=90&amp;w=266&amp;la=en&amp;hash=61718206E0B56B8F9EBBFC8338BAE7866CFB6B51" alt="follow-us">
-                        </a>
-                            <div class="clearfix"></div>
-                            <div class="carousel slide" id="latestTrend">
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <a href="#!" class="">
-                                                <div class="thumbnail">
-                                                    <img src="../assets/img/latest-slide1.jpg" alt="">
-                                                </div>
-                                                <div class="caption">
-                                                    <p><strong>From Warehouse to Your House: A Parcel’s Delivery Journey</strong></p>
-                                                    <p>When it comes to online shopping, we have certainly come a long way. Legend has it that the first online purchase was a CD of Sting’s Ten Summoner’s Tales in 1994.</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <a href="#!" class="">
-                                                <div class="thumbnail">
-                                                    <img src="../assets/img/latest-slide2.jpg" alt="">
-                                                </div>
-                                                <div class="caption">
-                                                    <p><strong>From Warehouse to Your House: A Parcel’s Delivery Journey</strong></p>
-                                                    <p>When it comes to online shopping, we have certainly come a long way. Legend has it that the first online purchase was a CD of Sting’s Ten Summoner’s Tales in 1994.</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <a href="#!" class="">
-                                                <div class="thumbnail">
-                                                    <img src="../assets/img/latest-slide1.jpg" alt="">
-                                                </div>
-                                                <div class="caption">
-                                                    <p><strong>From Warehouse to Your House: A Parcel’s Delivery Journey</strong></p>
-                                                    <p>When it comes to online shopping, we have certainly come a long way. Legend has it that the first online purchase was a CD of Sting’s Ten Summoner’s Tales in 1994.</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <footer>
-            <div class="foot-top">
-                <div class="container">
-                    <ul class="foot-nav">
-                        <li>
-                            <h6></h6>
-                            <ul class="social-bar-bottom">
-                                <li>
-                                    <a href="https://www.facebook.com/singaporepsa/" title="Facebook - opens in a new window" target="_blank" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://in.linkedin.com/company/psa-corporation-limited" title="LinkedIn - opens in a new window" target="_blank" class=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                </li>
-                                <li>
-                                    <a href="http://www.twitter.com" title="Twitter - opens in a new window" target="_blank" class=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="seprator">&nbsp;</li>
-                        <li>
-                            <h6>Contact us</h6>
-                            <ul class="footer-middle">
-                                <li>
-                                    <a href="mailto:psac_corpcomms@globalpsa.com" title="Email - opens in a mailbox">
-                <i class="fa fa-envelope" aria-hidden="true"></i>psac_corpcomms@globalpsa.com
-            </a>
-                                </li>
-                                <li>
-                                    <a href="tel:65 6274 7111" title="Call this no">
-                <i class="fa fa-phone" aria-hidden="true"></i>65 6274 7111
-            </a>
-                                    <a href="#!" title="Print">
-                <img src="/-/media/Feature/Contact/print.png" alt="">(65) 6274 4261
-            </a>
-                                </li>
-                                <li>
-                                    <a href="#!" title="Contact address">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>460 Alexandra Road Singapore 119963
-            </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="seprator">&nbsp;</li>
-                        <li>
-                            <ul>
-                                <li>
-                                    <a href="/Terms-and-Conditions" title="Terms and Conditions">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>Terms and Conditions</a>
-                                </li>
-                                <li>
-                                    <a href="/Sitemap" title="Sitemap">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>Sitemap</a>
-                                </li>
-                                <li>
-                                    <a href="/" title="Other Useful Websites">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>Other Useful Websites</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="foot-bottom">
-                <div class="container">
-                    <p class="copy-text">© 2017 PSA Singapore all Rights Reserved </p>
-                </div>
-            </div>
-        </footer>
-    </footer>
+    </div>
     <script src="../js/app.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRsO9WnXsHaY5KFUqCnmS7vT-kEdO081o&callback=initialize"></script>
+
 </body>
 
 </html>
