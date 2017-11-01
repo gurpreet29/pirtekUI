@@ -45,6 +45,35 @@ h2 {
     }
 }
 
+a {
+    h2 {
+        font-size: 5.4rem;
+        color: $projectNavyBlue;
+
+        strong {
+            color: $projectSkyBlue;
+            font-weight: 600;
+        }
+
+        @include transition(0.25s);
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: none;
+        color: $projectBrown;
+
+        h2 {
+            color: $projectBrown;
+
+            strong {
+                color: $projectBrown;
+            }
+        }
+    }
+}
+
 h3 {
     font-family: $fontFamily;
     font-size: 3.7rem;
@@ -229,6 +258,12 @@ label {
         font-size: 4rem;
         margin-bottom: 2rem;
     }
+
+    a {
+        h2 {
+            font-size: 4rem;
+        }
+    }
 }
 
 /* Mobile */
@@ -251,6 +286,12 @@ label {
 
         span {
             font-size: 2.2rem;
+        }
+    }
+
+    a {
+        h2 {
+            font-size: 2.6rem;
         }
     }
 

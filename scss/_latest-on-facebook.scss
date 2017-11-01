@@ -133,8 +133,11 @@
     .latest-facebook {
         padding: 4rem 0;
 
-        h2 {
-            max-width: 15.5rem;
+        a {
+            h2 {
+                display: block;
+                width: 100%;
+            }
         }
 
         .summary {
@@ -147,6 +150,10 @@
             z-index: 1;
             right: 1.5rem;
             max-width: 14.8rem;
+
+            img {
+                display: none;
+            }
         }
 
         nav {

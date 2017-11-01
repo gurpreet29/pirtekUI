@@ -10514,6 +10514,28 @@ h2 strong {
   font-weight: 600;
 }
 
+a h2 {
+  font-size: 5.4rem;
+  color: #103771;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+a h2 strong {
+  color: #5c8d9f;
+  font-weight: 600;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: #bb5241;
+}
+a:hover h2, a:focus h2, a:active h2 {
+  color: #bb5241;
+}
+a:hover h2 strong, a:focus h2 strong, a:active h2 strong {
+  color: #bb5241;
+}
+
 h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 3.7rem;
@@ -10671,6 +10693,10 @@ label {
     font-size: 4rem;
     margin-bottom: 2rem;
   }
+
+  a h2 {
+    font-size: 4rem;
+  }
 }
 /* Mobile */
 @media (max-width: 767px) {
@@ -10692,6 +10718,10 @@ label {
   }
   h3 span {
     font-size: 2.2rem;
+  }
+
+  a h2 {
+    font-size: 2.6rem;
   }
 
   h2 {
@@ -12385,8 +12415,9 @@ footer .foot-bottom .container p {
   .latest-facebook {
     padding: 4rem 0;
   }
-  .latest-facebook h2 {
-    max-width: 15.5rem;
+  .latest-facebook a h2 {
+    display: block;
+    width: 100%;
   }
   .latest-facebook .summary {
     display: none;
@@ -12397,6 +12428,9 @@ footer .foot-bottom .container p {
     z-index: 1;
     right: 1.5rem;
     max-width: 14.8rem;
+  }
+  .latest-facebook .Facebook-link img {
+    display: none;
   }
   .latest-facebook nav {
     margin-top: 3.5rem;
