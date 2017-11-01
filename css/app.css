@@ -11988,6 +11988,9 @@ footer .foot-bottom .container p {
 .carousel > .item > a > img {
   width: 100%;
 }
+.carousel .carousel-inner > .item > a > img {
+  width: 100% !important;
+}
 
 @media (max-width: 1300px) {
   .carousel .carousel-indicators {
