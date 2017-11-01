@@ -12774,6 +12774,9 @@ footer .foot-bottom .container p {
   .rich-text.img-compact [class*=col] > img {
     margin: 0 0 4rem 0;
   }
+  .rich-text.figure-img figure {
+    margin-bottom: 2rem;
+  }
 }
 .multicarousel .carousel .col-md-2 {
   width: 20%;
