@@ -222,8 +222,9 @@ a {
         margin-bottom: 0;
         padding-top: 0.6rem;
         padding-bottom: 0.6rem;
-        display: inline;
+        display: inline-block;
         font-weight: 300;
+        min-width: 100%;
     }
 }
 
