@@ -11671,6 +11671,9 @@ footer .foot-bottom .container p {
 
 /* Tablet */
 @media (max-width: 991px) {
+  .psa-commitments .psa-commits > .psa-commit-childs li a figure .icon-img {
+    position: relative;
+  }
   .psa-commitments .psa-commits > .psa-commit-childs li a figure figcaption {
     display: none;
   }

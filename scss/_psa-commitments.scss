@@ -258,6 +258,10 @@
                 li {
                     a {
                         figure {
+                            .icon-img {
+                                position: relative;
+                            }
+
                             figcaption {
                                 display: none;
                             }
