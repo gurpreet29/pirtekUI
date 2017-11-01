@@ -13071,6 +13071,7 @@ footer .foot-bottom .container p {
 .tender-listing li {
   padding: 3.5rem 3rem;
   border: 0;
+  word-wrap: break-word;
   border-radius: 0px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
