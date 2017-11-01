@@ -58,11 +58,10 @@ function hoverRemove() {
     }
 }
 
-
-
-
-
-
+// add background on home page
+function homeBg() {
+    $('.homepage-bg').parents('body').addClass('homepage-bg');
+}
 
 // READY FUNCTION
 $(document).ready(function() {
@@ -85,6 +84,8 @@ $(document).ready(function() {
     });
 
     svgBg();
+    homeBg();
+    
 
 
     $('header li.dropdown > a').on("touchstart", function(e) {
@@ -103,10 +104,10 @@ $(document).ready(function() {
         }
     });
 
-
-
-
     $(headerList).on('mouseenter focus', hoverAdd);
     $(headerList).on('mouseleave blur', hoverRemove);
+});
 
+$(window).load(function() {
+    
 });
