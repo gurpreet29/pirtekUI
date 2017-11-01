@@ -213,6 +213,10 @@ label {
     @include border-radius(50rem);
 }
 
+.padding-large {
+    padding: 6rem 0;
+}
+
 /* Tablet */
 @media (max-width: $tablet) {
     h2 {
@@ -223,6 +227,10 @@ label {
 
 /* Mobile */
 @media (max-width: $mobile) {
+    .padding-large {
+        padding: 4rem 0;
+    }
+
     .btn {
         display: block;
         width: 100%;

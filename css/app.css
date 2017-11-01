@@ -10656,6 +10656,10 @@ label {
   -moz-border-radius: 50rem;
 }
 
+.padding-large {
+  padding: 6rem 0;
+}
+
 /* Tablet */
 @media (max-width: 991px) {
   h2 {
@@ -10665,6 +10669,10 @@ label {
 }
 /* Mobile */
 @media (max-width: 767px) {
+  .padding-large {
+    padding: 4rem 0;
+  }
+
   .btn {
     display: block;
     width: 100%;
@@ -11782,7 +11790,7 @@ footer .foot-bottom .container p {
   }
 }
 .latest-news {
-  padding: 10rem 0;
+  padding: 6rem 0;
   overflow: hidden;
 }
 .latest-news a {
@@ -12273,7 +12281,7 @@ footer .foot-bottom .container p {
   }
 }
 .latest-facebook {
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 .latest-facebook .item a {
   text-decoration: none;
@@ -12606,7 +12614,7 @@ footer .foot-bottom .container p {
   overflow: hidden;
 }
 .rich-text.padding-large {
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 .rich-text p {
   font-size: 1.6rem;
@@ -13170,7 +13178,7 @@ footer .foot-bottom .container p {
 /* Tablet */
 /* Mobile */
 .tender-notice {
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 .tender-notice .pull-right {
   padding-bottom: 4.7rem;
@@ -13373,7 +13381,7 @@ footer .foot-bottom .container p {
   }
 }
 .career-benefits {
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 .career-benefits a:hover, .career-benefits a:focus, .career-benefits a:active {
   text-decoration: none;
@@ -13545,7 +13553,7 @@ footer .foot-bottom .container p {
   }
 }
 .contact-map {
-  margin: 10rem 0;
+  margin: 6rem 0;
 }
 .contact-map #map_container {
   position: relative;
@@ -13730,7 +13738,7 @@ footer .foot-bottom .container p {
 .right-panel {
   background-color: #ebebeb;
   padding: 4rem 5rem;
-  margin: 10rem 0;
+  margin: 6rem 0;
 }
 .right-panel table {
   margin-bottom: 4.5rem;
@@ -13746,10 +13754,10 @@ footer .foot-bottom .container p {
   float: left;
 }
 .right-panel table tr td:first-child {
-  width: 20%;
+  width: 25%;
 }
 .right-panel table tr td:last-child {
-  width: 80%;
+  width: 75%;
 }
 .right-panel table:last-child {
   margin-bottom: 0;
@@ -13759,6 +13767,7 @@ footer .foot-bottom .container p {
 }
 .right-panel h6 {
   margin-bottom: 0.4rem;
+  color: #01387b;
 }
 
 /* Mobile */
@@ -13776,7 +13785,7 @@ footer .foot-bottom .container p {
   }
 }
 .not-found {
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 .not-found h2 {
   font-size: 27rem;
@@ -13846,7 +13855,7 @@ footer .foot-bottom .container p {
 .site-map {
   background-color: #ebebeb;
   overflow: hidden;
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 .site-map ul {
   list-style: none;
@@ -13906,7 +13915,7 @@ footer .foot-bottom .container p {
   }
 }
 .form-default {
-  margin: 10rem 0;
+  margin: 6rem 0;
 }
 .form-default form span, .form-default form label {
   font-family: "Montserrat", sans-serif;
@@ -13954,7 +13963,7 @@ footer .foot-bottom .container p {
   box-shadow: none;
   border-bottom: 0.4rem solid #bb5241;
 }
-.form-default form textarea {
+.form-default form textarea.form-control {
   height: 10rem;
   width: 100%;
   margin: 0;
@@ -13963,6 +13972,8 @@ footer .foot-bottom .container p {
   outline: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  background-color: #fff !important;
+  border: 1px solid #ebebeb;
 }
 .form-default .Captcha .control-label {
   display: none !important;
@@ -13975,7 +13986,7 @@ footer .foot-bottom .container p {
   }
 }
 .tender-notice {
-  padding: 10rem 0;
+  padding: 6rem 0;
 }
 .tender-notice .pull-right {
   padding-bottom: 4.7rem;

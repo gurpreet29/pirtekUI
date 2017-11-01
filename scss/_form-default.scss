@@ -1,5 +1,5 @@
 .form-default {
-    margin: 10rem 0;
+    margin: 6rem 0;
 
     form {
         span, label {
@@ -58,14 +58,18 @@
         }
 
         textarea {
-            height: 10rem;
-            width: 100%;
-            margin: 0;
-            resize: none;
-            border: none;
-            outline: 0;
-            overflow-x: hidden;
-            overflow-y: auto;
+            &.form-control {
+                height: 10rem;
+                width: 100%;
+                margin: 0;
+                resize: none;
+                border: none;
+                outline: 0;
+                overflow-x: hidden;
+                overflow-y: auto;
+                background-color: $white !important;
+                border: 1px solid $projectlightGrey;
+            }
         }
     }
 
