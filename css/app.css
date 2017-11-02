@@ -10483,7 +10483,7 @@ body {
 body.homepage-bg {
   background: url("../img/bg.jpg") no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: 0px bottom;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -12360,6 +12360,7 @@ footer .foot-bottom .container p {
 .latest-facebook .item .caption p {
   margin-bottom: 1.5rem;
   font-size: 1.7rem;
+  color: #fff;
 }
 .latest-facebook .item .caption p:nth-child(2) {
   font-size: 1.45rem;
@@ -12393,6 +12394,7 @@ footer .foot-bottom .container p {
 }
 .latest-facebook .summary {
   font-size: 2.5rem;
+  color: #fff;
 }
 .latest-facebook .Facebook-link {
   margin-bottom: 5.6rem;
