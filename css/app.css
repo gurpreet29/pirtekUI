@@ -10735,6 +10735,11 @@ label {
     font-size: 1.8rem;
     margin-bottom: 2rem;
   }
+
+  .remove-padding-xs [class*=col] {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 header {
   background: #fff;
@@ -10817,7 +10822,10 @@ header .top-nav-wrap .social-bar li {
 }
 header .top-nav-wrap .social-bar li a {
   color: #343f55;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
+}
+header .top-nav-wrap .social-bar li a i {
+  font-size: 1.9rem;
 }
 header .top-nav-wrap .social-bar li:last-child {
   margin-right: 0;
@@ -10836,6 +10844,7 @@ header .navbar-default .navbar-collapse {
 }
 header .navbar-default .navbar-collapse .navbar-nav {
   height: 5.6rem;
+  margin: 0;
 }
 header .navbar-default .navbar-collapse .navbar-nav > li.open > a, header .navbar-default .navbar-collapse .navbar-nav > li.active > a {
   color: #1f1f1f;
@@ -11022,7 +11031,7 @@ header .navbar-default .navbar-collapse .navbar-nav .search-box button {
   background-repeat: no-repeat;
   background-color: transparent;
   box-shadow: none;
-  height: 5.8rem;
+  height: 5.6rem;
   background-size: 2.1rem;
   outline: 0;
   border: 0;
@@ -11031,6 +11040,9 @@ header .navbar-default .navbar-collapse .navbar-nav .search-box button {
   background-position: center;
   padding: 0;
   opacity: 0.87;
+  position: absolute;
+  top: 0;
+  left: 16.3rem;
 }
 header .navbar-default .navbar-collapse .navbar-nav .search-box button:hover, header .navbar-default .navbar-collapse .navbar-nav .search-box button:focus {
   opacity: 1;
@@ -11114,6 +11126,8 @@ header .global-btn {
   }
   header .navbar-default .navbar-collapse .navbar-nav .search-box button {
     background-size: 1.9rem;
+    left: 13.2rem;
+    width: 5rem;
   }
 }
 /* Mobile */
@@ -11135,6 +11149,30 @@ header .global-btn {
   }
   header .nav {
     margin-left: 0;
+  }
+  header .nav.navbar-nav > li {
+    position: relative;
+    border-bottom: 0.1rem solid #060606;
+  }
+  header .nav.navbar-nav > li .arrow-right {
+    position: absolute;
+    right: 0;
+    padding: 1.3rem 1.5rem;
+    z-index: 2;
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+  }
+  header .nav.navbar-nav > li .arrow-right::after {
+    color: #fff;
+    content: "\f067";
+    display: block;
+    font-family: 'FontAwesome';
+    font-size: 2rem;
+  }
+  header .nav.navbar-nav > li .arrow-right[aria-expanded="true"]::after {
+    color: #1f1f1f;
+    content: "\f068";
   }
   header .navbar {
     min-height: 4rem;
@@ -11222,6 +11260,7 @@ header .global-btn {
   }
   header .navbar-default .navbar-collapse .navbar-nav:first-of-type li {
     margin-right: auto;
+    overflow: hidden;
   }
   header .navbar-default .navbar-collapse .navbar-nav:last-of-type {
     display: none;
@@ -13515,6 +13554,7 @@ footer .foot-bottom .container p {
   outline: 0;
   border-bottom: 1px solid #e6eef0;
   display: flex;
+  align-items: center;
 }
 .accordion .panel-body h6 a .badge {
   border-radius: 50rem;
@@ -13527,7 +13567,7 @@ footer .foot-bottom .container p {
   min-width: 2.5rem;
   align-items: center;
   padding: 0.6rem .5rem .4rem;
-  background-color: #014181;
+  background-color: #bb5241;
   -webkit-transition: 0.25s;
   -o-transition: 0.25s;
   transition: 0.25s;
@@ -13552,29 +13592,34 @@ footer .foot-bottom .container p {
 }
 .accordion .panel-body h6 a[aria-expanded="true"] {
   border-bottom: 1px solid transparent;
+  color: #bb5241;
 }
 .accordion .panel-body h6 a[aria-expanded="true"]::after {
   content: "\f056";
 }
 .accordion .panel-body h6 a[aria-expanded="false"] .badge {
-  background-color: #bb5241;
+  background-color: #014181;
 }
-.accordion .panel-body h6 a:hover, .accordion .panel-body h6 a:focus, .accordion .panel-body h6 a:active {
+.accordion .panel-body h6 a:hover, .accordion .panel-body h6 a:focus {
   text-decoration: none;
+  color: #bb5241;
+}
+.accordion .panel-body h6 a:hover .badge, .accordion .panel-body h6 a:focus .badge {
+  background-color: #bb5241;
 }
 .accordion .panel-body .panel-collapse .media {
   padding-left: 4.4rem;
 }
 .accordion .panel-body .panel-collapse .media p {
   font-size: 1.4rem;
-  color: #949494;
+  color: #727272;
   margin-bottom: 1rem;
   line-height: 1.5;
   font-weight: 300;
 }
 .accordion .panel-body .panel-collapse .media p strong {
   font-weight: 600;
-  color: #616161;
+  color: #727272;
   margin-bottom: 1rem;
 }
 .accordion .panel-body .panel-collapse .media .media-left {

@@ -85,7 +85,11 @@ header {
 
                 a {
                     color: $projectBlue;
-                    font-size: 1.8rem;
+                    font-size: 1.9rem;
+
+                    i {
+                        font-size: 1.9rem;
+                    }
                 }
 
                 &:last-child {
@@ -111,6 +115,7 @@ header {
 
             .navbar-nav {
                 height: 5.6rem;
+                margin: 0;
 
                 > li {
                     // default open menu
@@ -355,7 +360,7 @@ header {
                         background-repeat: no-repeat;
                         background-color: transparent;
                         box-shadow: none;
-                        height: 5.8rem;
+                        height: 5.6rem;
                         background-size: 2.1rem;
                         outline: 0;
                         border: 0;
@@ -364,6 +369,9 @@ header {
                         background-position: center;
                         padding: 0;
                         opacity: 0.87;
+                        position: absolute;
+                        top: 0;
+                        left: 16.3rem;
 
                         &:hover,
                         &:focus {
@@ -508,6 +516,8 @@ header {
 
                         button {
                             background-size: 1.9rem;
+                            left: 13.2rem;
+                            width: 5rem;
                         }
                     }
                 }
@@ -546,6 +556,37 @@ header {
 
         .nav {
             margin-left: 0;
+
+            &.navbar-nav {
+                > li {
+                    position: relative;
+                    border-bottom: 0.1rem solid darken($projectBlack, 10%);
+
+                    .arrow-right {
+                        position: absolute;
+                        right: 0;
+                        padding: 1.3rem 1.5rem;
+                        z-index: 2;
+
+                        @include transition(0.25s);
+
+                        &::after {
+                            color: $white;
+                            content: "\f067";
+                            display: block;
+                            font-family: 'FontAwesome';
+                            font-size: 2rem;
+                        }
+
+                        &[aria-expanded="true"] {
+                            &::after {
+                                color: $projectBlack;
+                                content: "\f068";
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         .navbar {
@@ -668,6 +709,7 @@ header {
 
                         li {
                             margin-right: auto;
+                            overflow: hidden;
                         }
                     }
 

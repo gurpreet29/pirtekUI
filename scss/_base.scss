@@ -308,4 +308,11 @@ label {
             margin-bottom: 2rem;
         }
     }
+
+    .remove-padding-xs {
+        [class*=col] {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 }
