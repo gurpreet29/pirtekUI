@@ -13967,7 +13967,6 @@ footer .foot-bottom .container p {
   }
 }
 .site-map {
-  background-color: #ebebeb;
   overflow: hidden;
   padding: 6rem 0;
 }
@@ -14345,7 +14344,9 @@ footer .foot-bottom .container p {
   color: #1f1f1f;
   margin: 0;
   margin-right: 2%;
-  border-radius: 0;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   vertical-align: top;
   border: 0.1rem solid #ebebeb;
   box-shadow: none;

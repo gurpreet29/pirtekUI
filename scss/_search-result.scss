@@ -50,7 +50,9 @@
         color: $projectBlack;
         margin: 0;
         margin-right: 2%;
-        border-radius: 0;
+
+        @include border-radius(0px);
+
         vertical-align: top;
         border: 0.1rem solid $projectlightGrey;
         box-shadow: none;
