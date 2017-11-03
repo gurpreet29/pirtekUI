@@ -11072,6 +11072,7 @@ header .navbar-default .navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
 header .search-field {
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -11110,6 +11111,9 @@ header .global-btn {
 @media (max-width: 991px) {
   header .logo {
     width: 15rem;
+  }
+  header .search-field.active {
+    display: block;
   }
   header .top-nav-wrap .top-nav li,
   header .top-nav-wrap .social-bar li {
