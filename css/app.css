@@ -10645,6 +10645,7 @@ a {
   border-color: #b26c3e;
   color: #b26c3e;
   box-shadow: none;
+  outline: 0;
 }
 .btn.btn-md {
   font-size: 1.5rem;
@@ -14069,6 +14070,7 @@ footer .foot-bottom .container p {
   height: 4.5rem;
   border-color: #ebebeb;
   box-shadow: none;
+  outline: 0;
 }
 .form-default form .form-control:focus {
   border-color: #ebebeb;
@@ -14342,9 +14344,21 @@ footer .foot-bottom .container p {
   padding: 1rem 2rem;
   color: #1f1f1f;
   margin: 0;
-  vertical-align: top;
-  border: 0.1rem solid #e1e1e1;
   margin-right: 2%;
+  border-radius: 0;
+  vertical-align: top;
+  border: 0.1rem solid #ebebeb;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  outline: 0;
+  border-bottom: 0.4rem solid transparent;
+}
+.form-search .input-search:focus {
+  border-color: #ebebeb;
+  outline: 0;
+  box-shadow: none;
+  border-bottom: 0.4rem solid #bb5241;
 }
 .form-search .btn {
   width: 20%;
