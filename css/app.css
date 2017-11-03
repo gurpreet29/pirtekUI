@@ -11071,6 +11071,27 @@ header .navbar-default .navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
 header .navbar-default .navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
+header .search-field {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+header .search-field input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  height: 4rem;
+  outline: 0;
+}
+header .search-field .btn {
+  min-width: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  height: 4rem;
+  width: 4rem;
+  line-height: inherit;
+}
 header .call-btn,
 header .search-btn,
 header .global-btn {
