@@ -14352,7 +14352,9 @@ footer .foot-bottom .container p {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   outline: 0;
-  border-bottom: 0.4rem solid transparent;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 .form-search .input-search:focus {
   border-color: #ebebeb;
