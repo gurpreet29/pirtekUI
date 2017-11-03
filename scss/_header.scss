@@ -423,6 +423,7 @@ header {
         top: 100%;
         left: 0;
         right: 0;
+        z-index: 999;
 
         input {
             width: 100%;
@@ -439,6 +440,12 @@ header {
             height: 4rem;
             width: 4rem;
             line-height: inherit;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: $projectBrown;
+            }
         }
     }
 

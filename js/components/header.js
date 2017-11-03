@@ -58,6 +58,11 @@ function hoverRemove() {
     }
 }
 
+function showSearchBtn() {
+    console.log('sdf');
+    $('.search-field').slideToggle();
+}
+
 // add background on home page
 function homeBg() {
     $('.homepage-bg').parents('body').addClass('homepage-bg');
@@ -115,6 +120,7 @@ $(document).ready(function() {
 
     $(headerList).on('mouseenter focus', hoverAdd);
     $(headerList).on('mouseleave blur', hoverRemove);
+    $('.search-btn').on('click', showSearchBtn);
 });
 
 $(window).resize(function() {

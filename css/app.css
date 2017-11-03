@@ -11077,6 +11077,7 @@ header .search-field {
   top: 100%;
   left: 0;
   right: 0;
+  z-index: 999;
 }
 header .search-field input {
   width: 100%;
@@ -11092,6 +11093,9 @@ header .search-field .btn {
   height: 4rem;
   width: 4rem;
   line-height: inherit;
+}
+header .search-field .btn:hover, header .search-field .btn:focus, header .search-field .btn:active {
+  background-color: #bb5241;
 }
 header .call-btn,
 header .search-btn,
