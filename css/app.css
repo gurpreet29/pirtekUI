@@ -11278,6 +11278,9 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   color: #1d4789;
   text-transform: uppercase;
 }
+.container-fluid.bg-blue .solution h4, .container-fluid.bg-blue .solution a {
+  color: #fff;
+}
 .solution .link {
   font-family: "MuseoSans", sans-serif;
   font-weight: 900;
