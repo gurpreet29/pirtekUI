@@ -12429,7 +12429,7 @@ footer .foot-bottom .container p {
 .latest-facebook .item .caption p {
   margin-bottom: 1.5rem;
   font-size: 1.7rem;
-  color: #fff;
+  color: #1f1f1f;
 }
 .latest-facebook .item .caption p:nth-child(2) {
   font-size: 1.45rem;
@@ -12463,7 +12463,7 @@ footer .foot-bottom .container p {
 }
 .latest-facebook .summary {
   font-size: 2.5rem;
-  color: #fff;
+  color: #1f1f1f;
 }
 .latest-facebook .Facebook-link {
   margin-bottom: 5.6rem;
