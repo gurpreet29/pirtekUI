@@ -10481,7 +10481,7 @@ body {
   font-weight: 400;
 }
 body.homepage-bg {
-  background: url("../img/bg.jpg") no-repeat;
+  background: #f9f9fa url("../img/bg.jpg") no-repeat;
   background-size: cover;
   background-position: 0px bottom;
 }

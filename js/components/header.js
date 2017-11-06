@@ -71,7 +71,7 @@ function homeBg() {
 // adjust background position on home page
 function homeBgPos() {
     var headerPos = $('header').outerHeight() + $('#myCarousel').outerHeight();
-    $('.homepage-bg').parents('body').css('background-position', '0' + ('-' + headerPos + 'px'));
+    $('.homepage-bg').parents('body').css('background-position', '0' + (headerPos + 'px'));
 }
 
 
