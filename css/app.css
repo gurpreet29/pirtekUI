@@ -12188,6 +12188,7 @@ footer .foot-bottom .container p {
   justify-content: center;
   align-items: center;
   padding: 2rem 1rem;
+  align-items: baseline;
 }
 .quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure {
   width: 100%;
@@ -12319,7 +12320,7 @@ footer .foot-bottom .container p {
   }
   .quick-link .singapore-container .singapore-container-value .singapore-container-items .img-sec figure img {
     width: 100%;
-    max-width: 11.1rem;
+    width: 11.1rem;
   }
   .quick-link .singapore-container > a p {
     padding: 0 0 0 1rem;
