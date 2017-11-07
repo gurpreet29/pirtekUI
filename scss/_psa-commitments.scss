@@ -211,9 +211,9 @@
                 }
 
                 &:first-child {
-                    left: auto;
+                    left: auto !important;
                     right: 25.1rem;
-                    top: -1.7rem;
+                    top: -1.7rem !important;
                 }
 
                 &:nth-child(2) {

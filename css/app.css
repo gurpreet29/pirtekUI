@@ -11744,9 +11744,9 @@ footer .foot-bottom .container p {
   text-align: right;
 }
 .psa-commitments .psa-commits > .psa-commit-childs li:first-child {
-  left: auto;
+  left: auto !important;
   right: 25.1rem;
-  top: -1.7rem;
+  top: -1.7rem !important;
 }
 .psa-commitments .psa-commits > .psa-commit-childs li:nth-child(2) {
   left: 21.9rem;
@@ -12228,16 +12228,19 @@ footer .foot-bottom .container p {
   flex-basis: 33.333%;
   border: 1px solid yellow;
 }
-.quick-link .singapore-container > a {
+.quick-link .singapore-container > a,
+.quick-link .singapore-container .top-container {
   display: block;
 }
-.quick-link .singapore-container > a img {
+.quick-link .singapore-container > a img,
+.quick-link .singapore-container .top-container img {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
 }
-.quick-link .singapore-container > a p {
+.quick-link .singapore-container > a p,
+.quick-link .singapore-container .top-container p {
   text-transform: uppercase;
   position: absolute;
   color: #fff;
@@ -12251,7 +12254,8 @@ footer .foot-bottom .container p {
   margin-bottom: 0;
   max-width: 24rem;
 }
-.quick-link .singapore-container > a p span {
+.quick-link .singapore-container > a p span,
+.quick-link .singapore-container .top-container p span {
   display: block;
   clear: both;
   font-size: 1.6rem;
@@ -12364,7 +12368,8 @@ footer .foot-bottom .container p {
     max-width: 9.3rem;
     margin-bottom: 0.5rem;
   }
-  .quick-link .singapore-container > a p {
+  .quick-link .singapore-container > a p,
+  .quick-link .singapore-container .top-container p {
     padding: 4rem 1rem 0 1rem;
     font-size: 1.8rem;
     position: relative;
@@ -12372,10 +12377,12 @@ footer .foot-bottom .container p {
     top: 0;
     max-width: 100%;
   }
-  .quick-link .singapore-container > a p br {
+  .quick-link .singapore-container > a p br,
+  .quick-link .singapore-container .top-container p br {
     display: none;
   }
-  .quick-link .singapore-container > a p span {
+  .quick-link .singapore-container > a p span,
+  .quick-link .singapore-container .top-container p span {
     font-size: 1.6rem;
   }
   .quick-link .quick-link-bottom [class*=col-] .quick-anchor {
