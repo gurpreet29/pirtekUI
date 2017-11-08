@@ -4,9 +4,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+
     grunt.loadNpmTasks('grunt-grunticon');
     grunt.loadNpmTasks('grunt-svgmin');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-postcss');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -82,6 +85,30 @@ module.exports = function(grunt) {
             }
         },
 
+        postcss: {
+            options: {
+                map: true,
+                processors: [
+                    require('autoprefixer')
+                ]
+            },
+            dist: {
+                src: 'css/*.css'
+            }
+        },
+
+        cssmin: {
+            minify: {
+                expand: true,
+                cwd: 'css/',
+                src: ['app.css'],
+                // src: ['app.css', '!*.min.css'],
+                dest: 'css/',
+                ext: '.min.css'
+            }
+        },
+
+
         grunticon: {
             myIcons: {
                 files: [{
@@ -111,7 +138,7 @@ module.exports = function(grunt) {
             },
         }
     });
-    grunt.registerTask('default', 'watch');
+    grunt.registerTask('default', ['postcss:dist', 'cssmin', 'watch']);
     grunt.registerTask('svgbuild', ['svgmin', 'grunticon', 'copy', 'clean']); // Build and compress svgs
 
 }
