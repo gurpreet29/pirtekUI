@@ -12848,7 +12848,7 @@ footer .foot-bottom .container p {
 /* Mobile */
 @media (max-width: 767px) {
   .rich-text.padding-large {
-    padding: 4rem 0;
+    padding: 4rem 1.5rem;
   }
   .rich-text.img-compact [class*=col] > img {
     margin: 0 0 4rem 0;
