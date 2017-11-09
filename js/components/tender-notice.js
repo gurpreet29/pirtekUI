@@ -22,18 +22,18 @@ window.app = window.app || {};
 
             // TENDER FILTER
             tenderNotice = function() {
-                var btnFilter = $(model.container).find(model.filterBtn);
-                $(btnFilter).on('click', function() {
-                    var $target = $(this).data('target');
-                    addActiveClass($(this));
-                    if ($target != 'all') {
-                        $('.table').css('display', 'none');
-                        $('.table[data-status="' + $target + '"]').fadeIn('slow');
-                    } else {
-                        $('.table').css('display', 'none').fadeIn('slow');
-                    }
+                $(model.container).each(function() {
+                    var btnFilter = $(this).find(model.filterBtn);
+                    $(btnFilter).on('click', function() {
+                        // console.log('btnfilter ', btnFilter);
+                        var $target = $(this).data('target');
+                        addActiveClass($(this));
+                        if ($target != 'all') {
+                            $(this).closest(model.container).find('.table').addClass('hide');
+                            $('.table[data-status="' + $target + '"]').removeClass('hide');
+                        }
+                    });
                 });
-                
             },
 
             tableCount = function() {
@@ -44,8 +44,6 @@ window.app = window.app || {};
                 });
 
             },
-
-
 
             /***** PUBLIC FUNCTION/INITIALISE ************/
 
