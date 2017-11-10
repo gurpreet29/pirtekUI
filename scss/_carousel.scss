@@ -1,4 +1,15 @@
 .carousel {
+    a {
+        &:hover,
+        &:focus,
+        &:active {
+            h2 {
+                text-decoration: underline;
+                color: $white;
+            }
+        }
+    }
+
     .carousel-control {
         opacity: 1;
         background-image: none;

@@ -17,7 +17,7 @@ window.app = window.app || {};
             positionBox = function() {
                 var containerHeight = $(model.container).height();
                 if ($(window).height() > 767) {
-                    $(model.container).css('margin-top', -(containerHeight / 2));
+                    $(model.container).css('margin-top', -(containerHeight / 5) + 'px');
                 } else {
                     $(model.container).removeAttr('style');
                 }
@@ -41,7 +41,6 @@ window.app = window.app || {};
                     positionBox();
                 });
 
-
             },
 
             reset = function() {};
@@ -52,8 +51,6 @@ window.app = window.app || {};
             reset: reset
         };
     };
-
-
 
     /*********************************************************************************/
     /*****   ON DOCUMENT LOAD                                            ************/

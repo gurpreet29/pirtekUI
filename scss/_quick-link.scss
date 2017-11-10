@@ -80,13 +80,16 @@
 
         > a,
         .top-container {
-            display: block;
+            display: inline-block;
+            overflow: hidden;
 
             img {
                 width: 100%;
                 position: absolute;
-                top: 0;
+                top: 50%;
                 left: 0;
+
+                @include transform(translateY(-50%));
             }
 
             p {
@@ -101,7 +104,7 @@
                 left: 8.7%;
                 line-height: 1.3;
                 margin-bottom: 0;
-                max-width: 24rem;
+                max-width: 35rem;
 
                 span {
                     display: block;
@@ -222,6 +225,14 @@
                     }
                 }
             }
+
+            > a,
+            .top-container {
+                p {
+                    left: 2.7rem;
+                    width: 31rem;
+                }
+            }
         }
 
         .quick-link-bottom {
@@ -241,7 +252,18 @@
 }
 
 /* Tablet */
-@media (max-width: $tablet) {}
+@media (max-width: $tablet) {
+    .quick-link {
+        .singapore-container {
+            > a,
+            .top-container {
+                p {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+}
 
 /* Mobile */
 @media (max-width: $mobile) {
