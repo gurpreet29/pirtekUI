@@ -29,7 +29,7 @@ window.app = window.app || {};
                 args = args || {};
                 model = {
                     init: function() {
-                        this.container = args.container || '.quick-link';
+                        this.container = args.container || '.quick-link-container';
                     }
                 };
 
@@ -57,10 +57,10 @@ window.app = window.app || {};
     /*******************************************************************************/
 
     $(function() {
-        if ($('.quick-link').length) {
+        if ($('.quick-link-container').length) {
             var newQuickLink = new app.quickLink();
             newQuickLink.init({
-                container: '.quick-link'
+                container: '.quick-link-container'
             });
         }
     });
