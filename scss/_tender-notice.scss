@@ -95,6 +95,10 @@
                             width: 5%;
                         }
 
+                        &.quarter {
+                            width: 10%;
+                        }
+
                         &.type {
                             width: 15%;
                         }
@@ -200,7 +204,8 @@
                         left: -9999px;
 
                         td {
-                            &.no {
+                            &.no,
+                            &.quarter {
                                 width: auto;
                             }
 
