@@ -15,13 +15,13 @@ window.app = window.app || {};
             /***** PRIVATE FUNCTIONS ************/
 
             // What does the function do
-            
-            smallCarousel = function(){
-           
-                $('.multicarousel .carousel .item').each(function(){
+
+            smallCarousel = function() {
+
+                $('.multicarousel .carousel .item').each(function() {
                     var itemToClone = $(this);
 
-                    for (var i=1;i<5;i++) {
+                    for (var i = 1; i < 5; i++) {
                         itemToClone = itemToClone.next();
 
                         // wrap around if at end of item collection
@@ -30,7 +30,7 @@ window.app = window.app || {};
                         }
 
                         // grab item, clone, add marker class, add to collection
-                        itemToClone.children(':first-child').clone().addClass("cloneditem-"+(i)).appendTo($(this));
+                        itemToClone.children(':first-child').clone().addClass("cloneditem-" + (i)).appendTo($(this));
                     }
                 });
             },
@@ -41,22 +41,13 @@ window.app = window.app || {};
                 args = args || {};
                 model = {
                     init: function() {
-                        this.container = args.container || '.multicarousel'; 
+                        this.container = args.container || '.multicarousel';
                     }
                 };
 
                 // On document ready
                 model.init();
                 smallCarousel();
-
-                $('.variable-width').slick({
-                  dots: true,
-                  infinite: true,
-                  speed: 300,
-                  slidesToShow: 1,
-                  centerMode: true,
-                  variableWidth: true
-                });
                 
 
             },

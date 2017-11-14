@@ -9,81 +9,52 @@
 </head>
 
 <body>
-    <!--  <div class="multicarousel">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                  <div class="carousel slide" id="Multicarousel">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="col-md-2">
-                                <a href="#" title="Sample link"><img src="http://placehold.it/1000/0054A6/fff/&amp;text=1" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2">
-                                <a href="#" title="Sample link"><img src="http://placehold.it/1000/002d5a/fff/&amp;text=2" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2">
-                                <a href="#" title="Sample link"><img src="http://placehold.it/1000/d6d6d6/333&amp;text=3" alt=""></a>
-                            </div>
-                        </div>          
-                        <div class="item">
-                            <div class="col-md-2">
-                                <a href="#" title="Sample link"><img src="http://placehold.it/1000/002040/eeeeee&amp;text=4" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2">
-                                <a href="#" title="Sample link"><img src="http://placehold.it/1000/0054A6/fff/&amp;text=5" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2">
-                                <a href="#" title="Sample link"><img src="http://placehold.it/1000/002d5a/fff/&amp;text=6" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="col-md-2">
-                                <a href="#" title="Sample link"><img src="http://placehold.it/1000/eeeeee&amp;text=7" alt=""></a>
-                            </div>
-                        </div>
-                      
-                    </div>
-                    <a class="left carousel-control" href="#Multicarousel" data-slide="prev" title="Previous"><i class="fa fa-angle-left fa-2x"></i></a>
-                    <a class="right carousel-control" href="#Multicarousel" data-slide="next" title="Next"><i class="fa fa-angle-right fa-2x"></i></a>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <div class="container">
         <div class="row">
-            <section class="regular slider slick-slider">
+            <section class="slider variable-width">
                 <div>
-                    <img src="http://placehold.it/350x300?text=1">
+                    <img src="http://placehold.it/175x100/d84141/000/?text=175x100">
                 </div>
                 <div>
-                    <img src="http://placehold.it/350x300?text=2">
+                    <img src="http://placehold.it/200x100/d84196/000/?text=200x100">
                 </div>
                 <div>
-                    <img src="http://placehold.it/350x300?text=3">
+                    <img src="http://placehold.it/200x100/cf41d8/000/?text=200x100">
                 </div>
                 <div>
-                    <img src="http://placehold.it/350x300?text=4">
+                    <img src="http://placehold.it/150x100/6541d8/000/?text=150x100">
                 </div>
                 <div>
-                    <img src="http://placehold.it/350x300?text=5">
+                    <img src="http://placehold.it/200x100/4165d8/000/?text=200x100">
                 </div>
                 <div>
-                    <img src="http://placehold.it/350x300?text=6">
+                    <img src="http://placehold.it/200x100/41c8d8/000/?text=200x100">
+                </div>
+                <div>
+                    <img src="http://placehold.it/500x100/41d86c/000/?text=500x100">
+                </div>
+                <div>
+                    <img src="http://placehold.it/300x100/9dd841/000/?text=300x100">
+                </div>
+                <div>
+                    <img src="http://placehold.it/150x100/d8b341/000/?text=150x100">
                 </div>
             </section>
         </div>
     </div>
     <script src="../js/app.min.js"></script>
+    <script type="text/javascript">
+    $(document).on('ready', function() {
+        $('.variable-width').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            // centerMode: true,
+            variableWidth: true
+        });
+    });
+    </script>
 </body>
 
 </html>
