@@ -50,6 +50,17 @@
                     background-image: url("../img/component/terminal/open.png");
                 }
             }
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.open {
+                color: $projectBrown;
+            }
+
+            &:focus {
+                outline: auto;
+            }
         }
 
         ul {

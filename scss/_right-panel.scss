@@ -36,7 +36,17 @@
         margin-bottom: 4.3rem;
     }
 
-    h6 {
+    h5 {
+        font-family: $fontFamily;
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.2;
+
+        span {
+            font-weight: 300;
+        }
+
         margin-bottom: 0.4rem;
         color: $darkBlue;
     }
@@ -55,5 +65,9 @@
         padding: 0;
         background-color: transparent;
         margin: 0 0 4rem;
+
+        h5 {
+            font-size: 1.9rem;
+        }
     }
 }

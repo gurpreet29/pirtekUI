@@ -41,5 +41,10 @@
 @media (max-width: $mobile) {
     .thumbnails {
         margin: 4rem 0;
+
+        .btn {
+            display: inline-block;
+            width: auto;
+        }
     }
 }

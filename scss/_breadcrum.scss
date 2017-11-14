@@ -99,15 +99,15 @@
     .breadcrum {
         .caption-text {
             width: 100%;
-        }
 
-        h1, h2 {
-            font-size: 1.8rem;
-            font-weight: 900;
-        }
+            h1, h2 {
+                font-size: 2rem;
+                white-space: inherit;
+            }
 
-        h2 {
-            display: none;
+            .page-title {
+                font-size: 1.8rem;
+            }
         }
     }
 }
