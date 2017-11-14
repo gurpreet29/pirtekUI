@@ -31,6 +31,8 @@ window.app = window.app || {};
                         if ($target != 'all') {
                             $(this).closest(model.container).find('.table').addClass('hide');
                             $('.table[data-status="' + $target + '"]').removeClass('hide');
+                        } else {
+                            $(this).closest(model.container).find('.table').removeClass('hide');
                         }
                     });
                 });
