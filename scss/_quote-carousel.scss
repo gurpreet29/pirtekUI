@@ -2,9 +2,14 @@
     .carousel {
         .container {
             max-width: 55rem;
-            right: 15rem;
+            right: 10rem;
             left: auto;
             text-align: left;
+            bottom: auto;
+            top: 50%;
+            padding-top: 0;
+
+            @include transform(translateY(-50%));
 
             p {
                 font-size: 1.8rem;
@@ -42,11 +47,12 @@
 
         .carousel-indicators {
             top: auto;
-            bottom: 3rem;
+            bottom: 2rem;
             text-align: center;
             left: 50%;
             margin-left: -30%;
             width: 60%;
+            margin-bottom: 0;
 
             li {
                 display: inline-block;
@@ -66,7 +72,10 @@
             .container {
                 max-width: 50rem;
                 right: 8rem;
-                padding-top: 6.8%;
+            }
+
+            .carousel-indicators {
+                bottom: 0;
             }
         }
     }
@@ -79,7 +88,6 @@
             .container {
                 max-width: 40rem;
                 right: 5rem;
-                padding-top: 5.8%;
 
                 p {
                     font-size: 1.4rem;
@@ -92,7 +100,7 @@
             }
 
             .carousel-indicators {
-                bottom: 2rem;
+                bottom: 1rem;
             }
         }
     }
@@ -107,6 +115,9 @@
                 right: 0;
                 padding: 1rem 1.5rem;
                 margin: 0 auto;
+                top: 0;
+
+                @include transform(translateY(0));
 
                 p,
                 h5 {
