@@ -163,6 +163,8 @@ a {
     a {
         color: $blue;
 
+        @include transition(0.25s);
+
         &:hover,
         &:focus,
         &:active {
