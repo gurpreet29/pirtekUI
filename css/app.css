@@ -10524,6 +10524,24 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
+.table-default {
+  background-color: #e8edff;
+  border-color: #fff;
+}
+.table-default > thead > tr > th {
+  background-color: #b9c9fe;
+  border-color: #fff;
+}
+.table-default > tbody > tr > td {
+  border-color: #fff;
+}
+.table-default a {
+  color: #014181;
+}
+.table-default a:hover, .table-default a:focus, .table-default a:active {
+  color: #bb5241;
+}
+
 .btn {
   text-transform: uppercase;
   font-size: 2rem;

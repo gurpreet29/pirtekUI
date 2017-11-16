@@ -139,6 +139,38 @@ a {
     font-family: $fontFamily;
 }
 
+.table-default {
+    background-color: $lightPurple;
+    border-color: $white;
+
+    > thead {
+        > tr {
+            > th {
+                background-color: $purple;
+                border-color: $white;
+            }
+        }
+    }
+
+    > tbody {
+        > tr {
+            > td {
+                border-color: $white;
+            }
+        }
+    }
+
+    a {
+        color: $blue;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $projectBrown;
+        }
+    }
+}
+
 .container-fluid {}
 
 .btn {
