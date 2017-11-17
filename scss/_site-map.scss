@@ -2,6 +2,10 @@
     overflow: hidden;
     padding: 6rem 0;
 
+    a {
+        color: $blue;
+    }
+
     ul {
         list-style: none;
         margin: 0;
@@ -17,7 +21,7 @@
                 a {
                     font-size: 2rem;
                     text-transform: uppercase;
-                    color: $black;
+                    color: $darkBlue;
                     padding: 2rem 0;
                     border-bottom: 1px solid $lightBlue;
                 }
@@ -29,6 +33,7 @@
                 line-height: 1.1;
 
                 a {
+                    color: $blue;
                     font-size: 1.7rem;
                     font-weight: 600;
                     margin: 2rem 0 0;
@@ -50,7 +55,7 @@
             }
 
             a {
-                color: $projectGrey;
+                color: $blue;
                 font-size: 1.6rem;
                 letter-spacing: 0.05rem;
                 display: block;

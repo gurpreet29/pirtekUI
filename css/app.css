@@ -10416,6 +10416,13 @@ body.homepage-bg {
   background-position: 0px bottom;
 }
 
+a {
+  color: #014181;
+}
+a:focus, a:hover, a:active {
+  color: #bb5241;
+}
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin: 0;
   padding: 0;
@@ -11675,7 +11682,7 @@ footer .foot-bottom .container p {
   font-size: 1.2rem;
 }
 .psa-commitments .psa-commits > .psa-commit-childs li a figure figcaption .heading {
-  color: #1f1f1f;
+  color: #014181;
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -11876,7 +11883,6 @@ footer .foot-bottom .container p {
 .latest-news a {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  color: #000;
   font-weight: 600;
   line-height: 1.6;
   text-decoration: none;
@@ -11922,7 +11928,6 @@ footer .foot-bottom .container p {
   display: none;
 }
 .latest-news.headline a:not(.btn) {
-  color: #032f3e;
   margin: 0;
   text-transform: normal;
 }
@@ -12784,7 +12789,6 @@ footer .foot-bottom .container p {
 }
 .rich-text a {
   outline: 0;
-  color: #616161;
 }
 .rich-text a:hover, .rich-text a:focus, .rich-text a:active {
   text-decoration: none;
@@ -13760,6 +13764,9 @@ footer .foot-bottom .container p {
 .career-benefits {
   padding: 6rem 0;
 }
+.career-benefits a {
+  color: #014181;
+}
 .career-benefits a:hover, .career-benefits a:focus, .career-benefits a:active {
   text-decoration: none;
   outline: 0;
@@ -13817,7 +13824,7 @@ footer .foot-bottom .container p {
   margin-bottom: 0;
 }
 .accordion .panel-body h6 a {
-  color: #343f55;
+  color: #014181;
   display: block;
   padding: 3rem 4rem 3rem 0;
   position: relative;
@@ -14266,6 +14273,9 @@ footer .foot-bottom .container p {
   overflow: hidden;
   padding: 6rem 0;
 }
+.site-map a {
+  color: #014181;
+}
 .site-map ul {
   list-style: none;
   margin: 0;
@@ -14281,7 +14291,7 @@ footer .foot-bottom .container p {
 .site-map ul li h6 a {
   font-size: 2rem;
   text-transform: uppercase;
-  color: #000;
+  color: #01387b;
   padding: 2rem 0;
   border-bottom: 1px solid #dae4e6;
 }
@@ -14291,6 +14301,7 @@ footer .foot-bottom .container p {
   line-height: 1.1;
 }
 .site-map ul li .sub-heading a {
+  color: #014181;
   font-size: 1.7rem;
   font-weight: 600;
   margin: 2rem 0 0;
@@ -14308,7 +14319,7 @@ footer .foot-bottom .container p {
   font-family: 'FontAwesome';
 }
 .site-map ul li a {
-  color: #727272;
+  color: #014181;
   font-size: 1.6rem;
   letter-spacing: 0.05rem;
   display: block;
@@ -14612,7 +14623,7 @@ footer .foot-bottom .container p {
   margin-bottom: 0;
 }
 .items h6 a {
-  color: #1f1f1f;
+  color: #014181;
   outline: 0;
 }
 .items h6 a:hover, .items h6 a:focus, .items h6 a:active {
@@ -14677,7 +14688,7 @@ footer .foot-bottom .container p {
   margin: 4rem 0 10rem;
 }
 .pagination > li > a {
-  color: #1f1f1f;
+  color: #014181;
   outline: 0;
 }
 .pagination > li > a:hover, .pagination > li > a:focus, .pagination > li > a:active {
