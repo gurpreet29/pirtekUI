@@ -16,6 +16,34 @@ body {
     }
 }
 
+.txtwhite h1,
+.txtwhite h2,
+.txtwhite h3,
+.txtwhite h4,
+.txtwhite h5,
+.txtwhite h6,
+.txtwhite p,
+.txtwhite div,
+.txtwhite span,
+.txtwhite i,
+.txtwhite .fa {
+    color: $white !important;
+}
+
+.txtblack h1,
+.txtblack h2,
+.txtblack h3,
+.txtblack h4,
+.txtblack h5,
+.txtblack h6,
+.txtblack p,
+.txtblack div,
+.txtblack span,
+.txtblack i,
+.txtblack .fa {
+    color: $black !important;
+}
+
 a {
     color: $blue;
 
