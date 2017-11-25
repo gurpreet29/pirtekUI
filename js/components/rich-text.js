@@ -18,9 +18,13 @@ window.app = window.app || {};
             videoIframe = function() {
                 var videoIframe = $(model.container).find('iframe');
                     videoIframe.wrap('<div class="video-iframe"></div>');
-                // $(model.container).swipeleft(function() {
-                //     $(this).carousel('next');
-                // });
+            },
+
+            tableFrame = function() {
+                var tableFrame = $(model.container).find('.table.table-default');
+                $(tableFrame).each(function() {
+                    $(this).wrap('<div class="table-responsive"></div>');
+                });
             },
 
 
@@ -38,6 +42,7 @@ window.app = window.app || {};
                 // On document ready
                 model.init();
                 videoIframe();
+                tableFrame();
 
             },
 

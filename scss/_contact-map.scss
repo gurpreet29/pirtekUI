@@ -1,5 +1,5 @@
 .contact-map {
-    margin: 6rem 0;
+    margin: 4rem 0;
 
     #map_container {
         position: relative;
@@ -16,13 +16,13 @@
 /* Mobile */
 @media (max-width: $tablet) {
     .contact-map {
-        margin: 4rem 0 0;
+        margin: 2rem 0 0;
     }
 }
 
 /* Mobile */
 @media (max-width: $mobile) {
     .contact-map {
-        margin: 4rem 0 2rem;
+        margin: 2rem 0 2rem;
     }
 }

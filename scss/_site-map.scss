@@ -1,6 +1,6 @@
 .site-map {
     overflow: hidden;
-    padding: 6rem 0;
+    padding: 4rem 0;
 
     a {
         color: $blue;
@@ -76,6 +76,6 @@
 /*mobile*/
 @media (max-width: $mobile) {
     .site-map {
-        padding: 4rem 0;
+        padding: 2rem 0;
     }
 }

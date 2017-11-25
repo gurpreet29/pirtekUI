@@ -1,5 +1,5 @@
 .latest-news {
-    padding: 6rem 0;
+    padding: 4rem 0;
     overflow: hidden;
 
     a {
@@ -130,7 +130,7 @@
 /* Tablet */
 @media (max-width: $tablet) {
     .latest-news {
-        padding: 4rem 0;
+        padding: 2rem 0;
 
         a {
             &.btn-primary {

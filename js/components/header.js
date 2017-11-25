@@ -45,14 +45,14 @@ function svgBg() {
 
 
 function hoverAdd() {
-    if ($(window).width() > 1024) {
+    if ($(window).width() > 767) {
         $(this).addClass('open');
         $(">ul", this).show();
     }
 }
 
 function hoverRemove() {
-    if ($(window).width() > 1024) {
+    if ($(window).width() > 767) {
         $(this).removeClass('open');
         $(">ul", this).hide();
     }

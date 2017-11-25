@@ -2,13 +2,14 @@ footer {
     // display: flex;
     .foot-top {
         background-color: $projectMediumBlack;
-        padding: 6rem 0;
+        padding: 3rem 0;
 
         .container {
             .foot-nav {
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
+                margin-bottom: 0;
 
                 > li {
                     position: relative;
@@ -164,7 +165,7 @@ footer {
 
     .foot-bottom {
         background-color: $projectDarkBlack;
-        padding: 2rem 0;
+        padding: 1.5rem 0;
 
         .container {
             p {
