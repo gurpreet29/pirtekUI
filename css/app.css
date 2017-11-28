@@ -10526,8 +10526,7 @@ main {
   main {
     margin-top: 0;
   }
-
-  .container {
+  main .container {
     padding: 0 !important;
   }
 }
