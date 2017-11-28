@@ -1,4 +1,11 @@
 header {
+    background-color: #fff;
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
     .brand-bar {
         padding-top: 3rem;
         padding-bottom: 3rem;
@@ -210,6 +217,8 @@ header {
 /* Mobile */
 @media (max-width: $mobile) {
     header {
+        position: relative;
+
         .brand-bar {
             padding-top: 1rem;
             padding-bottom: 1rem;
