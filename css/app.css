@@ -14022,6 +14022,11 @@ footer .foot-bottom .container p {
   .accordion .panel-body .panel-collapse .media .media-left {
     min-width: 4rem;
   }
+  .accordion .panel-body .panel-collapse .media .media-body {
+    display: block;
+    width: 100%;
+    clear: both;
+  }
   .accordion .panel-body .panel-collapse .media .media-body p:last-child {
     padding-bottom: 2rem;
   }
