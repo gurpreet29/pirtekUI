@@ -10500,29 +10500,11 @@ label {
     width: 100%;
   }
 }
-header {
-  background-color: #fff;
-  top: 0;
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
 main {
   margin-top: 173px;
 }
 
 @media (max-width: 767px) {
-  header {
-    background-color: #fff;
-    top: 0;
-    position: relative;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-  }
-
   main {
     margin-top: 0;
   }
@@ -10532,6 +10514,8 @@ main {
 }
 header {
   background-color: #fff;
+}
+header.sticky {
   top: 0;
   position: fixed;
   right: 0;
@@ -10713,6 +10697,9 @@ header .call-btn, header .search-btn {
 /* Mobile */
 @media (max-width: 767px) {
   header {
+    position: relative;
+  }
+  header.sticky {
     position: relative;
   }
   header .brand-bar {

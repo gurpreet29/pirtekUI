@@ -1,10 +1,13 @@
 header {
     background-color: #fff;
-    top: 0;
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+
+    &.sticky {
+        top: 0;
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
 
     .brand-bar {
         padding-top: 3rem;
@@ -218,6 +221,10 @@ header {
 @media (max-width: $mobile) {
     header {
         position: relative;
+
+        &.sticky {
+            position: relative;
+        }
 
         .brand-bar {
             padding-top: 1rem;
