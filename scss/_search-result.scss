@@ -1,5 +1,5 @@
 .items {
-    margin-bottom: 3rem;
+    // margin-bottom: 3rem;
     padding: 4rem 2rem;
 
     h6 {
@@ -22,9 +22,9 @@
         margin-bottom: 0.2rem;
     }
 
-    &:first-child {
-        margin-top: 2rem;
-    }
+    // &:first-child {
+    //     margin-top: 2rem;
+    // }
 
     &:last-child {
         margin-bottom: 0;
@@ -133,12 +133,13 @@
     }
 
     .items {
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
         padding: 3rem 2rem;
 
-        &:first-child {
-            margin-top: 1rem;
-        }
+        // &:first-child {
+        //     margin-top: 1rem;
+        // }
+   
     }
 
     .pagination {
