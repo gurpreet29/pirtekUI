@@ -13564,6 +13564,9 @@ footer .foot-bottom .container p {
 /* Tablet */
 /* Mobile */
 @media (max-width: 767px) {
+  .tender-status {
+    margin-bottom: 2rem;
+  }
   .tender-status .reg-btn .btn {
     display: block;
   }
