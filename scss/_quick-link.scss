@@ -161,6 +161,7 @@
                 font-size: 2.4rem;
                 display: block;
                 word-break: break-word;
+                line-height: 1;
             }
 
             &:after {
@@ -204,6 +205,8 @@
         flex-flow: column;
 
         .tile {
+            margin-bottom: 0;
+
             &.x2 {
                 a {
                     p {
