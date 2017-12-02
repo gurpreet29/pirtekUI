@@ -141,6 +141,10 @@ label {
     top: auto;
 }
 
+input[type=text]::-ms-clear {
+    display: none;
+}
+
 /* Tablet */
 @media (max-width: $tablet) {}
 
