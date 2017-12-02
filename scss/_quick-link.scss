@@ -1,14 +1,11 @@
 .quick-link {
     display: flex;
     flex-flow: row;
-    position: relative;
 
     .tile {
         flex: 1;
         font-size: 0;
         display: flex;
-        margin-bottom: 0;
-        position: relative;
 
         &.x2 {
             flex: 2;
@@ -21,10 +18,8 @@
 
                 a {
                     display: inline-block;
-
-                    // width: 50%;
-                    // padding-top: 49.5%;
-               
+                    width: 50%;
+                    padding-top: 49.5%;
                 }
             }
         }
@@ -34,104 +29,97 @@
             flex-flow: column;
             font-size: 0;
             flex: 1;
-            position: relative;
 
             a {
                 display: block;
-
-                // width: 100%;
-                // padding-top: 100%;
-           
+                width: 100%;
+                padding-top: 100%;
             }
         }
 
-        // .search-nearby {
-        //     .search-area {
-        //         // background-image: url(../img/search-tile-background.jpg);
-        //         background-repeat: no-repeat;
-        //         background-position: top right;
-        //         background-size: cover;
-        //         position: relative;
-        //         padding-top: 50%;
+        // .search-area {
+        //     background-image: url(../img/search-tile-background.jpg);
+        //     background-repeat: no-repeat;
+        //     background-position: top right;
+        //     background-size: cover;
+        //     position: relative;
+        //     padding-top: 50%;
 
-        //         form {
-        //             position: absolute;
-        //             font-size: 1.6rem;
-        //             bottom: 3rem;
-        //             width: 90%;
-        //             left: 5%;
+        //     form {
+        //         position: absolute;
+        //         font-size: 1.6rem;
+        //         bottom: 3rem;
+        //         width: 90%;
+        //         left: 5%;
 
-        //             label {
-        //                 font-family: $fontFamily;
+        //         label {
+        //             font-family: $fontFamily;
+        //             font-weight: 900;
+        //             font-size: 1.4rem;
+        //             color: $white;
+        //             text-transform: uppercase;
+
+        //             strong {
         //                 font-weight: 900;
-        //                 font-size: 1.4rem;
-        //                 color: $white;
-        //                 text-transform: uppercase;
+        //                 font-size: 2.4rem;
+        //                 display: block;
+        //             }
+        //         }
 
-        //                 strong {
-        //                     font-weight: 900;
-        //                     font-size: 2.4rem;
-        //                     display: block;
-        //                 }
+        //         .search-box {
+        //             position: relative;
+        //             margin-top: 2rem;
+
+        //             input[type='text'] {
+        //                 width: 100%;
+        //                 height: 4.2rem;
+        //                 font-size: 1.4rem;
+        //                 color: $projectBlue;
+        //                 padding-left: 2rem;
+        //                 padding-right: 4rem;
+        //                 font-weight: 500;
         //             }
 
-        //             .search-box {
-        //                 position: relative;
-        //                 margin-top: 2rem;
+        //             ::-webkit-input-placeholder {
+        //                 /* Chrome/Opera/Safari
+        //                 color: $projectBlue;
+        //                 text-transform: uppercase;
+        //             }
 
-        //                 input[type='text'] {
-        //                     width: 100%;
-        //                     height: 4.2rem;
-        //                     font-size: 1.4rem;
-        //                     color: $projectBlue;
-        //                     padding-left: 2rem;
-        //                     padding-right: 4rem;
-        //                     font-weight: 500;
-        //                     background-color: $white;
-        //                 }
+        //             ::-moz-placeholder {
+        //                 /* Firefox 19+
+        //                 color: $projectBlue;
+        //                 text-transform: uppercase;
+        //             }
 
-        //                 ::-webkit-input-placeholder {
-        //                     // /* Chrome/Opera/Safari
-        //                     color: $projectBlue;
-        //                     text-transform: uppercase;
-        //                 }
+        //             :-ms-input-placeholder {
+        //                 /* IE 10+
+        //                 color: $projectBlue;
+        //                 text-transform: uppercase;
+        //             }
 
-        //                 ::-moz-placeholder {
-        //                     // /* Firefox 19+
-        //                     color: $projectBlue;
-        //                     text-transform: uppercase;
-        //                 }
+        //             :-moz-placeholder {
+        //                 /* Firefox 18-
+        //                 color: $projectBlue;
+        //                 text-transform: uppercase;
+        //             }
 
-        //                 :-ms-input-placeholder {
-        //                     // /* IE 10+
-        //                     color: $projectBlue;
-        //                     text-transform: uppercase;
-        //                 }
+        //             .search-button {
+        //                 display: block;
+        //                 position: absolute;
+        //                 right: 0;
+        //                 top: 0;
+        //                 height: 4.2rem;
+        //                 width: 4rem;
+        //                 border: none;
+        //                 background: none;
 
-        //                 :-moz-placeholder {
-        //                     // /* Firefox 18-
-        //                     color: $projectBlue;
-        //                     text-transform: uppercase;
-        //                 }
-
-        //                 .search-button {
-        //                     display: block;
+        //                 img {
+        //                     width: 52%;
+        //                     top: 50%;
+        //                     transform: translateY(-50%);
         //                     position: absolute;
-        //                     right: 0;
-        //                     top: 0;
-        //                     height: 4.2rem;
-        //                     width: 4rem;
-        //                     border: none;
-
-        //                     // background: none;
-
-        //                     img {
-        //                         width: 52%;
-        //                         top: 50%;
-        //                         transform: translateY(-50%);
-        //                         position: absolute;
-        //                         left: 0.4rem;
-        //                     }
+        //                     left: 0.4rem;
         //                 }
         //             }
         //         }
@@ -143,14 +131,13 @@
     a {
         padding-bottom: 0;
         display: block;
-
-        // padding-top: 100%;
+        background-color: yellowgreen;
+        padding-top: 100%;
         position: relative;
 
         img {
             width: 100%;
-
-            // position: absolute;
+            position: absolute;
             top: 0;
             left: 0;
         }
@@ -167,12 +154,12 @@
             width: 100%;
             font-weight: 900;
             z-index: 1;
-            line-height: 1.1;
 
             strong {
                 font-weight: 900;
                 font-size: 2.4rem;
                 display: block;
+                word-break: break-word;
             }
 
             &:after {
@@ -199,13 +186,10 @@
 @media (max-width: $tablet) {
     .quick-link {
         .tile {
-            // .search-nearby {
             // .search-area {
             //     form {
             //         bottom: 1rem;
             //     }
-            // }
-
             // }
        
         }
@@ -229,24 +213,21 @@
                 }
             }
 
-            // .search-nearby {
-            .search-area {
-                padding-top: 4rem;
-                padding-bottom: 2rem;
+            // .search-area {
+            //     padding-top: 4rem;
+            //     padding-bottom: 2rem;
 
-                form {
-                    position: relative;
-                    bottom: auto;
-                }
-            }
-
+            //     form {
+            //         position: relative;
+            //         bottom: auto;
+            //     }
             // }
 
             .image-thumb {
                 flex-flow: row;
 
                 a {
-                    // padding-top: 50%;
+                    padding-top: 50%;
 
                     p {
                         strong {
