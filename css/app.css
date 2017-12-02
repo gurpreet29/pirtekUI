@@ -12668,6 +12668,21 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 .tile {
   margin-bottom: 3rem;
 }
+.tile.product .title {
+  text-align: right;
+  margin-bottom: 3rem;
+}
+.tile.product .title .link {
+  font-family: "MuseoSans", sans-serif;
+  font-weight: 900;
+  color: #1d4789;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-align: right;
+}
+.tile.product .title .link.non-desktop {
+  display: none;
+}
 .tile.product .item ul li {
   flex-basis: 33.33%;
 }
@@ -12734,6 +12749,22 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 @media (max-width: 767px) {
   .tile.product .item ul li {
     flex-basis: 50%;
+  }
+  .tile.product .title {
+    margin-bottom: 1.5rem;
+  }
+  .tile.product .title .link {
+    font-size: 1.1rem;
+  }
+  .tile.product .title .link:after {
+    height: .2rem;
+  }
+  .tile.product .title .link.desktop {
+    display: none;
+  }
+  .tile.product .title .link.non-desktop {
+    display: inline-block;
+    white-space: nowrap;
   }
   .tile .item ul li {
     flex-basis: 50%;
