@@ -11380,23 +11380,14 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   .solution .carousel .carousel-inner > .item {
     display: block !important;
   }
-  .container-fluid.bg-blue .solution .carousel .carousel-inner > .item:first-of-type ul li:first-child a {
-    border-top: 0.1rem solid #fff;
-  }
   .solution .carousel .carousel-inner > .item:first-of-type ul li:first-child a {
     border-top: 0.1rem solid #373e74;
-  }
-  .container-fluid.bg-blue .solution .carousel .carousel-inner > .item:last-of-type ul li:last-child a {
-    border-bottom: 0.1rem solid #1d4789;
   }
   .solution .carousel .carousel-inner > .item ul {
     display: block;
   }
   .solution .carousel .carousel-inner > .item ul li {
     width: 100%;
-  }
-  .container-fluid.bg-blue .solution .carousel .carousel-inner > .item ul li a {
-    border-bottom: 0.1rem solid #fff;
   }
   .solution .carousel .carousel-inner > .item ul li a {
     display: block;

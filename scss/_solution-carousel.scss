@@ -200,28 +200,8 @@
                         ul {
                             li {
                                 &:first-child {
-                                    .container-fluid.bg-blue & {
-                                        a {
-                                            border-top: 0.1rem solid $white;
-                                        }
-                                    }
-
                                     a {
                                         border-top: 0.1rem solid $borderPurple;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    &:last-of-type {
-                        ul {
-                            li {
-                                &:last-child {
-                                    .container-fluid.bg-blue & {
-                                        a {
-                                            border-bottom: 0.1rem solid $projectBlue;
-                                        }
                                     }
                                 }
                             }
@@ -233,12 +213,6 @@
 
                         li {
                             width: 100%;
-
-                            .container-fluid.bg-blue & {
-                                a {
-                                    border-bottom: 0.1rem solid $white;
-                                }
-                            }
 
                             a {
                                 // background-color: $projectBlue;
