@@ -11239,6 +11239,9 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
     font-size: 1.4rem;
   }
 }
+.solution {
+  padding-top: 8rem;
+}
 .solution .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11257,9 +11260,6 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   font-weight: 900;
   color: #1d4789;
   text-transform: uppercase;
-}
-.container-fluid.bg-blue .solution {
-  padding-top: 8rem;
 }
 .container-fluid.bg-blue .solution h4, .container-fluid.bg-blue .solution a {
   color: #fff;
