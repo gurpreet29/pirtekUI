@@ -7,6 +7,10 @@ header {
         right: 0;
         left: 0;
         z-index: 1030;
+
+        + main {
+            margin-top: 173px;
+        }
     }
 
     .brand-bar {
@@ -224,6 +228,10 @@ header {
 
         &.sticky {
             position: relative;
+
+            + main {
+                margin-top: 0;
+            }
         }
 
         .brand-bar {

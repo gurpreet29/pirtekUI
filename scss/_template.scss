@@ -21,17 +21,3 @@
 //     padding-right: $gutter-width !important;
 //     padding-left: $gutter-width !important;
 // }
-
-main {
-    margin-top: 173px;
-}
-
-@media (max-width: $mobile) {
-    main {
-        margin-top: 0;
-
-        .container {
-            padding: 0 !important;
-        }
-    }
-}
