@@ -1,4 +1,6 @@
 .solution {
+    padding-top: 8rem;
+
     .title {
         display: flex;
         align-items: flex-end;
@@ -15,8 +17,6 @@
     }
 
     .container-fluid.bg-blue & {
-        padding-top: 8rem;
-
         h4, a {
             color: #fff;
         }
