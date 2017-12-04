@@ -21,3 +21,13 @@
 //     padding-right: $gutter-width !important;
 //     padding-left: $gutter-width !important;
 // }
+
+// global margin for .container containing component without filters
+.layout-margin3 {
+    margin-top: 3rem;
+}
+
+// global margin for .container containing component (grid pages) with filters
+.layout-margin5 {
+    margin-top: 5rem;
+}
