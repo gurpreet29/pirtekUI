@@ -105,6 +105,10 @@
             }
         }
     }
+
+    &.carousel-item {
+        display: none;
+    }
 }
 
 /* Tablet */
@@ -248,6 +252,36 @@
 
                         &:hover, &:focus {
                             background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%208.6%2013.4%22%3E%3Cstyle%3E.st0%7Bfill%3A%23f3c828%7D%3C%2Fstyle%3E%3Ctitle%3EArrow%20copy%206%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%3E%3Cg%20id%3D%22Layer_1-2%22%3E%3Cpath%20id%3D%22Arrow_copy_6%22%20class%3D%22st0%22%20d%3D%22M1.8%200L0%201.8l5%205-5%205%201.8%201.7%206.8-6.7L1.8%200z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+                        }
+                    }
+                }
+            }
+        }
+
+        &.carousel-item {
+            display: block;
+
+            .news-item {
+                li {
+                    max-width: 100%;
+
+                    a {
+                        padding: 0 !important;
+                        background-color: transparent !important;
+                        text-decoration: none;
+                    }
+
+                    img {
+                        display: block !important;
+                    }
+
+                    .carousel {
+                        .carousel-control {
+                            top: 38%;
+                        }
+
+                        .carousel-indicators {
+                            display: none;
                         }
                     }
                 }

@@ -253,10 +253,18 @@ header {
             position: absolute;
             left: 0;
             width: 100%;
-            top: 11rem;
+            top: 9.4rem;
+            padding: 10px 20px 20px 10px;
+            background-color: #1d4789;
 
             &.show {
                 display: block;
+            }
+
+            .search-box {
+                input[type='text'] {
+                    border: 1px solid #fff;
+                }
             }
         }
 
@@ -293,6 +301,7 @@ header {
         .navbar-header {
             display: flex;
             justify-content: flex-end;
+            border-bottom: 1px solid #fff;
 
             a {
                 padding: 0;
