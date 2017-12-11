@@ -218,7 +218,18 @@ header {
 
 /* Tablet */
 @media (max-width: $tablet) {
-    header {}
+    header {
+        .navbar-default {
+            .navbar-nav {
+                li {
+                    a {
+                        font-size: 1.2rem;
+                        margin-right: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* Mobile */
