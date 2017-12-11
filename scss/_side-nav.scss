@@ -187,6 +187,45 @@
 
         .panel-group {
             display: none;
+
+            .panel {
+                background-color: $projectBlue;
+
+                &:last-of-type {
+                    .panel-title > a {
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .panel-title > a {
+                padding-left: 1.6rem;
+                padding-right: 1.6rem;
+                color: $white;
+
+                &:hover {
+                    color: $projectYellow;
+                }
+            }
+
+            .panel-body {
+                .sub-heading {
+                    margin-bottom: 1.8rem;
+                }
+
+                a {
+                    color: $white;
+                    display: block;
+                    padding-left: 1.6rem;
+                    padding-right: 1.6rem;
+
+                    &:hover, &:focus, &.active {
+                        color: $projectYellow;
+                    }
+                }
+            }
         }
 
         .sort-box {

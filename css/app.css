@@ -12459,6 +12459,32 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   .side-nav .panel-group {
     display: none;
   }
+  .side-nav .panel-group .panel {
+    background-color: #1d4789;
+  }
+  .side-nav .panel-group .panel:last-of-type .panel-title > a:after {
+    display: none;
+  }
+  .side-nav .panel-group .panel-title > a {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    color: #fff;
+  }
+  .side-nav .panel-group .panel-title > a:hover {
+    color: #f3c828;
+  }
+  .side-nav .panel-group .panel-body .sub-heading {
+    margin-bottom: 1.8rem;
+  }
+  .side-nav .panel-group .panel-body a {
+    color: #fff;
+    display: block;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+  }
+  .side-nav .panel-group .panel-body a:hover, .side-nav .panel-group .panel-body a:focus, .side-nav .panel-group .panel-body a.active {
+    color: #f3c828;
+  }
   .side-nav .sort-box {
     margin-top: 1.8rem;
   }
