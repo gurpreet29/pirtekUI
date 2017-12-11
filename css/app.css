@@ -12129,6 +12129,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   color: #1d4789;
   line-height: 1;
   margin-bottom: 0;
+  word-break: break-word;
 }
 .category-grid ul li a .thumbnail .caption p.date {
   font-size: 1.4rem;
