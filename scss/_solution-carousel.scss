@@ -1,4 +1,4 @@
-.solution {
+.solution, .solution-mobile {
     padding-top: 8rem;
 
     .title {
@@ -134,6 +134,18 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.solution-mobile {
+    display: none;
+
+    .carousel {
+        ul {
+            li {
+                width: 100%;
             }
         }
     }
@@ -277,6 +289,43 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .solution-mobile {
+        display: block;
+
+        .link {
+            font-size: 1.1rem;
+
+            &:after {
+                height: .2rem;
+            }
+
+            &.desktop {
+                display: none;
+            }
+
+            &.non-desktop {
+                display: block;
+                white-space: nowrap;
+            }
+        }
+
+        .carousel {
+            .carousel-indicators {
+                display: none;
+            }
+
+            .carousel-control {
+                display: block;
+            }
+
+            ul {
+                li {
+                    width: 100%;
                 }
             }
         }
