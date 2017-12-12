@@ -13223,15 +13223,15 @@ window.app = window.app || {};
 
             // 
             changeActive = function() {
-              
-              var panelName = $(this).text();
-            $(model.activePanel).text(panelName);
-openPanel();
+
+                var panelName = $(this).text();
+                $(model.activePanel).text(panelName);
+                openPanel();
             },
             // 
             openPanel = function() {
-              
-              $(model.panelGroup).slideToggle();
+
+                $(model.panelGroup).slideToggle();
 
 
             },
@@ -13246,6 +13246,8 @@ openPanel();
                         this.activePanel = this.container + ' ' + (args.activePanel || '.active-panel');
                         this.panelGroup = this.container + ' ' + (args.panelGroup || '.panel-group');
                         this.panelTitle = this.container + ' ' + (args.panelTitle || '.panel a');
+                        this.mainBody = args.mainBody  || 'main';
+                        this.checkSideNavClass = args.checkSideNavClass  || 'has-sidenav';
 
 
                     }
@@ -13253,13 +13255,15 @@ openPanel();
 
                 // On document ready
                 model.init();
+                // adds class to <main> to tell page has .side-nav
+                $(model.mainBody).addClass('has-sidenav');
 
-                $(document).on('click', model.panelTitle,changeActive);
-                $(document).on('click', model.activePanel,openPanel);
+                $(document).on('click', model.panelTitle, changeActive);
+                $(document).on('click', model.activePanel, openPanel);
 
-                
 
-                
+
+
 
             },
 

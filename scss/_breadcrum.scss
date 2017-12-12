@@ -77,8 +77,17 @@
         margin-bottom: 3rem;
         padding-bottom: 0;
 
-        &.mobile-hide {
-            display: none;
+        .has-sidenav & {
+            margin-bottom: 0rem;
+            border-bottom: 0;
+
+            .page-title {
+                margin-bottom: 5px;
+            }
+
+            h1 {
+                display: none;
+            }
         }
 
         .page-title {

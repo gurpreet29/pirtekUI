@@ -31,3 +31,13 @@
 .layout-margin5 {
     margin-top: 5rem;
 }
+
+// global margin for .container gets removed when page has .side-nav component
+
+@media (max-width: $mobile) {
+    .has-sidenav {
+        .layout-margin3, .layout-margin5 {
+            margin-top: 0;
+        }
+    }
+}
