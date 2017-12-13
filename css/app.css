@@ -11267,7 +11267,6 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   }
 }
 .quick-link .tile .image-thumb {
-  display: flex;
   flex-flow: column;
   font-size: 0;
   flex: 1;
@@ -11306,7 +11305,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   font-weight: 900;
   font-size: 2.4rem;
   display: block;
-  word-break: break-word;
+  word-wrap: break-word;
   line-height: 1;
 }
 .quick-link a p:after {
