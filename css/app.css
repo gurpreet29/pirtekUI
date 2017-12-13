@@ -11164,8 +11164,6 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   display: inline-block;
   width: 50%;
   padding-top: 49.5%;
-  /* Tablet */
-  /* Mobile */
 }
 .quick-link .tile.x2 .image-thumb a .quick-link {
   display: flex;
@@ -11244,37 +11242,6 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 .quick-link .tile.x2 .image-thumb a .quick-link a:after {
   display: none;
 }
-@media (max-width: 767px) {
-  .quick-link .tile.x2 .image-thumb a .quick-link {
-    padding: 0;
-    flex-flow: column;
-  }
-  .quick-link .tile.x2 .image-thumb a .quick-link .tile.x2 a p strong {
-    font-size: 2.4rem;
-  }
-  .quick-link .tile.x2 .image-thumb a .quick-link .tile .search-area {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-  }
-  .quick-link .tile.x2 .image-thumb a .quick-link .tile .search-area form {
-    position: relative;
-    bottom: auto;
-  }
-  .quick-link .tile.x2 .image-thumb a .quick-link .tile .image-thumb {
-    flex-flow: row;
-  }
-  .quick-link .tile.x2 .image-thumb a .quick-link .tile .image-thumb a p strong {
-    font-size: 1.4rem;
-  }
-  .quick-link .tile.x2 .image-thumb a .quick-link a p {
-    font-size: 1.4rem;
-    background-image: none;
-    padding: 0 1.5rem;
-  }
-  .quick-link .tile.x2 .image-thumb a .quick-link a p strong {
-    font-size: 1.4rem;
-  }
-}
 .quick-link .tile .image-thumb {
   flex-flow: column;
   font-size: 0;
@@ -11333,6 +11300,16 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 }
 
 /* Tablet */
+@media (max-width: 991px) {
+  .quick-link a p {
+    font-size: 1.4rem;
+    background-image: none;
+    padding: 0 1.5rem;
+  }
+  .quick-link a p strong {
+    font-size: 1.8rem;
+  }
+}
 /* Mobile */
 @media (max-width: 767px) {
   .quick-link {
@@ -11341,6 +11318,10 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   }
   .quick-link .tile {
     margin-bottom: 0;
+    display: block;
+  }
+  .quick-link .tile.x2 {
+    display: block;
   }
   .quick-link .tile.x2 a p strong {
     font-size: 2.4rem;
@@ -11350,6 +11331,8 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   }
   .quick-link .tile .image-thumb a {
     padding-top: 50%;
+    display: inline-block;
+    width: 50%;
   }
   .quick-link .tile .image-thumb a p strong {
     font-size: 1.4rem;

@@ -217,85 +217,6 @@
                             }
                         }
                     }
-
-                    /* Tablet */
-
-                    @media (max-width: $tablet) {
-                        .quick-link {
-                            .tile {
-                                // .search-nearby {
-                                // .search-area {
-                                //     form {
-                                //         bottom: 1rem;
-                                //     }
-                                // }
-
-                                // }
-                           
-                            }
-                        }
-                    }
-
-                    /* Mobile */
-                    @media (max-width: $mobile) {
-                        .quick-link {
-                            padding: 0;
-                            flex-flow: column;
-
-                            .tile {
-                                &.x2 {
-                                    a {
-                                        p {
-                                            strong {
-                                                font-size: 2.4rem;
-                                            }
-                                        }
-                                    }
-                                }
-
-                                // .search-nearby {
-                                .search-area {
-                                    padding-top: 4rem;
-                                    padding-bottom: 2rem;
-
-                                    form {
-                                        position: relative;
-                                        bottom: auto;
-                                    }
-                                }
-
-                                // }
-
-                                .image-thumb {
-                                    flex-flow: row;
-
-                                    a {
-                                        // padding-top: 50%;
-
-                                        p {
-                                            strong {
-                                                font-size: 1.4rem;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-
-                            // .quick-link .tile .image-thumb a
-
-                            a {
-                                p {
-                                    font-size: 1.4rem;
-                                    background-image: none;
-                                    padding: 0 $gutter-width;
-
-                                    strong {
-                                        font-size: 1.4rem;
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -463,13 +384,18 @@
 
 @media (max-width: $tablet) {
     .quick-link {
-        .tile {
-            // .search-area {
-            //     form {
-            //         bottom: 1rem;
-            //     }
-            // }
-       
+        .tile {}
+
+        a {
+            p {
+                font-size: 1.4rem;
+                background-image: none;
+                padding: 0 $gutter-width;
+
+                strong {
+                    font-size: 1.8rem;
+                }
+            }
         }
     }
 }
@@ -482,8 +408,11 @@
 
         .tile {
             margin-bottom: 0;
+            display: block;
 
             &.x2 {
+                display: block;
+
                 a {
                     p {
                         strong {
@@ -508,6 +437,8 @@
 
                 a {
                     padding-top: 50%;
+                    display: inline-block;
+                    width: 50%;
 
                     p {
                         strong {
