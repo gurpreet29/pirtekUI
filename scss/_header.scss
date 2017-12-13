@@ -141,6 +141,16 @@ header {
                         color: $projectYellow;
                         background-color: transparent;
 
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            height: 0.4rem;
+                            width: 100%;
+                            bottom: 0;
+                            left: 0;
+                            background-color: $projectYellow;
+                        }
+
                         &:hover,
                         &:focus,
                         &:active {

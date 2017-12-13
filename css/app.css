@@ -10702,6 +10702,15 @@ header .navbar-default .navbar-nav li.active a {
   color: #f3c828;
   background-color: transparent;
 }
+header .navbar-default .navbar-nav li.active a:after {
+  content: '';
+  position: absolute;
+  height: 0.4rem;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #f3c828;
+}
 header .navbar-default .navbar-nav li.active a:hover, header .navbar-default .navbar-nav li.active a:focus, header .navbar-default .navbar-nav li.active a:active {
   color: #f3c828;
   background-color: transparent;
