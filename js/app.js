@@ -12775,6 +12775,7 @@ if (document.getElementById("grid-holder") != undefined) {
             result: [],
 
             selectedVal: '',
+            selectedValselect: '',
             lastSelectedVal: '',
             elementLoaded: '',
             pageLoad: ''
@@ -12783,24 +12784,27 @@ if (document.getElementById("grid-holder") != undefined) {
         created: function() {
 
             this.result = this.category.Results;
-
             this.elementLoaded = this.result.length;
             this.pageLoad = this.category.ItemToLoad;
-            this.selectedVal = this.category.Filter[0];
+           this.selectedValselect= this.selectedVal = this.category.Filter[0];
             this.getFiltered();
         },
 
         watch: {
 
-            selectedVal: function() {
-                this.getFiltered();
-                this.lastSelectedVal = this.selectedVal;
+            selectedValselect: function() {
+               this.selectedValue(this.selectedValselect);
             }
         },
 
 
 
-        methods: {
+        methods: {  
+            selectedValue: function(value) {
+                this.selectedVal= value;
+                this.getFiltered();
+                this.lastSelectedVal = this.selectedVal;
+            },
 
             getFiltered: function() {
                 this.filterResult = [];
@@ -12842,6 +12846,7 @@ if (document.getElementById("grid-holder") != undefined) {
 
 
                 this.result = this.filterResult.slice(0, this.pageLoad);
+
 
                 // call global function to reset height of items in row
                 uif.gridHeight();

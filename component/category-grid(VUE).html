@@ -19,12 +19,12 @@
         <!--filter component -->
         <section class="grid-filter" v-if="category.Filter.length > 0">
             <label for="sort-by"></label>
-            <select name="sort-by" id="sort-by" v-model="selectedVal">
-                <option track-by="$index" v-for="name in category.Filter"> {{ name }} </option>
+            <select name="sort-by" id="sort-by" v-model="selectedValselect">
+                <option track-by="$index" v-for="name in category.Filter" > {{ name }} </option>
             </select>
             <ul>
                 <li track-by="$index" v-for="name in category.Filter">
-                    <a href="#" v-on:click="selectedVal = name" v-bind:class=" name === selectedVal  ? 'active' : ''">
+                    <a href="#" v-on:click="selectedValue(name)" v-bind:class=" name === selectedVal  ? 'active' : ''">
                         {{ name }} 
                     </a>
                 </li>
@@ -347,7 +347,7 @@
         ]
     };
     </script>
-    <script src="../js/app.min.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
