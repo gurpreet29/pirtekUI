@@ -12786,7 +12786,7 @@ if (document.getElementById("grid-holder") != undefined) {
             this.result = this.category.Results;
             this.elementLoaded = this.result.length;
             this.pageLoad = this.category.ItemToLoad;
-           this.selectedValselect= this.selectedVal = this.category.Filter[0];
+           this.selectedValselect = this.selectedVal = this.category.Filter[0];
             this.getFiltered();
         },
 
@@ -13231,7 +13231,10 @@ window.app = window.app || {};
 
                 var panelName = $(this).text();
                 $(model.activePanel).text(panelName);
-                openPanel();
+                if ($(window).width() <768) {
+                openPanel();    
+                }
+                
             },
             // 
             openPanel = function() {
@@ -13264,6 +13267,7 @@ window.app = window.app || {};
                 $(model.mainBody).addClass('has-sidenav');
 
                 $(document).on('click', model.panelTitle, changeActive);
+
                 $(document).on('click', model.activePanel, openPanel);
 
 

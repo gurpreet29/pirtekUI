@@ -19,7 +19,10 @@ window.app = window.app || {};
 
                 var panelName = $(this).text();
                 $(model.activePanel).text(panelName);
-                openPanel();
+                if ($(window).width() < 768) {
+                    openPanel();
+                }
+
             },
             // 
             openPanel = function() {
@@ -39,8 +42,8 @@ window.app = window.app || {};
                         this.activePanel = this.container + ' ' + (args.activePanel || '.active-panel');
                         this.panelGroup = this.container + ' ' + (args.panelGroup || '.panel-group');
                         this.panelTitle = this.container + ' ' + (args.panelTitle || '.panel a');
-                        this.mainBody = args.mainBody  || 'main';
-                        this.checkSideNavClass = args.checkSideNavClass  || 'has-sidenav';
+                        this.mainBody = args.mainBody || 'main';
+                        this.checkSideNavClass = args.checkSideNavClass || 'has-sidenav';
 
 
                     }
@@ -52,6 +55,7 @@ window.app = window.app || {};
                 $(model.mainBody).addClass('has-sidenav');
 
                 $(document).on('click', model.panelTitle, changeActive);
+
                 $(document).on('click', model.activePanel, openPanel);
 
 
