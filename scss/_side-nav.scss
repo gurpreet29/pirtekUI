@@ -10,6 +10,9 @@
         padding: 1.5rem 4rem 1.3rem 1.5rem;
         font-weight: 900;
         display: none;
+        width: 100%;
+        text-align: left;
+        border: 0;
 
         &:after {
             content: '';
