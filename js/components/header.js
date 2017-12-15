@@ -18,6 +18,15 @@ window.app = window.app || {};
             toggleSearch = function() {
                 $(model.searchForm).slideToggle();
             },
+            // checks for call text / call number to write in mobile nav.
+            callUs = function() {
+             
+                var callText =$(model.callUs).data('calltext');
+                var contactNumber =$(model.callUs).data('callnumber');
+                
+                $(model.callButton).text(callText + " " + contactNumber ).attr('href', 'tel:' +contactNumber );
+                
+            },
 
 
 
@@ -30,12 +39,15 @@ window.app = window.app || {};
                         this.container = args.container || 'header';
                         this.searchButton = args.searchButton || this.container + ' .search-btn';
                         this.searchForm = args.searchForm || this.container + ' form';
+                        this.callUs = args.callUs || this.container + ' .call-us';
+                        this.callButton = args.callButton || this.container + ' .call-btn';
+
                     }
                 };
 
                 // On document ready
                 model.init();
-                // toggleSearch();
+                callUs();
 
                 $(model.searchButton).on('click', toggleSearch);
 
