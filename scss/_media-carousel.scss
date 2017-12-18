@@ -147,3 +147,28 @@
         }
     }
 }
+
+.carousel-inner.onebyone-carosel {
+    margin: auto;
+    width: 150%;
+}
+
+.onebyone-carosel {
+    .active {
+        &.left {
+            left: -33.33%;
+        }
+
+        &.right {
+            left: 33.33%;
+        }
+    }
+
+    .next {
+        left: 33.33%;
+    }
+
+    .prev {
+        left: -33.33%;
+    }
+}

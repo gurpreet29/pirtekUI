@@ -11084,7 +11084,7 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   right: 0;
   padding-top: 26.8%;
 }
-.carousel h1, .carousel h2 {
+.carousel h1, .carousel h2, .carousel h3 {
   color: #1d4789;
   font-family: "MuseoSans", sans-serif;
   font-weight: 900;
@@ -11095,6 +11095,16 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   left: 0;
 }
 .carousel h2 {
+  color: #1d4789;
+  font-family: "MuseoSans", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: 26.8%;
+  left: 0;
+}
+.carousel h3 {
   color: #1d4789;
   font-size: 7.5rem;
   margin-top: 2.5rem;
@@ -11107,10 +11117,10 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
 }
 
 @media (max-width: 991px) {
-  .carousel h1 {
+  .carousel h2 {
     font-size: 2.6rem;
   }
-  .carousel h2 {
+  .carousel h3 {
     font-size: 5.8rem;
     margin-top: 2.6rem;
   }
@@ -11132,11 +11142,11 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   .carousel .carousel-control {
     display: none;
   }
-  .carousel h1 {
+  .carousel h2 {
     font-size: 1.6rem;
     font-weight: 500;
   }
-  .carousel h2 {
+  .carousel h3 {
     font-size: 2.8rem;
     margin-top: 1.6rem;
   }
@@ -12093,6 +12103,24 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   width: 100%;
 }
 
+.carousel-inner.onebyone-carosel {
+  margin: auto;
+  width: 150%;
+}
+
+.onebyone-carosel .active.left {
+  left: -33.33%;
+}
+.onebyone-carosel .active.right {
+  left: 33.33%;
+}
+.onebyone-carosel .next {
+  left: 33.33%;
+}
+.onebyone-carosel .prev {
+  left: -33.33%;
+}
+
 .category-grid ul {
   font-size: 0;
 }
@@ -12307,10 +12335,6 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
     font-size: 2.4rem;
     font-weight: 900;
     background-color: #1d4789;
-    background-image: url("data:image/svg+xml;charset%3DUS-ASCII,%3Csvg%20id%3D%22Layer_1%22%20data-name%3D%22Layer%201%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2013.44%208.64%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23fff%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Ctitle%3Earrow-white-down%3C%2Ftitle%3E%3Cg%20id%3D%22Layer_2%22%20data-name%3D%22Layer%202%22%3E%3Cg%20id%3D%22Layer_1-2%22%20data-name%3D%22Layer%201-2%22%3E%3Cpath%20id%3D%22Arrow_copy_6%22%20data-name%3D%22Arrow%20copy%206%22%20class%3D%22cls-1%22%20d%3D%22M11%204.2L9.27%202.4l-5%205-5-5-1.67%201.8L4.32%2011z%22%20transform%3D%22translate%282.4%20-2.4%29%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
-    background-repeat: no-repeat;
-    background-size: 1.7rem 1rem;
-    background-position: calc(100% - 1.5rem) center;
     width: calc(100% + 3rem);
     left: -1.5rem;
     position: relative;
@@ -12836,9 +12860,15 @@ footer .social-links li.instagram a:hover, footer .social-links li.instagram a:a
   text-align: center;
   width: 100%;
 }
-.near-me h5 {
+.near-me h5, .near-me h1 {
   color: #fff;
   margin-bottom: 2.5rem;
+  font-family: "MuseoSans", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #1d4789;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 .near-me input[type='text'] {
   min-width: 35rem;

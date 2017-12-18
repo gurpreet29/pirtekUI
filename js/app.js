@@ -12970,42 +12970,44 @@ window.app = window.app || {};
 
             // What does the function do
             mediaCarousel = function() {
-                if($(window).width() > 767){
-                    $('.videosec .carousel .item').each(function () {
+                if ($(window).width() > 767) {
+                    
+                    $(model.carouselItem).each(function() {
                         var next = $(this).next();
                         if (!next.length) {
                             next = $(this).siblings(':first');
                         }
                         next.children(':first-child').clone().appendTo($(this));
+
                         if (next.next().length > 0) {
                             next.next().children(':first-child').clone().appendTo($(this));
                         } else {
                             $(this).siblings(':first').children(':first-child').clone().appendTo($(this));
                         }
                     });
-                } 
+                }
             },
 
-            playVideo = function(){
+            playVideo = function() {
                 $('.video-icon').click(function(ev) {
                     $(this).parents('.video-container').find('.video-image').hide();
                     $(this).parents('.video-container').find('.video-file').show();
                     $(this).parent('.video-image').siblings('.video-file').find("iframe")[0].src += "?&autoplay=1";
                     $(this).parents('.carousel').carousel('pause');
-                    ev.preventDefault(); 
-                });        
+                    ev.preventDefault();
+                });
             },
 
-            stopVideo = function(){
-                $('.videosec .carousel').on('slid.bs.carousel', function(){
+            stopVideo = function() {
+                $(model.carousel).on('slid.bs.carousel', function() {
                     var videoContainer = $('.video-container');
-                    videoContainer.each(function(){
+                    videoContainer.each(function() {
                         var src = $(this).find('iframe').attr('src');
                         var finalSrc = src.split('&autoplay=1');
-                        $(this).find('iframe')[0].src = finalSrc; 
+                        $(this).find('iframe')[0].src = finalSrc;
                     });
-                }); 
-            }, 
+                });
+            },
 
 
             /***** PUBLIC FUNCTION/INITIALISE ************/
@@ -13016,6 +13018,7 @@ window.app = window.app || {};
                     init: function() {
                         this.container = args.container || '.videosec';
                         this.carousel = this.container + ' ' + (args.carousel || '.carousel');
+                        this.carouselItem = this.container + ' ' + (args.carouselItem || '.carousel .item');
                     }
                 };
 
@@ -13026,13 +13029,13 @@ window.app = window.app || {};
                 stopVideo();
                 $(window).resize(function(event) {
                     /* Act on the event */
-                    
+
                 });
 
             },
 
             reset = function() {
-                
+
             };
 
         // Return public functions only
