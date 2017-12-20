@@ -1,5 +1,6 @@
 .breadcrum {
     position: relative;
+    margin-bottom: 4rem;
 
     &::after {
         content: '';
@@ -109,6 +110,8 @@
 /* Mobile */
 @media (max-width: $mobile) {
     .breadcrum {
+        margin-bottom: 2rem;
+
         .caption-text {
             width: 100%;
 

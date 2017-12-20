@@ -126,6 +126,11 @@ h3 {
         font-size: 3.6rem;
         font-weight: 300;
     }
+
+    // fix for thumbnails component as it may have Heading in future.
+    + .thumbnails {
+        margin-top: 0;
+    }
 }
 
 h4 {

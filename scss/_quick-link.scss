@@ -2,6 +2,16 @@
     position: relative;
     overflow: hidden;
 
+    h3 {
+        display: none;
+    }
+
+    &.with-heading {
+        h3 {
+            display: block;
+        }
+    }
+
     [class*=col-] {
         padding: 0;
         overflow: hidden;
